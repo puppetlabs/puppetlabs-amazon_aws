@@ -1,0 +1,28 @@
+{
+	"description": "Modifies an existing cache subnet group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cache_subnet_group_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subnet_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

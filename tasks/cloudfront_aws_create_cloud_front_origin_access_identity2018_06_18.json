@@ -1,0 +1,16 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cloud_front_origin_access_identity_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

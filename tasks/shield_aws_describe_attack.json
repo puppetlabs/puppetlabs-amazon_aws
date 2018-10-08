@@ -1,0 +1,16 @@
+{
+	"description": "Describes the details of a DDoS attack. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"attack_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

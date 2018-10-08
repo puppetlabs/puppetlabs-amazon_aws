@@ -1,0 +1,16 @@
+{
+	"description": "Returns current applied schema version ARN, including the minor version in use.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"schema_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

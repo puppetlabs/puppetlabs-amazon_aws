@@ -1,0 +1,22 @@
+{
+	"description": "Gets a key policy attached to the specified customer master key (CMK). You cannot perform this operation on a CMK in a different AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

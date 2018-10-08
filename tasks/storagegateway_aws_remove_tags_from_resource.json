@@ -1,0 +1,22 @@
+{
+	"description": "Removes one or more tags from the specified resource. This operation is only supported in the cached volume, stored volume and tape gateway types.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

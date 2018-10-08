@@ -1,0 +1,22 @@
+{
+	"description": "Gets information about unique problems.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

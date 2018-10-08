@@ -1,0 +1,16 @@
+{
+	"description": "Returns the XssMatchSet that is specified by XssMatchSetId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"xss_match_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

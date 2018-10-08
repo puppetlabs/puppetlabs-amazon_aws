@@ -1,0 +1,28 @@
+{
+	"description": "Gets a list of the file shares for a specific file gateway, or the list of file shares that belong to the calling user account. This operation is only supported for file gateways.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"gateway_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

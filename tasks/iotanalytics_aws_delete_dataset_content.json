@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the content of the specified data set.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dataset_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

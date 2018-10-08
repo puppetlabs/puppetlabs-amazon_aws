@@ -1,0 +1,22 @@
+{
+	"description": "Creates a new thing type.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"thing_type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_type_properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

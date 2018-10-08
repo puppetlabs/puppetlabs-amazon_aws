@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves the specified lifecycle policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

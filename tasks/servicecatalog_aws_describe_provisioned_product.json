@@ -1,0 +1,22 @@
+{
+	"description": "Gets information about the specified provisioned product.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

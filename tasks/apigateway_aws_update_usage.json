@@ -1,0 +1,28 @@
+{
+	"description": "Grants a temporary extension to the remaining quota of a usage plan associated with a specified API key.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"usage_plan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patch_operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

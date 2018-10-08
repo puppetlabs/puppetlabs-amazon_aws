@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves the definition of a trigger.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Updates the comment for a specified hosted zone.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"comment":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

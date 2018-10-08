@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a specified configuration for DNS query logging. For more information about DNS query logs, see CreateQueryLoggingConfig and Logging DNS Queries.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

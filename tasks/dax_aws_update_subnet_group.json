@@ -1,0 +1,28 @@
+{
+	"description": "Modifies an existing subnet group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subnet_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

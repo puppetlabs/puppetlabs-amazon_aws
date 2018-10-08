@@ -1,0 +1,28 @@
+{
+	"description": "Updates the MLModelName and the ScoreThreshold of an MLModel. You can use the GetMLModel operation to view the contents of the updated data element.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"ml_model_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ml_model_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"score_threshold":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

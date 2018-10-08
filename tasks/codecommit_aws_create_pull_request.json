@@ -1,0 +1,34 @@
+{
+	"description": "Creates a pull request in the specified repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"title":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

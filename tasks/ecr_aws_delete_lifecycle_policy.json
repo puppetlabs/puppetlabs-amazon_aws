@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified lifecycle policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"registry_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

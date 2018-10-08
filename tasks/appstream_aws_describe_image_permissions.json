@@ -1,0 +1,34 @@
+{
+	"description": "Retrieves a list that describes the permissions for shared AWS account IDs on a private image that you own. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"shared_aws_account_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

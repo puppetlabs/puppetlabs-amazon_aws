@@ -1,0 +1,34 @@
+{
+	"description": "Adds an InputProcessingConfiguration to an application. An input processor preprocesses records on the input stream before the application's SQL code executes. Currently, the only input processor available is AWS Lambda.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"current_application_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input_processing_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

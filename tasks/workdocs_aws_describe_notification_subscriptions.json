@@ -1,0 +1,28 @@
+{
+	"description": "Lists the specified notification subscriptions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

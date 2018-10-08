@@ -1,0 +1,22 @@
+{
+	"description": "Creates a new, empty repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"repository_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Gets information about one or more repositories.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"sort_by":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"order":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

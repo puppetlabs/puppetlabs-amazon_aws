@@ -1,0 +1,16 @@
+{
+	"description": "Describes load-based auto scaling configurations for specified layers.  You must specify at least one of the parameters.   Required Permissions: To use this action, an IAM user must have a Show, Deploy, or Manage permissions level for the stack, or an attached policy that explicitly grants permissions. For more information about user permissions, see Managing User Permissions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"layer_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

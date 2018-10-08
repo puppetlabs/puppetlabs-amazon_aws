@@ -1,0 +1,28 @@
+{
+	"description": "Creates an address book with the specified details.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"client_request_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

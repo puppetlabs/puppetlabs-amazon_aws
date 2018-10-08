@@ -1,0 +1,16 @@
+{
+	"description": "Returns an Evaluation that includes metadata as well as the current status of the Evaluation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"evaluation_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

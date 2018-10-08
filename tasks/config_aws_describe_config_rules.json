@@ -1,0 +1,22 @@
+{
+	"description": "Returns details about your AWS Config rules.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"config_rule_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

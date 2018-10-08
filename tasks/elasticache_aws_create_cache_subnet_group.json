@@ -1,0 +1,28 @@
+{
+	"description": "Creates a new cache subnet group. Use this parameter only when you are creating a cluster in an Amazon Virtual Private Cloud (Amazon VPC).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subnet_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_subnet_group_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

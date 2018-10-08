@@ -1,0 +1,16 @@
+{
+	"description": "Allocates a static IP address.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"static_ip_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

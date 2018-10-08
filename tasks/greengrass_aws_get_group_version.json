@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves information about a group version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"group_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

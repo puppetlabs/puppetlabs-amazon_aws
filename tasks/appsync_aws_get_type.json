@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves a Type object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"format":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

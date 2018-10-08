@@ -1,0 +1,22 @@
+{
+	"description": "Deletes pending authorization requests for a specified aggregator account in a specified region.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"requester_account_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"requester_aws_region":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

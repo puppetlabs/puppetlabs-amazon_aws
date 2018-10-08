@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about all Amazon Lightsail virtual private servers, or instances.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

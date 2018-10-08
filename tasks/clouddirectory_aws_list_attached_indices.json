@@ -1,0 +1,40 @@
+{
+	"description": "Lists indices attached to the specified object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"directory_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_reference":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"consistency_level":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

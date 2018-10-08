@@ -1,0 +1,22 @@
+{
+	"description": "Removes a patch group from a patch baseline.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"baseline_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patch_group":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Returns information about a repository branch, including its name and the last commit ID.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"branch_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

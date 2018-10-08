@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves the introspection schema for a GraphQL API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"format":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

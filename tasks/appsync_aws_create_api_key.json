@@ -1,0 +1,28 @@
+{
+	"description": "Creates a unique key that you can distribute to clients who are executing your API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expires":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Returns a list of all revisions for the specified configuration.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"configuration_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

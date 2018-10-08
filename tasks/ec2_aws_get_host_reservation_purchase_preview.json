@@ -1,0 +1,22 @@
+{
+	"description": "Preview a reservation purchase with configurations that match those of your Dedicated Host. You must have active Dedicated Hosts in your account before you purchase a reservation. This is a preview of the PurchaseHostReservation action and does not result in the offering being purchased.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"offering_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"host_id_set":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

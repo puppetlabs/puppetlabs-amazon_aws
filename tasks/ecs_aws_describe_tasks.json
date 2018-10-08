@@ -1,0 +1,22 @@
+{
+	"description": "Describes a specified task or tasks.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tasks":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

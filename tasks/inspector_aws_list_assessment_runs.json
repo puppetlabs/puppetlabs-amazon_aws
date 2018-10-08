@@ -1,0 +1,34 @@
+{
+	"description": "Lists the assessment runs that correspond to the assessment templates that are specified by the ARNs of the assessment templates.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_template_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

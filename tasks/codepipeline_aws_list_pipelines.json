@@ -1,0 +1,16 @@
+{
+	"description": "Gets a summary of all of the pipelines associated with your account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

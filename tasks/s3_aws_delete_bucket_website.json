@@ -1,0 +1,22 @@
+{
+	"description": "This operation removes the website configuration from the bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"website":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

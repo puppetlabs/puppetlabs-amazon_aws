@@ -1,0 +1,22 @@
+{
+	"description": "Returns the specified configuration revision for the specified configuration.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"configuration_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"configuration_revision":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

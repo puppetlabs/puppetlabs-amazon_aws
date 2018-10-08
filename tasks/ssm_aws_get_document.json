@@ -1,0 +1,28 @@
+{
+	"description": "Gets the contents of the specified Systems Manager document.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_format":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": " Creates an AWS Mobile Hub project. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"contents":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"region":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

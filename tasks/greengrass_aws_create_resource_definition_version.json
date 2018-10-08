@@ -1,0 +1,28 @@
+{
+	"description": "Creates a version of a resource definition that has already been defined.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"amzn_client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

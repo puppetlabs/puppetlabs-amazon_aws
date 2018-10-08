@@ -1,0 +1,22 @@
+{
+	"description": "Lists the RestApis resources for your collection.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"position":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

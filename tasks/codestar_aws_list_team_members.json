@@ -1,0 +1,28 @@
+{
+	"description": "Lists all team members associated with a project.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"project_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

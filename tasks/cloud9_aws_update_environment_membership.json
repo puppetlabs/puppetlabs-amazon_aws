@@ -1,0 +1,28 @@
+{
+	"description": "Changes the settings of an existing environment member for an AWS Cloud9 development environment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"environment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"permissions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the delivery channel. Before you can delete the delivery channel, you must stop the configuration recorder by using the StopConfigurationRecorder action.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"delivery_channel_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

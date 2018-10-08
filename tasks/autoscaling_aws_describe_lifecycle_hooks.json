@@ -1,0 +1,22 @@
+{
+	"description": "Describes the lifecycle hooks for the specified Auto Scaling group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"auto_scaling_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lifecycle_hook_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

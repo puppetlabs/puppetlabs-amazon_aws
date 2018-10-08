@@ -1,0 +1,22 @@
+{
+	"description": "Permanently deletes the specified document and its associated metadata.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

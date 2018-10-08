@@ -1,0 +1,22 @@
+{
+	"description": "Removes the specified tags from the specified Elastic Load Balancing resource. To list the current tags for your resources, use DescribeTags.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

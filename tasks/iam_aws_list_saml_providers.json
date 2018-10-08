@@ -1,0 +1,10 @@
+{
+	"description": "Lists the SAML provider resource objects defined in IAM in the account.   This operation requires Signature Version 4. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

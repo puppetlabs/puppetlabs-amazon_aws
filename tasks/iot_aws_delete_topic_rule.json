@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the rule.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rule_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

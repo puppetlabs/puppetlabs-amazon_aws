@@ -1,0 +1,16 @@
+{
+	"description": "Returns the IAM policy attached to the RuleGroup.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

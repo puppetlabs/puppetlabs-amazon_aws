@@ -1,0 +1,34 @@
+{
+	"description": "Adds one or more custom properties to the specified resource (a folder, document, or version).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_metadata":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

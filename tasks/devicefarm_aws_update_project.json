@@ -1,0 +1,28 @@
+{
+	"description": "Modifies the specified project name, given the project ARN and a new name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"default_job_timeout_minutes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

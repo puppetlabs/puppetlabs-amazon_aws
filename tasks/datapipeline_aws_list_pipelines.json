@@ -1,0 +1,16 @@
+{
+	"description": "Lists the pipeline identifiers for all active pipelines that you have permission to access.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Modifies the parameters of a parameter group.  For more information about parameters and parameter groups, go to Amazon Redshift Parameter Groups in the Amazon Redshift Cluster Management Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameter_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

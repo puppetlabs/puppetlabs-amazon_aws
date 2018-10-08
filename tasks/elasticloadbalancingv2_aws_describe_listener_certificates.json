@@ -1,0 +1,28 @@
+{
+	"description": "Describes the certificates for the specified secure listener.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"listener_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

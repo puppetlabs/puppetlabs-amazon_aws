@@ -1,0 +1,22 @@
+{
+	"description": "This operation adds or updates tags for a specified domain. All tag operations are eventually consistent; subsequent operations might not immediately represent all issued operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags_to_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

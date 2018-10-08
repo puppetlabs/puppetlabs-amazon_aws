@@ -1,0 +1,22 @@
+{
+	"description": "Creates a TagOption.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

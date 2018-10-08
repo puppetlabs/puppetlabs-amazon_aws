@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a notebook instance.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"notebook_instance_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

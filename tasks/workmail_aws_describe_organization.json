@@ -1,0 +1,16 @@
+{
+	"description": "Provides more information regarding a given organization based on its identifier.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

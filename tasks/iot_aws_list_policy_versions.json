@@ -1,0 +1,16 @@
+{
+	"description": "Lists the versions of the specified policy and identifies the default version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

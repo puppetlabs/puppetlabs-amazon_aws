@@ -1,0 +1,22 @@
+{
+	"description": "Deletes one or more VPC endpoint connection notifications.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"connection_notification_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

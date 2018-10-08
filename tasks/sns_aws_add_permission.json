@@ -1,0 +1,34 @@
+{
+	"description": "Adds a statement to a topic's access control policy, granting access for the specified AWS accounts to the specified actions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"aws_account_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"topic_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"label":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

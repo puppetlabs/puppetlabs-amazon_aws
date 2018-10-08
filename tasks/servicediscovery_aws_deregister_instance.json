@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the records and the health check, if any, that Amazon Route 53 created for the specified instance.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

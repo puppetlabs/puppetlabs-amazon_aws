@@ -1,0 +1,28 @@
+{
+	"description": "Creates a classifier in the user's account. This may be a GrokClassifier, an XMLClassifier, or abbrev JsonClassifier, depending on which field of the request is present.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"grok_classifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"xml_classifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"json_classifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

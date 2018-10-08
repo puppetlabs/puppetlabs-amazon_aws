@@ -1,0 +1,22 @@
+{
+	"description": "Deprecated, see the GetBucketLifecycleConfiguration operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"lifecycle":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

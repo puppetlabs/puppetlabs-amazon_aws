@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified change set. Deleting change sets ensures that no one executes the wrong change set. If the call successfully completes, AWS CloudFormation successfully deleted the change set.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"change_set_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

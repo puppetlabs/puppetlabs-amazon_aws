@@ -1,0 +1,40 @@
+{
+	"description": "Retrieves a list that describes one or more specified images, if the image names or image ARNs are provided. Otherwise, all images in the account are described.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

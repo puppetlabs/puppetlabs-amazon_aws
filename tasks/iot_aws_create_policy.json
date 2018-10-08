@@ -1,0 +1,22 @@
+{
+	"description": "Creates an AWS IoT policy. The created policy is the default version for the policy. This operation creates a policy version with a version identifier of 1 and sets 1 as the policy's default version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_document":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

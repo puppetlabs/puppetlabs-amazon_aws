@@ -1,0 +1,16 @@
+{
+	"description": "Describes an activity.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"activity_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"description": "Gets information about Docker images that are managed by AWS CodeBuild.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

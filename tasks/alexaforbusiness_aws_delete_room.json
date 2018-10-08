@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a room by the room ARN.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"room_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

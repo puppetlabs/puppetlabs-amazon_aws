@@ -1,0 +1,16 @@
+{
+	"description": "Describes a state machine.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"state_machine_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

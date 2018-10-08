@@ -1,0 +1,22 @@
+{
+	"description": "This operation returns all the domain names registered with Amazon Route 53 for the current AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

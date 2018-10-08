@@ -1,0 +1,16 @@
+{
+	"description": "Get detailed information about a particular Automation execution.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"automation_execution_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

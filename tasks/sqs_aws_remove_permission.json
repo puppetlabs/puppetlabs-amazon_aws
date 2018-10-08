@@ -1,0 +1,22 @@
+{
+	"description": "Revokes any permissions in the queue policy that matches the specified Label parameter.  Only the owner of a queue can remove permissions from it. Cross-account permissions don't apply to this action. For more information, see see Grant Cross-Account Permissions to a Role and a User Name in the Amazon Simple Queue Service Developer Guide. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"queue_url":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"label":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

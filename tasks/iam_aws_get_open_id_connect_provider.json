@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the specified OpenID Connect (OIDC) provider resource object in IAM.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"open_id_connect_provider_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

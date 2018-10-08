@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a profile that can be applied to one or more private device instances.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

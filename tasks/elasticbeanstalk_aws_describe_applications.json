@@ -1,0 +1,16 @@
+{
+	"description": "Returns the descriptions of existing applications.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

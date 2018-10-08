@@ -1,0 +1,28 @@
+{
+	"description": "This operation returns the operation IDs of operations that are not yet complete.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"submitted_since":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

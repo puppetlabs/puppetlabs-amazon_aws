@@ -1,0 +1,22 @@
+{
+	"description": "Adds or overwrites one or more tags for the specified AWS CloudHSM cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_list":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

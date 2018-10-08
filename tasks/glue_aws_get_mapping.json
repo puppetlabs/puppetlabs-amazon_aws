@@ -1,0 +1,28 @@
+{
+	"description": "Creates mappings.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"source":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sinks":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

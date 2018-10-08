@@ -1,0 +1,16 @@
+{
+	"description": "Returns a BatchPrediction that includes detailed metadata, status, and data file information for a Batch Prediction request.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"batch_prediction_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

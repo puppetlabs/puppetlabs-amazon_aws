@@ -1,0 +1,22 @@
+{
+	"description": "Returns temporary SSH keys you can use to connect to a specific virtual private server, or instance.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"protocol":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

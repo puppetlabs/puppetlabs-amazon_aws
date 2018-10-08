@@ -1,0 +1,22 @@
+{
+	"description": "Assigns or changes an Amazon Identity and Access Management (IAM) role to the managed instance.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iam_role":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

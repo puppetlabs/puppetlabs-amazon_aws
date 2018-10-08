@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a transform job.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"transform_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

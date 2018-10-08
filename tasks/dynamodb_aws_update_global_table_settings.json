@@ -1,0 +1,40 @@
+{
+	"description": "Updates settings for a global table.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"global_table_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"global_table_provisioned_write_capacity_units":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"global_table_provisioned_write_capacity_auto_scaling_settings_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"global_table_global_secondary_index_settings_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replica_settings_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

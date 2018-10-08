@@ -1,0 +1,16 @@
+{
+	"description": "Lists the names of stored connections to GitHub accounts.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

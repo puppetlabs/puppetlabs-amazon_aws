@@ -1,0 +1,16 @@
+{
+	"description": "Deletes an existing OriginEndpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

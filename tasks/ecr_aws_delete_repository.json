@@ -1,0 +1,28 @@
+{
+	"description": "Deletes an existing image repository. If a repository contains images, you must use the force option to delete it.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"registry_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"force":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

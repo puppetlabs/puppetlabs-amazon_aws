@@ -1,0 +1,22 @@
+{
+	"description": "Gets information about an application revision.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"revision":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

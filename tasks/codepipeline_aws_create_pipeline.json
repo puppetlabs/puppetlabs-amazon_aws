@@ -1,0 +1,16 @@
+{
+	"description": "Creates a pipeline.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pipeline":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

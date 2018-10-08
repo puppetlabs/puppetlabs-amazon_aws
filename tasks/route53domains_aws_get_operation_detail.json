@@ -1,0 +1,16 @@
+{
+	"description": "This operation returns the current status of an operation that is not completed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"operation_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Gets room details by room ARN.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"room_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

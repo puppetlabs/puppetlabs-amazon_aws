@@ -1,0 +1,22 @@
+{
+	"description": "Returns a list of all pending aggregation requests.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

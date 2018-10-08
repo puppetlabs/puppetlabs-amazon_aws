@@ -1,0 +1,28 @@
+{
+	"description": "Removes a target from a Maintenance Window.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"window_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"window_target_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"safe":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

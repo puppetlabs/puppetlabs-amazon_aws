@@ -1,0 +1,28 @@
+{
+	"description": "Creates a platform application object for one of the supported push notification services, such as APNS and GCM, to which devices and mobile apps may register. You must specify PlatformPrincipal and PlatformCredential attributes when using the CreatePlatformApplication action. The PlatformPrincipal is received from the notification service. For APNS/APNS_SANDBOX, PlatformPrincipal is 'SSL certificate'. For GCM, PlatformPrincipal is not applicable. For ADM, PlatformPrincipal is 'client id'. The PlatformCredential is also received from the notification service. For WNS, PlatformPrincipal is 'Package Security Identifier'. For MPNS, PlatformPrincipal is 'TLS certificate'. For Baidu, PlatformPrincipal is 'API key'. For APNS/APNS_SANDBOX, PlatformCredential is 'private key'. For GCM, PlatformCredential is 'API key'. For ADM, PlatformCredential is 'client secret'. For WNS, PlatformCredential is 'secret key'. For MPNS, PlatformCredential is 'private key'. For Baidu, PlatformCredential is 'secret key'. The PlatformApplicationArn that is returned when using CreatePlatformApplication is then used as an attribute for the CreatePlatformEndpoint action. For more information, see Using Amazon SNS Mobile Push Notifications. For more information about obtaining the PlatformPrincipal and PlatformCredential for each of the supported push notification services, see Getting Started with Apple Push Notification Service, Getting Started with Amazon Device Messaging, Getting Started with Baidu Cloud Push, Getting Started with Google Cloud Messaging for Android, Getting Started with MPNS, or Getting Started with WNS. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"platform":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

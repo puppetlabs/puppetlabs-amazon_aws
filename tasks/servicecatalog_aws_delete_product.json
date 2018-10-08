@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified product. You cannot delete a product if it was shared with you or is associated with a portfolio.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

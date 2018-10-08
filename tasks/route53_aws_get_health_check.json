@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a specified health check.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"health_check_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

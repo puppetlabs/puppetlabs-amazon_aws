@@ -1,0 +1,16 @@
+{
+	"description": "Creates an image repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Creates a new Amazon WorkMail resource. The available types are equipment and room.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

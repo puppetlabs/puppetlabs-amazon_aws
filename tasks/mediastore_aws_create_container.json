@@ -1,0 +1,16 @@
+{
+	"description": "Creates a storage container to hold objects. A container is similar to a bucket in the Amazon S3 service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"container_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

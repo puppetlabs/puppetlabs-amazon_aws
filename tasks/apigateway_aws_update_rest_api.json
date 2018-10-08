@@ -1,0 +1,22 @@
+{
+	"description": "Changes information about the specified API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patch_operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Returns a link to a currently running remote access session.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

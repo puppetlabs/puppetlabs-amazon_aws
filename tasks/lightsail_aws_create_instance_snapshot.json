@@ -1,0 +1,22 @@
+{
+	"description": "Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instance_snapshot_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

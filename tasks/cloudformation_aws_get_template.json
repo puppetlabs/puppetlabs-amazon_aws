@@ -1,0 +1,28 @@
+{
+	"description": "Returns the template body for a specified stack. You can get the template for running or deleted stacks. For deleted stacks, GetTemplate returns the template for up to 90 days after the stack has been deleted.   If the template does not exist, a ValidationError is returned.  ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"change_set_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"template_stage":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

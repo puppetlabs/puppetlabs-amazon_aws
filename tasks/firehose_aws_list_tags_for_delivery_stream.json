@@ -1,0 +1,28 @@
+{
+	"description": "Lists the tags for the specified delivery stream. This operation has a limit of five transactions per second per account. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delivery_stream_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exclusive_start_tag_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Permanently deletes the LoggingConfiguration from the specified web ACL.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

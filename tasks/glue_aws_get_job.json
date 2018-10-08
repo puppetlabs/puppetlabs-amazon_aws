@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves an existing job definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

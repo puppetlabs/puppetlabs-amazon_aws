@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves a list of the reusable delegation sets that are associated with the current AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

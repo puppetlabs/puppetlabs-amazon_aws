@@ -1,0 +1,34 @@
+{
+	"description": "Deletes a specified stack. Once the call completes successfully, stack deletion starts. Deleted stacks do not show up in the DescribeStacks API if the deletion has been completed successfully.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"retain_resources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

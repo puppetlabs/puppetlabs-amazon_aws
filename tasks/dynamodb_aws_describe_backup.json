@@ -1,0 +1,16 @@
+{
+	"description": "Describes an existing backup of a table. You can call DescribeBackup at a maximum rate of 10 times per second.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"backup_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

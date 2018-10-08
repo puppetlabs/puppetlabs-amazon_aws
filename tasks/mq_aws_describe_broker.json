@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the specified broker.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"broker_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

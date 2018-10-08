@@ -1,0 +1,40 @@
+{
+	"description": "Creates a profile that can be applied to one or more private fleet device instances.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"package_cleanup":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exclude_app_packages_from_cleanup":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reboot_after_use":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

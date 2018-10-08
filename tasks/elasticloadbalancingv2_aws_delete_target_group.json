@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified target group. You can delete a target group if it is not referenced by any actions. Deleting a target group also deletes any associated health checks.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"target_group_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

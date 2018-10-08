@@ -1,0 +1,28 @@
+{
+	"description": "Describes the specified attribute of the specified AMI. You can specify only one attribute at a time.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"image_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attribute":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

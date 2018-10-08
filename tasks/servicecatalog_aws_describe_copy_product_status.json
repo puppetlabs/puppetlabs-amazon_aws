@@ -1,0 +1,22 @@
+{
+	"description": "Gets the status of the specified copy product operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"copy_product_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified user from a Simple AD or Microsoft AD directory.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"user_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

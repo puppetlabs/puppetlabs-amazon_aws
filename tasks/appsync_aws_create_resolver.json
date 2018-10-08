@@ -1,0 +1,46 @@
+{
+	"description": "Creates a Resolver object. A resolver converts incoming requests into a format that a data source can understand and converts the data source's responses into GraphQL.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"response_mapping_template":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"field_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_source_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request_mapping_template":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

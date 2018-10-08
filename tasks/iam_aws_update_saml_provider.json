@@ -1,0 +1,22 @@
+{
+	"description": "Updates the metadata document for an existing SAML provider resource object.  This operation requires Signature Version 4. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"saml_metadata_document":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"saml_provider_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

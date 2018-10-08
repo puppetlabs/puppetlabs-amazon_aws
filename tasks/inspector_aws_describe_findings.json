@@ -1,0 +1,22 @@
+{
+	"description": "Describes the findings that are specified by the ARNs of the findings.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"finding_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"locale":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

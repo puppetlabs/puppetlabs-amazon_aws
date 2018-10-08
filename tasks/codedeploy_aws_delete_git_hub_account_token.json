@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a GitHub account connection.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"token_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

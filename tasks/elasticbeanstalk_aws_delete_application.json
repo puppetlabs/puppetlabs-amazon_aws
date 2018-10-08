@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified application along with all associated versions and configurations. The application versions will not be deleted from your Amazon S3 bucket.  You cannot delete an application that has a running environment. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"terminate_env_by_force":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

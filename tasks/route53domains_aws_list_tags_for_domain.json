@@ -1,0 +1,16 @@
+{
+	"description": "This operation returns all of the tags that are associated with the specified domain. All tag operations are eventually consistent; subsequent operations might not immediately represent all issued operations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Starts an on-demand Device Defender audit.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"target_check_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

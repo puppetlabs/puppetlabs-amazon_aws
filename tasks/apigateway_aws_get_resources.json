@@ -1,0 +1,34 @@
+{
+	"description": "Lists information about a collection of Resource resources.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"position":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"embed":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

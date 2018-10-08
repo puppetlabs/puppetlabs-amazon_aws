@@ -1,0 +1,40 @@
+{
+	"description": "Return a list of inventory type names for the account, or return a list of attribute names for a specific Inventory item type. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"sub_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"aggregator":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

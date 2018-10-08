@@ -1,0 +1,22 @@
+{
+	"description": "Describes the permissions for a Systems Manager document. If you created the document, you are the owner. If a document is shared, it can either be shared privately (by specifying a user's AWS account ID) or publicly (All). ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"permission_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

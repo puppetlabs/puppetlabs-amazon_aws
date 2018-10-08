@@ -1,0 +1,22 @@
+{
+	"description": "Describes one or more of your clusters.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"clusters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"include":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Removes one or more tags from the specified load balancer.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"load_balancer_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

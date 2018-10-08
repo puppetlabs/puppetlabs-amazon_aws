@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves a Resolver object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"field_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

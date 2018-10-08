@@ -1,0 +1,22 @@
+{
+	"description": "Creates a new group.  For information about the number of groups you can create, see Limitations on IAM Entities in the IAM User Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

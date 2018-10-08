@@ -1,0 +1,16 @@
+{
+	"description": "Ends a specified remote access session.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

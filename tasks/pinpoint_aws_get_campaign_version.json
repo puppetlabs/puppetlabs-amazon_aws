@@ -1,0 +1,28 @@
+{
+	"description": "Returns information about a specific version of a campaign.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"campaign_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

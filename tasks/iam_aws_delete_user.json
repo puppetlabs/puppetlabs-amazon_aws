@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified IAM user. The user must not belong to any groups or have any access keys, signing certificates, or attached policies.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"user_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

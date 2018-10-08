@@ -1,0 +1,40 @@
+{
+	"description": "Returns a paginated list of child objects that are associated with a given object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"directory_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"object_reference":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"consistency_level":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

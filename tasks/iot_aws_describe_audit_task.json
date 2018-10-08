@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a Device Defender audit.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"task_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

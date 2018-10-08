@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a stream.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"stream_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

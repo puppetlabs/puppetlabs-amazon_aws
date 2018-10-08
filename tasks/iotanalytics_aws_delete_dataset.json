@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified data set. You do not have to delete the content of the data set before you perform this operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dataset_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a vocabulary.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"vocabulary_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

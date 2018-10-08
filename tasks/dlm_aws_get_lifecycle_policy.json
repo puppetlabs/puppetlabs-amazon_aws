@@ -1,0 +1,16 @@
+{
+	"description": "Gets detailed information about the specified lifecycle policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

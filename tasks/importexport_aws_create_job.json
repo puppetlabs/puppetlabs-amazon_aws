@@ -1,0 +1,46 @@
+{
+	"description": "This operation initiates the process of scheduling an upload or download of your data. You include in the request a manifest that describes the data transfer specifics. The response to the request includes a job ID, which you can use in other operations, a signature that you use to identify your storage device, and the address where you should ship your storage device.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation":{
+			   "description": "Default value CreateJob",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manifest":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manifest_addendum":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"validate_only":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

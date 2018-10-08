@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a user profile in AWS CodeStar, including all personal preference data associated with that profile, such as display name and email address. It does not delete the history of that user, for example the history of commits made by that user.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"user_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

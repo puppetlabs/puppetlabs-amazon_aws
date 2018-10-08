@@ -1,0 +1,34 @@
+{
+	"description": "Creates a new BasePathMapping resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"stage":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"base_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

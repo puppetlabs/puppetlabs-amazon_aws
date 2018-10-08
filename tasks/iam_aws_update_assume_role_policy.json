@@ -1,0 +1,22 @@
+{
+	"description": "Updates the policy that grants an IAM entity permission to assume a role. This is typically referred to as the 'role trust policy'. For more information about roles, go to Using Roles to Delegate Permissions and Federate Identities.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_document":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

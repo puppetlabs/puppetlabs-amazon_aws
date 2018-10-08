@@ -1,0 +1,10 @@
+{
+	"description": "Describes the IAM role that enables Amazon Inspector to access your AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

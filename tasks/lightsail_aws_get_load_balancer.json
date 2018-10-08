@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the specified Lightsail load balancer.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"load_balancer_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Removes existing tags from the specified pipeline.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pipeline_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

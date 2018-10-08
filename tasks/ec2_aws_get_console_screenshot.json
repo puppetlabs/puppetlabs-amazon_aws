@@ -1,0 +1,28 @@
+{
+	"description": "Retrieve a JPG-format screenshot of a running instance to help with troubleshooting. The returned content is Base64-encoded.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"wake_up":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

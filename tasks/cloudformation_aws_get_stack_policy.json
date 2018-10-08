@@ -1,0 +1,16 @@
+{
+	"description": "Returns the stack policy for a specified stack. If a stack doesn't have a policy, a null value is returned.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

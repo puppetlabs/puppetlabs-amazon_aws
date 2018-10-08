@@ -1,0 +1,52 @@
+{
+	"description": "Lists information about revisions for an application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"s3_bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"s3_key_prefix":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployed":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_by":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_order":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

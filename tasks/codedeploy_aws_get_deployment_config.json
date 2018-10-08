@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a deployment configuration.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"deployment_config_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

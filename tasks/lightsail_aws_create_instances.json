@@ -1,0 +1,52 @@
+{
+	"description": "Creates one or more Amazon Lightsail virtual private servers, or instances.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key_pair_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"availability_zone":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_image_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"blueprint_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bundle_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_data":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

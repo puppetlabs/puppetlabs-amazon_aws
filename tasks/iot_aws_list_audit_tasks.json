@@ -1,0 +1,46 @@
+{
+	"description": "Lists the Device Defender audits that have been performed during a given time period.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"end_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"task_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"task_status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

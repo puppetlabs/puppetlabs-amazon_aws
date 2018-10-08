@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a Amazon GuardDuty detector specified by the detector ID.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

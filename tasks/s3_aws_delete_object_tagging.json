@@ -1,0 +1,34 @@
+{
+	"description": "Removes the tag-set from an existing object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tagging":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

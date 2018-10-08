@@ -1,0 +1,22 @@
+{
+	"description": "Configures the access rules that control access to the domain's document and search endpoints. For more information, see  Configuring Access for an Amazon CloudSearch Domain.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"access_policies":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

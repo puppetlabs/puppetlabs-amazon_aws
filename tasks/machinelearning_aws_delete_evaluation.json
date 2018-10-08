@@ -1,0 +1,16 @@
+{
+	"description": "Assigns the DELETED status to an Evaluation, rendering it unusable. After invoking the DeleteEvaluation operation, you can use the GetEvaluation operation to verify that the status of the Evaluation changed to DELETED. Caution The results of the DeleteEvaluation operation are irreversible.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"evaluation_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

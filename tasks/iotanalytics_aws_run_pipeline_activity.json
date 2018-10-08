@@ -1,0 +1,22 @@
+{
+	"description": "Simulates the results of running a pipeline activity on a message payload.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pipeline_activity":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"payloads":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

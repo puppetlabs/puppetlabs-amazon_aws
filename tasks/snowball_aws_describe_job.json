@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a specific job including shipping information, job status, and other important metadata. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

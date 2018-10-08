@@ -1,0 +1,22 @@
+{
+	"description": "Returns information about an execution of a pipeline, including details about artifacts, the pipeline execution ID, and the name, version, and status of the pipeline.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pipeline_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pipeline_execution_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

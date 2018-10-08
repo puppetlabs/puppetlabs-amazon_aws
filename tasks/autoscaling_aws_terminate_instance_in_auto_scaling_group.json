@@ -1,0 +1,22 @@
+{
+	"description": "Terminates the specified instance and optionally adjusts the desired group size. This call simply makes a termination request. The instance is not terminated immediately.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"should_decrement_desired_capacity":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

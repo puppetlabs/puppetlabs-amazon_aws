@@ -1,0 +1,10 @@
+{
+	"description": "Describes the available types of lifecycle hooks. The following hook types are supported:   autoscaling:EC2_INSTANCE_LAUNCHING   autoscaling:EC2_INSTANCE_TERMINATING  ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

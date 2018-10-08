@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the access policy that is associated with the specified container.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"container_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

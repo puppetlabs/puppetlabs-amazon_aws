@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves information about an organizational unit (OU). This operation can be called only from the organization's master account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"organizational_unit_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

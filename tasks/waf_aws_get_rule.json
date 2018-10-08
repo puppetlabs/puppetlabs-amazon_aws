@@ -1,0 +1,16 @@
+{
+	"description": "Returns the Rule that is specified by the RuleId that you included in the GetRule request.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rule_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

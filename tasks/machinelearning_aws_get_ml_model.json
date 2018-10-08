@@ -1,0 +1,22 @@
+{
+	"description": "Returns an MLModel that includes detailed metadata, data source information, and the current status of the MLModel. GetMLModel provides results in normal or verbose format. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"ml_model_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"verbose":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

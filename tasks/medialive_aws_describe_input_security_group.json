@@ -1,0 +1,16 @@
+{
+	"description": "Produces a summary of an Input Security Group",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"input_security_group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

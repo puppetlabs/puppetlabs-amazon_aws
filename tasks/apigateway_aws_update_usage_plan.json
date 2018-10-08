@@ -1,0 +1,22 @@
+{
+	"description": "Updates a usage plan of a given plan Id.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"usage_plan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patch_operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

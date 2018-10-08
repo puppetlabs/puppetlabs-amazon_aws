@@ -1,0 +1,28 @@
+{
+	"description": "Describes the specified attribute of the specified Amazon FPGA Image (AFI).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"attribute":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fpga_image_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

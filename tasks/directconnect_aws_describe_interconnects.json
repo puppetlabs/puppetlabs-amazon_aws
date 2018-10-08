@@ -1,0 +1,16 @@
+{
+	"description": "Returns a list of interconnects owned by the AWS account. If an interconnect ID is provided, it will only return this particular interconnect.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"interconnect_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

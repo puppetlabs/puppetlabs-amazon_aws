@@ -1,0 +1,22 @@
+{
+	"description": "Stops a specific Amazon Lightsail instance that is currently running.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instance_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"force":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

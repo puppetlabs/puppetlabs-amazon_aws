@@ -1,0 +1,28 @@
+{
+	"description": "Updates an existing database definition in a Data Catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_input":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

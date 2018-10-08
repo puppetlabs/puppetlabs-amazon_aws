@@ -1,0 +1,28 @@
+{
+	"description": "Deletes a notification.  Deleting a notification also deletes the subscribers associated with the notification. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"account_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"budget_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

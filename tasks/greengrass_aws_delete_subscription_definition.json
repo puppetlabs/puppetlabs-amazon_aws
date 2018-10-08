@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a subscription definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "Returns a list of event source mappings you created using the CreateEventSourceMapping (see CreateEventSourceMapping).  For each mapping, the API returns configuration information. You can optionally specify filters to retrieve specific event source mappings. If you are using the versioning feature, you can get list of event source mappings for a specific Lambda function version or an alias as described in the FunctionName parameter. For information about the versioning feature, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:ListEventSourceMappings action.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_source_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

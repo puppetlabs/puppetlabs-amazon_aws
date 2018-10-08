@@ -1,0 +1,40 @@
+{
+	"description": "Creates a usage plan with the throttle and quota limits, as well as the associated API stages, specified in the payload. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_stages":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"throttle":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"quota":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

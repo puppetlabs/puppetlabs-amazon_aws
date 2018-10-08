@@ -1,0 +1,16 @@
+{
+	"description": "Returns the content of a comment made on a change, file, or commit in a repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"comment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

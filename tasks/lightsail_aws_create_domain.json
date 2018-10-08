@@ -1,0 +1,16 @@
+{
+	"description": "Creates a domain resource for the specified domain (e.g., example.com).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves information about a Lambda function definition version, including which Lambda functions are included in the version and their configurations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"function_definition_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"function_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

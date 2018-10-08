@@ -1,0 +1,28 @@
+{
+	"description": "Provisions a private virtual interface to be owned by another AWS customer. Virtual interfaces created using this action must be confirmed by the virtual interface owner by using the ConfirmPrivateVirtualInterface action. Until then, the virtual interface will be in 'Confirming' state, and will not be available for handling traffic.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"connection_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"owner_account":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"new_private_virtual_interface_allocation":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

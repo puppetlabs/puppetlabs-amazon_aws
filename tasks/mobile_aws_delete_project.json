@@ -1,0 +1,16 @@
+{
+	"description": " Delets a project in AWS Mobile Hub. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"project_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

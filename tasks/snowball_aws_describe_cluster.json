@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a specific cluster including shipping information, cluster status, and other important metadata.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

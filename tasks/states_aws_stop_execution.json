@@ -1,0 +1,28 @@
+{
+	"description": "Stops an execution.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"error":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cause":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"execution_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,40 @@
+{
+	"description": "Lists Amazon GuardDuty findings for the specified detector ID.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_criteria":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"finding_criteria":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

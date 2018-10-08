@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves the role associated with a particular group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

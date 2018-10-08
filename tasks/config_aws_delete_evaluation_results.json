@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the evaluation results for the specified AWS Config rule. You can specify one AWS Config rule per request. After you delete the evaluation results, you can call the StartConfigRulesEvaluation API to start evaluating your AWS resources against the rule.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"config_rule_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

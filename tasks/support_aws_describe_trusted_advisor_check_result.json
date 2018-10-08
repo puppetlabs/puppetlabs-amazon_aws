@@ -1,0 +1,22 @@
+{
+	"description": "Returns the results of the Trusted Advisor check that has the specified check ID. Check IDs can be obtained by calling DescribeTrustedAdvisorChecks. The response contains a TrustedAdvisorCheckResult object, which contains these three objects:    TrustedAdvisorCategorySpecificSummary     TrustedAdvisorResourceDetail     TrustedAdvisorResourcesSummary    In addition, the response contains these fields:    status. The alert status of the check: 'ok' (green), 'warning' (yellow), 'error' (red), or 'not_available'.    timestamp. The time of the last refresh of the check.    checkId. The unique identifier for the check.  ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"check_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

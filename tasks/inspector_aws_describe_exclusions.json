@@ -1,0 +1,22 @@
+{
+	"description": "Describes the exclusions that are specified by the exclusions' ARNs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"locale":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"exclusion_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

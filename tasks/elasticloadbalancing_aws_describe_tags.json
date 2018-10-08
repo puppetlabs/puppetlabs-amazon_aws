@@ -1,0 +1,16 @@
+{
+	"description": "Describes the tags associated with the specified load balancers.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"load_balancer_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

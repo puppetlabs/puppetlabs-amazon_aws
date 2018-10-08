@@ -1,0 +1,22 @@
+{
+	"description": "Displays a list of categories for all event source types, or, if specified, for a specified source type. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"source_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

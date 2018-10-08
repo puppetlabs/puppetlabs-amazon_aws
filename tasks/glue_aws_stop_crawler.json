@@ -1,0 +1,16 @@
+{
+	"description": "If the specified crawler is running, stops the crawl.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

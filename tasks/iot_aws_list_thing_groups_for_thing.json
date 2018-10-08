@@ -1,0 +1,28 @@
+{
+	"description": "List the thing groups to which the specified thing belongs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"thing_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

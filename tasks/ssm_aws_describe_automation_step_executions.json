@@ -1,0 +1,40 @@
+{
+	"description": "Information about all active and terminated step executions in an Automation workflow.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"automation_execution_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reverse_order":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified Amazon Redshift HSM configuration.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"hsm_configuration_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

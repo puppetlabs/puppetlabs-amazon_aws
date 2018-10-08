@@ -1,0 +1,34 @@
+{
+	"description": "Describes the specified rules or the rules for the specified listener. You must specify either a listener or one or more rules.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"listener_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rule_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

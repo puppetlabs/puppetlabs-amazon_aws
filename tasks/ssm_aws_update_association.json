@@ -1,0 +1,64 @@
+{
+	"description": "Updates an association. You can update the association name and version, the document version, schedule, parameters, and Amazon S3 output.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"association_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule_expression":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"association_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"association_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"output_location":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

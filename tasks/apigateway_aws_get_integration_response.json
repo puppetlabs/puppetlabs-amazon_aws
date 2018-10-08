@@ -1,0 +1,34 @@
+{
+	"description": "Represents a get integration response.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"http_method":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status_code":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

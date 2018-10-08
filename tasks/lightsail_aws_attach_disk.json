@@ -1,0 +1,28 @@
+{
+	"description": "Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"disk_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disk_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

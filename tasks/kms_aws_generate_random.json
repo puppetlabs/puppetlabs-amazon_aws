@@ -1,0 +1,16 @@
+{
+	"description": "Returns a random byte string that is cryptographically secure. For more information about entropy and random number generation, see the AWS Key Management Service Cryptographic Details whitepaper.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"number_of_bytes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

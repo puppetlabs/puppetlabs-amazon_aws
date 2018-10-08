@@ -1,0 +1,34 @@
+{
+	"description": "Creates a device pool.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"project_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rules":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

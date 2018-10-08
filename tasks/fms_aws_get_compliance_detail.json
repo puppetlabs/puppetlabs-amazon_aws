@@ -1,0 +1,22 @@
+{
+	"description": "Returns detailed compliance information about the specified member account. Details include resources that are in and out of compliance with the specified policy. Resources are considered non-compliant if the specified policy has not been applied to them.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"member_account":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

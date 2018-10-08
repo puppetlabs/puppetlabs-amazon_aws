@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves a specified function definition from the Data Catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

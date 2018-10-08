@@ -1,0 +1,22 @@
+{
+	"description": "Creates a new parameter group. A parameter group is a collection of parameters that you apply to all of the nodes in a DAX cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"parameter_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

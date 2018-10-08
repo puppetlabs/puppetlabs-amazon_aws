@@ -1,0 +1,22 @@
+{
+	"description": "Changes information about the DomainName resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patch_operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

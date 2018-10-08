@@ -1,0 +1,16 @@
+{
+	"description": "Describes the version of the platform.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"platform_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

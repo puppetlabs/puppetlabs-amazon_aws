@@ -1,0 +1,16 @@
+{
+	"description": "Gets the properties associated with a dominant language detection job. Use this operation to get the status of a detection job.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

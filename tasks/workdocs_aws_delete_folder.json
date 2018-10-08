@@ -1,0 +1,22 @@
+{
+	"description": "Permanently deletes the specified folder and its contents.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"folder_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

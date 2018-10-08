@@ -1,0 +1,22 @@
+{
+	"description": "Get details of a parameter. Don't confuse this API action with the GetParameter API action.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"with_decryption":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

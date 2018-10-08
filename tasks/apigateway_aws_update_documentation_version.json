@@ -1,0 +1,28 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"documentation_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"patch_operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

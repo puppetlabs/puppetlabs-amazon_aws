@@ -1,0 +1,16 @@
+{
+	"description": "Creates an AWS organization. The account whose user is calling the CreateOrganization operation automatically becomes the master account of the new organization. This operation must be called using credentials from the account that is to become the new organization's master account. The principal must also have the relevant IAM permissions. By default (or if you set the FeatureSet parameter to ALL), the new organization is created with all features enabled and service control policies automatically enabled in the root. If you instead choose to create the organization supporting only the consolidated billing features by setting the FeatureSet parameter to CONSOLIDATED_BILLING', then no policy types are enabled by default and you cannot use organization policies.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"feature_set":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

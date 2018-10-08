@@ -1,0 +1,40 @@
+{
+	"description": "Creates a data set. A data set stores data retrieved from a data store by applying a 'queryAction' (a SQL query) or a 'containerAction' (executing a containerized application). This operation creates the skeleton of a data set. The data set can be populated manually by calling 'CreateDatasetContent' or automatically according to a 'trigger' you specify.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dataset_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"actions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"triggers":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"retention_period":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

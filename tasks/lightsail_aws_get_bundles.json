@@ -1,0 +1,22 @@
+{
+	"description": "Returns the list of bundles that are available for purchase. A bundle describes the specs for your virtual private server (or instance).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"include_inactive":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

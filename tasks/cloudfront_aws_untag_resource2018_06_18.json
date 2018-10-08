@@ -1,0 +1,28 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation":{
+			   "description": "Default value Untag",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

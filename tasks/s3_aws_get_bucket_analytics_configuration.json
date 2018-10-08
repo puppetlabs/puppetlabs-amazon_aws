@@ -1,0 +1,28 @@
+{
+	"description": "Gets an analytics configuration for the bucket (specified by the analytics configuration ID).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"analytics":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

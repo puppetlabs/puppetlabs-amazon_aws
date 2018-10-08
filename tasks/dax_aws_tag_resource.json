@@ -1,0 +1,22 @@
+{
+	"description": "Associates a set of tags with a DAX resource. You can call TagResource up to 5 times per second, per account. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

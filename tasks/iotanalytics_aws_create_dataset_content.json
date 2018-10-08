@@ -1,0 +1,16 @@
+{
+	"description": "Creates the content of a data set by applying a SQL action.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dataset_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

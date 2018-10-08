@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a specific block storage disk.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"disk_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

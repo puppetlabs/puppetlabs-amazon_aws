@@ -1,0 +1,22 @@
+{
+	"description": "Returns information about an endpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"endpoint_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

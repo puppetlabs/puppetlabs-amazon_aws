@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves properties for an alias. This operation returns all alias metadata and settings. To get an alias's target fleet ID only, use ResolveAlias.  To get alias properties, specify the alias ID. If successful, the requested alias record is returned. Alias-related operations include:    CreateAlias     ListAliases     DescribeAlias     UpdateAlias     DeleteAlias     ResolveAlias   ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"alias_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

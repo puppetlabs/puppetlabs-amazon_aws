@@ -1,0 +1,28 @@
+{
+	"description": "Gets a list of build project names, with each build project name representing a single build project.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"sort_by":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_order":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

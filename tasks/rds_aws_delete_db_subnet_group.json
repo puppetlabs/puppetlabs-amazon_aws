@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a DB subnet group.  The specified database subnet group must not be associated with any DB instances. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"db_subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

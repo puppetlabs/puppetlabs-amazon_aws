@@ -1,0 +1,16 @@
+{
+	"description": "Returns high-level aggregated patch compliance state for a patch group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"patch_group":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

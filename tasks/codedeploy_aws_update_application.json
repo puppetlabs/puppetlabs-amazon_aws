@@ -1,0 +1,22 @@
+{
+	"description": "Changes the name of an application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"new_application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

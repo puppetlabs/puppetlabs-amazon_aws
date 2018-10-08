@@ -1,0 +1,52 @@
+{
+	"description": "Starts a job run using a job definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"allocated_capacity":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification_property":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_run_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"arguments":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

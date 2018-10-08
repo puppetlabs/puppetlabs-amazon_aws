@@ -1,0 +1,16 @@
+{
+	"description": "Creates a Input Security Group",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"whitelist_rules":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

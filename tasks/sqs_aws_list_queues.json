@@ -1,0 +1,16 @@
+{
+	"description": "Returns a list of your queues. The maximum number of queues that can be returned is 1,000. If you specify a value for the optional QueueNamePrefix parameter, only queues with a name that begins with the specified value are returned.  Cross-account permissions don't apply to this action. For more information, see see Grant Cross-Account Permissions to a Role and a User Name in the Amazon Simple Queue Service Developer Guide. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"queue_name_prefix":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

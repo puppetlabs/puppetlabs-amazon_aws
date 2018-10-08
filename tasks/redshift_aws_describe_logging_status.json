@@ -1,0 +1,16 @@
+{
+	"description": "Describes whether information, such as queries and connection attempts, is being logged for the specified Amazon Redshift cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

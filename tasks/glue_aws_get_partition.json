@@ -1,0 +1,34 @@
+{
+	"description": "Retrieves information about a specified partition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"partition_values":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"table_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

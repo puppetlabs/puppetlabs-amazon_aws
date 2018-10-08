@@ -1,0 +1,22 @@
+{
+	"description": "Updates a certificate. Currently, you can use this function to specify whether to opt in to or out of recording your certificate in a certificate transparency log. For more information, see  Opting Out of Certificate Transparency Logging. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"certificate_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"options":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

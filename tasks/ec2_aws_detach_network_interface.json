@@ -1,0 +1,28 @@
+{
+	"description": "Detaches a network interface from an instance.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"attachment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"force":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a configuration for your Amazon Virtual Private Cloud (VPC) endpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

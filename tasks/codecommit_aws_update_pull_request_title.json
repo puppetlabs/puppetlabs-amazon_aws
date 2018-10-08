@@ -1,0 +1,22 @@
+{
+	"description": "Replaces the title of a pull request.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pull_request_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"title":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a specified trigger. If the trigger is not found, no exception is thrown.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Gets a list of build IDs, with each build ID representing a single build.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_order":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

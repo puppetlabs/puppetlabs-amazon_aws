@@ -1,0 +1,16 @@
+{
+	"description": "Describes a task definition. You can specify a family and revision to find information about a specific task definition, or you can simply specify the family to find the latest ACTIVE revision in that family.  You can only describe INACTIVE task definitions while an active task or service references them. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"task_definition":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

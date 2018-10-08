@@ -1,0 +1,16 @@
+{
+	"description": "Provides the details for the GuardDuty master account to the current GuardDuty member account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

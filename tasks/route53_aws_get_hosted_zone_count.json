@@ -1,0 +1,10 @@
+{
+	"description": "Retrieves the number of hosted zones that are associated with the current AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

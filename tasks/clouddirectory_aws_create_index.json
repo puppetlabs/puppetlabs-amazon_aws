@@ -1,0 +1,40 @@
+{
+	"description": "Creates an index object. See Indexing for more information.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"is_unique":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parent_reference":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"link_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"directory_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ordered_indexed_attribute_list":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

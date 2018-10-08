@@ -1,0 +1,28 @@
+{
+	"description": "Creates a version of a device definition that has already been defined.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"devices":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"amzn_client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

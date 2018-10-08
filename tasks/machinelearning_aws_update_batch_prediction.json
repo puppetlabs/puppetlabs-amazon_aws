@@ -1,0 +1,22 @@
+{
+	"description": "Updates the BatchPredictionName of a BatchPrediction. You can use the GetBatchPrediction operation to view the contents of the updated data element.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"batch_prediction_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"batch_prediction_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

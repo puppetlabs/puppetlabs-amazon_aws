@@ -1,0 +1,28 @@
+{
+	"description": " Returns a list of IAM users that are in the specified IAM group. You can paginate the results using the MaxItems and Marker parameters.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

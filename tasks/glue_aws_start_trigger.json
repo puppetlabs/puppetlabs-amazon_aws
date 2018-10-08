@@ -1,0 +1,16 @@
+{
+	"description": "Starts an existing trigger. See Triggering Jobs for information about how different types of trigger are started.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

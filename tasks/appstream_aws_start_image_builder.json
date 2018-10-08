@@ -1,0 +1,22 @@
+{
+	"description": "Starts the specified image builder.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"appstream_agent_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified TagOption. You cannot delete a TagOption if it is associated with a product or portfolio.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

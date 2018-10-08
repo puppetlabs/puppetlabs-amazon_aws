@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified IP access control group. You cannot delete an IP access control group that is associated with a directory.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

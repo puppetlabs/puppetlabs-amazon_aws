@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a traffic policy instance and all of the resource record sets that Amazon Route 53 created when you created the instance.  In the Amazon Route 53 console, traffic policy instances are known as policy records. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Returns a list of tags assigned to a function when supplied the function ARN (Amazon Resource Name). For more information on Tagging, see Tagging Lambda Functions in the AWS Lambda Developer Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

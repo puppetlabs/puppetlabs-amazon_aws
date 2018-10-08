@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified configuration aggregator and the aggregated data associated with the aggregator.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"configuration_aggregator_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

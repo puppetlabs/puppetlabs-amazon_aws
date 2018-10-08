@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a campaign.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"campaign_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

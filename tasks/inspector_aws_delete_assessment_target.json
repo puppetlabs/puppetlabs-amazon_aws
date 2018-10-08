@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the assessment target that is specified by the ARN of the assessment target.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_target_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

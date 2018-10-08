@@ -1,0 +1,16 @@
+{
+	"description": "Assigns the DELETED status to a BatchPrediction, rendering it unusable. After using the DeleteBatchPrediction operation, you can use the GetBatchPrediction operation to verify that the status of the BatchPrediction changed to DELETED. Caution: The result of the DeleteBatchPrediction operation is irreversible.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"batch_prediction_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Creates a new private virtual interface. A virtual interface is the VLAN that transports AWS Direct Connect traffic. A private virtual interface supports sending traffic to a single virtual private cloud (VPC).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"connection_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"new_private_virtual_interface":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

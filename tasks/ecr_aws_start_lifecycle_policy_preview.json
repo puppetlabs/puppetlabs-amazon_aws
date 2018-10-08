@@ -1,0 +1,28 @@
+{
+	"description": "Starts a preview of the specified lifecycle policy. This allows you to see the results before creating the lifecycle policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"registry_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lifecycle_policy_text":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

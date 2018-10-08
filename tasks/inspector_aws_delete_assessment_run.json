@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the assessment run that is specified by the ARN of the assessment run.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_run_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

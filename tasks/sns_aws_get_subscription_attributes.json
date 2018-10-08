@@ -1,0 +1,16 @@
+{
+	"description": "Returns all of the properties of a subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

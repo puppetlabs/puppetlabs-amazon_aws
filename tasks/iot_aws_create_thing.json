@@ -1,0 +1,28 @@
+{
+	"description": "Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"thing_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attribute_payload":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "Returns a paginated list of all attribute definitions for a particular TypedLinkFacet. For more information, see Typed link.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"schema_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

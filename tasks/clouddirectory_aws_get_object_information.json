@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves metadata about an object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"directory_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"object_reference":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"consistency_level":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

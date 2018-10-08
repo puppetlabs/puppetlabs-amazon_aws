@@ -1,0 +1,22 @@
+{
+	"description": "Creates an application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"compute_platform":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

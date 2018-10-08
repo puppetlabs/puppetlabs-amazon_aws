@@ -1,0 +1,22 @@
+{
+	"description": "Updates an existing job definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

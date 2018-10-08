@@ -1,0 +1,22 @@
+{
+	"description": "Creates a group that can be used in Amazon WorkMail by calling the RegisterToWorkMail operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

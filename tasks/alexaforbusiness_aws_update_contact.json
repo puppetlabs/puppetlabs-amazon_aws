@@ -1,0 +1,40 @@
+{
+	"description": "Updates the contact details by the contact ARN.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"contact_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"first_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"last_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"phone_number":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

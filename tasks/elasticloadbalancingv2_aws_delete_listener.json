@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified listener. Alternatively, your listener is deleted when you delete the load balancer to which it is attached, using DeleteLoadBalancer.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"listener_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

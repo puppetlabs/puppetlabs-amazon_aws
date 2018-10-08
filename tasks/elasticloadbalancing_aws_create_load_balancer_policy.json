@@ -1,0 +1,34 @@
+{
+	"description": "Creates a policy with the specified attributes for the specified load balancer. Policies are settings that are saved for your load balancer and that can be applied to the listener or the application server, depending on the policy type.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"load_balancer_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

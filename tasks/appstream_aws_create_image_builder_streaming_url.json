@@ -1,0 +1,22 @@
+{
+	"description": "Creates a URL to start an image builder streaming session.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"validity":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

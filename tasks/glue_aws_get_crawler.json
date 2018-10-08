@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves metadata for a specified crawler.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

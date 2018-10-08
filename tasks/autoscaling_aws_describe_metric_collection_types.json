@@ -1,0 +1,10 @@
+{
+	"description": "Describes the available CloudWatch metrics for Amazon EC2 Auto Scaling. Note that the GroupStandbyInstances metric is not returned by default. You must explicitly request this metric when calling EnableMetricsCollection.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

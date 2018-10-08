@@ -1,0 +1,28 @@
+{
+	"description": "Returns a list of inventory configurations for the bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuation_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"inventory":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the ClientCertificate resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"client_certificate_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

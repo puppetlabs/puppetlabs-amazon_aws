@@ -1,0 +1,16 @@
+{
+	"description": "Creates a 2048-bit RSA key pair and issues an X.509 certificate using the issued public key.  Note This is the only time AWS IoT issues the private key for this certificate, so it is important to keep it in a secure location.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"set_as_active":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

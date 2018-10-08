@@ -1,0 +1,16 @@
+{
+	"description": "Retrieve the JSON for a specific completed transcoding job.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Modifies the list of AWS Identity and Access Management (IAM) roles that can be used by the cluster to access other AWS services. A cluster can have up to 10 IAM roles associated at any time.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"remove_iam_roles":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"add_iam_roles":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

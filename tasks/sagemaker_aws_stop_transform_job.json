@@ -1,0 +1,16 @@
+{
+	"description": "Stops a transform job. When Amazon SageMaker receives a StopTransformJob request, the status of the job changes to Stopping. After Amazon SageMaker stops the job, the status is set to Stopped. When you stop a transform job before it is completed, Amazon SageMaker doesn't store the job's output in Amazon S3.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"transform_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Detaches one or more target groups from the specified Auto Scaling group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"auto_scaling_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_group_ar_ns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

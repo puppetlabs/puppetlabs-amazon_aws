@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves the Table definition in a Data Catalog for a specified table.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

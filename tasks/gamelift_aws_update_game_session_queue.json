@@ -1,0 +1,34 @@
+{
+	"description": "Updates settings for a game session queue, which determines how new game session requests in the queue are processed. To update settings, specify the queue name to be updated and provide the new settings. When updating destinations, provide a complete list of destinations.  Queue-related operations include:    CreateGameSessionQueue     DescribeGameSessionQueues     UpdateGameSessionQueue     DeleteGameSessionQueue   ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"player_latency_policies":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout_in_seconds":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

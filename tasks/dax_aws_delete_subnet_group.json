@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a subnet group.  You cannot delete a subnet group if it is associated with any DAX clusters. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

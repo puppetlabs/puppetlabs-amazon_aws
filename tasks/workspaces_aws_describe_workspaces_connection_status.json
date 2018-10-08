@@ -1,0 +1,22 @@
+{
+	"description": "Describes the connection status of the specified WorkSpaces.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workspace_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

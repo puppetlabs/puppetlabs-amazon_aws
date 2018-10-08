@@ -1,0 +1,22 @@
+{
+	"description": "Describes the rules packages that are specified by the ARNs of the rules packages.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rules_package_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"locale":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

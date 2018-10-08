@@ -1,0 +1,34 @@
+{
+	"description": "Creates a Device Defender security profile.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"security_profile_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"behaviors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alert_targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_profile_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

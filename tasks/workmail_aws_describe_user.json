@@ -1,0 +1,22 @@
+{
+	"description": "Provides information regarding the user.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

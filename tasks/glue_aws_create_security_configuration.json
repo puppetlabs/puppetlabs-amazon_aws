@@ -1,0 +1,22 @@
+{
+	"description": "Creates a new security configuration.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encryption_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

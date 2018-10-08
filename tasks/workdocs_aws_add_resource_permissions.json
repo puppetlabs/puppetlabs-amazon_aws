@@ -1,0 +1,34 @@
+{
+	"description": "Creates a set of permissions for the specified folder or document. The resource permissions are overwritten if the principals already have different permissions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"notification_options":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"principals":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

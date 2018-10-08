@@ -1,0 +1,28 @@
+{
+	"description": "Modifies the specified attribute of the specified VPC.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"enable_dns_hostnames":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_dns_support":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpc_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Describes an execution.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"execution_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Transforms a directed acyclic graph (DAG) into code.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dag_nodes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dag_edges":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

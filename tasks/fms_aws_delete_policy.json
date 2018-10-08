@@ -1,0 +1,16 @@
+{
+	"description": "Permanently deletes an AWS Firewall Manager policy. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

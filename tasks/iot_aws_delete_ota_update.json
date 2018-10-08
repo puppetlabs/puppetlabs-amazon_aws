@@ -1,0 +1,28 @@
+{
+	"description": "Delete an OTA update.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"delete_stream":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"force_delete_aws_job":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ota_update_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

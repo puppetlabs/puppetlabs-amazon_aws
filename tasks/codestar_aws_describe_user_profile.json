@@ -1,0 +1,16 @@
+{
+	"description": "Describes a user in AWS CodeStar and the user attributes across all projects.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"user_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

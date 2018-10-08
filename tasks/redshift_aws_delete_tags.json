@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a tag or tags from a resource. You must provide the ARN of the resource from which you want to delete the tag or tags.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

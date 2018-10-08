@@ -1,0 +1,16 @@
+{
+	"description": "Creates an alias for your AWS account. For information about using an AWS account alias, see Using an Alias for Your AWS Account ID in the IAM User Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"account_alias":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

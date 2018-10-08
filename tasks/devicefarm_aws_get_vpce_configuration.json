@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the configuration settings for your Amazon Virtual Private Cloud (VPC) endpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

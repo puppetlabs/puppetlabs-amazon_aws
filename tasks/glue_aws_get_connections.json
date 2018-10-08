@@ -1,0 +1,34 @@
+{
+	"description": "Retrieves a list of connection definitions from the Data Catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

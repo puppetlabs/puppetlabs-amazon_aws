@@ -1,0 +1,34 @@
+{
+	"description": "Modifies the permissions for your VPC endpoint service. You can add or remove permissions for service consumers (IAM users, IAM roles, and AWS accounts) to connect to your endpoint service. If you grant permissions to all principals, the service is public. Any users who know the name of a public service can send a request to attach an endpoint. If the service does not require manual approval, attachments are automatically approved.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"remove_allowed_principals":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"add_allowed_principals":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

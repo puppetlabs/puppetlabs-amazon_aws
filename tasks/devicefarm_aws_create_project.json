@@ -1,0 +1,22 @@
+{
+	"description": "Creates a new project.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"default_job_timeout_minutes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

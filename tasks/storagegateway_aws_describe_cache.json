@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the cache of a gateway. This operation is only supported in the cached volume, tape and file gateway types. The response includes disk IDs that are configured as cache, and it includes the amount of cache allocated and used.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"gateway_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

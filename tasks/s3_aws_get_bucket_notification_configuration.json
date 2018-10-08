@@ -1,0 +1,22 @@
+{
+	"description": "Returns the notification configuration of a bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Removes a task from a Maintenance Window.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"window_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"window_task_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

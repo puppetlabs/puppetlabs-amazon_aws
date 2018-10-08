@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a specific snapshot of a virtual private server (or instance).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"instance_snapshot_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Represents a collection of DomainName resources.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"position":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

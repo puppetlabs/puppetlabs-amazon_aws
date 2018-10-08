@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified network ACL. You can't delete the ACL if it's associated with any subnets. You can't delete the default network ACL.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_acl_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

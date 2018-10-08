@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a traffic policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

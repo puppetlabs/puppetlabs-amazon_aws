@@ -1,0 +1,34 @@
+{
+	"description": "Creates a user who can be used in Amazon WorkMail by calling the RegisterToWorkMail operation.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"password":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

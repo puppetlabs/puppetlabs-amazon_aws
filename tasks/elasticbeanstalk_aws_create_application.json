@@ -1,0 +1,28 @@
+{
+	"description": " Creates an application that has one configuration template named default and no application versions. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_lifecycle_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

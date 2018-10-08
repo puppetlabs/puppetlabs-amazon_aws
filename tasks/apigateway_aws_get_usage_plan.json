@@ -1,0 +1,16 @@
+{
+	"description": "Gets a usage plan of a given plan identifier.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"usage_plan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

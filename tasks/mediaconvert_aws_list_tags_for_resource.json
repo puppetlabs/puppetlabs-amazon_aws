@@ -1,0 +1,16 @@
+{
+	"description": "Retrieve the tags for a MediaConvert resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

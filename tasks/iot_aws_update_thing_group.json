@@ -1,0 +1,28 @@
+{
+	"description": "Update a thing group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"thing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_group_properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expected_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

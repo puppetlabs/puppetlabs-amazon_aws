@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the ApiKey resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"api_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

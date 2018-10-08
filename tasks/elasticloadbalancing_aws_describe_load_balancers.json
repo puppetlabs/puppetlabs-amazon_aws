@@ -1,0 +1,28 @@
+{
+	"description": "Describes the specified the load balancers. If no load balancers are specified, the call describes all of your load balancers.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"load_balancer_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

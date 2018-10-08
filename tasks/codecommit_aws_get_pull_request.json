@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a pull request in a specified repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pull_request_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

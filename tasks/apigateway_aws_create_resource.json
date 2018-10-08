@@ -1,0 +1,28 @@
+{
+	"description": "Creates a Resource resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parent_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"path_part":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,10 @@
+{
+	"description": "Returns the AWS Organizations master account that is associated with AWS Firewall Manager as the AWS Firewall Manager administrator.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

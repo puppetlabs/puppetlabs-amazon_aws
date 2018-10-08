@@ -1,0 +1,16 @@
+{
+	"description": "Returns the IPSet that is specified by IPSetId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"ip_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

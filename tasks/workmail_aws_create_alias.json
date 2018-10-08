@@ -1,0 +1,28 @@
+{
+	"description": "Adds an alias to the set of a given member of Amazon WorkMail.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entity_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alias":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

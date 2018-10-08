@@ -1,0 +1,28 @@
+{
+	"description": "Creates a usage plan key for adding an existing API key to a usage plan.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"usage_plan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

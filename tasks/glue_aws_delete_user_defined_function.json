@@ -1,0 +1,28 @@
+{
+	"description": "Deletes an existing function definition from the Data Catalog.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

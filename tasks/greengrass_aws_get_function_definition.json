@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves information about a Lambda function definition, including its creation time and latest version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"function_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

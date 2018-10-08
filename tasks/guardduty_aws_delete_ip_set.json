@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the IPSet specified by the IPSet ID.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ip_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

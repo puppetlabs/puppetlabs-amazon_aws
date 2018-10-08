@@ -1,0 +1,28 @@
+{
+	"description": "Assigns the specified routing profile to a user.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"routing_profile_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

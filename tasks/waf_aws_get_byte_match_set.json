@@ -1,0 +1,16 @@
+{
+	"description": "Returns the ByteMatchSet specified by ByteMatchSetId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"byte_match_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

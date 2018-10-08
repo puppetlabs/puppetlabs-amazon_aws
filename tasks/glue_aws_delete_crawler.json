@@ -1,0 +1,16 @@
+{
+	"description": "Removes a specified crawler from the Data Catalog, unless the crawler state is RUNNING.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

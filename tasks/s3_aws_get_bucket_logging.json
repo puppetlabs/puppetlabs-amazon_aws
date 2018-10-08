@@ -1,0 +1,22 @@
+{
+	"description": "Returns the logging status of a bucket and the permissions users have to view and modify that status. To use GET, you must be the bucket owner.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"logging":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

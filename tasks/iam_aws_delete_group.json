@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified IAM group. The group must not contain any users or have any attached policies.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

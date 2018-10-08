@@ -1,0 +1,34 @@
+{
+	"description": "Creates a subscriber. You must create the associated budget and notification before you create the subscriber.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"account_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"budget_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscriber":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

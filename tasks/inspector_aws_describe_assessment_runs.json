@@ -1,0 +1,16 @@
+{
+	"description": "Describes the assessment runs that are specified by the ARNs of the assessment runs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_run_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

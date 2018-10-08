@@ -1,0 +1,22 @@
+{
+	"description": "Describes the available AWS OpsWorks Stacks agent versions. You must specify a stack ID or a configuration manager. DescribeAgentVersions returns a list of available agent versions for the specified stack or configuration manager.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"stack_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"configuration_manager":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

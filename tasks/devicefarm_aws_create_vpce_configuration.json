@@ -1,0 +1,34 @@
+{
+	"description": "Creates a configuration record in Device Farm for your Amazon Virtual Private Cloud (VPC) endpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"vpce_configuration_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpce_service_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_dns_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpce_configuration_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

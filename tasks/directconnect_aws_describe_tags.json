@@ -1,0 +1,16 @@
+{
+	"description": "Describes the tags associated with the specified Direct Connect resources.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Describes the assessment targets that are specified by the ARNs of the assessment targets.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_target_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a broker. Note: This API is asynchronous.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"broker_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

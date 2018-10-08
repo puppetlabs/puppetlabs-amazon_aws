@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a skill group by skill group ARN.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"skill_group_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

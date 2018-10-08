@@ -1,0 +1,28 @@
+{
+	"description": "Resets a device and its account to the known default settings, by clearing all information and settings set by previous users.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"room_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"features":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Describes the specified tags for the specified WorkSpace.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

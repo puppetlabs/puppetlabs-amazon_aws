@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a namespace from the current account. If the namespace still contains one or more services, the request fails.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

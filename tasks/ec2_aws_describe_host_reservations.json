@@ -1,0 +1,34 @@
+{
+	"description": "Describes reservations that are associated with Dedicated Hosts in your account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"host_reservation_id_set":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

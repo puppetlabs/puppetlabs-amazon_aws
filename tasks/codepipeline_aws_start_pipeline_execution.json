@@ -1,0 +1,16 @@
+{
+	"description": "Starts the specified pipeline. Specifically, it begins processing the latest commit to the source location specified as part of the pipeline.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

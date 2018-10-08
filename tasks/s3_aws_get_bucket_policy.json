@@ -1,0 +1,22 @@
+{
+	"description": "Returns the policy of a specified bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

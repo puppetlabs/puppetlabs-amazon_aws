@@ -1,0 +1,22 @@
+{
+	"description": "Updates the schedule of a crawler using a cron expression. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"crawler_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

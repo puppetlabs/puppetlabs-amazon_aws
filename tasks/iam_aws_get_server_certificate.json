@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves information about the specified server certificate stored in IAM. For more information about working with server certificates, see Working with Server Certificates in the IAM User Guide. This topic includes a list of AWS services that can use the server certificates that you manage with IAM.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"server_certificate_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

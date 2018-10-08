@@ -1,0 +1,28 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"operation":{
+			   "description": "Default value Tag",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Remove the alias from a set of aliases for a given user.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"alias":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"entity_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

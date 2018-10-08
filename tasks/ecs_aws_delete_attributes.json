@@ -1,0 +1,22 @@
+{
+	"description": "Deletes one or more custom attributes from an Amazon ECS resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

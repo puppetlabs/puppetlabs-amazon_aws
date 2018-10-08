@@ -1,0 +1,16 @@
+{
+	"description": "Changes the schedule state of the specified crawler to SCHEDULED, unless the crawler is already running or the schedule state is already SCHEDULED.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"crawler_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

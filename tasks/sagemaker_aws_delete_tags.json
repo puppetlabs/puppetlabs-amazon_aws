@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified tags from an Amazon SageMaker resource. To list a resource's tags, use the ListTags API. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

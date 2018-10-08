@@ -1,0 +1,22 @@
+{
+	"description": "Describes the available AWS Directory Service directories that are registered with Amazon WorkSpaces.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"directory_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

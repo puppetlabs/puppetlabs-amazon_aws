@@ -1,0 +1,22 @@
+{
+	"description": "Generates example findings of types specified by the list of finding types. If 'NULL' is specified for findingTypes, the API generates example findings of all supported finding types.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"finding_types":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a single query.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"named_query_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

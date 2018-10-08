@@ -1,0 +1,22 @@
+{
+	"description": "Updates a trigger definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trigger_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

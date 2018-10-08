@@ -1,0 +1,16 @@
+{
+	"description": "Returns the GeoMatchSet that is specified by GeoMatchSetId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"geo_match_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

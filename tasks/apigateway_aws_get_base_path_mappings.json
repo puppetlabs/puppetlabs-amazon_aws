@@ -1,0 +1,28 @@
+{
+	"description": "Represents a collection of BasePathMapping resources.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"position":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

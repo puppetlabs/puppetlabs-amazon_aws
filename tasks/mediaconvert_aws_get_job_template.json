@@ -1,0 +1,16 @@
+{
+	"description": "Retrieve the JSON for a specific job template.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

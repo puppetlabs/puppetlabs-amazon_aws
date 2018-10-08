@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified notification.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"topic_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"auto_scaling_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

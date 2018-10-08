@@ -1,0 +1,16 @@
+{
+	"description": "Takes an AddressId and returns specific details about that address in the form of an Address object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"address_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "This operation enables you to delete multiple objects from a bucket using a single HTTP request. You may specify up to 1000 keys.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"mfa":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request_payer":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delete":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

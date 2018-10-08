@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves information about a specified reusable delegation set, including the four name servers that are assigned to the delegation set.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

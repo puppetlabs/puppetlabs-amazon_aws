@@ -1,0 +1,22 @@
+{
+	"description": "Updates a domain recordset after it is created.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_entry":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

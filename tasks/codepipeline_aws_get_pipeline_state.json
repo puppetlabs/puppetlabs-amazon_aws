@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the state of a pipeline, including the stages and actions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

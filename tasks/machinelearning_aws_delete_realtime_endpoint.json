@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a real time endpoint of an MLModel.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"ml_model_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

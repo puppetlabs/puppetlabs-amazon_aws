@@ -1,0 +1,16 @@
+{
+	"description": "Stops recording configurations of the AWS resources you have selected to record in your AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"configuration_recorder_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

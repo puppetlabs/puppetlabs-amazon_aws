@@ -1,0 +1,34 @@
+{
+	"description": "Creates a deployment configuration.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"traffic_routing_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"compute_platform":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_config_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"minimum_healthy_hosts":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

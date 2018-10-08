@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified version of a custom platform.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"platform_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Transforms a Python script into a directed acyclic graph (DAG). ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"python_script":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

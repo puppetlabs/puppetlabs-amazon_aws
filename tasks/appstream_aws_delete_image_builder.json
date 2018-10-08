@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified image builder and releases the capacity.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

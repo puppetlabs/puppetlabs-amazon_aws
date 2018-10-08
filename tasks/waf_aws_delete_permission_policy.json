@@ -1,0 +1,16 @@
+{
+	"description": "Permanently deletes an IAM policy from the specified RuleGroup. The user making the request must be the owner of the RuleGroup.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

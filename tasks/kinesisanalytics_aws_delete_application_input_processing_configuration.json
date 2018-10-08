@@ -1,0 +1,28 @@
+{
+	"description": "Deletes an InputProcessingConfiguration from an input.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"current_application_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

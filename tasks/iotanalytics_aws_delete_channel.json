@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified channel.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"channel_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

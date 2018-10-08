@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves an Amazon GuardDuty detector specified by the detectorId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a suggester. For more information, see Getting Search Suggestions in the Amazon CloudSearch Developer Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"suggester_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

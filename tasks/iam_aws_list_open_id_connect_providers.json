@@ -1,0 +1,10 @@
+{
+	"description": "Lists information about the IAM OpenID Connect (OIDC) provider resource objects defined in the AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

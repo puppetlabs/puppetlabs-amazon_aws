@@ -1,0 +1,16 @@
+{
+	"description": "Gets a description for one or more Network File System (NFS) file shares from a file gateway. This operation is only supported for file gateways.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"file_share_arn_list":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

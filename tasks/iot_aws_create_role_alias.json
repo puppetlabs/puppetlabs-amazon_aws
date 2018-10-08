@@ -1,0 +1,28 @@
+{
+	"description": "Creates a role alias.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"role_alias":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"credential_duration_seconds":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

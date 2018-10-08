@@ -1,0 +1,28 @@
+{
+	"description": "Modifies an existing classifier (a GrokClassifier, XMLClassifier, or JsonClassifier, depending on which field is present).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"grok_classifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"xml_classifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"json_classifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

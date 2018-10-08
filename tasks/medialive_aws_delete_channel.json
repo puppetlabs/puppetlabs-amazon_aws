@@ -1,0 +1,16 @@
+{
+	"description": "Starts deletion of channel. The associated outputs are also deleted.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"channel_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

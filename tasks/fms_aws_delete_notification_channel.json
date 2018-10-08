@@ -1,0 +1,10 @@
+{
+	"description": "Deletes an AWS Firewall Manager association with the IAM role and the Amazon Simple Notification Service (SNS) topic that is used to record AWS Firewall Manager SNS logs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

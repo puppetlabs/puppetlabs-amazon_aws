@@ -1,0 +1,22 @@
+{
+	"description": "Retreives the CA associated with a group. Returns the public key of the CA.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"certificate_authority_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

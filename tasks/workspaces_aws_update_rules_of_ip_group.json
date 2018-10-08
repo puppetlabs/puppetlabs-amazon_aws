@@ -1,0 +1,22 @@
+{
+	"description": "Replaces the current rules of the specified IP access control group with the specified rules.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_rules":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

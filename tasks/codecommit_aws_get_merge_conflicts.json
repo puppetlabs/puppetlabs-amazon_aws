@@ -1,0 +1,34 @@
+{
+	"description": "Returns information about merge conflicts between the before and after commit IDs for a pull request in a repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destination_commit_specifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"source_commit_specifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"merge_option":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

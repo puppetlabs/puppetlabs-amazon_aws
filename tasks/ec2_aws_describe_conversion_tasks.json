@@ -1,0 +1,22 @@
+{
+	"description": "Describes one or more of your conversion tasks. For more information, see the VM Import/Export User Guide. For information about the import manifest referenced by this API action, see VM Import Manifest.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"conversion_task_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

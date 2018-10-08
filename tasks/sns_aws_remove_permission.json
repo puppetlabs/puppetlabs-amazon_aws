@@ -1,0 +1,22 @@
+{
+	"description": "Removes a statement from a topic's access control policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"topic_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"label":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

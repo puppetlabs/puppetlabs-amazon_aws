@@ -1,0 +1,40 @@
+{
+	"description": "Updates the specified attributes of the specified folder. The user must have access to both the folder and its parent folder, if applicable.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"folder_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parent_folder_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_state":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

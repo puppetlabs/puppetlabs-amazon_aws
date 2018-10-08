@@ -1,0 +1,16 @@
+{
+	"description": "The DeleteReplicationJob API is used to delete a ReplicationJob, resulting in no further ReplicationRuns. This will delete the contents of the S3 bucket used to store SMS artifacts, but will not delete any AMIs created by the SMS service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"replication_job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about AWS Cloud9 development environments.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"environment_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Describes a model that you created using the CreateModel API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"model_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

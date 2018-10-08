@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a usage plan key and remove the underlying API key from the associated usage plan.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"usage_plan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

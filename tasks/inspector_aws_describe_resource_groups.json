@@ -1,0 +1,16 @@
+{
+	"description": "Describes the resource groups that are specified by the ARNs of the resource groups.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_group_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

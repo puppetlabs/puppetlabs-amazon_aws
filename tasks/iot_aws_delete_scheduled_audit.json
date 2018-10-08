@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a scheduled audit.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"scheduled_audit_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

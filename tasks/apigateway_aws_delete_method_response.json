@@ -1,0 +1,34 @@
+{
+	"description": "Deletes an existing MethodResponse resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"status_code":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"http_method":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

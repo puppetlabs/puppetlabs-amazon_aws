@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves settings for the trail associated with the current region for your account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"trail_name_list":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"include_shadow_trails":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

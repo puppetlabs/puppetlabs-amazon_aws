@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified snapshot copy grant.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"snapshot_copy_grant_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

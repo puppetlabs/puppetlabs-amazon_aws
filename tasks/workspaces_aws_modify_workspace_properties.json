@@ -1,0 +1,22 @@
+{
+	"description": "Modifies the specified WorkSpace properties.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workspace_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workspace_properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

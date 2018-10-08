@@ -1,0 +1,16 @@
+{
+	"description": "Deprecated in favor of DescribeHostedConnections. Returns a list of connections that have been provisioned on the given interconnect.  This is intended for use by AWS Direct Connect partners only. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"interconnect_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

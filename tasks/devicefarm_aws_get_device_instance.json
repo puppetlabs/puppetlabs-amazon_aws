@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a device instance belonging to a private device fleet.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

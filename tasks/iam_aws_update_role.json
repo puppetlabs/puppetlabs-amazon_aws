@@ -1,0 +1,28 @@
+{
+	"description": "Updates the description or maximum session duration setting of a role.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"role_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_session_duration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

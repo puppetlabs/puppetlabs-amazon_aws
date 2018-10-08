@@ -1,0 +1,22 @@
+{
+	"description": "Lists the account IDs that have access to the specified portfolio.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"portfolio_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

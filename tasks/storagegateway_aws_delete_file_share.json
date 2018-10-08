@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a file share from a file gateway. This operation is only supported for file gateways.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"force_delete":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"file_share_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

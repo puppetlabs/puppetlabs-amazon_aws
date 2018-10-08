@@ -1,0 +1,22 @@
+{
+	"description": "Describes Amazon Elastic Container Service container instances. Returns metadata about registered and remaining resources on each container instance requested.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container_instances":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Returns the WebACL that is specified by WebACLId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"web_acl_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

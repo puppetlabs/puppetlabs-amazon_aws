@@ -1,0 +1,28 @@
+{
+	"description": "Lists summary information about the instances that you registered by using a specified service.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"service_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

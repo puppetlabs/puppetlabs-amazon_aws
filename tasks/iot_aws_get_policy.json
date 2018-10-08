@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about the specified policy with the policy document of the default version.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

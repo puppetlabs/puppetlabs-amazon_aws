@@ -1,0 +1,28 @@
+{
+	"description": " Updates the webhook associated with an AWS CodeBuild build project. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rotate_secret":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"branch_filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

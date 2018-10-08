@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the input end point",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"input_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

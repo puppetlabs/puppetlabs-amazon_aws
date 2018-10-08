@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a specified hosted zone including the four name servers assigned to the hosted zone.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

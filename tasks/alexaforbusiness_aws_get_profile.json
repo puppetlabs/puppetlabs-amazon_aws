@@ -1,0 +1,16 @@
+{
+	"description": "Gets the details of a room profile by profile ARN.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"profile_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

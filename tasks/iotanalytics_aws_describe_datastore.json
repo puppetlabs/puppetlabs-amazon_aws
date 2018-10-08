@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves information about a data store.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"datastore_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"include_statistics":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

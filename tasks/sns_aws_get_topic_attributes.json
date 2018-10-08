@@ -1,0 +1,16 @@
+{
+	"description": "Returns all of the properties of a topic. Topic properties returned might differ based on the authorization of the user.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"topic_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

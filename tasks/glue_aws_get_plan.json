@@ -1,0 +1,40 @@
+{
+	"description": "Gets code to perform a specified mapping.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"sinks":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"mapping":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"source":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

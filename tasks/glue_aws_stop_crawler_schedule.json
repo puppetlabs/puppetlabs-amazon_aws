@@ -1,0 +1,16 @@
+{
+	"description": "Sets the schedule state of the specified crawler to NOT_SCHEDULED, but does not stop the crawler if it is already running.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"crawler_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

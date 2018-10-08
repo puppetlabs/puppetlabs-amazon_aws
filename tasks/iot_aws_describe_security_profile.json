@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a Device Defender security profile.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"security_profile_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

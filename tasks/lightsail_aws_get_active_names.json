@@ -1,0 +1,16 @@
+{
+	"description": "Returns the names of all active (not deleted) resources.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

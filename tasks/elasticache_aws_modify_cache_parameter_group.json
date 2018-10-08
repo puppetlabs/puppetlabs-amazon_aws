@@ -1,0 +1,22 @@
+{
+	"description": "Modifies the parameters of a cache parameter group. You can modify up to 20 parameters in a single request by submitting a list parameter name and value pairs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cache_parameter_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parameter_name_values":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

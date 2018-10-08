@@ -1,0 +1,22 @@
+{
+	"description": "Modifies the database revision of a cluster. The database revision is a unique revision of the database running in a cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"revision_target":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

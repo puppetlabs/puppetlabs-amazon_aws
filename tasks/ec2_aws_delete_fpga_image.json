@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified Amazon FPGA Image (AFI).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"fpga_image_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

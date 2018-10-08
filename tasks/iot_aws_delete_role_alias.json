@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a role alias",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"role_alias":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

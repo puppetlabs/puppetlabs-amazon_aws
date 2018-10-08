@@ -1,0 +1,28 @@
+{
+	"description": "Deletes the specified version from the specified application.  You cannot delete an application version that is associated with a running environment. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_label":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delete_source_bundle":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

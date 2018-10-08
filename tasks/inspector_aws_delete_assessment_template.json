@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the assessment template that is specified by the ARN of the assessment template.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_template_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

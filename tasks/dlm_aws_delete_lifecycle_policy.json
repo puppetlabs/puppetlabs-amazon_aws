@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified lifecycle policy and halts the automated operations that the policy specified.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

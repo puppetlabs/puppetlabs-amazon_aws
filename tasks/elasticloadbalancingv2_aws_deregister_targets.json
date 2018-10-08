@@ -1,0 +1,22 @@
+{
+	"description": "Deregisters the specified targets from the specified target group. After the targets are deregistered, they no longer receive traffic from the load balancer.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"target_group_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

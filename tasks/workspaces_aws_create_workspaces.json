@@ -1,0 +1,16 @@
+{
+	"description": "Creates one or more WorkSpaces. This operation is asynchronous and returns before the WorkSpaces are created.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workspaces":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"vocabulary_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"language_code":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"phrases":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

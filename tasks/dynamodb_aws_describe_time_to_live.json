@@ -1,0 +1,16 @@
+{
+	"description": "Gives a description of the Time to Live (TTL) status on the specified table. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"table_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

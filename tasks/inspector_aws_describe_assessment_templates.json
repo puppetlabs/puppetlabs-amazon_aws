@@ -1,0 +1,16 @@
+{
+	"description": "Describes the assessment templates that are specified by the ARNs of the assessment templates.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_template_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

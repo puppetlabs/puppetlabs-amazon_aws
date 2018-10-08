@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves details about a specific task executed as part of a Maintenance Window execution.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"window_execution_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

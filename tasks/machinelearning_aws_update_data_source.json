@@ -1,0 +1,22 @@
+{
+	"description": "Updates the DataSourceName of a DataSource. You can use the GetDataSource operation to view the contents of the updated data element.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"data_source_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_source_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

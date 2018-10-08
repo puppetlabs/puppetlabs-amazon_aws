@@ -1,0 +1,34 @@
+{
+	"description": "Update an uploaded test specification (test spec).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"edit_content":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

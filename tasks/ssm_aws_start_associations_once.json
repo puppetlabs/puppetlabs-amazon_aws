@@ -1,0 +1,16 @@
+{
+	"description": "Use this API action to execute an association immediately and only one time. This action can be helpful when troubleshooting associations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"association_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Removes the specified certificate from the specified secure listener. You can't remove the default certificate for a listener. To replace the default certificate, call ModifyListener. To list the certificates for your listener, use DescribeListenerCertificates.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"listener_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificates":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

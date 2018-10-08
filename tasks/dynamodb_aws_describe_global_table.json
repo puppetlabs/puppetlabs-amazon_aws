@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the specified global table.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"global_table_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "Terminates the specified environment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"environment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"terminate_resources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"force_terminate":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

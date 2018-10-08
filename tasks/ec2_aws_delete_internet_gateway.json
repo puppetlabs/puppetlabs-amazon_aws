@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified internet gateway. You must detach the internet gateway from the VPC before you can delete it.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"internet_gateway_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,34 @@
+{
+	"description": "Gets information about the specified provisioning artifact (also known as a version) for the specified product.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"provisioning_artifact_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"product_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"verbose":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

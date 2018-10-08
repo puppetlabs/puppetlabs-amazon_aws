@@ -1,0 +1,28 @@
+{
+	"description": "Creates a version of a Lambda function definition that has already been defined.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"amzn_client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"function_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"functions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

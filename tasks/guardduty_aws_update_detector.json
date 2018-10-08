@@ -1,0 +1,28 @@
+{
+	"description": "Updates an Amazon GuardDuty detector specified by the detectorId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"finding_publishing_frequency":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Updates the EvaluationName of an Evaluation. You can use the GetEvaluation operation to view the contents of the updated data element.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"evaluation_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"evaluation_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

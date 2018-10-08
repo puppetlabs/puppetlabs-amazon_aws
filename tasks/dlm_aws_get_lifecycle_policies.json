@@ -1,0 +1,40 @@
+{
+	"description": "Gets summary information about all or the specified data lifecycle policies. To get complete information about a policy, use GetLifecyclePolicy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"state":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_types":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags_to_add":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

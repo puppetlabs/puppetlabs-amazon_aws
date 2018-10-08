@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a device pool given the pool ARN. Does not allow deletion of curated pools owned by the system.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

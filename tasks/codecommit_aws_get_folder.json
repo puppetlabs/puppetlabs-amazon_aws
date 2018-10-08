@@ -1,0 +1,28 @@
+{
+	"description": "Returns the contents of a specified folder in a repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"commit_specifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"folder_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

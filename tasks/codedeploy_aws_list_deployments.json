@@ -1,0 +1,40 @@
+{
+	"description": "Lists the deployments in a deployment group for an application registered with the applicable IAM user or AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"create_time_range":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"include_only_statuses":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

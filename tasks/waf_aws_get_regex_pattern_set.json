@@ -1,0 +1,16 @@
+{
+	"description": "Returns the RegexPatternSet specified by RegexPatternSetId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"regex_pattern_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

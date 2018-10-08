@@ -1,0 +1,16 @@
+{
+	"description": "Creates sn SSH key pair.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key_pair_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

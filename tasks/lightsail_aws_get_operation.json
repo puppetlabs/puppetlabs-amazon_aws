@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a specific operation. Operations include events such as when you create an instance, allocate a static IP, attach a static IP, and so on.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"operation_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

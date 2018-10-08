@@ -1,0 +1,16 @@
+{
+	"description": "Information about the data that is collected for the specified assessment run.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"assessment_run_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

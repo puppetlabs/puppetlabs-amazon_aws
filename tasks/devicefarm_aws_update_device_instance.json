@@ -1,0 +1,28 @@
+{
+	"description": "Updates information about an existing private device instance.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"profile_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"labels":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

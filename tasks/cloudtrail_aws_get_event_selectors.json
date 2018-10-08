@@ -1,0 +1,16 @@
+{
+	"description": "Describes the settings for the event selectors that you configured for your trail. The information returned for your event selectors includes the following:   The S3 objects that you are logging for data events.   If your event selector includes management events.   If your event selector includes read-only events, write-only events, or all.    For more information, see Logging Data and Management Events for Trails  in the AWS CloudTrail User Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"trail_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

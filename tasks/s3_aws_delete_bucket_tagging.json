@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the tags from the bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tagging":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Displays all connections in this region. If a connection ID is provided, the call returns only that particular connection.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"connection_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

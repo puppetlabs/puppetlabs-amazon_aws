@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves details of a document.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"include_custom_metadata":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

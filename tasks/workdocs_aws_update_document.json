@@ -1,0 +1,40 @@
+{
+	"description": "Updates the specified attributes of a document. The user must have access to both the document and its parent folder, if applicable.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parent_folder_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_state":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

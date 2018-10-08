@@ -1,0 +1,22 @@
+{
+	"description": "Returns information about an ActiveMQ user.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"broker_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"username":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

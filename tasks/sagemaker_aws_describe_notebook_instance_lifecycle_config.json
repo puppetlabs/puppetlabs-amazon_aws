@@ -1,0 +1,16 @@
+{
+	"description": "Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"notebook_instance_lifecycle_config_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

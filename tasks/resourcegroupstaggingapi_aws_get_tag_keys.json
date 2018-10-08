@@ -1,0 +1,16 @@
+{
+	"description": "Returns all tag keys in the specified region for the AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pagination_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

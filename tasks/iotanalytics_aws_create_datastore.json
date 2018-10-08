@@ -1,0 +1,28 @@
+{
+	"description": "Creates a data store, which is a repository for messages.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"retention_period":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"datastore_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

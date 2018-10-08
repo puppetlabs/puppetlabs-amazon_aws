@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified customer gateway. You must delete the VPN connection before you can delete the customer gateway.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"customer_gateway_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

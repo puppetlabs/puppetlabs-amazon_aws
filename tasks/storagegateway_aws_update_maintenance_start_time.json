@@ -1,0 +1,34 @@
+{
+	"description": "Updates a gateway's weekly maintenance start time information, including day and time of the week. The maintenance time is the time in your gateway's time zone.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"day_of_week":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gateway_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hour_of_day":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"minute_of_hour":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

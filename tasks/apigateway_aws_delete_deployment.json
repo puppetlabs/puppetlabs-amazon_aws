@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a Deployment resource. Deleting a deployment will only succeed if there are no Stage resources associated with it.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

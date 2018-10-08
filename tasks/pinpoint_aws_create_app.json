@@ -1,0 +1,16 @@
+{
+	"description": "Creates or updates an app.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"create_application_request":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

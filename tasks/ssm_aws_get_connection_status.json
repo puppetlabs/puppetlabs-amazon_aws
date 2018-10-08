@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves the Session Manager connection status for an instance to determine whether it is connected and ready to receive Session Manager connections.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"target":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

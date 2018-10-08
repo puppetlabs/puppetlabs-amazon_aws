@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the run, given the run ARN.  Note Deleting this resource does not stop an in-progress run.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

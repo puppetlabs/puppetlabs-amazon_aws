@@ -1,0 +1,16 @@
+{
+	"description": "Describes one or more of your export tasks.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"export_task_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

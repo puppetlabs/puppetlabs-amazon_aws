@@ -1,0 +1,22 @@
+{
+	"description": "Stop an Automation that is currently executing.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"automation_execution_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

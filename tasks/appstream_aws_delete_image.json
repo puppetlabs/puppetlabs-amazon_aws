@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the specified image. You cannot delete an image when it is in use. After you delete an image, you cannot provision new capacity using the image.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

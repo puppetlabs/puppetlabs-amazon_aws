@@ -1,0 +1,40 @@
+{
+	"description": "Create a new version of your custom platform.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"platform_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"platform_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"platform_definition_bundle":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"option_settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

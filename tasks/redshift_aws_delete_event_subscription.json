@@ -1,0 +1,16 @@
+{
+	"description": "Deletes an Amazon Redshift event notification subscription.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"subscription_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

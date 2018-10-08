@@ -1,0 +1,40 @@
+{
+	"description": "Creates a scheduled audit that is run at a specified time interval.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"day_of_month":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"day_of_week":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_check_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scheduled_audit_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"frequency":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a specific domain entry.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_entry":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

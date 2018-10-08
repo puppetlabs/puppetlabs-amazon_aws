@@ -1,0 +1,16 @@
+{
+	"description": "Returns the SizeConstraintSet specified by SizeConstraintSetId.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"size_constraint_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"description": "Returns detailed metadata about the specified ACM certificate.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"certificate_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

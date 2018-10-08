@@ -1,0 +1,10 @@
+{
+	"description": "Returns the number of AWS Config rules that are compliant and noncompliant, up to a maximum of 25 for each.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

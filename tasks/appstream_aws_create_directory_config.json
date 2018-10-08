@@ -1,0 +1,28 @@
+{
+	"description": "Creates a Directory Config object in AppStream 2.0. This object includes the information required to join streaming instances to an Active Directory domain.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"directory_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organizational_unit_distinguished_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_account_credentials":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

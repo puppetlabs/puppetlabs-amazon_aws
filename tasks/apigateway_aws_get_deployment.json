@@ -1,0 +1,28 @@
+{
+	"description": "Gets information about a Deployment resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"embed":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

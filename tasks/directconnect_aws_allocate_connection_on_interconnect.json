@@ -1,0 +1,40 @@
+{
+	"description": "Deprecated in favor of AllocateHostedConnection. Creates a hosted connection on an interconnect. Allocates a VLAN number and a specified amount of bandwidth for use by a hosted connection on the given interconnect.  This is intended for use by AWS Direct Connect partners only. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"interconnect_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vlan":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bandwidth":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connection_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"owner_account":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

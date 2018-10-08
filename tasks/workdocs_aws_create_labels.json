@@ -1,0 +1,28 @@
+{
+	"description": "Adds the specified list of labels to the given resource (a document or folder)",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"labels":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

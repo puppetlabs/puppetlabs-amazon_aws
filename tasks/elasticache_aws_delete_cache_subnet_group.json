@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a cache subnet group.  You cannot delete a cache subnet group if it is associated with any clusters. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cache_subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

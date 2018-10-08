@@ -1,0 +1,16 @@
+{
+	"description": "Stops a running stream processor that was created by .",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

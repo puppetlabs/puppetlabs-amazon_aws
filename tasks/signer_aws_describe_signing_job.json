@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a specific code signing job. You specify the job by using the jobId value that is returned by the StartSigningJob operation. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

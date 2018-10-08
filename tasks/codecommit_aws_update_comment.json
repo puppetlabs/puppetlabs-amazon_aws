@@ -1,0 +1,22 @@
+{
+	"description": "Replaces the contents of a comment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"comment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

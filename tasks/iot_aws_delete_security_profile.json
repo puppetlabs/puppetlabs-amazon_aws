@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a Device Defender security profile.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"expected_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_profile_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

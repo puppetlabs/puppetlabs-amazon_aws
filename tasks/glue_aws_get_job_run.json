@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves the metadata for a given job run.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"run_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"predecessors_included":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

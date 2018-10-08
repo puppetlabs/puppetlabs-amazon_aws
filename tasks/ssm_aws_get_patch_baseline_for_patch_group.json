@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves the patch baseline that should be used for the specified patch group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"patch_group":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operating_system":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

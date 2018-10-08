@@ -1,0 +1,16 @@
+{
+	"description": "Lists all tags associated with an assessment template.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

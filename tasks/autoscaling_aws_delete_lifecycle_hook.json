@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified lifecycle hook. If there are any outstanding lifecycle actions, they are completed first (ABANDON for launching instances, CONTINUE for terminating instances).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"lifecycle_hook_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"auto_scaling_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

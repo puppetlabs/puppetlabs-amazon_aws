@@ -1,0 +1,28 @@
+{
+	"description": "Describes Amazon GuardDuty findings specified by finding IDs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"finding_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_criteria":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

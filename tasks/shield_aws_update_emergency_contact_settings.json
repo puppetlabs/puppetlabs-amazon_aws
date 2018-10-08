@@ -1,0 +1,16 @@
+{
+	"description": "Updates the details of the list of email addresses that the DRT can use to contact you during a suspected attack.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"emergency_contact_list":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

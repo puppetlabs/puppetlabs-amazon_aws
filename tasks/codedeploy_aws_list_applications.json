@@ -1,0 +1,16 @@
+{
+	"description": "Lists the applications registered with the applicable IAM user or AWS account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

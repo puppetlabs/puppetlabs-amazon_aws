@@ -1,0 +1,28 @@
+{
+	"description": "Updates a GatewayResponse of a specified response type on the given RestApi.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"patch_operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"response_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}
