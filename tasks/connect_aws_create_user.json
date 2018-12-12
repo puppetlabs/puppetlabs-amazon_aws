@@ -7,13 +7,7 @@
 		
 		
 		    
-			"routing_profile_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_id":{
+			"directory_user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,25 +19,7 @@
 			}
 			,
 		    
-			"phone_config":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"username":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"directory_user_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"security_profile_ids":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +31,31 @@
 			}
 			,
 		    
+			"username":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"identity_info":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"phone_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"routing_profile_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_profile_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

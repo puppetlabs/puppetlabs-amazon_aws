@@ -7,7 +7,13 @@
 		
 		
 		    
-			"provisioning_artifact_id":{
+			"verbose":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +25,7 @@
 			}
 			,
 		    
-			"verbose":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"accept_language":{
+			"provisioning_artifact_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,40 @@
+{
+	"description": "Retrieves an object's retention settings.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request_payer":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"retention":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

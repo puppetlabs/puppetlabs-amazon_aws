@@ -1,0 +1,28 @@
+{
+	"description": "Returns a list of events for a specific database in Amazon Lightsail.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"relational_database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"duration_in_minutes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

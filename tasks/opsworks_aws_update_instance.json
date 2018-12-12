@@ -7,19 +7,31 @@
 		
 		
 		    
+			"architecture":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"install_updates_on_boot":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"instance_id":{
+			"layer_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"layer_ids":{
+			"os":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"agent_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,31 +49,7 @@
 			}
 			,
 		    
-			"os":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ssh_key_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"ebs_optimized":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"agent_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -73,7 +61,19 @@
 			}
 			,
 		    
-			"architecture":{
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ssh_key_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

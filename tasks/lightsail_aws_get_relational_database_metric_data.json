@@ -1,0 +1,52 @@
+{
+	"description": "Returns the data points of the specified metric for a database in Amazon Lightsail.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"statistics":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metric_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"period":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relational_database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

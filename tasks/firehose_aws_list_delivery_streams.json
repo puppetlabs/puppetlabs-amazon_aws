@@ -1,17 +1,11 @@
 {
-	"description": "Lists your delivery streams. The number of delivery streams might be too large to return using a single call to ListDeliveryStreams. You can limit the number of delivery streams returned, using the Limit parameter. To determine whether there are more delivery streams to list, check the value of HasMoreDeliveryStreams in the output. If there are more delivery streams to list, you can request them by specifying the name of the last delivery stream returned in the call in the ExclusiveStartDeliveryStreamName parameter of a subsequent call.",
+	"description": "Lists your delivery streams in alphabetical order of their names. The number of delivery streams might be too large to return using a single call to ListDeliveryStreams. You can limit the number of delivery streams returned, using the Limit parameter. To determine whether there are more delivery streams to list, check the value of HasMoreDeliveryStreams in the output. If there are more delivery streams to list, you can request them by calling this operation again and setting the ExclusiveStartDeliveryStreamName parameter to the name of the last delivery stream returned in the last call.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
-		    
-			"delivery_stream_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
 		    
 			"exclusive_start_delivery_stream_name":{
 			   "description": "",
@@ -20,6 +14,12 @@
 			,
 		    
 			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delivery_stream_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

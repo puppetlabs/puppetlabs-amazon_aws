@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"public_ips":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

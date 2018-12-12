@@ -7,7 +7,7 @@
 		
 		
 		    
-			"name":{
+			"association_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"association_id":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

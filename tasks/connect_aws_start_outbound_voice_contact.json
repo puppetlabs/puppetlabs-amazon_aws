@@ -13,25 +13,7 @@
 			}
 			,
 		    
-			"contact_flow_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"instance_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"source_phone_number":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +25,25 @@
 			}
 			,
 		    
+			"source_phone_number":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contact_flow_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

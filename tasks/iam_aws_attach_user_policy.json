@@ -7,13 +7,13 @@
 		
 		
 		    
-			"user_name":{
+			"policy_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"policy_arn":{
+			"user_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

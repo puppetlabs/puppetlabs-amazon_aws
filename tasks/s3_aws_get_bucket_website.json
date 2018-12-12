@@ -7,13 +7,13 @@
 		
 		
 		    
-			"website":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"website":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

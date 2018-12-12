@@ -7,6 +7,12 @@
 		
 		
 		    
+			"current_application_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"reference_data_source":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"application_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"current_application_version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

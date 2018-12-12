@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"subject_alternative_names":{
+			"certificate_authority_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"idempotency_token":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,19 +31,19 @@
 			}
 			,
 		    
+			"idempotency_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"options":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"certificate_authority_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"domain_name":{
+			"subject_alternative_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

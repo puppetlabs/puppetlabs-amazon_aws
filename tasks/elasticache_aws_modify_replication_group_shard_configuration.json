@@ -7,13 +7,7 @@
 		
 		
 		    
-			"replication_group_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"node_group_count":{
+			"resharding_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,7 @@
 			}
 			,
 		    
-			"resharding_configuration":{
+			"node_group_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -38,6 +32,12 @@
 			,
 		    
 			"node_groups_to_retain":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replication_group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

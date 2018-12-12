@@ -7,19 +7,7 @@
 		
 		
 		    
-			"hyper_parameter_tuning_job_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_results":{
+			"sort_order":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +19,25 @@
 			}
 			,
 		    
-			"sort_by":{
+			"hyper_parameter_tuning_job_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"sort_order":{
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort_by":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

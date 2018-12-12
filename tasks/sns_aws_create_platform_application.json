@@ -7,6 +7,12 @@
 		
 		
 		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"platform":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"attributes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

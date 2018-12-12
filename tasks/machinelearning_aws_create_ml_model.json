@@ -7,6 +7,30 @@
 		
 		
 		    
+			"parameters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recipe":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"recipe_uri":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_data_source_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"ml_model_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,30 +44,6 @@
 			,
 		    
 			"ml_model_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"training_data_source_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"recipe":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"recipe_uri":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"name":{
+			"function_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"function_name":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

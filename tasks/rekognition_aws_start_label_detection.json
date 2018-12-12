@@ -7,6 +7,12 @@
 		
 		
 		    
+			"notification_channel":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"video":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,19 +25,13 @@
 			}
 			,
 		    
-			"min_confidence":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"notification_channel":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"job_tag":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"min_confidence":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

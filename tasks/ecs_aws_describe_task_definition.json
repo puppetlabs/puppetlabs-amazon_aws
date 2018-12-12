@@ -7,6 +7,12 @@
 		
 		
 		    
+			"include":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"task_definition":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

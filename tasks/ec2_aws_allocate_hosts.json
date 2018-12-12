@@ -7,24 +7,6 @@
 		
 		
 		    
-			"instance_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"quantity":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_specifications":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"auto_placement":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +20,24 @@
 			,
 		    
 			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"quantity":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_specifications":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

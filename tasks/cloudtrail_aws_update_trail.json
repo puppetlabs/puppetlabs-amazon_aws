@@ -7,25 +7,7 @@
 		
 		
 		    
-			"cloud_watch_logs_role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kms_key_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"enable_log_file_validation":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +19,19 @@
 			}
 			,
 		    
-			"cloud_watch_logs_log_group_arn":{
+			"is_organization_trail":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"s3_key_prefix":{
+			"cloud_watch_logs_role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_log_file_validation":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,7 +49,25 @@
 			}
 			,
 		    
+			"kms_key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"s3_bucket_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"s3_key_prefix":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cloud_watch_logs_log_group_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

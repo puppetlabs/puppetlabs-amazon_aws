@@ -7,13 +7,13 @@
 		
 		
 		    
-			"patch_group":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filters":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"max_results":{
+			"patch_group":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

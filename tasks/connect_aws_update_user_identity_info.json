@@ -7,13 +7,13 @@
 		
 		
 		    
-			"instance_id":{
+			"identity_info":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"identity_info":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

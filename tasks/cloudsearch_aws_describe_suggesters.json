@@ -7,12 +7,6 @@
 		
 		
 		    
-			"suggester_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"deployed":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"suggester_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

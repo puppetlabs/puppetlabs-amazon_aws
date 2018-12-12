@@ -7,13 +7,13 @@
 		
 		
 		    
-			"queue_name":{
+			"attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"attributes":{
+			"queue_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

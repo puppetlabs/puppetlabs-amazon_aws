@@ -1,0 +1,28 @@
+{
+	"description": "Describes the IP address ranges that were specified in calls to ProvisionByoipCidr. To describe the address pools that were created when you provisioned the address ranges, use DescribePublicIpv4Pools.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

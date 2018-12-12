@@ -7,43 +7,13 @@
 		
 		
 		    
-			"health_check_protocol":{
+			"health_check_enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"unhealthy_threshold_count":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_group_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"healthy_threshold_count":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"health_check_timeout_seconds":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"matcher":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"health_check_port":{
+			"health_check_interval_seconds":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +25,43 @@
 			}
 			,
 		    
-			"health_check_interval_seconds":{
+			"health_check_protocol":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"matcher":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_group_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"health_check_port":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"health_check_timeout_seconds":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"healthy_threshold_count":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unhealthy_threshold_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

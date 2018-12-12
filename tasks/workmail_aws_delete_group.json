@@ -7,13 +7,13 @@
 		
 		
 		    
-			"organization_id":{
+			"group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"group_id":{
+			"organization_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

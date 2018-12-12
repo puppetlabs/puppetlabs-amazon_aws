@@ -7,19 +7,7 @@
 		
 		
 		    
-			"stack_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fleet_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"user_id":{
+			"validity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +19,25 @@
 			}
 			,
 		    
-			"validity":{
+			"fleet_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"session_context":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

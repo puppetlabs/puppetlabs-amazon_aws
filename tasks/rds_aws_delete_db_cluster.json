@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"skip_final_snapshot":{
+			"final_db_snapshot_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"final_db_snapshot_identifier":{
+			"skip_final_snapshot":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

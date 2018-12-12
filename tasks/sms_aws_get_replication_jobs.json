@@ -1,5 +1,5 @@
 {
-	"description": "The GetReplicationJobs API will return all of your ReplicationJobs and their details. This API returns a paginated list, that may be consecutively called with nextToken to retrieve all ReplicationJobs.",
+	"description": "Describes the specified replication job or all of your replication jobs.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"replication_job_id":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"replication_job_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

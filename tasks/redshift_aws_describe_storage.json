@@ -1,0 +1,10 @@
+{
+	"description": "Returns the total amount of snapshot usage and provisioned storage for a user in megabytes.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

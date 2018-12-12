@@ -1,5 +1,5 @@
 {
-	"description": "Creates a domain resource for the specified domain (e.g., example.com).",
+	"description": "Creates a domain resource for the specified domain (e.g., example.com). The create domain operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -8,6 +8,12 @@
 		
 		    
 			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

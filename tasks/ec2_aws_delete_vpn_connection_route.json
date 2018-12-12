@@ -7,13 +7,13 @@
 		
 		
 		    
-			"vpn_connection_id":{
+			"destination_cidr_block":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"destination_cidr_block":{
+			"vpn_connection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

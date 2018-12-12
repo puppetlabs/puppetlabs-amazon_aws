@@ -1,0 +1,16 @@
+{
+	"description": "Returns a description of the specified model package, which is used to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"model_package_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

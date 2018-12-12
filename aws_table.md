@@ -10,6 +10,7 @@ Path: "https://github.com/aws/aws-sdk-go-v2/tree/master/models/apis/dynamodb/201
 ```puppet
 aws_table {
   attribute_definitions => "AttributeDefinitions (optional)",
+  billing_mode => $aws_billing_mode
   global_secondary_indexes => "GlobalSecondaryIndexes (optional)",
   key_schema => "KeySchema (optional)",
   local_secondary_indexes => "LocalSecondaryIndexes (optional)",
@@ -23,6 +24,7 @@ aws_table {
 | Name        | Type           | Required       |
 | ------------- | ------------- | ------------- |
 |attribute_definitions | AttributeDefinitions | false |
+|billing_mode | [BillingMode](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=billingmode) | false |
 |global_secondary_indexes | GlobalSecondaryIndexList | false |
 |key_schema | KeySchema | false |
 |local_secondary_indexes | LocalSecondaryIndexList | false |

@@ -1,11 +1,7 @@
-require "pry"
-# require "pry-rescue"
-require "json"
-require "facets"
-require "retries"
+require 'json'
+require 'retries'
 
-
-require "aws-sdk-elasticloadbalancingv2"
+require 'aws-sdk-elasticloadbalancingv2'
 
 
 Puppet::Type.type(:aws_load_balancer).provide(:arm) do
@@ -17,7 +13,7 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
     @is_create = false
     @is_delete = false
   end
-    
+
   # ELB properties
   def namevar
     :load_balancer_arn
@@ -86,23 +82,23 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
     @property_flush[:name] = value
   end
 
-  def self.get_region
+  def self.region
     ENV['AWS_REGION'] || 'us-west-2'
   end
 
-  def self.has_name?(hash)
+  def self.name?(hash)
     !hash[:load_balancer_name].nil? && !hash[:load_balancer_name].empty?
   end
 
   def self.instances
-    Puppet.debug("Calling instances for region #{self.get_region}")
-    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.get_region)
+    Puppet.debug("Calling instances for region #{region}")
+    client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
 
     all_instances = []
     client.describe_load_balancers.each do |response|
       response.load_balancers.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if has_name?(hash)
+        all_instances << new(hash) if name?(hash)
       end
     end
     all_instances
@@ -110,32 +106,30 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
 
   def self.prefetch(resources)
     instances.each do |prov|
-      if (resource = (resources.find { |k, v| k.casecmp(prov.name).zero? } || [])[1])
+      if (resource = (resources.find { |k, _| k.casecmp(prov.name).zero? } || [])[1])
         resource.provider = prov
       end
     end
   end
 
   def self.instance_to_hash(instance)
-
-    ip_address_type = instance.respond_to?(:ip_address_type) ? (instance.ip_address_type.respond_to?(:to_hash) ? instance.ip_address_type.to_hash : instance.ip_address_type ) : nil
-    load_balancer_arn = instance.respond_to?(:load_balancer_arn) ? (instance.load_balancer_arn.respond_to?(:to_hash) ? instance.load_balancer_arn.to_hash : instance.load_balancer_arn ) : nil
-    load_balancer_arns = instance.respond_to?(:load_balancer_arns) ? (instance.load_balancer_arns.respond_to?(:to_hash) ? instance.load_balancer_arns.to_hash : instance.load_balancer_arns ) : nil
-    names = instance.respond_to?(:names) ? (instance.names.respond_to?(:to_hash) ? instance.names.to_hash : instance.names ) : nil
-    page_size = instance.respond_to?(:page_size) ? (instance.page_size.respond_to?(:to_hash) ? instance.page_size.to_hash : instance.page_size ) : nil
-    scheme = instance.respond_to?(:scheme) ? (instance.scheme.respond_to?(:to_hash) ? instance.scheme.to_hash : instance.scheme ) : nil
-    security_groups = instance.respond_to?(:security_groups) ? (instance.security_groups.respond_to?(:to_hash) ? instance.security_groups.to_hash : instance.security_groups ) : nil
-    subnet_mappings = instance.respond_to?(:subnet_mappings) ? (instance.subnet_mappings.respond_to?(:to_hash) ? instance.subnet_mappings.to_hash : instance.subnet_mappings ) : nil
-    subnets = instance.respond_to?(:subnets) ? (instance.subnets.respond_to?(:to_hash) ? instance.subnets.to_hash : instance.subnets ) : nil
-    tags = instance.respond_to?(:tags) ? (instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags ) : nil
-    type = instance.respond_to?(:type) ? (instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type ) : nil
+    ip_address_type = instance.respond_to?(:ip_address_type) ? (instance.ip_address_type.respond_to?(:to_hash) ? instance.ip_address_type.to_hash : instance.ip_address_type) : nil
+    load_balancer_arn = instance.respond_to?(:load_balancer_arn) ? (instance.load_balancer_arn.respond_to?(:to_hash) ? instance.load_balancer_arn.to_hash : instance.load_balancer_arn) : nil
+    load_balancer_arns = instance.respond_to?(:load_balancer_arns) ? (instance.load_balancer_arns.respond_to?(:to_hash) ? instance.load_balancer_arns.to_hash : instance.load_balancer_arns) : nil
+    names = instance.respond_to?(:names) ? (instance.names.respond_to?(:to_hash) ? instance.names.to_hash : instance.names) : nil
+    page_size = instance.respond_to?(:page_size) ? (instance.page_size.respond_to?(:to_hash) ? instance.page_size.to_hash : instance.page_size) : nil
+    scheme = instance.respond_to?(:scheme) ? (instance.scheme.respond_to?(:to_hash) ? instance.scheme.to_hash : instance.scheme) : nil
+    security_groups = instance.respond_to?(:security_groups) ? (instance.security_groups.respond_to?(:to_hash) ? instance.security_groups.to_hash : instance.security_groups) : nil
+    subnet_mappings = instance.respond_to?(:subnet_mappings) ? (instance.subnet_mappings.respond_to?(:to_hash) ? instance.subnet_mappings.to_hash : instance.subnet_mappings) : nil
+    subnets = instance.respond_to?(:subnets) ? (instance.subnets.respond_to?(:to_hash) ? instance.subnets.to_hash : instance.subnets) : nil
+    tags = instance.respond_to?(:tags) ? (instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags) : nil
+    type = instance.respond_to?(:type) ? (instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type) : nil
 
     hash = {}
     hash[:ensure] = :present
     hash[:object] = instance
     hash[:name] = instance[:load_balancer_name]
     hash[:load_balancer_name] = instance[:load_balancer_name]
-
 
     hash[:ip_address_type] = ip_address_type unless ip_address_type.nil?
     hash[:load_balancer_arn] = load_balancer_arn unless load_balancer_arn.nil?
@@ -154,10 +148,10 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
   def create
     @is_create = true
     Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.get_region)
+    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.region)
     client.create_load_balancer(build_hash)
     @property_hash[:ensure] = :present
-  rescue Exception => ex
+  rescue StandardError => ex
     msg = ex.to_s.nil? ? ex.detail : ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{msg} and backtrace is #{ex.backtrace}")
     raise
@@ -169,10 +163,10 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
       return # we've already done the create or delete
     end
     @is_update = true
-    hash = build_hash
-    Puppet.info("Calling Update on flush")
+    build_hash
+    Puppet.info('Calling Update on flush')
     @property_hash[:ensure] = :present
-    response = []
+    []
   end
 
   def build_hash
@@ -191,15 +185,15 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
       load_balancer[:tags] = resource[:tags] unless resource[:tags].nil?
       load_balancer[:type] = resource[:type] unless resource[:type].nil?
     end
-    return symbolize(load_balancer)
+    symbolize(load_balancer)
   end
 
   def destroy
     Puppet.info("Entered delete for resource #{resource[:name]}")
     @is_delete = true
-    Puppet.info("Calling operation delete_load_balancer")
-    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.get_region)
-    client.delete_load_balancer({namevar => @property_hash[namevar]})
+    Puppet.info('Calling operation delete_load_balancer')
+    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.region)
+    client.delete_load_balancer(namevar => @property_hash[namevar])
     @property_hash[:ensure] = :absent
   end
 
@@ -211,9 +205,7 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
     return_value
   end
 
-  def property_hash
-    @property_hash
-  end
+  attr_reader :property_hash
 
 
   def symbolize(obj)

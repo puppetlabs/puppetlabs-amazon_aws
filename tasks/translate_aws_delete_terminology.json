@@ -1,0 +1,16 @@
+{
+	"description": "A synchronous action that deletes a custom terminology.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

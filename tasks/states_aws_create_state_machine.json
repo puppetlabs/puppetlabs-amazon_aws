@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"role_arn":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

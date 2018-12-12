@@ -7,13 +7,7 @@
 		
 		
 		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"user_groups":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,31 +19,7 @@
 			}
 			,
 		    
-			"attribute":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"operation_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"value":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dry_run":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"launch_permission":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -62,6 +32,36 @@
 			,
 		    
 			"user_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"value":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attribute":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"launch_permission":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

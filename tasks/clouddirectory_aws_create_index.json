@@ -1,5 +1,5 @@
 {
-	"description": "Creates an index object. See Indexing for more information.",
+	"description": "Creates an index object. See Indexing and search for more information.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"is_unique":{
+			"directory_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"parent_reference":{
+			"is_unique":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,13 @@
 			}
 			,
 		    
-			"directory_arn":{
+			"ordered_indexed_attribute_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"ordered_indexed_attribute_list":{
+			"parent_reference":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

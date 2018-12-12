@@ -1,5 +1,5 @@
 {
-	"description": "The CreateReplicationJob API is used to create a ReplicationJob to replicate a server on AWS. Call this API to first create a ReplicationJob, which will then schedule periodic ReplicationRuns to replicate your server to AWS. Each ReplicationRun will result in the creation of an AWS AMI.",
+	"description": "Creates a replication job. The replication job schedules periodic replication runs to replicate your server to AWS. Each replication run creates an Amazon Machine Image (AMI).",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,7 @@
 		
 		
 		    
-			"server_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"seed_replication_time":{
+			"encrypted":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,7 @@
 			}
 			,
 		    
-			"license_type":{
+			"number_of_recent_amis_to_keep":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +31,37 @@
 			}
 			,
 		    
+			"server_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"license_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"run_once":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"seed_replication_time":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

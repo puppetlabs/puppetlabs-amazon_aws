@@ -7,12 +7,6 @@
 		
 		
 		    
-			"ml_model_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"ml_model_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"score_threshold":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ml_model_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

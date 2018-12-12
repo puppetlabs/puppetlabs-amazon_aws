@@ -7,7 +7,7 @@
 		
 		
 		    
-			"token":{
+			"attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"attributes":{
+			"platform_application_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"platform_application_arn":{
+			"token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

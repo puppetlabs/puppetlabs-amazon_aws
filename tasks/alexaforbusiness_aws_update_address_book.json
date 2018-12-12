@@ -7,7 +7,7 @@
 		
 		
 		    
-			"name":{
+			"address_book_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"address_book_arn":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

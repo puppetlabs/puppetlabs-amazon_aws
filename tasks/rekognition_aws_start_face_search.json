@@ -7,13 +7,19 @@
 		
 		
 		    
+			"client_request_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"collection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"notification_channel":{
+			"face_match_threshold":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +31,13 @@
 			}
 			,
 		    
+			"notification_channel":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"video":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_request_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"face_match_threshold":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

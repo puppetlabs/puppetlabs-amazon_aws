@@ -7,19 +7,19 @@
 		
 		
 		    
-			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"dataset_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"actions":{
+			"retention_period":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,13 @@
 			}
 			,
 		    
-			"retention_period":{
+			"actions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_delivery_rules":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

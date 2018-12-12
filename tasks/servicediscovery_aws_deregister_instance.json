@@ -1,5 +1,5 @@
 {
-	"description": "Deletes the records and the health check, if any, that Amazon Route 53 created for the specified instance.",
+	"description": "Deletes the Amazon Route 53 DNS records and health check, if any, that AWS Cloud Map created for the specified instance.",
 	"input_method": "stdin",
 	"parameters":{
 		

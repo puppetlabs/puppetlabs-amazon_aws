@@ -7,7 +7,7 @@
 		
 		
 		    
-			"remove_iam_roles":{
+			"add_iam_roles":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"add_iam_roles":{
+			"remove_iam_roles":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

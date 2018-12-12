@@ -1,0 +1,16 @@
+{
+	"description": "Provides details about an entity recognizer including status, S3 buckets containing training data, recognizer metadata, metrics, and so on.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"entity_recognizer_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

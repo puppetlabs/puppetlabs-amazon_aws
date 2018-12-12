@@ -7,13 +7,13 @@
 		
 		
 		    
-			"labels":{
+			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"authentication_token":{
+			"labels":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

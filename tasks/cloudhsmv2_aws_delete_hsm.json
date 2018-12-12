@@ -7,6 +7,12 @@
 		
 		
 		    
+			"cluster_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"eni_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"eni_ip":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

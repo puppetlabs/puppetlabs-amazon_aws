@@ -1,5 +1,5 @@
 {
-	"description": "Creates a private namespace based on DNS, which will be visible only inside a specified Amazon VPC. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service will be backend.example.com. For the current limit on the number of namespaces that you can create using the same AWS account, see Limits on Auto Naming in the Route 53 Developer Guide.",
+	"description": "Creates a private namespace based on DNS, which will be visible only inside a specified Amazon VPC. The namespace defines your service naming scheme. For example, if you name your namespace example.com and name your service backend, the resulting DNS name for the service will be backend.example.com. For the current limit on the number of namespaces that you can create using the same AWS account, see AWS Cloud Map Limits in the AWS Cloud Map Developer Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,7 +7,7 @@
 		
 		
 		    
-			"name":{
+			"vpc":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"vpc":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"stop_action":{
+			"assessment_run_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"assessment_run_arn":{
+			"stop_action":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

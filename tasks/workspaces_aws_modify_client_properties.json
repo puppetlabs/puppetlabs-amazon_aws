@@ -1,0 +1,22 @@
+{
+	"description": "Modifies the properties of the specified Amazon WorkSpaces client.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"client_properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

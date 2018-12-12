@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"schema_facet":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"object_attribute_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"object_reference":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_facet":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

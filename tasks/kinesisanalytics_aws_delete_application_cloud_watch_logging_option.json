@@ -7,7 +7,7 @@
 		
 		
 		    
-			"current_application_version_id":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"application_name":{
+			"current_application_version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Describes an activity.",
+	"description": "Describes an activity.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. ",
 	"input_method": "stdin",
 	"parameters":{
 		

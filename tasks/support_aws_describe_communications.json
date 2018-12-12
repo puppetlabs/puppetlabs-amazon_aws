@@ -7,13 +7,7 @@
 		
 		
 		    
-			"case_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"before_time":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"next_token":{
+			"before_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"case_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

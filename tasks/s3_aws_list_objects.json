@@ -7,6 +7,18 @@
 		
 		
 		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delimiter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"encoding_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,18 +44,6 @@
 			,
 		    
 			"request_payer":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"bucket":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"delimiter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

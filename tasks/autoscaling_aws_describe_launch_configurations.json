@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"next_token":{
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"max_records":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

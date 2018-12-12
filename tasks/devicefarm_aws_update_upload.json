@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"content_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"edit_content":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

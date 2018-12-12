@@ -1,5 +1,5 @@
 {
-	"description": "Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name.",
+	"description": "Attaches a block storage disk to a running or stopped Lightsail instance and exposes it to the instance with the specified disk name. The attach disk operation supports tag-based access control via resource tags applied to the resource identified by diskName. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"instance_name":{
+			"disk_path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"disk_path":{
+			"instance_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

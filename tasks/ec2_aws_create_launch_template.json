@@ -7,13 +7,7 @@
 		
 		
 		    
-			"version_description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"launch_template_data":{
+			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +19,19 @@
 			}
 			,
 		    
-			"client_token":{
+			"launch_template_data":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"launch_template_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

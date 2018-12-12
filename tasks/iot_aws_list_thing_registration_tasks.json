@@ -7,7 +7,7 @@
 		
 		
 		    
-			"next_token":{
+			"status":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"status":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,7 @@
 		
 		
 		    
-			"security_profile_name":{
+			"expected_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"behaviors":{
+			"security_profile_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,7 @@
 			}
 			,
 		    
-			"expected_version":{
+			"behaviors":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_name":{
+			"admin_privacy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"admin_privacy":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

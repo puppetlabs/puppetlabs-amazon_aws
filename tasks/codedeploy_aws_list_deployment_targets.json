@@ -1,0 +1,28 @@
+{
+	"description": " Returns an array of target IDs that are associated a deployment. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"deployment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"description": "Describes the specified IPv4 address pools.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pool_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

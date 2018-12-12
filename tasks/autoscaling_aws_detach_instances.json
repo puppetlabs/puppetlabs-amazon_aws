@@ -7,13 +7,13 @@
 		
 		
 		    
-			"instance_ids":{
+			"auto_scaling_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"auto_scaling_group_name":{
+			"instance_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,19 +7,7 @@
 		
 		
 		    
-			"registry_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"repository_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
+			"filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +19,19 @@
 			}
 			,
 		    
-			"filter":{
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"registry_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"repository_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

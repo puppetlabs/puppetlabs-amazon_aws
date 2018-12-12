@@ -13,19 +13,19 @@
 			}
 			,
 		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"fpga_image_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"owners":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +37,7 @@
 			}
 			,
 		    
-			"max_results":{
+			"owners":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

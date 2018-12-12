@@ -13,13 +13,19 @@
 			}
 			,
 		    
-			"accept_language":{
+			"provider_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"display_name":{
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +37,7 @@
 			}
 			,
 		    
-			"provider_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
+			"display_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

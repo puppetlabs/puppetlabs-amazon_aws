@@ -7,13 +7,13 @@
 		
 		
 		    
-			"load_balancer_arn":{
+			"attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"attributes":{
+			"load_balancer_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Deletes the replication configuration from the bucket.",
+	"description": " Deletes the replication configuration from the bucket. For information about replication configuration, see Cross-Region Replication (CRR) in the Amazon S3 Developer Guide. ",
 	"input_method": "stdin",
 	"parameters":{
 		

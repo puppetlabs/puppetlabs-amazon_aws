@@ -13,13 +13,7 @@
 			}
 			,
 		    
-			"policy_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"policy_types":{
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"max_records":{
+			"policy_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

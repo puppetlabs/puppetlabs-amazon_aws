@@ -7,13 +7,7 @@
 		
 		
 		    
-			"replication_source_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"storage_encrypted":{
+			"db_cluster_parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,31 +19,25 @@
 			}
 			,
 		    
-			"preferred_backup_window":{
+			"master_username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"port":{
+			"preferred_maintenance_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"master_user_password":{
+			"storage_encrypted":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_cluster_parameter_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"enable_iam_database_authentication":{
+			"vpc_security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,13 +49,43 @@
 			}
 			,
 		    
+			"db_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"pre_signed_url":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"availability_zones":{
+			"db_subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_iam_database_authentication":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"port":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replication_source_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -85,25 +103,19 @@
 			}
 			,
 		    
-			"preferred_maintenance_window":{
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"vpc_security_group_ids":{
+			"master_user_password":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"character_set_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"db_cluster_identifier":{
+			"preferred_backup_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -115,25 +127,13 @@
 			}
 			,
 		    
-			"kms_key_id":{
+			"availability_zones":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_subnet_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"database_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"master_username":{
+			"character_set_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

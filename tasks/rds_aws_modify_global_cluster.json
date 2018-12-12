@@ -1,0 +1,28 @@
+{
+	"description": " Modify a setting for an Amazon Aurora global cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"deletion_protection":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"global_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"new_global_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

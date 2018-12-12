@@ -1,0 +1,40 @@
+{
+	"description": "Gets an object's current Legal Hold status.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"legal_hold":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request_payer":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

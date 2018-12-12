@@ -7,13 +7,13 @@
 		
 		
 		    
-			"num_tapes_to_create":{
+			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tape_barcode_prefix":{
+			"gateway_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,19 +31,19 @@
 			}
 			,
 		    
-			"gateway_arn":{
+			"num_tapes_to_create":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tape_barcode_prefix":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"tape_size_in_bytes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

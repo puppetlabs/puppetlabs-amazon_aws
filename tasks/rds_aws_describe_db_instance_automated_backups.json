@@ -1,0 +1,40 @@
+{
+	"description": "Displays backups for both current and deleted instances. For example, use this operation to find details about automated backups for previously deleted instances. Current instances with retention periods greater than zero (0) are returned for both the DescribeDBInstanceAutomatedBackups and DescribeDBInstances operations. All parameters are optional.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"db_instance_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dbi_resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

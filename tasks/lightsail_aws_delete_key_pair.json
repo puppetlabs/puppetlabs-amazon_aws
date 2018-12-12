@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a specific SSH key pair.",
+	"description": "Deletes a specific SSH key pair. The delete key pair operation supports tag-based access control via resource tags applied to the resource identified by keyPairName. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		

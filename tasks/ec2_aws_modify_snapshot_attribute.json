@@ -7,24 +7,6 @@
 		
 		
 		    
-			"create_volume_permission":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"group_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"operation_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"snapshot_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -37,13 +19,31 @@
 			}
 			,
 		    
+			"attribute":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"create_volume_permission":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"attribute":{
+			"group_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

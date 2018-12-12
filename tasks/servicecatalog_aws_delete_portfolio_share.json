@@ -1,5 +1,5 @@
 {
-	"description": "Stops sharing the specified portfolio with the specified account.",
+	"description": "Stops sharing the specified portfolio with the specified account or organization node. Shares to an organization node can only be deleted by the master account of an Organization.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,19 +7,25 @@
 		
 		
 		    
-			"accept_language":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"portfolio_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"account_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organization_node":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"duration_seconds":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"policy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"duration_seconds":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

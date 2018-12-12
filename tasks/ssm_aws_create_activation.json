@@ -7,19 +7,13 @@
 		
 		
 		    
+			"iam_role":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"registration_limit":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"expiration_date":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"iam_role":{
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expiration_date":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

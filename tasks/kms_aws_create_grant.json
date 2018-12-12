@@ -7,25 +7,13 @@
 		
 		
 		    
-			"retiring_principal":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"operations":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"constraints":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"grant_tokens":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +25,19 @@
 			}
 			,
 		    
-			"key_id":{
+			"operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"retiring_principal":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"constraints":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

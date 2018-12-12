@@ -7,31 +7,7 @@
 		
 		
 		    
-			"desired_status":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"family":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_results":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,19 +19,43 @@
 			}
 			,
 		    
-			"launch_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"container_instance":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"desired_status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"service_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"family":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"launch_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

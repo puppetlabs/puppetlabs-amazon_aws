@@ -1,5 +1,5 @@
 {
-	"description": "Gets information about the traffic policy instances that you created by using the current AWS account.  After you submit an UpdateTrafficPolicyInstance request, there's a brief delay while Amazon Route 53 creates the resource record sets that are specified in the traffic policy definition. For more information, see the State response element.  Amazon Route 53 returns a maximum of 100 items in each response. If you have a lot of traffic policy instances, you can use the MaxItems parameter to list them in groups of up to 100.",
+	"description": "Gets information about the traffic policy instances that you created by using the current AWS account.  After you submit an UpdateTrafficPolicyInstance request, there's a brief delay while Amazon Route 53 creates the resource record sets that are specified in the traffic policy definition. For more information, see the State response element.  Route 53 returns a maximum of 100 items in each response. If you have a lot of traffic policy instances, you can use the MaxItems parameter to list them in groups of up to 100.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"max_items":{
+			"hosted_zone_id_marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"hosted_zone_id_marker":{
+			"max_items":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

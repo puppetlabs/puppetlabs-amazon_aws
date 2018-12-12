@@ -7,7 +7,19 @@
 		
 		
 		    
-			"user_groups":{
+			"attribute":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"load_permission":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +31,7 @@
 			}
 			,
 		    
-			"load_permission":{
+			"user_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +49,7 @@
 			}
 			,
 		    
-			"attribute":{
+			"fpga_image_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,19 +61,7 @@
 			}
 			,
 		    
-			"operation_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fpga_image_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"user_ids":{
+			"user_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

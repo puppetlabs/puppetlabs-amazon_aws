@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves a list that describes one or more specified Amazon WorkSpaces clients.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

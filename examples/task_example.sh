@@ -20,3 +20,7 @@ bolt task run --nodes localhost amazon_aws::ec2_aws_describe_vpcs
 #S3 Examples
 #bolt task run --nodes localhost amazon_aws::s3_aws_create_bucket bucket="testBucket97e8b4a8"
 #bolt task run --nodes localhost amazon_aws::s3_aws_list_buckets
+
+#IAM Examples
+#bolt task run --nodes localhost amazon_aws::iam_aws_create_role role_name="testrole" assume_role_policy_document="{'Version':'2012-10-17','Statement':[{'Effect':'Allow','Principal':{'Service':'eks.amazonaws.com'},'Action':'sts:AssumeRole'}]}"
+#bolt task run --nodes localhost amazon_aws::iam_aws_list_roles

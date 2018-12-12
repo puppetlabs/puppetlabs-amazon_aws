@@ -7,12 +7,6 @@
 		
 		
 		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"content":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

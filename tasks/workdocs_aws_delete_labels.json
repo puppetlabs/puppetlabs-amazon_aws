@@ -7,7 +7,7 @@
 		
 		
 		    
-			"labels":{
+			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"resource_id":{
+			"labels":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"authentication_token":{
+			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

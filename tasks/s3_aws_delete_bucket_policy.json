@@ -7,13 +7,13 @@
 		
 		
 		    
-			"policy":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"policy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

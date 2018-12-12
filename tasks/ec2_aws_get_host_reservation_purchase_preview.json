@@ -7,13 +7,13 @@
 		
 		
 		    
-			"offering_id":{
+			"host_id_set":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"host_id_set":{
+			"offering_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a work team provided by a vendor. It returns details about the subscription with a vendor in the AWS Marketplace.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workteam_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

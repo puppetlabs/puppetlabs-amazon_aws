@@ -7,19 +7,7 @@
 		
 		
 		    
-			"key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"mfa":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +19,25 @@
 			}
 			,
 		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bypass_governance_retention":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

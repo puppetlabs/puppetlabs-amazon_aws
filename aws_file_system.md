@@ -13,6 +13,7 @@ aws_file_system {
   encrypted => $aws_encrypted
   file_system_id => $aws_file_system_id
   kms_key_id => $aws_kms_key_id
+  kms_key_id => $aws_kms_key_id
   max_items => "MaxItems (optional)",
   performance_mode => $aws_performance_mode
   provisioned_throughput_in_mibps => "ProvisionedThroughputInMibps (optional)",
@@ -25,6 +26,7 @@ aws_file_system {
 |creation_token | [CreationToken](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=creationtoken) | false |
 |encrypted | [Encrypted](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=encrypted) | false |
 |file_system_id | [FileSystemId](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=filesystemid) | false |
+|kms_key_id | [KmsKeyId](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=kmskeyid) | false |
 |kms_key_id | [KmsKeyId](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=kmskeyid) | false |
 |max_items | MaxItems | false |
 |performance_mode | [PerformanceMode](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=performancemode) | false |

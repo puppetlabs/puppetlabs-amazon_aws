@@ -7,7 +7,13 @@
 		
 		
 		    
-			"input_bucket":{
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notifications":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +31,13 @@
 			}
 			,
 		    
-			"aws_kms_key_arn":{
+			"thumbnail_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"notifications":{
+			"aws_kms_key_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +49,7 @@
 			}
 			,
 		    
-			"thumbnail_config":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
+			"input_bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

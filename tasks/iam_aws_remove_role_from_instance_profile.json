@@ -7,13 +7,13 @@
 		
 		
 		    
-			"instance_profile_name":{
+			"role_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"role_name":{
+			"instance_profile_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,7 @@
 		
 		
 		    
-			"volume_id":{
+			"mount_point":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"mount_point":{
+			"volume_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

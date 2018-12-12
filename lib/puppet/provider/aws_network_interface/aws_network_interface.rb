@@ -1,11 +1,7 @@
-require "pry"
-# require "pry-rescue"
-require "json"
-require "facets"
-require "retries"
+require 'json'
+require 'retries'
 
-
-require "aws-sdk-ec2"
+require 'aws-sdk-ec2'
 
 
 Puppet::Type.type(:aws_network_interface).provide(:arm) do
@@ -17,7 +13,7 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
     @is_create = false
     @is_delete = false
   end
-    
+
   def namevar
     :network_interface_id
   end
@@ -159,28 +155,29 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
     @property_flush[:vpc_id] = value
   end
 
-
   def name=(value)
     Puppet.info("name setter called to change to #{value}")
     @property_flush[:name] = value
   end
 
-  def self.get_region
+  def self.region
     ENV['AWS_REGION'] || 'us-west-2'
   end
 
-  def self.has_name?(hash)
+  def self.name?(hash)
     !hash[:name].nil? && !hash[:name].empty?
   end
+
+
   def self.instances
-    Puppet.debug("Calling instances for region #{self.get_region}")
-    client = Aws::EC2::Client.new(region: self.get_region)
+    Puppet.debug("Calling instances for region #{region}")
+    client = Aws::EC2::Client.new(region: region)
 
     all_instances = []
     client.describe_network_interfaces.each do |response|
       response.network_interfaces.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if has_name?(hash)
+        all_instances << new(hash) if name?(hash)
       end
     end
     all_instances
@@ -190,11 +187,10 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
     instances.each do |prov|
       tags = prov.respond_to?(:tags) ? prov.tags : nil
       tags = prov.respond_to?(:tag_set) ? prov.tag_set : tags
-      if tags 
-        name = tags.find { |x| x[:key] == "Name" }[:value]
-        if (resource = (resources.find { |k, v| k.casecmp(name).zero? } || [])[1])
-          resource.provider = prov
-        end
+      next if tags.empty?
+      name = tags.find { |x| x[:key] == 'Name' }[:value]
+      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
+        resource.provider = prov
       end
     end
   end
@@ -207,40 +203,40 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
   end
 
   def self.instance_to_hash(instance)
-    association = instance.respond_to?(:association) ? (instance.association.respond_to?(:to_hash) ? instance.association.to_hash : instance.association ) : nil
-    attachment = instance.respond_to?(:attachment) ? (instance.attachment.respond_to?(:to_hash) ? instance.attachment.to_hash : instance.attachment ) : nil
-    availability_zone = instance.respond_to?(:availability_zone) ? (instance.availability_zone.respond_to?(:to_hash) ? instance.availability_zone.to_hash : instance.availability_zone ) : nil
-    description = instance.respond_to?(:description) ? (instance.description.respond_to?(:to_hash) ? instance.description.to_hash : instance.description ) : nil
-    dry_run = instance.respond_to?(:dry_run) ? (instance.dry_run.respond_to?(:to_hash) ? instance.dry_run.to_hash : instance.dry_run ) : nil
-    filters = instance.respond_to?(:filters) ? (instance.filters.respond_to?(:to_hash) ? instance.filters.to_hash : instance.filters ) : nil
-    groups = instance.respond_to?(:groups) ? (instance.groups.respond_to?(:to_hash) ? instance.groups.to_hash : instance.groups ) : nil
-    interface_type = instance.respond_to?(:interface_type) ? (instance.interface_type.respond_to?(:to_hash) ? instance.interface_type.to_hash : instance.interface_type ) : nil
-    ipv6_address_count = instance.respond_to?(:ipv6_address_count) ? (instance.ipv6_address_count.respond_to?(:to_hash) ? instance.ipv6_address_count.to_hash : instance.ipv6_address_count ) : nil
-    ipv6_addresses = instance.respond_to?(:ipv6_addresses) ? (instance.ipv6_addresses.respond_to?(:to_hash) ? instance.ipv6_addresses.to_hash : instance.ipv6_addresses ) : nil
-    mac_address = instance.respond_to?(:mac_address) ? (instance.mac_address.respond_to?(:to_hash) ? instance.mac_address.to_hash : instance.mac_address ) : nil
-    max_results = instance.respond_to?(:max_results) ? (instance.max_results.respond_to?(:to_hash) ? instance.max_results.to_hash : instance.max_results ) : nil
-    network_interface_id = instance.respond_to?(:network_interface_id) ? (instance.network_interface_id.respond_to?(:to_hash) ? instance.network_interface_id.to_hash : instance.network_interface_id ) : nil
-    network_interface_ids = instance.respond_to?(:network_interface_ids) ? (instance.network_interface_ids.respond_to?(:to_hash) ? instance.network_interface_ids.to_hash : instance.network_interface_ids ) : nil
-    next_token = instance.respond_to?(:next_token) ? (instance.next_token.respond_to?(:to_hash) ? instance.next_token.to_hash : instance.next_token ) : nil
-    owner_id = instance.respond_to?(:owner_id) ? (instance.owner_id.respond_to?(:to_hash) ? instance.owner_id.to_hash : instance.owner_id ) : nil
-    private_dns_name = instance.respond_to?(:private_dns_name) ? (instance.private_dns_name.respond_to?(:to_hash) ? instance.private_dns_name.to_hash : instance.private_dns_name ) : nil
-    private_ip_address = instance.respond_to?(:private_ip_address) ? (instance.private_ip_address.respond_to?(:to_hash) ? instance.private_ip_address.to_hash : instance.private_ip_address ) : nil
-    private_ip_addresses = instance.respond_to?(:private_ip_addresses) ? (instance.private_ip_addresses.respond_to?(:to_hash) ? instance.private_ip_addresses.to_hash : instance.private_ip_addresses ) : nil
-    requester_id = instance.respond_to?(:requester_id) ? (instance.requester_id.respond_to?(:to_hash) ? instance.requester_id.to_hash : instance.requester_id ) : nil
-    requester_managed = instance.respond_to?(:requester_managed) ? (instance.requester_managed.respond_to?(:to_hash) ? instance.requester_managed.to_hash : instance.requester_managed ) : nil
-    secondary_private_ip_address_count = instance.respond_to?(:secondary_private_ip_address_count) ? (instance.secondary_private_ip_address_count.respond_to?(:to_hash) ? instance.secondary_private_ip_address_count.to_hash : instance.secondary_private_ip_address_count ) : nil
-    source_dest_check = instance.respond_to?(:source_dest_check) ? (instance.source_dest_check.respond_to?(:to_hash) ? instance.source_dest_check.to_hash : instance.source_dest_check ) : nil
-    status = instance.respond_to?(:status) ? (instance.status.respond_to?(:to_hash) ? instance.status.to_hash : instance.status ) : nil
-    subnet_id = instance.respond_to?(:subnet_id) ? (instance.subnet_id.respond_to?(:to_hash) ? instance.subnet_id.to_hash : instance.subnet_id ) : nil
-    tag_set = instance.respond_to?(:tag_set) ? (instance.tag_set.respond_to?(:to_hash) ? instance.tag_set.to_hash : instance.tag_set ) : nil
-    vpc_id = instance.respond_to?(:vpc_id) ? (instance.vpc_id.respond_to?(:to_hash) ? instance.vpc_id.to_hash : instance.vpc_id ) : nil
+    association = instance.respond_to?(:association) ? (instance.association.respond_to?(:to_hash) ? instance.association.to_hash : instance.association) : nil
+    attachment = instance.respond_to?(:attachment) ? (instance.attachment.respond_to?(:to_hash) ? instance.attachment.to_hash : instance.attachment) : nil
+    availability_zone = instance.respond_to?(:availability_zone) ? (instance.availability_zone.respond_to?(:to_hash) ? instance.availability_zone.to_hash : instance.availability_zone) : nil
+    description = instance.respond_to?(:description) ? (instance.description.respond_to?(:to_hash) ? instance.description.to_hash : instance.description) : nil
+    dry_run = instance.respond_to?(:dry_run) ? (instance.dry_run.respond_to?(:to_hash) ? instance.dry_run.to_hash : instance.dry_run) : nil
+    filters = instance.respond_to?(:filters) ? (instance.filters.respond_to?(:to_hash) ? instance.filters.to_hash : instance.filters) : nil
+    groups = instance.respond_to?(:groups) ? (instance.groups.respond_to?(:to_hash) ? instance.groups.to_hash : instance.groups) : nil
+    interface_type = instance.respond_to?(:interface_type) ? (instance.interface_type.respond_to?(:to_hash) ? instance.interface_type.to_hash : instance.interface_type) : nil
+    ipv6_address_count = instance.respond_to?(:ipv6_address_count) ? (instance.ipv6_address_count.respond_to?(:to_hash) ? instance.ipv6_address_count.to_hash : instance.ipv6_address_count) : nil
+    ipv6_addresses = instance.respond_to?(:ipv6_addresses) ? (instance.ipv6_addresses.respond_to?(:to_hash) ? instance.ipv6_addresses.to_hash : instance.ipv6_addresses) : nil
+    mac_address = instance.respond_to?(:mac_address) ? (instance.mac_address.respond_to?(:to_hash) ? instance.mac_address.to_hash : instance.mac_address) : nil
+    max_results = instance.respond_to?(:max_results) ? (instance.max_results.respond_to?(:to_hash) ? instance.max_results.to_hash : instance.max_results) : nil
+    network_interface_id = instance.respond_to?(:network_interface_id) ? (instance.network_interface_id.respond_to?(:to_hash) ? instance.network_interface_id.to_hash : instance.network_interface_id) : nil
+    network_interface_ids = instance.respond_to?(:network_interface_ids) ? (instance.network_interface_ids.respond_to?(:to_hash) ? instance.network_interface_ids.to_hash : instance.network_interface_ids) : nil
+    next_token = instance.respond_to?(:next_token) ? (instance.next_token.respond_to?(:to_hash) ? instance.next_token.to_hash : instance.next_token) : nil
+    owner_id = instance.respond_to?(:owner_id) ? (instance.owner_id.respond_to?(:to_hash) ? instance.owner_id.to_hash : instance.owner_id) : nil
+    private_dns_name = instance.respond_to?(:private_dns_name) ? (instance.private_dns_name.respond_to?(:to_hash) ? instance.private_dns_name.to_hash : instance.private_dns_name) : nil
+    private_ip_address = instance.respond_to?(:private_ip_address) ? (instance.private_ip_address.respond_to?(:to_hash) ? instance.private_ip_address.to_hash : instance.private_ip_address) : nil
+    private_ip_addresses = instance.respond_to?(:private_ip_addresses) ? (instance.private_ip_addresses.respond_to?(:to_hash) ? instance.private_ip_addresses.to_hash : instance.private_ip_addresses) : nil
+    requester_id = instance.respond_to?(:requester_id) ? (instance.requester_id.respond_to?(:to_hash) ? instance.requester_id.to_hash : instance.requester_id) : nil
+    requester_managed = instance.respond_to?(:requester_managed) ? (instance.requester_managed.respond_to?(:to_hash) ? instance.requester_managed.to_hash : instance.requester_managed) : nil
+    secondary_private_ip_address_count = instance.respond_to?(:secondary_private_ip_address_count) ? (instance.secondary_private_ip_address_count.respond_to?(:to_hash) ? instance.secondary_private_ip_address_count.to_hash : instance.secondary_private_ip_address_count) : nil
+    source_dest_check = instance.respond_to?(:source_dest_check) ? (instance.source_dest_check.respond_to?(:to_hash) ? instance.source_dest_check.to_hash : instance.source_dest_check) : nil
+    status = instance.respond_to?(:status) ? (instance.status.respond_to?(:to_hash) ? instance.status.to_hash : instance.status) : nil
+    subnet_id = instance.respond_to?(:subnet_id) ? (instance.subnet_id.respond_to?(:to_hash) ? instance.subnet_id.to_hash : instance.subnet_id) : nil
+    tag_set = instance.respond_to?(:tag_set) ? (instance.tag_set.respond_to?(:to_hash) ? instance.tag_set.to_hash : instance.tag_set) : nil
+    vpc_id = instance.respond_to?(:vpc_id) ? (instance.vpc_id.respond_to?(:to_hash) ? instance.vpc_id.to_hash : instance.vpc_id) : nil
 
     hash = {}
     hash[:ensure] = :present
     hash[:object] = instance
     hash[:name] = name_from_tag(instance)
-    hash[:tags] = instance.tags if instance.respond_to?(:tags) and instance.tags.size > 0
-    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) and instance.tag_set.size > 0
+    hash[:tags] = instance.tags if instance.respond_to?(:tags) && !instance.tags.empty?
+    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) && !instance.tag_set.empty?
 
     hash[:association] = association unless association.nil?
     hash[:attachment] = attachment unless attachment.nil?
@@ -275,17 +271,17 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
   def create
     @is_create = true
     Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::EC2::Client.new(region: self.class.get_region)
+    client = Aws::EC2::Client.new(region: self.class.region)
     response = client.create_network_interface(build_hash)
     res = response.respond_to?(:network_interface) ? response.network_interface : response
-    with_retries(:max_tries => 5) do  
+    with_retries(max_tries: 5) do
       client.create_tags(
         resources: [res.to_hash[namevar]],
-        tags: [{ key: 'Name', value: resource.provider.name}]
+        tags: [{ key: 'Name', value: resource.provider.name }],
       )
     end
     @property_hash[:ensure] = :present
-  rescue Exception => ex
+  rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
@@ -296,10 +292,9 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
       return # we've already done the create or delete
     end
     @is_update = true
-    hash = build_hash
-    Puppet.info("Calling Update on flush")
+    build_hash
+    Puppet.info('Calling Update on flush')
     @property_hash[:ensure] = :present
-    response = []
   end
 
   def build_hash
@@ -309,7 +304,6 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
       network_interface[:dry_run] = resource[:dry_run] unless resource[:dry_run].nil?
       network_interface[:filters] = resource[:filters] unless resource[:filters].nil?
       network_interface[:groups] = resource[:groups] unless resource[:groups].nil?
-      network_interface[:subnet_id] = resource[:subnet_id] unless resource[:subnet_id].nil?
       network_interface[:ipv6_address_count] = resource[:ipv6_address_count] unless resource[:ipv6_address_count].nil?
       network_interface[:ipv6_addresses] = resource[:ipv6_addresses] unless resource[:ipv6_addresses].nil?
       network_interface[:max_results] = resource[:max_results] unless resource[:max_results].nil?
@@ -321,15 +315,15 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
       network_interface[:secondary_private_ip_address_count] = resource[:secondary_private_ip_address_count] unless resource[:secondary_private_ip_address_count].nil?
       network_interface[:subnet_id] = resource[:subnet_id] unless resource[:subnet_id].nil?
     end
-    return symbolize(network_interface)
+    symbolize(network_interface)
   end
 
   def destroy
     Puppet.info("Entered delete for resource #{resource[:name]}")
     @is_delete = true
-    Puppet.info("Calling operation delete_network_interface")
-    client = Aws::EC2::Client.new(region: self.class.get_region)
-    client.delete_network_interface({namevar => resource.provider.property_hash[namevar]})
+    Puppet.info('Calling operation delete_network_interface')
+    client = Aws::EC2::Client.new(region: self.class.region)
+    client.delete_network_interface(namevar => resource.provider.property_hash[namevar])
     @property_hash[:ensure] = :absent
   end
 
@@ -341,9 +335,7 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
     return_value
   end
 
-  def property_hash
-    @property_hash
-  end
+  attr_reader :property_hash
 
 
   def symbolize(obj)

@@ -1,0 +1,28 @@
+{
+	"description": "Modifies the settings for a snapshot.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"force":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"manual_snapshot_retention_period":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

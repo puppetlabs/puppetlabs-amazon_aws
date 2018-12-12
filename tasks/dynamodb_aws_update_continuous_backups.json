@@ -7,13 +7,13 @@
 		
 		
 		    
-			"table_name":{
+			"point_in_time_recovery_specification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"point_in_time_recovery_specification":{
+			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

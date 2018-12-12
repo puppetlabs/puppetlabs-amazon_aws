@@ -7,6 +7,12 @@
 		
 		
 		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"engine_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

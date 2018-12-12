@@ -7,12 +7,6 @@
 		
 		
 		    
-			"public_ips":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"allocation_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"public_ips":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

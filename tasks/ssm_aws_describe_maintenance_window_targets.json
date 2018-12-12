@@ -7,6 +7,12 @@
 		
 		
 		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"window_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"limit":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"delivery_stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"exclusive_start_tag_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

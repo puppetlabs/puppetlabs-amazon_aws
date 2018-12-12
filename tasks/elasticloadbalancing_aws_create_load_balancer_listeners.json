@@ -7,13 +7,13 @@
 		
 		
 		    
-			"listeners":{
+			"load_balancer_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"load_balancer_name":{
+			"listeners":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

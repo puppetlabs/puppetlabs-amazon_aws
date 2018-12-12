@@ -7,6 +7,12 @@
 		
 		
 		    
+			"parameter_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"room_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"skill_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameter_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

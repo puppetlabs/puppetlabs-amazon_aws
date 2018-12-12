@@ -7,7 +7,13 @@
 		
 		
 		    
-			"remove_allowed_principals":{
+			"service_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"add_allowed_principals":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +25,7 @@
 			}
 			,
 		    
-			"service_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"add_allowed_principals":{
+			"remove_allowed_principals":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

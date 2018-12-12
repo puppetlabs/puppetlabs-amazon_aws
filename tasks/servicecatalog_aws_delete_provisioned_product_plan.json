@@ -7,7 +7,7 @@
 		
 		
 		    
-			"plan_id":{
+			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"accept_language":{
+			"plan_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

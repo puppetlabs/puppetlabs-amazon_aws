@@ -7,13 +7,13 @@
 		
 		
 		    
-			"locale":{
+			"exclusion_arns":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"exclusion_arns":{
+			"locale":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

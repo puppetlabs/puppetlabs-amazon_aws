@@ -7,55 +7,7 @@
 		
 		
 		    
-			"runtime_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ec2_instance_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"peer_vpc_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"metric_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ec2_inbound_permissions":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"new_game_session_protection_policy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"build_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
+			"fleet_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,13 +19,43 @@
 			}
 			,
 		    
+			"server_launch_parameters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"build_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"peer_vpc_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ec2_instance_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"log_paths":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"fleet_type":{
+			"new_game_session_protection_policy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -91,7 +73,25 @@
 			}
 			,
 		    
-			"server_launch_parameters":{
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"metric_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"runtime_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ec2_inbound_permissions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

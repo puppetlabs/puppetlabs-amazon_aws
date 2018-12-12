@@ -9,12 +9,14 @@ Path: "https://github.com/aws/aws-sdk-go-v2/tree/master/models/apis/elasticloadb
 
 ```puppet
 aws_target_group {
+  health_check_enabled => $aws_health_check_enabled
   health_check_interval_seconds => "HealthCheckIntervalSeconds (optional)",
   health_check_path => $aws_path
   health_check_port => $aws_health_check_port
   health_check_protocol => $aws_protocol_enum
   health_check_timeout_seconds => "HealthCheckTimeoutSeconds (optional)",
   healthy_threshold_count => $aws_health_check_threshold_count
+  vpc_id => $aws_vpc_id
   load_balancer_arn => $aws_load_balancer_arn
   matcher => $aws_matcher
   name => $aws_target_group_name
@@ -32,12 +34,14 @@ aws_target_group {
 
 | Name        | Type           | Required       |
 | ------------- | ------------- | ------------- |
+|health_check_enabled | [HealthCheckEnabled](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=healthcheckenabled) | false |
 |health_check_interval_seconds | HealthCheckIntervalSeconds | false |
 |health_check_path | [Path](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=path) | false |
 |health_check_port | [HealthCheckPort](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=healthcheckport) | false |
 |health_check_protocol | [ProtocolEnum](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=protocolenum) | false |
 |health_check_timeout_seconds | HealthCheckTimeoutSeconds | false |
 |healthy_threshold_count | [HealthCheckThresholdCount](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=healthcheckthresholdcount) | false |
+|vpc_id | [VpcId](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=vpcid) | false |
 |load_balancer_arn | [LoadBalancerArn](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=loadbalancerarn) | false |
 |matcher | [Matcher](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=matcher) | false |
 |name | [TargetGroupName](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=targetgroupname) | false |

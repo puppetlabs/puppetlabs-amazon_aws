@@ -7,37 +7,7 @@
 		
 		
 		    
-			"max_records":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"db_instance_class":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"product_description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"offering_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"reserved_db_instance_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +19,43 @@
 			}
 			,
 		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"offering_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"product_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"multi_az":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"reserved_db_instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

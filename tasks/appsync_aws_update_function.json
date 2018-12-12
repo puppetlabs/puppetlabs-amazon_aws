@@ -1,0 +1,58 @@
+{
+	"description": "Updates a Function object.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"data_source_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"function_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"function_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request_mapping_template":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"response_mapping_template":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

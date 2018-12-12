@@ -7,13 +7,13 @@
 		
 		
 		    
-			"instance_information_filter_list":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filters":{
+			"instance_information_filter_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

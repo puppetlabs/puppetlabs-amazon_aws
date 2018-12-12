@@ -7,13 +7,13 @@
 		
 		
 		    
-			"rds_db_instance_arn":{
+			"db_user":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_user":{
+			"rds_db_instance_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,7 @@
 		
 		
 		    
-			"parameter_filters":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"filters":{
+			"parameter_filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"player_id":{
+			"player_data":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"player_data":{
+			"player_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

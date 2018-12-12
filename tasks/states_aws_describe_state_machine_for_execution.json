@@ -1,5 +1,5 @@
 {
-	"description": "Describes the state machine associated with a specific execution.",
+	"description": "Describes the state machine associated with a specific execution.  This operation is eventually consistent. The results are best effort and may not reflect very recent updates and changes. ",
 	"input_method": "stdin",
 	"parameters":{
 		

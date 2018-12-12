@@ -1,5 +1,5 @@
 {
-	"description": " Updates the webhook associated with an AWS CodeBuild build project. ",
+	"description": " Updates the webhook associated with an AWS CodeBuild build project.    If you use Bitbucket for your repository, rotateSecret is ignored.  ",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"rotate_secret":{
+			"project_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"project_name":{
+			"rotate_secret":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

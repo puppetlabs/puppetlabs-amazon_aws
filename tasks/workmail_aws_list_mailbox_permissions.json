@@ -7,13 +7,13 @@
 		
 		
 		    
-			"entity_id":{
+			"organization_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"entity_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"organization_id":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

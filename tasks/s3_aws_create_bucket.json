@@ -7,25 +7,13 @@
 		
 		
 		    
-			"grant_full_control":{
+			"acl":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"grant_read":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"grant_write":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"grant_write_acp":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,19 +25,37 @@
 			}
 			,
 		    
+			"grant_read":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"grant_read_acp":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"acl":{
+			"grant_write":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"object_lock_enabled_for_bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"grant_write_acp":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"grant_full_control":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

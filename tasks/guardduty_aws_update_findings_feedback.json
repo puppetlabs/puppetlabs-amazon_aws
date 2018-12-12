@@ -7,6 +7,12 @@
 		
 		
 		    
+			"feedback":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"finding_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"detector_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"feedback":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

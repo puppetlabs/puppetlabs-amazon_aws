@@ -7,13 +7,13 @@
 		
 		
 		    
-			"max_results":{
+			"job_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"job_name":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

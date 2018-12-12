@@ -1,11 +1,7 @@
-require "pry"
-# require "pry-rescue"
-require "json"
-require "facets"
-require "retries"
+require 'json'
+require 'retries'
 
-
-require "aws-sdk-ec2"
+require 'aws-sdk-ec2'
 
 
 Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
@@ -17,7 +13,7 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
     @is_create = false
     @is_delete = false
   end
-    
+
   def namevar
     :customer_gateway_id
   end
@@ -74,28 +70,29 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
     @property_flush[:type] = value
   end
 
-
   def name=(value)
     Puppet.info("name setter called to change to #{value}")
     @property_flush[:name] = value
   end
 
-  def self.get_region
+  def self.region
     ENV['AWS_REGION'] || 'us-west-2'
   end
 
-  def self.has_name?(hash)
+  def self.name?(hash)
     !hash[:name].nil? && !hash[:name].empty?
   end
+
+
   def self.instances
-    Puppet.debug("Calling instances for region #{self.get_region}")
-    client = Aws::EC2::Client.new(region: self.get_region)
+    Puppet.debug("Calling instances for region #{region}")
+    client = Aws::EC2::Client.new(region: region)
 
     all_instances = []
     client.describe_customer_gateways.each do |response|
       response.customer_gateways.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if has_name?(hash)
+        all_instances << new(hash) if name?(hash)
       end
     end
     all_instances
@@ -105,11 +102,10 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
     instances.each do |prov|
       tags = prov.respond_to?(:tags) ? prov.tags : nil
       tags = prov.respond_to?(:tag_set) ? prov.tag_set : tags
-      if tags 
-        name = tags.find { |x| x[:key] == "Name" }[:value]
-        if (resource = (resources.find { |k, v| k.casecmp(name).zero? } || [])[1])
-          resource.provider = prov
-        end
+      next if tags.empty?
+      name = tags.find { |x| x[:key] == 'Name' }[:value]
+      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
+        resource.provider = prov
       end
     end
   end
@@ -122,23 +118,23 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
   end
 
   def self.instance_to_hash(instance)
-    bgp_asn = instance.respond_to?(:bgp_asn) ? (instance.bgp_asn.respond_to?(:to_hash) ? instance.bgp_asn.to_hash : instance.bgp_asn ) : nil
-    customer_gateway_id = instance.respond_to?(:customer_gateway_id) ? (instance.customer_gateway_id.respond_to?(:to_hash) ? instance.customer_gateway_id.to_hash : instance.customer_gateway_id ) : nil
-    customer_gateway_ids = instance.respond_to?(:customer_gateway_ids) ? (instance.customer_gateway_ids.respond_to?(:to_hash) ? instance.customer_gateway_ids.to_hash : instance.customer_gateway_ids ) : nil
-    dry_run = instance.respond_to?(:dry_run) ? (instance.dry_run.respond_to?(:to_hash) ? instance.dry_run.to_hash : instance.dry_run ) : nil
-    filters = instance.respond_to?(:filters) ? (instance.filters.respond_to?(:to_hash) ? instance.filters.to_hash : instance.filters ) : nil
-    ip_address = instance.respond_to?(:ip_address) ? (instance.ip_address.respond_to?(:to_hash) ? instance.ip_address.to_hash : instance.ip_address ) : nil
-    public_ip = instance.respond_to?(:public_ip) ? (instance.public_ip.respond_to?(:to_hash) ? instance.public_ip.to_hash : instance.public_ip ) : nil
-    state = instance.respond_to?(:state) ? (instance.state.respond_to?(:to_hash) ? instance.state.to_hash : instance.state ) : nil
-    tags = instance.respond_to?(:tags) ? (instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags ) : nil
-    type = instance.respond_to?(:type) ? (instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type ) : nil
+    bgp_asn = instance.respond_to?(:bgp_asn) ? (instance.bgp_asn.respond_to?(:to_hash) ? instance.bgp_asn.to_hash : instance.bgp_asn) : nil
+    customer_gateway_id = instance.respond_to?(:customer_gateway_id) ? (instance.customer_gateway_id.respond_to?(:to_hash) ? instance.customer_gateway_id.to_hash : instance.customer_gateway_id) : nil
+    customer_gateway_ids = instance.respond_to?(:customer_gateway_ids) ? (instance.customer_gateway_ids.respond_to?(:to_hash) ? instance.customer_gateway_ids.to_hash : instance.customer_gateway_ids) : nil
+    dry_run = instance.respond_to?(:dry_run) ? (instance.dry_run.respond_to?(:to_hash) ? instance.dry_run.to_hash : instance.dry_run) : nil
+    filters = instance.respond_to?(:filters) ? (instance.filters.respond_to?(:to_hash) ? instance.filters.to_hash : instance.filters) : nil
+    ip_address = instance.respond_to?(:ip_address) ? (instance.ip_address.respond_to?(:to_hash) ? instance.ip_address.to_hash : instance.ip_address) : nil
+    public_ip = instance.respond_to?(:public_ip) ? (instance.public_ip.respond_to?(:to_hash) ? instance.public_ip.to_hash : instance.public_ip) : nil
+    state = instance.respond_to?(:state) ? (instance.state.respond_to?(:to_hash) ? instance.state.to_hash : instance.state) : nil
+    tags = instance.respond_to?(:tags) ? (instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags) : nil
+    type = instance.respond_to?(:type) ? (instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type) : nil
 
     hash = {}
     hash[:ensure] = :present
     hash[:object] = instance
     hash[:name] = name_from_tag(instance)
-    hash[:tags] = instance.tags if instance.respond_to?(:tags) and instance.tags.size > 0
-    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) and instance.tag_set.size > 0
+    hash[:tags] = instance.tags if instance.respond_to?(:tags) && !instance.tags.empty?
+    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) && !instance.tag_set.empty?
 
     hash[:bgp_asn] = bgp_asn unless bgp_asn.nil?
     hash[:customer_gateway_id] = customer_gateway_id unless customer_gateway_id.nil?
@@ -156,17 +152,17 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
   def create
     @is_create = true
     Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::EC2::Client.new(region: self.class.get_region)
+    client = Aws::EC2::Client.new(region: self.class.region)
     response = client.create_customer_gateway(build_hash)
     res = response.respond_to?(:customer_gateway) ? response.customer_gateway : response
-    with_retries(:max_tries => 5) do  
+    with_retries(max_tries: 5) do
       client.create_tags(
         resources: [res.to_hash[namevar]],
-        tags: [{ key: 'Name', value: resource.provider.name}]
+        tags: [{ key: 'Name', value: resource.provider.name }],
       )
     end
     @property_hash[:ensure] = :present
-  rescue Exception => ex
+  rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
@@ -177,10 +173,9 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
       return # we've already done the create or delete
     end
     @is_update = true
-    hash = build_hash
-    Puppet.info("Calling Update on flush")
+    build_hash
+    Puppet.info('Calling Update on flush')
     @property_hash[:ensure] = :present
-    response = []
   end
 
   def build_hash
@@ -194,15 +189,15 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
       customer_gateway[:public_ip] = resource[:public_ip] unless resource[:public_ip].nil?
       customer_gateway[:type] = resource[:type] unless resource[:type].nil?
     end
-    return symbolize(customer_gateway)
+    symbolize(customer_gateway)
   end
 
   def destroy
     Puppet.info("Entered delete for resource #{resource[:name]}")
     @is_delete = true
-    Puppet.info("Calling operation delete_customer_gateway")
-    client = Aws::EC2::Client.new(region: self.class.get_region)
-    client.delete_customer_gateway({namevar => resource.provider.property_hash[namevar]})
+    Puppet.info('Calling operation delete_customer_gateway')
+    client = Aws::EC2::Client.new(region: self.class.region)
+    client.delete_customer_gateway(namevar => resource.provider.property_hash[namevar])
     @property_hash[:ensure] = :absent
   end
 
@@ -214,9 +209,7 @@ Puppet::Type.type(:aws_customer_gateway).provide(:arm) do
     return_value
   end
 
-  def property_hash
-    @property_hash
-  end
+  attr_reader :property_hash
 
 
   def symbolize(obj)

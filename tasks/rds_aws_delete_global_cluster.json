@@ -1,0 +1,16 @@
+{
+	"description": " Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"global_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

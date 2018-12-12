@@ -7,13 +7,7 @@
 		
 		
 		    
-			"seconds_before_timeout":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"timeout_action":{
+			"capacity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"capacity":{
+			"seconds_before_timeout":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout_action":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

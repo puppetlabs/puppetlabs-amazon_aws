@@ -7,13 +7,13 @@
 		
 		
 		    
-			"error":{
+			"cause":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cause":{
+			"error":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

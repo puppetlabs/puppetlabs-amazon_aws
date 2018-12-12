@@ -1,0 +1,40 @@
+{
+	"description": "Modifies the specified VPC attachment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"options":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"remove_subnet_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transit_gateway_attachment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"add_subnet_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

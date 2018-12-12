@@ -7,13 +7,13 @@
 		
 		
 		    
-			"rules_package_arns":{
+			"locale":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"locale":{
+			"rules_package_arns":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

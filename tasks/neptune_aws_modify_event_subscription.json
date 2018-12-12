@@ -13,7 +13,7 @@
 			}
 			,
 		    
-			"subscription_name":{
+			"event_categories":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,7 @@
 			}
 			,
 		    
-			"event_categories":{
+			"subscription_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"notification":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"notification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

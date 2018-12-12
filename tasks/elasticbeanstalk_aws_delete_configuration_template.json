@@ -7,13 +7,13 @@
 		
 		
 		    
-			"template_name":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"application_name":{
+			"template_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

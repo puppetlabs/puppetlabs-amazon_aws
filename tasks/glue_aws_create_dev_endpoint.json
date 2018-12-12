@@ -7,25 +7,13 @@
 		
 		
 		    
-			"public_keys":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"extra_python_libs_s3_path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"security_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"security_group_ids":{
+			"number_of_nodes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +25,31 @@
 			}
 			,
 		    
-			"number_of_nodes":{
+			"security_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"extra_jars_s3_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"public_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -50,18 +62,6 @@
 			,
 		    
 			"endpoint_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"extra_jars_s3_path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

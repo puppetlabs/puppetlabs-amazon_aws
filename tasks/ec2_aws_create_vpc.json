@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"cidr_block":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"instance_tenancy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cidr_block":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

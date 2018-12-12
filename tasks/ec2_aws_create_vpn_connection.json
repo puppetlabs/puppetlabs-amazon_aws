@@ -7,6 +7,12 @@
 		
 		
 		    
+			"customer_gateway_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +25,7 @@
 			}
 			,
 		    
-			"customer_gateway_id":{
+			"transit_gateway_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

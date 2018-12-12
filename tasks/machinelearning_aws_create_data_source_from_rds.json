@@ -7,6 +7,12 @@
 		
 		
 		    
+			"compute_statistics":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"data_source_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"compute_statistics":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

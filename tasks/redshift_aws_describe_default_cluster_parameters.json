@@ -7,7 +7,7 @@
 		
 		
 		    
-			"parameter_group_family":{
+			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"marker":{
+			"parameter_group_family":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

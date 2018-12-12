@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a connector definition.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"connector_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

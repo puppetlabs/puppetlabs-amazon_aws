@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves a list that describes modifications to the configuration of bring your own license (BYOL) for the specified account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

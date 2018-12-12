@@ -7,7 +7,7 @@
 		
 		
 		    
-			"name":{
+			"content_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,19 +19,19 @@
 			}
 			,
 		    
-			"schema":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"content_type":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

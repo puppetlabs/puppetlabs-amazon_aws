@@ -7,13 +7,13 @@
 		
 		
 		    
-			"policy_name":{
+			"auto_scaling_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"auto_scaling_group_name":{
+			"policy_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

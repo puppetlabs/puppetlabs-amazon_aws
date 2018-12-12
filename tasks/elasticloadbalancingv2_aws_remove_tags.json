@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tag_keys":{
+			"resource_arns":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_arns":{
+			"tag_keys":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Starts an asynchronous job to transcribe speech to text.",
+	"description": "Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. ",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,7 +13,7 @@
 			}
 			,
 		    
-			"media_sample_rate_hertz":{
+			"media":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"media":{
+			"media_sample_rate_hertz":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

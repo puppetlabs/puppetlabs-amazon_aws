@@ -7,12 +7,6 @@
 		
 		
 		    
-			"thing_type_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"attribute_payload":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"thing_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_type_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

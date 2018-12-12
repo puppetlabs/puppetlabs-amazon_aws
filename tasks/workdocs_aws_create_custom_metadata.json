@@ -7,7 +7,7 @@
 		
 		
 		    
-			"version_id":{
+			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"authentication_token":{
+			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_id":{
+			"version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

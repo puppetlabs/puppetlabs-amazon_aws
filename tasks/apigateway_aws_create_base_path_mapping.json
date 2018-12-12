@@ -7,7 +7,7 @@
 		
 		
 		    
-			"stage":{
+			"base_path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"base_path":{
+			"rest_api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"rest_api_id":{
+			"stage":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

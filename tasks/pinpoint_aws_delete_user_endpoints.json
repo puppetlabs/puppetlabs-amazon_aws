@@ -7,13 +7,13 @@
 		
 		
 		    
-			"application_id":{
+			"user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"user_id":{
+			"application_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

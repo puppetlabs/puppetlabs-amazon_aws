@@ -7,6 +7,12 @@
 		
 		
 		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tag_values":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,19 +25,13 @@
 			}
 			,
 		    
-			"max_records":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tag_keys":{
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

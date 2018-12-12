@@ -13,7 +13,7 @@
 			}
 			,
 		    
-			"location":{
+			"source":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,13 @@
 			}
 			,
 		    
-			"mapping":{
+			"location":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"source":{
+			"mapping":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

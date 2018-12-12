@@ -7,13 +7,13 @@
 		
 		
 		    
-			"repository_name":{
+			"branch_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"branch_name":{
+			"repository_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

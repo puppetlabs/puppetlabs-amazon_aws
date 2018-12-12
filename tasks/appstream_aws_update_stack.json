@@ -7,7 +7,13 @@
 		
 		
 		    
-			"redirect_url":{
+			"application_settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +25,19 @@
 			}
 			,
 		    
-			"application_settings":{
+			"redirect_url":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"storage_connectors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes_to_delete":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,25 +55,13 @@
 			}
 			,
 		    
-			"attributes_to_delete":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"user_settings":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"storage_connectors":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

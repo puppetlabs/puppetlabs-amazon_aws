@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"vault_name":{
+			"archive_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"archive_id":{
+			"vault_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

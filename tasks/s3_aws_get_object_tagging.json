@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"version_id":{
+			"tagging":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tagging":{
+			"version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

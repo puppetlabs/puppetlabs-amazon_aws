@@ -7,25 +7,25 @@
 		
 		
 		    
-			"load_balancer_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"policy_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"policy_type_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"load_balancer_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"policy_attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

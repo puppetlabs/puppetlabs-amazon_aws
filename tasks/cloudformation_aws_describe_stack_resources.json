@@ -7,12 +7,6 @@
 		
 		
 		    
-			"stack_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"logical_resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"physical_resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

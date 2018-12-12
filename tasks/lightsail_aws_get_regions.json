@@ -1,11 +1,17 @@
 {
-	"description": "Returns a list of all valid regions for Amazon Lightsail. Use the include availability zones parameter to also return the availability zones in a region.",
+	"description": "Returns a list of all valid regions for Amazon Lightsail. Use the include availability zones parameter to also return the Availability Zones in a region.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"include_relational_database_availability_zones":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"include_availability_zones":{
 			   "description": "",

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tags":{
+			"load_balancer_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"load_balancer_names":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,19 +7,7 @@
 		
 		
 		    
-			"replace_unhealthy_instances":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"launch_template_configs":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"terminate_instances_with_expiration":{
+			"valid_until":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,31 +25,7 @@
 			}
 			,
 		    
-			"valid_until":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_specifications":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"spot_options":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"on_demand_options":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
+			"launch_template_configs":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -73,13 +37,49 @@
 			}
 			,
 		    
-			"valid_from":{
+			"terminate_instances_with_expiration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"on_demand_options":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replace_unhealthy_instances":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"spot_options":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_specifications":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"valid_from":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

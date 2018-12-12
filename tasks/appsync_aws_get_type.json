@@ -7,13 +7,13 @@
 		
 		
 		    
-			"api_id":{
+			"type_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"type_name":{
+			"api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

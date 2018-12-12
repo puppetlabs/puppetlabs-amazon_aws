@@ -11,6 +11,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

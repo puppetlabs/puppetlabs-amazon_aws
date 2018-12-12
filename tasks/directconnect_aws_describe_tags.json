@@ -1,5 +1,5 @@
 {
-	"description": "Describes the tags associated with the specified Direct Connect resources.",
+	"description": "Describes the tags associated with the specified AWS Direct Connect resources.",
 	"input_method": "stdin",
 	"parameters":{
 		

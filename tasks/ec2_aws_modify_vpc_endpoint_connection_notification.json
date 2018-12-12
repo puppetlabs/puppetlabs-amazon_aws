@@ -7,7 +7,7 @@
 		
 		
 		    
-			"connection_notification_arn":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"dry_run":{
+			"connection_notification_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

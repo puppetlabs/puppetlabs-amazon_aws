@@ -1,0 +1,22 @@
+{
+	"description": "Describes a self-service action.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

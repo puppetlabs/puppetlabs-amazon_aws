@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified transit gateway route table. You must disassociate the route table from any transit gateway route tables before you can delete it.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transit_gateway_route_table_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"table_name":{
+			"partition_values":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"partition_values":{
+			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

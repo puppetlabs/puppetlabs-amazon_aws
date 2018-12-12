@@ -7,13 +7,7 @@
 		
 		
 		    
-			"load_balancer_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"listeners":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +19,13 @@
 			}
 			,
 		    
-			"subnets":{
+			"listeners":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"security_groups":{
+			"load_balancer_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +37,13 @@
 			}
 			,
 		    
-			"tags":{
+			"security_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subnets":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

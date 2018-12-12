@@ -7,13 +7,13 @@
 		
 		
 		    
-			"name":{
+			"change_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"change_token":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

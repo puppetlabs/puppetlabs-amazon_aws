@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"user_arn":{
+			"permissions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"permissions":{
+			"user_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

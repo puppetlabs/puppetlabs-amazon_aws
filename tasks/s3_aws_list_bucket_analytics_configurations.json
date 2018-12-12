@@ -7,6 +7,12 @@
 		
 		
 		    
+			"continuation_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"analytics":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"bucket":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"continuation_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"customer_gateway_ids":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filters":{
+			"customer_gateway_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

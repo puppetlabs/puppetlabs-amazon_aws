@@ -7,6 +7,18 @@
 		
 		
 		    
+			"groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"password":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,18 +32,6 @@
 			,
 		    
 			"console_access":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"password":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,13 @@
 		
 		
 		    
-			"thing_group_name":{
+			"override_dynamic_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +25,13 @@
 			}
 			,
 		    
-			"thing_name":{
+			"thing_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"thing_arn":{
+			"thing_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,16 @@
+{
+	"description": "Stops a running labeling job. A job that is stopped cannot be restarted. Any results obtained before the job is stopped are placed in the Amazon S3 output bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"labeling_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

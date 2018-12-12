@@ -7,13 +7,13 @@
 		
 		
 		    
-			"resource_arn":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
+			"resource_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,24 +7,6 @@
 		
 		
 		    
-			"offering_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_duration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +20,24 @@
 			,
 		    
 			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"offering_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_duration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

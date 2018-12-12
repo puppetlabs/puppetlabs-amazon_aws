@@ -1,5 +1,5 @@
 {
-	"description": "Describes the termination policies supported by Amazon EC2 Auto Scaling.",
+	"description": "Describes the termination policies supported by Amazon EC2 Auto Scaling. For more information, see Controlling Which Auto Scaling Instances Terminate During Scale In in the Amazon EC2 Auto Scaling User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		

@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves the policy status for an Amazon S3 bucket, indicating whether the bucket is public.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

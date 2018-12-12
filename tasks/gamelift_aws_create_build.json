@@ -7,7 +7,7 @@
 		
 		
 		    
-			"storage_location":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"name":{
+			"storage_location":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,25 +7,7 @@
 		
 		
 		    
-			"rest_api_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"auth_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"identity_validation_expression":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"authorizer_result_ttl_in_seconds":{
+			"identity_source":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +25,19 @@
 			}
 			,
 		    
-			"authorizer_credentials":{
+			"authorizer_result_ttl_in_seconds":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"auth_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"identity_validation_expression":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +49,19 @@
 			}
 			,
 		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"identity_source":{
+			"authorizer_credentials":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

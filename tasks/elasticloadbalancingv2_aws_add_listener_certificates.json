@@ -1,5 +1,5 @@
 {
-	"description": "Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates.",
+	"description": "Adds the specified certificate to the specified secure listener. If the certificate was already added, the call is successful but the certificate is not added again. To list the certificates for your listener, use DescribeListenerCertificates. To remove certificates from your listener, use RemoveListenerCertificates. To specify the default SSL server certificate, use ModifyListener.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"listener_arn":{
+			"certificates":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"certificates":{
+			"listener_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

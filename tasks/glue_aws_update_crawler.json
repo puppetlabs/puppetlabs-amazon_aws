@@ -7,25 +7,13 @@
 		
 		
 		    
-			"targets":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"classifiers":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"schema_change_policy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"table_prefix":{
+			"classifiers":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +31,7 @@
 			}
 			,
 		    
-			"description":{
+			"role":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,19 +43,31 @@
 			}
 			,
 		    
-			"name":{
+			"table_prefix":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"role":{
+			"targets":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

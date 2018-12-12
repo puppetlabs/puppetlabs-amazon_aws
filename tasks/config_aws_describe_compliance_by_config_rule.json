@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"next_token":{
+			"config_rule_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"config_rule_names":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

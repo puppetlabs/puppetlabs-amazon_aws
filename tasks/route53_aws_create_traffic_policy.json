@@ -7,13 +7,13 @@
 		
 		
 		    
-			"name":{
+			"document":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"document":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

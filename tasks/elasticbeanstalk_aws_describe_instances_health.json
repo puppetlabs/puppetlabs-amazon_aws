@@ -7,7 +7,7 @@
 		
 		
 		    
-			"environment_name":{
+			"attribute_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"attribute_names":{
+			"environment_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

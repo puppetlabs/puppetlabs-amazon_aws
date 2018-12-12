@@ -1,0 +1,46 @@
+{
+	"description": "Returns a list of log events for a database in Amazon Lightsail.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relational_database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_from_head":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"log_stream_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

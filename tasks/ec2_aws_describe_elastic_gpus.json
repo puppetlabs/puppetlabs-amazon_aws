@@ -1,11 +1,23 @@
 {
-	"description": "Describes the Elastic GPUs associated with your instances. For more information about Elastic GPUs, see Amazon EC2 Elastic GPUs.",
+	"description": "Describes the Elastic Graphics accelerator associated with your instances. For more information about Elastic Graphics, see Amazon Elastic Graphics.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"elastic_gpu_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"filters":{
 			   "description": "",
@@ -20,18 +32,6 @@
 			,
 		    
 			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"elastic_gpu_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

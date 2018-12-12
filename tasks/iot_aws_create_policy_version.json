@@ -7,13 +7,13 @@
 		
 		
 		    
-			"policy_name":{
+			"policy_document":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"policy_document":{
+			"policy_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

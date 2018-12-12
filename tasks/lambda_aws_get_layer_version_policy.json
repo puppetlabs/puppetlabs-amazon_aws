@@ -1,0 +1,22 @@
+{
+	"description": "Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"layer_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_number":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"description": "Lists the notifications associated with a budget.",
+	"description": "Lists the notifications that are associated with a budget.",
 	"input_method": "stdin",
 	"parameters":{
 		

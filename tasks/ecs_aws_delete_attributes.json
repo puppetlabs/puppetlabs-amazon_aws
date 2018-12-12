@@ -7,13 +7,13 @@
 		
 		
 		    
-			"cluster":{
+			"attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"attributes":{
+			"cluster":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

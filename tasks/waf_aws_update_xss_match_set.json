@@ -7,12 +7,6 @@
 		
 		
 		    
-			"xss_match_set_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"change_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"updates":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"xss_match_set_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

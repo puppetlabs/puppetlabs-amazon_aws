@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_name":{
+			"multi_az":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"multi_az":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

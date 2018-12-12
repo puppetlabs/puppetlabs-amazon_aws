@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"filters":{
+			"db_parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"max_records":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,7 @@
 			}
 			,
 		    
-			"db_parameter_group_name":{
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves an application replication configuration associatd with an application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

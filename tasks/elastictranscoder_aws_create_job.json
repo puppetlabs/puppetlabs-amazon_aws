@@ -7,19 +7,7 @@
 		
 		
 		    
-			"playlists":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"user_metadata":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"pipeline_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +31,25 @@
 			}
 			,
 		    
+			"output_key_prefix":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"outputs":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"output_key_prefix":{
+			"pipeline_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"playlists":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

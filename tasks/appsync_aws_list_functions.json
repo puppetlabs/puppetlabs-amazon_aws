@@ -1,0 +1,28 @@
+{
+	"description": "List multiple functions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

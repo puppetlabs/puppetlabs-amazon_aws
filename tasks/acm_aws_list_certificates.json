@@ -7,13 +7,13 @@
 		
 		
 		    
-			"includes":{
+			"certificate_statuses":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"includes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"certificate_statuses":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"source":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

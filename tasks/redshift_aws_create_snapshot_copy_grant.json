@@ -7,13 +7,13 @@
 		
 		
 		    
-			"snapshot_copy_grant_name":{
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"kms_key_id":{
+			"snapshot_copy_grant_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

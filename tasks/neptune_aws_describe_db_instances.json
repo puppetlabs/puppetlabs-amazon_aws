@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"marker":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"db_instance_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

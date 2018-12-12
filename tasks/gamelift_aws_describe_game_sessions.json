@@ -7,6 +7,12 @@
 		
 		
 		    
+			"alias_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"fleet_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,18 +25,6 @@
 			}
 			,
 		    
-			"alias_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"status_filter":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +32,12 @@
 			,
 		    
 			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

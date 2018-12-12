@@ -7,13 +7,13 @@
 		
 		
 		    
-			"stack_id":{
+			"configuration_manager":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"configuration_manager":{
+			"stack_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

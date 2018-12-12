@@ -13,13 +13,7 @@
 			}
 			,
 		    
-			"thumbnails":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
+			"container":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"container":{
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thumbnails":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

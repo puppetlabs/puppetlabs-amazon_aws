@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"player_ids":{
+			"player_data_map":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"player_data_map":{
+			"player_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

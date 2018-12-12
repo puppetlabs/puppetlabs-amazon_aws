@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves the PublicAccessBlock configuration for an Amazon S3 bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"public_access_block":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

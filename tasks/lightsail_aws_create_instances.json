@@ -1,5 +1,5 @@
 {
-	"description": "Creates one or more Amazon Lightsail virtual private servers, or instances.",
+	"description": "Creates one or more Amazon Lightsail virtual private servers, or instances. Create instances using active blueprints. Inactive blueprints are listed to support customers with existing instances but are not necessarily available for launch of new instances. Blueprints are marked inactive when they become outdated due to operating system updates or new application releases. Use the get blueprints operation to return a list of available blueprints. The create instances operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,25 +7,19 @@
 		
 		
 		    
-			"key_pair_name":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"instance_names":{
+			"user_data":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"availability_zone":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"custom_image_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +37,19 @@
 			}
 			,
 		    
-			"user_data":{
+			"custom_image_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_pair_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

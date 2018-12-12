@@ -1,0 +1,22 @@
+{
+	"description": "Returns suggestions for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"suggestion_query":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

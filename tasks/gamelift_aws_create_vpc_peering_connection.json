@@ -7,6 +7,12 @@
 		
 		
 		    
+			"fleet_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"peer_vpc_aws_account_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"peer_vpc_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fleet_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

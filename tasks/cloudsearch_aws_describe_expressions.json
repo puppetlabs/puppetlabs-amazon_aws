@@ -7,6 +7,12 @@
 		
 		
 		    
+			"deployed":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"expression_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployed":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

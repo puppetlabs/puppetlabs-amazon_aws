@@ -7,13 +7,13 @@
 		
 		
 		    
-			"name":{
+			"trigger_update":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"trigger_update":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

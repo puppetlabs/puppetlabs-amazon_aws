@@ -1,0 +1,22 @@
+{
+	"description": "Associates the specified tags to a resource with the specified resourceArn. If existing tags on a resource are not specified in the request parameters, they are not changed. When a resource is deleted, the tags associated with that resource are deleted as well.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

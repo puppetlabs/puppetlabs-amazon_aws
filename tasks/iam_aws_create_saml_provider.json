@@ -7,13 +7,13 @@
 		
 		
 		    
-			"saml_metadata_document":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"saml_metadata_document":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

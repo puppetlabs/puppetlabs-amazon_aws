@@ -7,7 +7,7 @@
 		
 		
 		    
-			"patch_operations":{
+			"response_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"response_type":{
+			"patch_operations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

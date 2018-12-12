@@ -7,6 +7,12 @@
 		
 		
 		    
+			"datastore_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"retention_period":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"datastore_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"versioning":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"versioning":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

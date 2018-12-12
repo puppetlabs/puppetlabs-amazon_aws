@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"current_application_version_id":{
+			"application_update":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"application_update":{
+			"current_application_version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

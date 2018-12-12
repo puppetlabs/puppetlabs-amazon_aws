@@ -7,6 +7,12 @@
 		
 		
 		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"enable":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"finding_publishing_frequency":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Deletes the association between a direct connect gateway and a virtual private gateway.",
+	"description": "Deletes the association between the specified Direct Connect gateway and virtual private gateway.",
 	"input_method": "stdin",
 	"parameters":{
 		

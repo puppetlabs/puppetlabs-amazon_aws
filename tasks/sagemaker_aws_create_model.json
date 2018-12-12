@@ -7,19 +7,25 @@
 		
 		
 		    
-			"execution_role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"vpc_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"containers":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_network_isolation":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"execution_role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -32,6 +38,12 @@
 			,
 		    
 			"primary_container":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

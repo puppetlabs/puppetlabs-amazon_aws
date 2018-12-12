@@ -7,7 +7,13 @@
 		
 		
 		    
-			"description":{
+			"input_storage_location":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"logs_storage_location":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +31,13 @@
 			}
 			,
 		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"input_storage_location":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"logs_storage_location":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

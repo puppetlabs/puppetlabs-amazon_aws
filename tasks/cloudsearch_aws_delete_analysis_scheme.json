@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_name":{
+			"analysis_scheme_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"analysis_scheme_name":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

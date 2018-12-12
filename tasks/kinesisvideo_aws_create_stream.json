@@ -7,13 +7,7 @@
 		
 		
 		    
-			"device_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"stream_name":{
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +19,19 @@
 			}
 			,
 		    
-			"kms_key_id":{
+			"stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"data_retention_in_hours":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

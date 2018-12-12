@@ -7,13 +7,37 @@
 		
 		
 		    
-			"security_group_ids":{
+			"availability_zones":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"preferred_maintenance_window":{
+			"node_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification_topic_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replication_factor":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subnet_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,37 +61,7 @@
 			}
 			,
 		    
-			"subnet_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"replication_factor":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"availability_zones":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"notification_topic_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -79,7 +73,13 @@
 			}
 			,
 		    
-			"node_type":{
+			"parameter_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"preferred_maintenance_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

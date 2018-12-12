@@ -13,13 +13,7 @@
 			}
 			,
 		    
-			"preferred_backup_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"disable_automated_backup":{
+			"server_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"server_name":{
+			"disable_automated_backup":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"preferred_backup_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

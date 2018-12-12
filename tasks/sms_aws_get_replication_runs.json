@@ -1,5 +1,5 @@
 {
-	"description": "The GetReplicationRuns API will return all ReplicationRuns for a given ReplicationJob. This API returns a paginated list, that may be consecutively called with nextToken to retrieve all ReplicationRuns for a ReplicationJob.",
+	"description": "Describes the replication runs for the specified replication job.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"max_results":{
+			"replication_job_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"replication_job_id":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

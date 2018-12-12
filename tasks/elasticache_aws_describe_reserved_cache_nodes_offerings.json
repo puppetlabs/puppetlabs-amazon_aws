@@ -7,13 +7,31 @@
 		
 		
 		    
-			"max_records":{
+			"duration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"offering_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"product_description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -26,24 +44,6 @@
 			,
 		    
 			"cache_node_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"duration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"product_description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"offering_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

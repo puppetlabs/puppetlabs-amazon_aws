@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"xml_classifier":{
+			"json_classifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"json_classifier":{
+			"xml_classifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

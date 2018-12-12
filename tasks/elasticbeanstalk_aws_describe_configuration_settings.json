@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"template_name":{
+			"environment_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"environment_name":{
+			"template_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

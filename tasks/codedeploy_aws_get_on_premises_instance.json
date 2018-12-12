@@ -1,5 +1,5 @@
 {
-	"description": "Gets information about an on-premises instance.",
+	"description": " Gets information about an on-premises instance. ",
 	"input_method": "stdin",
 	"parameters":{
 		

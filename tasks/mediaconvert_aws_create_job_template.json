@@ -7,6 +7,12 @@
 		
 		
 		    
+			"settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"queue":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"settings":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

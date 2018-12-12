@@ -7,13 +7,13 @@
 		
 		
 		    
-			"authorized_aws_region":{
+			"authorized_account_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"authorized_account_id":{
+			"authorized_aws_region":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

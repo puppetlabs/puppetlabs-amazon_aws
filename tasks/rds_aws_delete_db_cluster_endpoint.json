@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"db_cluster_endpoint_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"replication_group":{
+			"global_table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"global_table_name":{
+			"replication_group":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

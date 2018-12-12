@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"spot_instance_request_ids":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filters":{
+			"spot_instance_request_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

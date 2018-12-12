@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"bucket":{
+			"inventory":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"inventory":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

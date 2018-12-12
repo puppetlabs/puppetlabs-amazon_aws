@@ -7,7 +7,7 @@
 		
 		
 		    
-			"description":{
+			"change_set_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,55 +19,13 @@
 			}
 			,
 		    
-			"template_body":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rollback_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"stack_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_types":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"use_previous_template":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"change_set_name":{
+			"template_url":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -79,7 +37,19 @@
 			}
 			,
 		    
-			"template_url":{
+			"rollback_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -92,6 +62,36 @@
 			,
 		    
 			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"use_previous_template":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_types":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"template_body":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -13,7 +13,7 @@
 			}
 			,
 		    
-			"vault_name":{
+			"completed":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +37,7 @@
 			}
 			,
 		    
-			"completed":{
+			"vault_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

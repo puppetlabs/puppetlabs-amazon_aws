@@ -7,13 +7,13 @@
 		
 		
 		    
-			"organization_id":{
+			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_id":{
+			"booking_options":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"booking_options":{
+			"organization_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

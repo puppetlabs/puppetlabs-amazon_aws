@@ -7,6 +7,12 @@
 		
 		
 		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"core_definition_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"max_results":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"user_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"first_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"email":{
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +37,7 @@
 			}
 			,
 		    
-			"tags":{
+			"email":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

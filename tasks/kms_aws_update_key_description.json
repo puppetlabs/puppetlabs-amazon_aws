@@ -1,5 +1,5 @@
 {
-	"description": "Updates the description of a customer master key (CMK). To see the description of a CMK, use DescribeKey.  You cannot perform this operation on a CMK in a different AWS account. The result of this operation varies with the key state of the CMK. For details, see How Key State Affects Use of a Customer Master Key in the AWS Key Management Service Developer Guide.",
+	"description": "Updates the description of a customer master key (CMK). To see the decription of a CMK, use DescribeKey.  You cannot perform this operation on a CMK in a different AWS account. The result of this operation varies with the key state of the CMK. For details, see How Key State Affects Use of a Customer Master Key in the AWS Key Management Service Developer Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"key_id":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"finding_arns":{
+			"attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"attributes":{
+			"finding_arns":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

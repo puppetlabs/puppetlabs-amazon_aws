@@ -1,5 +1,5 @@
 {
-	"description": "Creates a customer master key (CMK) in the caller's AWS account. You can use a CMK to encrypt small amounts of data (4 KiB or less) directly. But CMKs are more commonly used to encrypt data encryption keys (DEKs), which are used to encrypt raw data. For more information about DEKs and the difference between CMKs and DEKs, see the following:   The GenerateDataKey operation    AWS Key Management Service Concepts in the AWS Key Management Service Developer Guide    You cannot use this operation to create a CMK in a different AWS account.",
+	"description": "Creates a customer master key (CMK) in the caller's AWS account. You can use a CMK to encrypt small amounts of data (4 KiB or less) directly, but CMKs are more commonly used to encrypt data keys, which are used to encrypt raw data. For more information about data keys and the difference between CMKs and data keys, see the following:   The GenerateDataKey operation    AWS Key Management Service Concepts in the AWS Key Management Service Developer Guide    If you plan to import key material, use the Origin parameter with a value of EXTERNAL to create a CMK with no key material. To create a CMK in a custom key store, use CustomKeyStoreId parameter to specify the custom key store. You must also use the Origin parameter with a value of AWS_CLOUDHSM. The AWS CloudHSM cluster that is associated with the custom key store must have at least two active HSMs, each in a different Availability Zone in the Region. You cannot use this operation to create a CMK in a different AWS account.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -8,6 +8,24 @@
 		
 		    
 			"policy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bypass_policy_lockout_safety_check":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_key_store_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -26,18 +44,6 @@
 			,
 		    
 			"origin":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"bypass_policy_lockout_safety_check":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

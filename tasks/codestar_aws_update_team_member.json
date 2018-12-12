@@ -7,7 +7,7 @@
 		
 		
 		    
-			"user_arn":{
+			"project_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"project_id":{
+			"user_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

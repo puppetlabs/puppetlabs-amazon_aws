@@ -1,0 +1,16 @@
+{
+	"description": "Returns the list of bundles that are available in Amazon Lightsail. A bundle describes the performance specifications for a database. You can use a bundle ID to create a new database with explicit performance specifications.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

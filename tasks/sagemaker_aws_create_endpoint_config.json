@@ -7,13 +7,13 @@
 		
 		
 		    
-			"production_variants":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
+			"endpoint_config_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"endpoint_config_name":{
+			"production_variants":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

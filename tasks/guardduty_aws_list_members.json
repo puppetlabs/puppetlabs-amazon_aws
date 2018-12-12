@@ -7,18 +7,6 @@
 		
 		
 		    
-			"only_associated":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"detector_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +14,18 @@
 			,
 		    
 			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"only_associated":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

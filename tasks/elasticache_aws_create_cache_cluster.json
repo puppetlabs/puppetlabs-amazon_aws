@@ -7,25 +7,7 @@
 		
 		
 		    
-			"engine_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"snapshot_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"az_mode":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"preferred_availability_zones":{
+			"preferred_maintenance_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,37 +19,7 @@
 			}
 			,
 		    
-			"preferred_maintenance_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"auth_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"engine":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cache_parameter_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"replication_group_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"num_cache_nodes":{
+			"az_mode":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -79,7 +31,7 @@
 			}
 			,
 		    
-			"tags":{
+			"cache_security_group_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -91,25 +43,7 @@
 			}
 			,
 		    
-			"auto_minor_version_upgrade":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cache_security_group_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"snapshot_arns":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"port":{
+			"engine_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -121,7 +55,49 @@
 			}
 			,
 		    
+			"snapshot_window":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_cluster_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"engine":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_parameter_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"notification_topic_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"preferred_availability_zones":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replication_group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -133,13 +109,37 @@
 			}
 			,
 		    
-			"snapshot_retention_limit":{
+			"auth_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cache_cluster_id":{
+			"auto_minor_version_upgrade":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"num_cache_nodes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"port":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_arns":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_retention_limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

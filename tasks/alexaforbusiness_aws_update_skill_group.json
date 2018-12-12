@@ -7,6 +7,12 @@
 		
 		
 		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"skill_group_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"skill_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"auto_placement":{
+			"host_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"host_ids":{
+			"auto_placement":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

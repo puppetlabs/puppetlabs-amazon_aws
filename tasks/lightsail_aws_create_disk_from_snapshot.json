@@ -1,5 +1,5 @@
 {
-	"description": "Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail.",
+	"description": "Creates a block storage disk from a disk snapshot that can be attached to a Lightsail instance in the same Availability Zone (e.g., us-east-2a). The disk is created in the regional endpoint that you send the HTTP request to. For more information, see Regions and Availability Zones in Lightsail. The create disk from snapshot operation supports tag-based access control via request tags and resource tags applied to the resource identified by diskSnapshotName. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,7 +7,7 @@
 		
 		
 		    
-			"size_in_gb":{
+			"availability_zone":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,13 @@
 			}
 			,
 		    
-			"availability_zone":{
+			"size_in_gb":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

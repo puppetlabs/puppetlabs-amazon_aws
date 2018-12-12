@@ -7,13 +7,13 @@
 		
 		
 		    
-			"amzn_client_token":{
+			"group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"group_id":{
+			"amzn_client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

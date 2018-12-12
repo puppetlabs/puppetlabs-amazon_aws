@@ -7,13 +7,13 @@
 		
 		
 		    
-			"client_arn":{
+			"certificate_fingerprint":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"certificate_fingerprint":{
+			"client_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

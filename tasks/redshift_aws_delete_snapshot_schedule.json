@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a snapshot schedule.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"schedule_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,30 +7,6 @@
 		
 		
 		    
-			"cluster_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"preferred_maintenance_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"notification_topic_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"notification_topic_status":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -43,7 +19,31 @@
 			}
 			,
 		    
+			"preferred_maintenance_window":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"security_group_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification_topic_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

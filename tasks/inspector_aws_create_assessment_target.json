@@ -7,13 +7,13 @@
 		
 		
 		    
-			"resource_group_arn":{
+			"assessment_target_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"assessment_target_name":{
+			"resource_group_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

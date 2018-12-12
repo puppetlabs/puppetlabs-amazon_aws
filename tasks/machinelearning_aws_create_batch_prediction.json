@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"batch_prediction_data_source_id":{
+			"output_uri":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"output_uri":{
+			"batch_prediction_data_source_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -16,7 +16,7 @@ aws_security_group {
   group_ids => "GroupIds (optional)",
   group_name => "group_name (optional)",
   group_names => "GroupNames (optional)",
-  group_id => "group_id (optional)",
+  vpc_id => "vpc_id (optional)",
   max_results => "1234 (optional)",
   next_token => "next_token (optional)",
   vpc_id => "vpc_id (optional)",
@@ -32,7 +32,7 @@ aws_security_group {
 |group_ids | GroupIdStringList | false |
 |group_name | String | false |
 |group_names | GroupNameStringList | false |
-|group_id | String | false |
+|vpc_id | String | false |
 |max_results | Integer | false |
 |next_token | String | false |
 |vpc_id | String | false |

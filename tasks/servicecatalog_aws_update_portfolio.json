@@ -7,13 +7,19 @@
 		
 		
 		    
-			"provider_name":{
+			"display_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"add_tags":{
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provider_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +37,7 @@
 			}
 			,
 		    
-			"id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display_name":{
+			"add_tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

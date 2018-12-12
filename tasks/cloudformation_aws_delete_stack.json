@@ -7,25 +7,25 @@
 		
 		
 		    
-			"role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"client_request_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"stack_name":{
+			"retain_resources":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"retain_resources":{
+			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

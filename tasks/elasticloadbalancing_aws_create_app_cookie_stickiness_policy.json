@@ -7,6 +7,12 @@
 		
 		
 		    
+			"cookie_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"load_balancer_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"policy_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cookie_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

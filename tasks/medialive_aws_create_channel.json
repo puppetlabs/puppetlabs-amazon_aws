@@ -7,13 +7,13 @@
 		
 		
 		    
-			"input_specification":{
+			"log_level":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"log_level":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,31 +31,31 @@
 			}
 			,
 		    
-			"destinations":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"input_attachments":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"encoder_settings":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
+			"input_specification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"request_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encoder_settings":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

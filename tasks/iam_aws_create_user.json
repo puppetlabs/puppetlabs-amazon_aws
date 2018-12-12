@@ -7,7 +7,13 @@
 		
 		
 		    
-			"path":{
+			"permissions_boundary":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +25,7 @@
 			}
 			,
 		    
-			"permissions_boundary":{
+			"path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

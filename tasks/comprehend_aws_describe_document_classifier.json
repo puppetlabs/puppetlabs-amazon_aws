@@ -1,0 +1,16 @@
+{
+	"description": "Gets the properties associated with a document classifier.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"document_classifier_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

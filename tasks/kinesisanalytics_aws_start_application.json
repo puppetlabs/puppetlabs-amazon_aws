@@ -7,13 +7,13 @@
 		
 		
 		    
-			"input_configurations":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"application_name":{
+			"input_configurations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"ssh_username":{
+			"ssh_public_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"ssh_public_key":{
+			"ssh_username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

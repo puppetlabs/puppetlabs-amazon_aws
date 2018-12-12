@@ -1,5 +1,5 @@
 {
-	"description": "Stops a specific Amazon Lightsail instance that is currently running.",
+	"description": "Stops a specific Amazon Lightsail instance that is currently running. The stop instance operation supports tag-based access control via resource tags applied to the resource identified by instanceName. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"instance_name":{
+			"force":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"force":{
+			"instance_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

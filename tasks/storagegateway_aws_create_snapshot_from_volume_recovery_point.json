@@ -7,13 +7,13 @@
 		
 		
 		    
-			"volume_arn":{
+			"snapshot_description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"snapshot_description":{
+			"volume_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

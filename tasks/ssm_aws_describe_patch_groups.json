@@ -7,13 +7,13 @@
 		
 		
 		    
-			"max_results":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filters":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,40 @@
+{
+	"description": "Retrieves a list that describes the UserStackAssociation objects. You must specify either or both of the following:   The stack name   The user name (email address of the user associated with the stack) and the authentication type for the user  ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authentication_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

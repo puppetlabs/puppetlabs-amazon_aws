@@ -7,13 +7,13 @@
 		
 		
 		    
-			"listener_arn":{
+			"certificates":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"certificates":{
+			"listener_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

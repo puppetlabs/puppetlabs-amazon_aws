@@ -7,13 +7,13 @@
 		
 		
 		    
-			"pipeline_name":{
+			"pipeline_activities":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"pipeline_activities":{
+			"pipeline_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

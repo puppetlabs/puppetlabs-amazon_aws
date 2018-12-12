@@ -7,13 +7,13 @@
 		
 		
 		    
-			"instance_id":{
+			"iam_role":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"iam_role":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

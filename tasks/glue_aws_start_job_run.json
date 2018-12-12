@@ -7,25 +7,19 @@
 		
 		
 		    
-			"allocated_capacity":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"timeout":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"notification_property":{
+			"allocated_capacity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"security_configuration":{
+			"arguments":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +37,13 @@
 			}
 			,
 		    
-			"arguments":{
+			"notification_property":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

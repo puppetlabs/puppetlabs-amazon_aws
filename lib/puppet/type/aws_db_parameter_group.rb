@@ -1,7 +1,9 @@
 require 'puppet/parameter/boolean'
 
+# AWS provider type
+
 Puppet::Type.newtype(:aws_db_parameter_group) do
-  @doc = ""
+  @doc = ''
 
   ensurable
 
@@ -9,71 +11,71 @@ Puppet::Type.newtype(:aws_db_parameter_group) do
     required_properties = []
     required_properties.each do |property|
       # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && self.provider.send(property) == :absent
+      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
         raise Puppet::Error, "In aws_db_parameter_group you must provide a value for #{property}"
       end
     end
   end
   newproperty(:db_parameter_group_arn) do
-    desc ""
-    validate do |value|
+    desc ''
+    validate do |x|
       true
     end
   end
   newproperty(:db_parameter_group_family) do
-    desc ""
-    validate do |value|
+    desc ''
+    validate do |x|
       true
     end
   end
   newproperty(:db_parameter_group_name) do
-    desc ""
-    validate do |value|
+    desc ''
+    validate do |x|
       true
     end
   end
   newproperty(:description) do
-    desc ""
-    validate do |value|
+    desc ''
+    validate do |x|
       true
     end
   end
-  newproperty(:filters, :array_matching => :all) do
-    desc ""
-    validate do |value|
+  newproperty(:filters, array_matching: :all) do
+    desc ''
+    validate do |x|
       true
     end
   end
   newproperty(:max_records) do
-    desc ""
-    validate do |value|
+    desc ''
+    validate do |x|
       true
     end
   end
-  newproperty(:parameters, :array_matching => :all) do
-    desc ""
-    validate do |value|
+  newproperty(:parameters, array_matching: :all) do
+    desc ''
+    validate do |x|
       true
     end
   end
-  newproperty(:tags, :array_matching => :all) do
-    desc ""
-    validate do |value|
+  newproperty(:tags, array_matching: :all) do
+    desc ''
+    validate do |x|
       true
     end
   end
 
   newparam(:name) do
     isnamevar
-    desc "The namevar for this resource in AWS"
-    validate do |value|
+    desc 'The namevar for this resource in AWS'
+    validate do |x|
       true
     end
   end
 
   newparam(:tags) do
-    desc "Tags are required for all AWS resources in Puppet"
-    validate do |value|
+    desc 'Tags are required for all AWS resources in Puppet'
+    validate do |x|
       true
     end
   end

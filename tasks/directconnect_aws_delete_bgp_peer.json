@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a BGP peer on the specified virtual interface that matches the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.",
+	"description": "Deletes the specified BGP peer on the specified virtual interface with the specified customer address and ASN. You cannot delete the last BGP peer from a virtual interface.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -8,6 +8,12 @@
 		
 		    
 			"asn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bgp_peer_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

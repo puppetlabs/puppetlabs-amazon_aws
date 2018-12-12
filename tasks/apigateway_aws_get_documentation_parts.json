@@ -7,7 +7,13 @@
 		
 		
 		    
-			"position":{
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,18 +31,6 @@
 			}
 			,
 		    
-			"rest_api_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name_query":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +38,12 @@
 			,
 		    
 			"path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"position":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

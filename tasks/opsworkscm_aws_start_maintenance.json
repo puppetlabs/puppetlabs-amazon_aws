@@ -7,13 +7,13 @@
 		
 		
 		    
-			"server_name":{
+			"engine_attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"engine_attributes":{
+			"server_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

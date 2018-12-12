@@ -7,13 +7,13 @@
 		
 		
 		    
-			"sync_name":{
+			"s3_destination":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"s3_destination":{
+			"sync_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

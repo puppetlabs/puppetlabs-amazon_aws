@@ -7,31 +7,13 @@
 		
 		
 		    
-			"snapshot_id":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"kms_key_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"volume_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"availability_zone":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"size":{
+			"encrypted":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,19 +25,37 @@
 			}
 			,
 		    
+			"volume_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"availability_zone":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"iops":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"dry_run":{
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"encrypted":{
+			"size":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

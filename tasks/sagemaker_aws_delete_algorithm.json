@@ -1,0 +1,16 @@
+{
+	"description": "Removes the specified algorithm from your account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"algorithm_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"version_label":{
+			"delete_source_bundle":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"delete_source_bundle":{
+			"version_label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

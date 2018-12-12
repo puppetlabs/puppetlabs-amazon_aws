@@ -1,5 +1,5 @@
 {
-	"description": "Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see notebook-lifecycle-config.",
+	"description": "Returns a description of a notebook instance lifecycle configuration. For information about notebook instance lifestyle configurations, see Step 2.1: (Optional) Customize a Notebook Instance.",
 	"input_method": "stdin",
 	"parameters":{
 		

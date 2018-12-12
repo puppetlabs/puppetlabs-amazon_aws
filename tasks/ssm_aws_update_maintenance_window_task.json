@@ -7,13 +7,13 @@
 		
 		
 		    
-			"replace":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"task_arn":{
+			"priority":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +25,7 @@
 			}
 			,
 		    
-			"task_invocation_parameters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"window_task_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targets":{
+			"task_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +37,19 @@
 			}
 			,
 		    
-			"logging_info":{
+			"max_errors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"task_invocation_parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,19 +61,7 @@
 			}
 			,
 		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"task_parameters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_errors":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -85,7 +73,19 @@
 			}
 			,
 		    
-			"priority":{
+			"window_task_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"logging_info":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"replace":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,34 @@
+{
+	"description": "Adds a thing to a billing group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"billing_group_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"billing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

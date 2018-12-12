@@ -1,0 +1,22 @@
+{
+	"description": "Unlinks a third-party account from a skill.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"room_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skill_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

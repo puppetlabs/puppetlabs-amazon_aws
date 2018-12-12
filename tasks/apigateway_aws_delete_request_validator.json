@@ -7,13 +7,13 @@
 		
 		
 		    
-			"rest_api_id":{
+			"request_validator_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"request_validator_id":{
+			"rest_api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"rest_api_id":{
+			"deployment_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"deployment_id":{
+			"rest_api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

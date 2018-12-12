@@ -13,25 +13,13 @@
 			}
 			,
 		    
+			"environment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"option_settings":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"application_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"template_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"solution_stack_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +31,25 @@
 			}
 			,
 		    
+			"solution_stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"source_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"environment_id":{
+			"template_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

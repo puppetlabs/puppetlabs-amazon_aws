@@ -7,13 +7,13 @@
 		
 		
 		    
-			"finding_types":{
+			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"detector_id":{
+			"finding_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

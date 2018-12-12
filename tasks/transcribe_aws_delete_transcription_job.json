@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a previously submitted transcription job along with any other generated results such as the transcription, models, and so on.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"transcription_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

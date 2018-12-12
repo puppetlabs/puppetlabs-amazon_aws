@@ -1,17 +1,11 @@
 {
-	"description": "Changes the status of the specified access key from Active to Inactive, or vice versa. This operation can be used to disable a user's key as part of a key rotation workflow. If the UserName field is not specified, the user name is determined implicitly based on the AWS access key ID used to sign the request. Because this operation works for access keys under the AWS account, you can use this operation to manage AWS account root user credentials even if the AWS account has no associated users. For information about rotating keys, see Managing Keys and Certificates in the IAM User Guide.",
+	"description": "Changes the status of the specified access key from Active to Inactive, or vice versa. This operation can be used to disable a user's key as part of a key rotation workflow. If the UserName field is not specified, the user name is determined implicitly based on the AWS access key ID used to sign the request. This operation works for access keys under the AWS account. Consequently, you can use this operation to manage AWS account root user credentials even if the AWS account has no associated users. For information about rotating keys, see Managing Keys and Certificates in the IAM User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
-		    
-			"user_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
 		    
 			"access_key_id":{
 			   "description": "",
@@ -20,6 +14,12 @@
 			,
 		    
 			"status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

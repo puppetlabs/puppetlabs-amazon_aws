@@ -7,6 +7,12 @@
 		
 		
 		    
+			"display_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"first_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"client_request_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

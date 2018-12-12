@@ -7,13 +7,13 @@
 		
 		
 		    
-			"max_results":{
+			"server_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"server_name":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,7 @@
 		
 		
 		    
-			"status_code":{
+			"http_method":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,19 +19,19 @@
 			}
 			,
 		    
-			"rest_api_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"http_method":{
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

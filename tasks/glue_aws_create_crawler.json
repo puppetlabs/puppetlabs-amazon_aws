@@ -7,7 +7,13 @@
 		
 		
 		    
-			"crawler_security_configuration":{
+			"table_prefix":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classifiers":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,37 +31,7 @@
 			}
 			,
 		    
-			"configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"classifiers":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"table_prefix":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"role":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targets":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -68,6 +44,30 @@
 			,
 		    
 			"schema_change_policy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"crawler_security_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

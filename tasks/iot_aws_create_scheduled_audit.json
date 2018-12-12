@@ -7,19 +7,7 @@
 		
 		
 		    
-			"day_of_month":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"day_of_week":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_check_names":{
+			"frequency":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +19,19 @@
 			}
 			,
 		    
-			"frequency":{
+			"target_check_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"day_of_month":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"day_of_week":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,7 @@
 		
 		
 		    
-			"destinations":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"input_security_groups":{
+			"media_connect_flows":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,6 +25,12 @@
 			}
 			,
 		    
+			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"sources":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +38,18 @@
 			,
 		    
 			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input_security_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

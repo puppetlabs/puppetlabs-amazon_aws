@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"type_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"definition":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"format":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

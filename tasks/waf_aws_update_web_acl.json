@@ -7,25 +7,25 @@
 		
 		
 		    
-			"default_action":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"web_acl_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"change_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"default_action":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"updates":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"web_acl_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

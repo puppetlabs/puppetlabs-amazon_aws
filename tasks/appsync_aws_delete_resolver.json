@@ -7,7 +7,7 @@
 		
 		
 		    
-			"api_id":{
+			"field_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"field_name":{
+			"api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

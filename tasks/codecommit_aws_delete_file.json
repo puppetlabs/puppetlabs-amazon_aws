@@ -7,19 +7,7 @@
 		
 		
 		    
-			"parent_commit_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"keep_empty_folders":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"commit_message":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +19,7 @@
 			}
 			,
 		    
-			"email":{
+			"parent_commit_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -44,6 +32,18 @@
 			,
 		    
 			"branch_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"commit_message":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"email":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

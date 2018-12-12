@@ -7,13 +7,13 @@
 		
 		
 		    
-			"rest_api_id":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"rest_api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

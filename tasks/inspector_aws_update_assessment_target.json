@@ -7,6 +7,12 @@
 		
 		
 		    
+			"assessment_target_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"assessment_target_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"resource_group_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"assessment_target_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

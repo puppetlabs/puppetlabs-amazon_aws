@@ -7,6 +7,12 @@
 		
 		
 		    
+			"queue_url":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"receipt_handle":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"visibility_timeout":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"queue_url":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

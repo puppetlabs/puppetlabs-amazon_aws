@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified set of tag keys and their values from the specified Amazon Lightsail resource. The untag resource operation supports tag-based access control via request tags and resource tags applied to the resource identified by resourceName. For more information, see the Lightsail Dev Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

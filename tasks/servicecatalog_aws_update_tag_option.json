@@ -7,6 +7,12 @@
 		
 		
 		    
+			"active":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"value":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"active":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

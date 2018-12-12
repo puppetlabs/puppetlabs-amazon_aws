@@ -7,37 +7,13 @@
 		
 		
 		    
-			"backup_retention_period":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"db_cluster_parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"preferred_backup_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"preferred_maintenance_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vpc_security_group_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"option_group_name":{
+			"enable_iam_database_authentication":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,19 +31,19 @@
 			}
 			,
 		    
-			"master_user_password":{
+			"option_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_cluster_identifier":{
+			"port":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"enable_iam_database_authentication":{
+			"preferred_backup_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -79,7 +55,31 @@
 			}
 			,
 		    
-			"port":{
+			"preferred_maintenance_window":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"db_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"master_user_password":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpc_security_group_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"backup_retention_period":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"tag_filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"registration_status":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

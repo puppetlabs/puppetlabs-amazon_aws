@@ -1,0 +1,28 @@
+{
+	"description": "Modifies a snapshot schedule for a cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disassociate_schedule":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

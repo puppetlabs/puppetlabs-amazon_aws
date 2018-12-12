@@ -7,6 +7,12 @@
 		
 		
 		    
+			"attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

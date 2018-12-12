@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"version_label":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"version_label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

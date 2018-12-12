@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"vpc_id":{
+			"instance_tenancy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"instance_tenancy":{
+			"vpc_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

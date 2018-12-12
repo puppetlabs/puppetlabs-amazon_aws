@@ -1,0 +1,46 @@
+{
+	"description": "Creates a model package that you can use to create Amazon SageMaker models or list on AWS Marketplace. Buyers can subscribe to model packages listed on AWS Marketplace to create models in Amazon SageMaker.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"certify_for_marketplace":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"inference_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"model_package_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"model_package_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"source_algorithm_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"validation_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

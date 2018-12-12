@@ -7,6 +7,12 @@
 		
 		
 		    
+			"deployment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"patch_operations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"rest_api_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployment_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

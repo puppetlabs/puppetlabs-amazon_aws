@@ -7,6 +7,12 @@
 		
 		
 		    
+			"new_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"new_server_certificate_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"server_certificate_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"new_path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

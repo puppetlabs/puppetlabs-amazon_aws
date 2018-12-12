@@ -7,6 +7,12 @@
 		
 		
 		    
+			"consistency_level":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"directory_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"object_reference":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"consistency_level":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

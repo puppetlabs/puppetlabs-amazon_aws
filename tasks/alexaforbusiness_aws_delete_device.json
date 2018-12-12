@@ -1,0 +1,16 @@
+{
+	"description": "Removes a device from Alexa For Business.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"device_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

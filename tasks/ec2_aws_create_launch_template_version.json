@@ -7,7 +7,13 @@
 		
 		
 		    
-			"client_token":{
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"launch_template_data":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +43,7 @@
 			}
 			,
 		    
-			"launch_template_data":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dry_run":{
+			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

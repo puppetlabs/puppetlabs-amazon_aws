@@ -7,19 +7,13 @@
 		
 		
 		    
-			"settings":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"input":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"name":{
+			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"settings":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

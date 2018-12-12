@@ -7,13 +7,25 @@
 		
 		
 		    
-			"unit":{
+			"start_time":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"statistics":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_time":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -32,18 +44,6 @@
 			,
 		    
 			"period":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"start_time":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"end_time":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

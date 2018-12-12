@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_name":{
+			"deployed":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"deployed":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

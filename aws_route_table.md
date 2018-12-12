@@ -11,7 +11,6 @@ Path: "https://github.com/aws/aws-sdk-go-v2/tree/master/models/apis/ec2/2016-11-
 aws_route_table {
   dry_run => "DryRun (optional)",
   filters => "Filters (optional)",
-  vpc_id => "vpc_id (optional)",
   max_results => "1234 (optional)",
   next_token => "next_token (optional)",
   route_table_id => "route_table_id (optional)",
@@ -24,7 +23,6 @@ aws_route_table {
 | ------------- | ------------- | ------------- |
 |dry_run | Boolean | false |
 |filters | FilterList | false |
-|vpc_id | String | false |
 |max_results | Integer | false |
 |next_token | String | false |
 |route_table_id | String | false |

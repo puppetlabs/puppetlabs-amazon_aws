@@ -7,13 +7,25 @@
 		
 		
 		    
-			"application_settings":{
+			"redirect_url":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"storage_connectors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_settings":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,25 +43,13 @@
 			}
 			,
 		    
-			"storage_connectors":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"redirect_url":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"feedback_url":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"user_settings":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

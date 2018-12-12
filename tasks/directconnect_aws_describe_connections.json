@@ -1,5 +1,5 @@
 {
-	"description": "Displays all connections in this region. If a connection ID is provided, the call returns only that particular connection.",
+	"description": "Displays the specified connection or all connections in this Region.",
 	"input_method": "stdin",
 	"parameters":{
 		

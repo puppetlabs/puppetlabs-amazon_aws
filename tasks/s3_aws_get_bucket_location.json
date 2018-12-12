@@ -7,13 +7,13 @@
 		
 		
 		    
-			"location":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"location":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

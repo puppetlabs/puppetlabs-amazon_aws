@@ -1,5 +1,5 @@
 {
-	"description": "Returns a list of interconnects owned by the AWS account. If an interconnect ID is provided, it will only return this particular interconnect.",
+	"description": "Lists the interconnects owned by the AWS account or only the specified interconnect.",
 	"input_method": "stdin",
 	"parameters":{
 		

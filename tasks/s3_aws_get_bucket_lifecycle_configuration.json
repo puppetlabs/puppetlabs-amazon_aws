@@ -7,13 +7,13 @@
 		
 		
 		    
-			"lifecycle":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"lifecycle":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"open_id_connect_provider_arn":{
+			"client_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"client_id":{
+			"open_id_connect_provider_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

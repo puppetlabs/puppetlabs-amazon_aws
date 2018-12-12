@@ -1,5 +1,5 @@
 {
-	"description": "Creates an association between a direct connect gateway and a virtual private gateway (VGW). The VGW must be attached to a VPC and must not be associated with another direct connect gateway.",
+	"description": "Creates an association between a Direct Connect gateway and a virtual private gateway. The virtual private gateway must be attached to a VPC and must not be associated with another Direct Connect gateway.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"direct_connect_gateway_id":{
+			"virtual_gateway_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"virtual_gateway_id":{
+			"direct_connect_gateway_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,7 @@
 		
 		
 		    
-			"valid_user_list":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kms_key":{
+			"file_share_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +19,19 @@
 			}
 			,
 		    
+			"kms_encrypted":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"object_acl":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"requester_pays":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"file_share_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,19 +43,25 @@
 			}
 			,
 		    
-			"invalid_user_list":{
+			"requester_pays":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"kms_encrypted":{
+			"valid_user_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"default_storage_class":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"invalid_user_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

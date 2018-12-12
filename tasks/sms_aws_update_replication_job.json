@@ -1,5 +1,5 @@
 {
-	"description": "The UpdateReplicationJob API is used to change the settings of your existing ReplicationJob created using CreateReplicationJob. Calling this API will affect the next scheduled ReplicationRun.",
+	"description": "Updates the specified settings for the specified replication job.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,25 +7,13 @@
 		
 		
 		    
-			"next_replication_run_start_time":{
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"license_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"role_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
+			"number_of_recent_amis_to_keep":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +25,37 @@
 			}
 			,
 		    
+			"role_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"frequency":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encrypted":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"license_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_replication_run_start_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

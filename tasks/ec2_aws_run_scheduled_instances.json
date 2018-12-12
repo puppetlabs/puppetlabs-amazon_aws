@@ -7,18 +7,6 @@
 		
 		
 		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dry_run":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"instance_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +20,18 @@
 			,
 		    
 			"scheduled_instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

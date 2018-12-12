@@ -1,0 +1,34 @@
+{
+	"description": "Retrieves information about the Maintenance Windows targets or tasks that an instance is associated with.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

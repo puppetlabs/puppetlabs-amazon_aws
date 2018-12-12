@@ -1,5 +1,5 @@
 {
-	"description": "Lists the instance for a deployment associated with the applicable IAM user or AWS account.",
+	"description": "  The newer BatchGetDeploymentTargets should be used instead because it works with all compute types. ListDeploymentInstances throws an exception if it is used with a compute platform other than EC2/On-premises or AWS Lambda.    Lists the instance for a deployment associated with the applicable IAM user or AWS account. ",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"instance_status_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"instance_type_filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

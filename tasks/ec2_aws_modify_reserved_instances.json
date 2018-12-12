@@ -7,13 +7,13 @@
 		
 		
 		    
-			"reserved_instances_ids":{
+			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"client_token":{
+			"reserved_instances_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

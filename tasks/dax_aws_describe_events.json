@@ -7,6 +7,24 @@
 		
 		
 		    
+			"duration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,24 +44,6 @@
 			,
 		    
 			"start_time":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"end_time":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"duration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

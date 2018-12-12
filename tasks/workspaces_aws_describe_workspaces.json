@@ -1,5 +1,5 @@
 {
-	"description": "Describes the specified WorkSpaces. You can filter the results using bundle ID, directory ID, or owner, but you can specify only one filter at a time.",
+	"description": "Describes the specified WorkSpaces. You can filter the results by using the bundle identifier, directory identifier, or owner, but you can specify only one filter at a time.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,19 +7,19 @@
 		
 		
 		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"workspace_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"directory_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +31,13 @@
 			}
 			,
 		    
-			"bundle_id":{
+			"workspace_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"limit":{
+			"bundle_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

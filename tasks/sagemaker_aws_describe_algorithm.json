@@ -1,0 +1,16 @@
+{
+	"description": "Returns a description of the specified algorithm that is in your account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"algorithm_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"database_name":{
+			"catalog_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"table_input":{
+			"database_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"catalog_id":{
+			"table_input":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

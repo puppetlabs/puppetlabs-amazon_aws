@@ -7,13 +7,13 @@
 		
 		
 		    
-			"lifecycle_hook_name":{
+			"auto_scaling_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"auto_scaling_group_name":{
+			"lifecycle_hook_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

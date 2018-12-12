@@ -7,25 +7,7 @@
 		
 		
 		    
-			"gateway_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"destination_ipv6_cidr_block":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"egress_only_internet_gateway_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"network_interface_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +19,25 @@
 			}
 			,
 		    
-			"vpc_peering_connection_id":{
+			"egress_only_internet_gateway_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gateway_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"nat_gateway_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpc_peering_connection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,7 +55,19 @@
 			}
 			,
 		    
+			"network_interface_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"route_table_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transit_gateway_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

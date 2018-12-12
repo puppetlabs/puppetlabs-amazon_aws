@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"name":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

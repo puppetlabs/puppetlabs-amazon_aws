@@ -7,13 +7,7 @@
 		
 		
 		    
-			"license_model":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vpc":{
+			"engine_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,7 @@
 			}
 			,
 		    
-			"max_records":{
+			"license_model":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,19 +31,25 @@
 			}
 			,
 		    
-			"engine":{
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"engine_version":{
+			"vpc":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"db_instance_class":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"engine":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

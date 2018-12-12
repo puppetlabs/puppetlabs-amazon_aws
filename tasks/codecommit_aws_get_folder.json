@@ -7,12 +7,6 @@
 		
 		
 		    
-			"repository_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"commit_specifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"folder_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"repository_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

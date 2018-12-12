@@ -7,12 +7,6 @@
 		
 		
 		    
-			"account_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"budget":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"notifications_with_subscribers":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

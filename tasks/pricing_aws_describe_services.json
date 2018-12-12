@@ -7,13 +7,13 @@
 		
 		
 		    
-			"format_version":{
+			"service_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"format_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"service_code":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

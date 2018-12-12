@@ -13,19 +13,25 @@
 			}
 			,
 		    
-			"kernel":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sriov_net_support":{
+			"disable_api_termination":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_data":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ebs_optimized":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,31 +49,7 @@
 			}
 			,
 		    
-			"ramdisk":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_initiated_shutdown_behavior":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"disable_api_termination":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ena_support":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"source_dest_check":{
+			"value":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -79,25 +61,43 @@
 			}
 			,
 		    
-			"ebs_optimized":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"user_data":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"value":{
+			"ena_support":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"source_dest_check":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_initiated_shutdown_behavior":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kernel":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ramdisk":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sriov_net_support":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

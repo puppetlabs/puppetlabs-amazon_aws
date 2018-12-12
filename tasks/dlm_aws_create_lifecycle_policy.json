@@ -7,25 +7,25 @@
 		
 		
 		    
-			"execution_role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"state":{
+			"execution_role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"policy_details":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"state":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"catalog_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"database_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

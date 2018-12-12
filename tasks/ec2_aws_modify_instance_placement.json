@@ -7,12 +7,6 @@
 		
 		
 		    
-			"tenancy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"affinity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tenancy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

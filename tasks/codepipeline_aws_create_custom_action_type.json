@@ -13,13 +13,19 @@
 			}
 			,
 		    
+			"settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"settings":{
+			"category":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -38,12 +44,6 @@
 			,
 		    
 			"output_artifact_details":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"category":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,22 @@
+{
+	"description": "Creates a group resource with a name and a filter expression. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter_expression":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"retention_configuration_names":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"retention_configuration_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

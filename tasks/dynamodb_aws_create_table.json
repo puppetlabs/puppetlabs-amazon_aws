@@ -7,6 +7,36 @@
 		
 		
 		    
+			"attribute_definitions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"billing_mode":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"global_secondary_indexes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sse_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stream_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"key_schema":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,31 +49,7 @@
 			}
 			,
 		    
-			"global_secondary_indexes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"provisioned_throughput":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"stream_specification":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sse_specification":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attribute_definitions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

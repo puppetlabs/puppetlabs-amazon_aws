@@ -7,19 +7,19 @@
 		
 		
 		    
+			"path_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"product_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"provisioning_artifact_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"path_id":{
+			"provisioned_product_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,7 @@
 			}
 			,
 		    
-			"update_token":{
+			"provisioning_preferences":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +49,13 @@
 			}
 			,
 		    
-			"provisioned_product_id":{
+			"provisioning_artifact_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"update_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

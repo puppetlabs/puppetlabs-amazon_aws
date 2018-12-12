@@ -7,7 +7,7 @@
 		
 		
 		    
-			"label":{
+			"actions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"actions":{
+			"label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

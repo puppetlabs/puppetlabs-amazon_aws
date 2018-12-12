@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_name":{
+			"patch_operations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"patch_operations":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

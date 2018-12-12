@@ -1,5 +1,5 @@
 {
-	"description": "Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record.",
+	"description": "Creates one of the following entry records associated with the domain: A record, CNAME record, TXT record, or MX record. The create domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_entry":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"domain_name":{
+			"domain_entry":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

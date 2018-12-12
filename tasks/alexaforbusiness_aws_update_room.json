@@ -7,19 +7,7 @@
 		
 		
 		    
-			"room_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"provider_calendar_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +19,19 @@
 			}
 			,
 		    
+			"provider_calendar_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"room_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"room_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

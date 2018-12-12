@@ -7,19 +7,19 @@
 		
 		
 		    
-			"duration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_records":{
+			"end_time":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +43,7 @@
 			}
 			,
 		    
-			"end_time":{
+			"duration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

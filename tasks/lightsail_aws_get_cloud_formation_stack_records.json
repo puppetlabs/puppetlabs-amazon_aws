@@ -1,0 +1,16 @@
+{
+	"description": "Returns the CloudFormation stack record created as a result of the create cloud formation stack operation. An AWS CloudFormation stack is used to create a new Amazon EC2 instance from an exported Lightsail snapshot.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

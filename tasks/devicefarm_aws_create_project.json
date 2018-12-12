@@ -7,13 +7,13 @@
 		
 		
 		    
-			"name":{
+			"default_job_timeout_minutes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"default_job_timeout_minutes":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

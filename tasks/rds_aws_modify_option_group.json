@@ -7,6 +7,12 @@
 		
 		
 		    
+			"options_to_remove":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"apply_immediately":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"options_to_include":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"options_to_remove":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

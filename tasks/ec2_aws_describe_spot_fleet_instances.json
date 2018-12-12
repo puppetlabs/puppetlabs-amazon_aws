@@ -7,18 +7,6 @@
 		
 		
 		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"spot_fleet_request_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +14,18 @@
 			,
 		    
 			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"spot_fleet_request_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

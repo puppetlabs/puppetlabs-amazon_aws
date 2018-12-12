@@ -7,13 +7,13 @@
 		
 		
 		    
-			"description":{
+			"routing_strategy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"routing_strategy":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

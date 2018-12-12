@@ -7,13 +7,13 @@
 		
 		
 		    
-			"label":{
+			"certificate":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"certificate":{
+			"label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

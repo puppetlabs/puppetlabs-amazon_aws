@@ -7,13 +7,13 @@
 		
 		
 		    
-			"type":{
+			"hosted_zone_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"hosted_zone_id":{
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

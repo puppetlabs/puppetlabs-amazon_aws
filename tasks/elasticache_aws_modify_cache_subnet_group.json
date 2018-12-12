@@ -7,7 +7,7 @@
 		
 		
 		    
-			"cache_subnet_group_description":{
+			"cache_subnet_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"cache_subnet_group_name":{
+			"cache_subnet_group_description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

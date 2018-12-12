@@ -7,7 +7,7 @@
 		
 		
 		    
-			"dry_run":{
+			"amazon_side_asn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"type":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"amazon_side_asn":{
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

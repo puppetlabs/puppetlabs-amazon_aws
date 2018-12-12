@@ -7,6 +7,12 @@
 		
 		
 		    
+			"device_index":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"network_interface_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"device_index":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

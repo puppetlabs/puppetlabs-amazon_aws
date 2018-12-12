@@ -1,11 +1,17 @@
 {
-	"description": "Lists the budgets associated with an account.",
+	"description": "Lists the budgets that are associated with an account.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"account_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"max_results":{
 			   "description": "",
@@ -14,12 +20,6 @@
 			,
 		    
 			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"account_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about all of your databases in Amazon Lightsail.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

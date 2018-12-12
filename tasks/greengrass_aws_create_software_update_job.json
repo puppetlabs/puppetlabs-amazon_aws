@@ -7,24 +7,6 @@
 		
 		
 		    
-			"s3_url_signer_role":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"software_to_update":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"update_agent_log_level":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"update_targets":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +26,24 @@
 			,
 		    
 			"amzn_client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"s3_url_signer_role":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"software_to_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"update_agent_log_level":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Identifies a poll-based event source for a Lambda function. It can be either an Amazon Kinesis or DynamoDB stream, or an Amazon SQS queue. AWS Lambda invokes the specified function when records are posted to the event source. This association between a poll-based source and a Lambda function is called the event source mapping. You provide mapping information (for example, which stream or SQS queue to read from and which Lambda function to invoke) in the request body. Amazon Kinesis or DynamoDB stream event sources can be associated with multiple AWS Lambda functions and a given Lambda function can be associated with multiple AWS event sources. For Amazon SQS, you can configure multiple queues as event sources for a single Lambda function, but an SQS queue can be mapped only to a single Lambda function. If you are using versioning, you can specify a specific function version or an alias via the function name parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  This operation requires permission for the lambda:CreateEventSourceMapping action.",
+	"description": "Creates a mapping between an event source and an AWS Lambda function. Lambda reads items from the event source and triggers the function. For details about each event source type, see the following topics.    Using AWS Lambda with Amazon Kinesis     Using AWS Lambda with Amazon SQS     Using AWS Lambda with Amazon DynamoDB   ",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,7 +7,7 @@
 		
 		
 		    
-			"enabled":{
+			"starting_position_timestamp":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,7 @@
 			}
 			,
 		    
-			"starting_position":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"starting_position_timestamp":{
+			"enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -38,6 +32,12 @@
 			,
 		    
 			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starting_position":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

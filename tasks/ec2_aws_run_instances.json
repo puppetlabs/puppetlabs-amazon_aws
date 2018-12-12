@@ -7,13 +7,13 @@
 		
 		
 		    
-			"key_name":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"kernel_id":{
+			"image_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,37 +25,13 @@
 			}
 			,
 		    
-			"client_token":{
+			"key_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"disable_api_termination":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"additional_info":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ebs_optimized":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"credit_specification":{
+			"min_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,31 +43,73 @@
 			}
 			,
 		    
-			"tag_specifications":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"ramdisk_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"launch_template":{
+			"tag_specifications":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"placement":{
+			"capacity_reservation_specification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"network_interfaces":{
+			"elastic_inference_accelerators":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hibernation_options":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kernel_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_group_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additional_info":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ebs_optimized":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"elastic_gpu_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iam_instance_profile":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -103,13 +121,13 @@
 			}
 			,
 		    
-			"max_count":{
+			"launch_template":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"user_data":{
+			"security_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -127,37 +145,13 @@
 			}
 			,
 		    
-			"min_count":{
+			"license_specifications":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"image_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"security_group_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subnet_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dry_run":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ipv6_address_count":{
+			"max_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -169,13 +163,7 @@
 			}
 			,
 		    
-			"security_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"elastic_gpu_specification":{
+			"network_interfaces":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -187,7 +175,43 @@
 			}
 			,
 		    
-			"iam_instance_profile":{
+			"credit_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ipv6_address_count":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_data":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disable_api_termination":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"placement":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subnet_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

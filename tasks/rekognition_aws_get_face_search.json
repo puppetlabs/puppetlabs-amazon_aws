@@ -7,18 +7,6 @@
 		
 		
 		    
-			"job_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_results":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +14,18 @@
 			,
 		    
 			"sort_by":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

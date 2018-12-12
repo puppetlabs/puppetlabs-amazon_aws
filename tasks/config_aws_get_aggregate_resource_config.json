@@ -1,0 +1,22 @@
+{
+	"description": "Returns configuration item that is aggregated for your specific resource in a specific source account and region.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"configuration_aggregator_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

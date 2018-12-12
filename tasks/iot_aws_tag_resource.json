@@ -1,0 +1,22 @@
+{
+	"description": "Adds to or modifies the tags of the given resource. Tags are metadata which can be used to manage a resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

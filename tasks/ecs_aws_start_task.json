@@ -7,19 +7,13 @@
 		
 		
 		    
-			"network_configuration":{
+			"enable_ecs_managed_tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cluster":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"task_definition":{
+			"group":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,19 +25,43 @@
 			}
 			,
 		    
-			"container_instances":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"started_by":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"group":{
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"container_instances":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"propagate_tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"task_definition":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

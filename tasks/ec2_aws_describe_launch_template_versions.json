@@ -7,19 +7,7 @@
 		
 		
 		    
-			"max_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dry_run":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"min_version":{
+			"launch_template_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +19,25 @@
 			}
 			,
 		    
-			"filters":{
+			"min_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"launch_template_id":{
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +49,13 @@
 			}
 			,
 		    
-			"versions":{
+			"max_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"versions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

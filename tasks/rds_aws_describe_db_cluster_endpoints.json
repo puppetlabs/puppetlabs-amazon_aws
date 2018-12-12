@@ -1,0 +1,40 @@
+{
+	"description": "Returns information about endpoints for an Amazon Aurora DB cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"db_cluster_endpoint_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"db_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

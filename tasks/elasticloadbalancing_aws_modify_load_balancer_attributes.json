@@ -7,13 +7,13 @@
 		
 		
 		    
-			"load_balancer_name":{
+			"load_balancer_attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"load_balancer_attributes":{
+			"load_balancer_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

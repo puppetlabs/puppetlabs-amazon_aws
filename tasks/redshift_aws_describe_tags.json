@@ -13,7 +13,13 @@
 			}
 			,
 		    
-			"max_records":{
+			"tag_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_values":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +31,7 @@
 			}
 			,
 		    
-			"tag_keys":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_values":{
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

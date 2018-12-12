@@ -7,13 +7,7 @@
 		
 		
 		    
-			"project_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
+			"rules":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"rules":{
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

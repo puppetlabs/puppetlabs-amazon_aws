@@ -7,13 +7,13 @@
 		
 		
 		    
-			"stream_name":{
+			"enforce_consumer_deletion":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"enforce_consumer_deletion":{
+			"stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

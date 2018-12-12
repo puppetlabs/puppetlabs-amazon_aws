@@ -7,25 +7,7 @@
 		
 		
 		    
-			"attachment_set_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cc_email_addresses":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"severity_code":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"category_code":{
+			"issue_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +19,7 @@
 			}
 			,
 		    
-			"issue_type":{
+			"severity_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +31,31 @@
 			}
 			,
 		    
-			"service_code":{
+			"attachment_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"category_code":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cc_email_addresses":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"communication_body":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

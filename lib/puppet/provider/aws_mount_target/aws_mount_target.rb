@@ -1,11 +1,7 @@
-require "pry"
-# require "pry-rescue"
-require "json"
-require "facets"
-require "retries"
+require 'json'
+require 'retries'
 
-
-require "aws-sdk-efs"
+require 'aws-sdk-efs'
 
 Puppet::Type.type(:aws_mount_target).provide(:arm) do
   mk_resource_methods
@@ -16,78 +12,70 @@ Puppet::Type.type(:aws_mount_target).provide(:arm) do
     @is_create = false
     @is_delete = false
   end
-  
+
   # EFS properties
-  
   def namevar
     :mount_target_id
   end
-  
-  # Properties
 
   def file_system_id=(value)
     Puppet.info("file_system_id setter called to change to #{value}")
     @property_flush[:file_system_id] = value
   end
-  
 
   def ip_address=(value)
     Puppet.info("ip_address setter called to change to #{value}")
     @property_flush[:ip_address] = value
   end
-  
 
   def max_items=(value)
     Puppet.info("max_items setter called to change to #{value}")
     @property_flush[:max_items] = value
   end
-  
 
   def mount_target_id=(value)
     Puppet.info("mount_target_id setter called to change to #{value}")
     @property_flush[:mount_target_id] = value
   end
-  
 
   def security_groups=(value)
     Puppet.info("security_groups setter called to change to #{value}")
     @property_flush[:security_groups] = value
   end
-  
 
   def subnet_id=(value)
     Puppet.info("subnet_id setter called to change to #{value}")
     @property_flush[:subnet_id] = value
   end
-  
-def name=(value)
+
+
+  def name=(value)
     Puppet.info("name setter called to change to #{value}")
     @property_flush[:name] = value
   end
 
-  def self.get_region
+  def self.region
     ENV['AWS_REGION'] || 'us-west-2'
   end
 
-  def self.has_name?(hash)
+  def self.name?(hash)
     !hash[:name].nil? && !hash[:name].empty?
   end
 
   def self.instance_to_hash(instance)
-
-    file_system_id = instance.respond_to?(:file_system_id) ? (instance.file_system_id.respond_to?(:to_hash) ? instance.file_system_id.to_hash : instance.file_system_id ) : nil
-    ip_address = instance.respond_to?(:ip_address) ? (instance.ip_address.respond_to?(:to_hash) ? instance.ip_address.to_hash : instance.ip_address ) : nil
-    max_items = instance.respond_to?(:max_items) ? (instance.max_items.respond_to?(:to_hash) ? instance.max_items.to_hash : instance.max_items ) : nil
-    mount_target_id = instance.respond_to?(:mount_target_id) ? (instance.mount_target_id.respond_to?(:to_hash) ? instance.mount_target_id.to_hash : instance.mount_target_id ) : nil
-    security_groups = instance.respond_to?(:security_groups) ? (instance.security_groups.respond_to?(:to_hash) ? instance.security_groups.to_hash : instance.security_groups ) : nil
-    subnet_id = instance.respond_to?(:subnet_id) ? (instance.subnet_id.respond_to?(:to_hash) ? instance.subnet_id.to_hash : instance.subnet_id ) : nil
+    file_system_id = instance.respond_to?(:file_system_id) ? (instance.file_system_id.respond_to?(:to_hash) ? instance.file_system_id.to_hash : instance.file_system_id) : nil
+    ip_address = instance.respond_to?(:ip_address) ? (instance.ip_address.respond_to?(:to_hash) ? instance.ip_address.to_hash : instance.ip_address) : nil
+    max_items = instance.respond_to?(:max_items) ? (instance.max_items.respond_to?(:to_hash) ? instance.max_items.to_hash : instance.max_items) : nil
+    mount_target_id = instance.respond_to?(:mount_target_id) ? (instance.mount_target_id.respond_to?(:to_hash) ? instance.mount_target_id.to_hash : instance.mount_target_id) : nil
+    security_groups = instance.respond_to?(:security_groups) ? (instance.security_groups.respond_to?(:to_hash) ? instance.security_groups.to_hash : instance.security_groups) : nil
+    subnet_id = instance.respond_to?(:subnet_id) ? (instance.subnet_id.respond_to?(:to_hash) ? instance.subnet_id.to_hash : instance.subnet_id) : nil
 
     hash = {}
     hash[:ensure] = :present
     hash[:object] = instance
     hash[:name] = instance.name
-    hash[:tags] = instance.tags if instance.respond_to?(:tags) and instance.tags.size > 0
-    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) and instance.tag_set.size > 0
+    hash[:tags] = instance.tags if instance.respond_to?(:tags) && !instance.tags.empty?
+    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) && !instance.tags.empty?
 
     hash[:file_system_id] = file_system_id unless file_system_id.nil?
     hash[:ip_address] = ip_address unless ip_address.nil?
@@ -101,10 +89,10 @@ def name=(value)
   def create
     @is_create = true
     Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::EFS::Client.new(region: self.class.get_region)
-    response = client.create_mount_target(build_hash)
+    client = Aws::EFS::Client.new(region: self.class.region)
+    client.create_mount_target(build_hash)
     @property_hash[:ensure] = :present
-  rescue Exception => ex
+  rescue StandardError => ex
     msg = ex.to_s.nil? ? ex.detail : ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{msg} and backtrace is #{ex.backtrace}")
     raise
@@ -116,10 +104,10 @@ def name=(value)
       return # we've already done the create or delete
     end
     @is_update = true
-    hash = build_hash
-    Puppet.info("Calling Update on flush")
+    build_hash
+    Puppet.info('Calling Update on flush')
     @property_hash[:ensure] = :present
-    response = []
+    []
   end
 
   def build_hash
@@ -133,39 +121,36 @@ def name=(value)
       mount_target[:security_groups] = resource[:security_groups] unless resource[:security_groups].nil?
       mount_target[:subnet_id] = resource[:subnet_id] unless resource[:subnet_id].nil?
     end
-    return symbolize(mount_target)
+    symbolize(mount_target)
   end
 
   def destroy
     Puppet.info("Entered delete for resource #{resource[:name]}")
     @is_delete = true
-    Puppet.info("Calling operation delete_mount_target")
-    client = Aws::EFS::Client.new(region: self.class.get_region)
-    client.delete_mount_target({namevar => @property_hash[namevar]})
+    Puppet.info('Calling operation delete_mount_target')
+    client = Aws::EFS::Client.new(region: self.class.region)
+    client.delete_mount_target(namevar => @property_hash[namevar])
     @property_hash[:ensure] = :absent
   end
-
-  
   def exists?
     Puppet.info("Parametered Describe for resource #{name} of type <no value>")
-    client = Aws::EFS::Client.new(region: self.class.get_region)
-    response = client.describe_mount_targets({:file_system_id => resource.to_hash[:file_system_id]})
-    
+    client = Aws::EFS::Client.new(region: self.class.region)
+    response = client.describe_mount_targets(file_system_id: resource.to_hash[:file_system_id])
+
     @property_hash[:ensure] = :absent
-    if response.mount_targets.size > 0
+    unless response.mount_targets.empty?
       @property_hash[:object] = response.mount_targets.first
       @property_hash[namevar] = response.mount_targets.first[namevar]
       @property_hash[:ensure] = :present
       return true
     end
     return false
-  rescue Exception => ex
+  rescue StandardError
     return false
   end
 
-  def property_hash
-    @property_hash
-  end
+  attr_reader :property_hash
+
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|

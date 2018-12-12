@@ -1,5 +1,5 @@
 {
-	"description": "Gets information about samples, given an AWS Device Farm project ARN",
+	"description": "Gets information about samples, given an AWS Device Farm job ARN.",
 	"input_method": "stdin",
 	"parameters":{
 		

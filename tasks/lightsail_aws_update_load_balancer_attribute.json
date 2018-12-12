@@ -1,11 +1,17 @@
 {
-	"description": "Updates the specified attribute for a load balancer. You can only update one attribute at a time.",
+	"description": "Updates the specified attribute for a load balancer. You can only update one attribute at a time. The update load balancer attribute operation supports tag-based access control via resource tags applied to the resource identified by loadBalancerName. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"attribute_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"attribute_value":{
 			   "description": "",
@@ -14,12 +20,6 @@
 			,
 		    
 			"load_balancer_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attribute_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

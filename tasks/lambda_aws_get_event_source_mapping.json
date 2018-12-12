@@ -1,5 +1,5 @@
 {
-	"description": "Returns configuration information for the specified event source mapping (see CreateEventSourceMapping). This operation requires permission for the lambda:GetEventSourceMapping action.",
+	"description": "Returns details about an event source mapping.",
 	"input_method": "stdin",
 	"parameters":{
 		

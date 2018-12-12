@@ -7,7 +7,7 @@
 		
 		
 		    
-			"web_acl_id":{
+			"max_items":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"max_items":{
+			"web_acl_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

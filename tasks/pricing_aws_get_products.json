@@ -7,19 +7,7 @@
 		
 		
 		    
-			"format_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -32,6 +20,18 @@
 			,
 		    
 			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"format_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

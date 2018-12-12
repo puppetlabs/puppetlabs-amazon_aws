@@ -7,7 +7,7 @@
 		
 		
 		    
-			"organization_id":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"max_results":{
+			"organization_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

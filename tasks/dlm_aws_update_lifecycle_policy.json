@@ -19,12 +19,6 @@
 			}
 			,
 		    
-			"execution_role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"state":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"execution_role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

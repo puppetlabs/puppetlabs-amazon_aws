@@ -7,7 +7,7 @@
 		
 		
 		    
-			"listener_arn":{
+			"actions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"priority":{
+			"listener_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"actions":{
+			"priority":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

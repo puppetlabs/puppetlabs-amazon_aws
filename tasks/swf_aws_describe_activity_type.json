@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain":{
+			"activity_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"activity_type":{
+			"domain":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

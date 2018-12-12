@@ -1,0 +1,40 @@
+{
+	"description": "Retrieves a collection of resources, including folders and documents. The only CollectionType supported is SHARED_WITH_ME.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"collection_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

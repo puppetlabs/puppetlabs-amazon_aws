@@ -1,0 +1,46 @@
+{
+	"description": "Starts an asynchronous document classification job. Use the operation to track the progress of the job.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"output_data_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_access_role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_classifier_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input_data_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

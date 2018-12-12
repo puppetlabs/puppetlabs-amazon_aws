@@ -7,25 +7,31 @@
 		
 		
 		    
-			"security_profile_description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"behaviors":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"alert_targets":{
+			"security_profile_description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"security_profile_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alert_targets":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

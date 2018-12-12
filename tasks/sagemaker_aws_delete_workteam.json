@@ -1,0 +1,16 @@
+{
+	"description": "Deletes an existing work team. This operation can't be undone.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workteam_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

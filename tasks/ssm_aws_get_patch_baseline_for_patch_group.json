@@ -7,13 +7,13 @@
 		
 		
 		    
-			"patch_group":{
+			"operating_system":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"operating_system":{
+			"patch_group":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

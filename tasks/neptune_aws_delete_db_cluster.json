@@ -7,13 +7,13 @@
 		
 		
 		    
-			"final_db_snapshot_identifier":{
+			"db_cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_cluster_identifier":{
+			"final_db_snapshot_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

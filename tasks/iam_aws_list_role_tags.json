@@ -1,0 +1,28 @@
+{
+	"description": "Lists the tags that are attached to the specified role. The returned list of tags is sorted by tag key. For more information about tagging, see Tagging IAM Identities in the IAM User Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"role_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

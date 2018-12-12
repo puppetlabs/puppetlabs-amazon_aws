@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"environment_name":{
+			"environment_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"environment_id":{
+			"environment_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

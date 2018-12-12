@@ -7,12 +7,6 @@
 		
 		
 		    
-			"resources_vpc_config":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"client_request_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,13 +19,19 @@
 			}
 			,
 		    
-			"version":{
+			"resources_vpc_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

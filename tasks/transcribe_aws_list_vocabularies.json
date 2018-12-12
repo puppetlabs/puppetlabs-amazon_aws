@@ -7,12 +7,6 @@
 		
 		
 		    
-			"state_equals":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name_contains":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"state_equals":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

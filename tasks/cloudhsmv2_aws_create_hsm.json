@@ -7,13 +7,13 @@
 		
 		
 		    
-			"cluster_id":{
+			"availability_zone":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"availability_zone":{
+			"cluster_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

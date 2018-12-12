@@ -1,5 +1,5 @@
 {
-	"description": "Reserved for future use. To create a project, use the AWS CodeStar console.",
+	"description": "Creates a project, including project resources. This action creates a project based on a submitted project request. A set of source code files and a toolchain template file can be included with the project request. If these are not provided, an empty project is created.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,19 +7,19 @@
 		
 		
 		    
-			"name":{
+			"source_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"id":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"toolchain":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,19 @@
 			}
 			,
 		    
-			"tags":{
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

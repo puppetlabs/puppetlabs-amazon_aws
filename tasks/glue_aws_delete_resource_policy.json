@@ -1,0 +1,16 @@
+{
+	"description": "Deletes a specified policy.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_hash_condition":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

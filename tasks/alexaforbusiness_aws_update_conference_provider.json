@@ -1,0 +1,40 @@
+{
+	"description": "Updates an existing conference provider's settings.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"pstn_dial_in":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"conference_provider_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"conference_provider_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ip_dial_in":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"meeting_setting":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

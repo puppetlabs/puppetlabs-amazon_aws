@@ -1,0 +1,28 @@
+{
+	"description": "Retrieves a list that describes one or more specified users in the user pool, if user names are provided. Otherwise, all users in the user pool are described.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authentication_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

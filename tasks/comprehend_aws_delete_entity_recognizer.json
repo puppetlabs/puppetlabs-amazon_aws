@@ -1,0 +1,16 @@
+{
+	"description": "Deletes an entity recognizer. Only those recognizers that are in terminated states (IN_ERROR, TRAINED) will be deleted. If an active inference job is using the model, a ResourceInUseException will be returned. This is an asynchronous action that puts the recognizer into a DELETING state, and it is then removed by a background job. Once removed, the recognizer disappears from your account and is no longer available for use. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"entity_recognizer_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

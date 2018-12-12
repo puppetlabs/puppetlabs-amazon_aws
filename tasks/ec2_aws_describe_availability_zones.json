@@ -7,6 +7,12 @@
 		
 		
 		    
+			"zone_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +25,7 @@
 			}
 			,
 		    
-			"zone_names":{
+			"zone_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

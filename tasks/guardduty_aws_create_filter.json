@@ -7,6 +7,18 @@
 		
 		
 		    
+			"rank":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,18 +44,6 @@
 			,
 		    
 			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"rank":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"action":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

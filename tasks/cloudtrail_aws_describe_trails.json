@@ -7,13 +7,13 @@
 		
 		
 		    
-			"trail_name_list":{
+			"include_shadow_trails":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"include_shadow_trails":{
+			"trail_name_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

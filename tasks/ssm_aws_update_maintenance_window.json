@@ -7,12 +7,6 @@
 		
 		
 		    
-			"replace":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"allow_unassociated_targets":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,13 +19,31 @@
 			}
 			,
 		    
-			"enabled":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cutoff":{
+			"replace":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule_timezone":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_date":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +55,7 @@
 			}
 			,
 		    
-			"name":{
+			"cutoff":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +67,13 @@
 			}
 			,
 		    
-			"schedule":{
+			"enabled":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_date":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

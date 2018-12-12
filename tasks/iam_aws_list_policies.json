@@ -7,6 +7,18 @@
 		
 		
 		    
+			"policy_usage_filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scope":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,12 +31,6 @@
 			}
 			,
 		    
-			"scope":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"only_attached":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"path_prefix":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"policy_usage_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

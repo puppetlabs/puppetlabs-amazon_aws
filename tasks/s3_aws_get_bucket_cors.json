@@ -1,5 +1,5 @@
 {
-	"description": "Returns the cors configuration for the bucket.",
+	"description": "Returns the CORS configuration for the bucket.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"cors":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"cors":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

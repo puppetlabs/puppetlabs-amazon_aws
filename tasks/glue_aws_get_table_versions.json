@@ -13,7 +13,7 @@
 			}
 			,
 		    
-			"max_results":{
+			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,7 @@
 			}
 			,
 		    
-			"table_name":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

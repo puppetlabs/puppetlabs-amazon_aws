@@ -7,13 +7,13 @@
 		
 		
 		    
-			"assessment_template_arn":{
+			"assessment_run_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"assessment_run_name":{
+			"assessment_template_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

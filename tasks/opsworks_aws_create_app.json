@@ -7,31 +7,7 @@
 		
 		
 		    
-			"attributes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"app_source":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"shortname":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,19 +19,13 @@
 			}
 			,
 		    
-			"data_sources":{
+			"domains":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"environment":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"enable_ssl":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,13 +37,43 @@
 			}
 			,
 		    
-			"stack_id":{
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"domains":{
+			"attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_sources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_ssl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"environment":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"shortname":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

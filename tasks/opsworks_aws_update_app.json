@@ -7,25 +7,7 @@
 		
 		
 		    
-			"enable_ssl":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ssl_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"environment":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"data_sources":{
+			"app_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +19,19 @@
 			}
 			,
 		    
-			"app_id":{
+			"environment":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ssl_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,13 +49,25 @@
 			}
 			,
 		    
+			"data_sources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"domains":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"enable_ssl":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,7 @@
 		
 		
 		    
-			"db_cluster_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
+			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"marker":{
+			"db_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

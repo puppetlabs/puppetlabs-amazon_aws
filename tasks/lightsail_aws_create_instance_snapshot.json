@@ -1,5 +1,5 @@
 {
-	"description": "Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot.",
+	"description": "Creates a snapshot of a specific virtual private server, or instance. You can use a snapshot to create a new instance that is based on that snapshot. The create instance snapshot operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,19 @@
 		
 		
 		    
+			"instance_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"instance_snapshot_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"instance_name":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

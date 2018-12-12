@@ -1,0 +1,16 @@
+{
+	"description": "Returns a list of attributes attached to an account",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"attribute_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

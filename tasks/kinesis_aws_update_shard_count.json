@@ -7,6 +7,12 @@
 		
 		
 		    
+			"scaling_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"target_shard_count":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"scaling_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

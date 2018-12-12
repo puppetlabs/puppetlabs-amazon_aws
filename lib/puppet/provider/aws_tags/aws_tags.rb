@@ -1,11 +1,7 @@
-require "pry"
-# require "pry-rescue"
-require "json"
-require "facets"
-require "retries"
+require 'json'
+require 'retries'
 
-
-require "aws-sdk-ec2"
+require 'aws-sdk-ec2'
 
 
 Puppet::Type.type(:aws_tags).provide(:arm) do
@@ -17,7 +13,7 @@ Puppet::Type.type(:aws_tags).provide(:arm) do
     @is_create = false
     @is_delete = false
   end
-    
+
   def namevar
     :resources
   end
@@ -39,19 +35,20 @@ Puppet::Type.type(:aws_tags).provide(:arm) do
     @property_flush[:tags] = value
   end
 
-
   def name=(value)
     Puppet.info("name setter called to change to #{value}")
     @property_flush[:name] = value
   end
 
-  def self.get_region
+  def self.region
     ENV['AWS_REGION'] || 'us-west-2'
   end
 
-  def self.has_name?(hash)
+  def self.name?(hash)
     !hash[:name].nil? && !hash[:name].empty?
   end
+
+
 
   def self.name_from_tag(instance)
     tags = instance.respond_to?(:tags) ? instance.tags : nil
@@ -61,16 +58,16 @@ Puppet::Type.type(:aws_tags).provide(:arm) do
   end
 
   def self.instance_to_hash(instance)
-    dry_run = instance.respond_to?(:dry_run) ? (instance.dry_run.respond_to?(:to_hash) ? instance.dry_run.to_hash : instance.dry_run ) : nil
-    resources = instance.respond_to?(:resources) ? (instance.resources.respond_to?(:to_hash) ? instance.resources.to_hash : instance.resources ) : nil
-    tags = instance.respond_to?(:tags) ? (instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags ) : nil
+    dry_run = instance.respond_to?(:dry_run) ? (instance.dry_run.respond_to?(:to_hash) ? instance.dry_run.to_hash : instance.dry_run) : nil
+    resources = instance.respond_to?(:resources) ? (instance.resources.respond_to?(:to_hash) ? instance.resources.to_hash : instance.resources) : nil
+    tags = instance.respond_to?(:tags) ? (instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags) : nil
 
     hash = {}
     hash[:ensure] = :present
     hash[:object] = instance
     hash[:name] = name_from_tag(instance)
-    hash[:tags] = instance.tags if instance.respond_to?(:tags) and instance.tags.size > 0
-    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) and instance.tag_set.size > 0
+    hash[:tags] = instance.tags if instance.respond_to?(:tags) && !instance.tags.empty?
+    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) && !instance.tag_set.empty?
 
     hash[:dry_run] = dry_run unless dry_run.nil?
     hash[:resources] = resources unless resources.nil?
@@ -81,17 +78,17 @@ Puppet::Type.type(:aws_tags).provide(:arm) do
   def create
     @is_create = true
     Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::EC2::Client.new(region: self.class.get_region)
+    client = Aws::EC2::Client.new(region: self.class.region)
     response = client.create_tags(build_hash)
     res = response.respond_to?(:tags) ? response.tags : response
-    with_retries(:max_tries => 5) do  
+    with_retries(max_tries: 5) do
       client.create_tags(
         resources: [res.to_hash[namevar]],
-        tags: [{ key: 'Name', value: resource.provider.name}]
+        tags: [{ key: 'Name', value: resource.provider.name }],
       )
     end
     @property_hash[:ensure] = :present
-  rescue Exception => ex
+  rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
@@ -102,10 +99,9 @@ Puppet::Type.type(:aws_tags).provide(:arm) do
       return # we've already done the create or delete
     end
     @is_update = true
-    hash = build_hash
-    Puppet.info("Calling Update on flush")
+    build_hash
+    Puppet.info('Calling Update on flush')
     @property_hash[:ensure] = :present
-    response = []
   end
 
   def build_hash
@@ -115,15 +111,15 @@ Puppet::Type.type(:aws_tags).provide(:arm) do
       tags[:resources] = resource[:resources] unless resource[:resources].nil?
       tags[:tags] = resource[:tags] unless resource[:tags].nil?
     end
-    return symbolize(tags)
+    symbolize(tags)
   end
 
   def destroy
     Puppet.info("Entered delete for resource #{resource[:name]}")
     @is_delete = true
-    Puppet.info("Calling operation delete_tags")
-    client = Aws::EC2::Client.new(region: self.class.get_region)
-    client.delete_tags({namevar => resource.provider.property_hash[namevar]})
+    Puppet.info('Calling operation delete_tags')
+    client = Aws::EC2::Client.new(region: self.class.region)
+    client.delete_tags(namevar => resource.provider.property_hash[namevar])
     @property_hash[:ensure] = :absent
   end
 
@@ -131,22 +127,19 @@ Puppet::Type.type(:aws_tags).provide(:arm) do
   # Shared funcs
   def exists?
     Puppet.info("Parametered Describe for resource #{name} of type <no value>")
-    client = Aws::EC2::Client.new(region: self.class.get_region)
-    response = client.describe_tags({namevar => resource.to_hash[namevar]})
+    client = Aws::EC2::Client.new(region: self.class.region)
+    response = client.describe_tags(namevar => resource.to_hash[namevar])
     res = response.respond_to?(:tags) ? response.tags : response
     @property_hash[:object] = :present
     @property_hash[namevar] = res[namevar]
     @property_hash[:object] = res
     return true
-  rescue Exception => ex
+  rescue StandardError
     @property_hash[:object] = :absent
     return false
-
   end
 
-  def property_hash
-    @property_hash
-  end
+  attr_reader :property_hash
 
 
   def symbolize(obj)

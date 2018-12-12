@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"organization_id":{
+			"entity_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"entity_id":{
+			"organization_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

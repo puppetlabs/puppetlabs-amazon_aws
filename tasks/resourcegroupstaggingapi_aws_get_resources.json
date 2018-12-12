@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tags_per_page":{
+			"tag_filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_type_filters":{
+			"tags_per_page":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,13 @@
 			}
 			,
 		    
-			"tag_filters":{
+			"resources_per_page":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resources_per_page":{
+			"resource_type_filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

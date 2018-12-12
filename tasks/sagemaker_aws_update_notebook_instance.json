@@ -7,7 +7,13 @@
 		
 		
 		    
-			"lifecycle_config_name":{
+			"disassociate_additional_code_repositories":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disassociate_default_code_repository":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +25,37 @@
 			}
 			,
 		    
-			"notebook_instance_name":{
+			"lifecycle_config_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"volume_size_in_gb":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"default_code_repository":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additional_code_repositories":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disassociate_accelerator_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +67,13 @@
 			}
 			,
 		    
-			"role_arn":{
+			"notebook_instance_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accelerator_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

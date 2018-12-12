@@ -7,13 +7,13 @@
 		
 		
 		    
-			"next_token":{
+			"arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"arn":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"force":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"registry_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"repository_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"force":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

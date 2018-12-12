@@ -7,13 +7,13 @@
 		
 		
 		    
-			"vpn_connection_id":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"dry_run":{
+			"vpn_connection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"encryption":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"encryption":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

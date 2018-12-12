@@ -1,11 +1,17 @@
 {
-	"description": "Creates a deployment.",
+	"description": "Creates a deployment. ''CreateDeployment'' requests are idempotent with respect to the ''X-Amzn-Client-Token'' token and the request parameters.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"deployment_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"group_id":{
 			   "description": "",
@@ -26,12 +32,6 @@
 			,
 		    
 			"deployment_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployment_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

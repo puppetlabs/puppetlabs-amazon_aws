@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"user_rules":{
+			"group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"group_name":{
+			"user_rules":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

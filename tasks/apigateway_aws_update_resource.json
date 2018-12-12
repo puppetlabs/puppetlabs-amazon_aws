@@ -7,7 +7,7 @@
 		
 		
 		    
-			"rest_api_id":{
+			"patch_operations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"patch_operations":{
+			"rest_api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

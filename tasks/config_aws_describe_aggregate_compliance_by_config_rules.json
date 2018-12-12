@@ -7,18 +7,6 @@
 		
 		
 		    
-			"limit":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"configuration_aggregator_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +14,18 @@
 			,
 		    
 			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

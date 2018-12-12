@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"skill_group_name":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"skill_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"updates":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"rate_limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"rule_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"updates":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

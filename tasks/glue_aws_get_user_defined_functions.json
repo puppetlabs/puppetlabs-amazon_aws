@@ -7,19 +7,7 @@
 		
 		
 		    
-			"catalog_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"database_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"pattern":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +19,19 @@
 			}
 			,
 		    
-			"max_results":{
+			"pattern":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"database_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

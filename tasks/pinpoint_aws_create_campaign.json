@@ -7,13 +7,13 @@
 		
 		
 		    
-			"write_campaign_request":{
+			"application_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"application_id":{
+			"write_campaign_request":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

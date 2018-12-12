@@ -7,13 +7,19 @@
 		
 		
 		    
-			"time_range_upper_bound":{
+			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"exclusive_start_backup_arn":{
+			"time_range_lower_bound":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"time_range_upper_bound":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +31,13 @@
 			}
 			,
 		    
-			"table_name":{
+			"exclusive_start_backup_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"limit":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"time_range_lower_bound":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

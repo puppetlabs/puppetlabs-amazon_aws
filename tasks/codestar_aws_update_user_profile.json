@@ -7,12 +7,6 @@
 		
 		
 		    
-			"ssh_public_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"user_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"email_address":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ssh_public_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"vpc_link_id":{
+			"patch_operations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"patch_operations":{
+			"vpc_link_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

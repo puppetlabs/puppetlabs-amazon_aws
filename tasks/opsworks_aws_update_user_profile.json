@@ -7,13 +7,13 @@
 		
 		
 		    
-			"iam_user_arn":{
+			"allow_self_management":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"ssh_username":{
+			"iam_user_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"allow_self_management":{
+			"ssh_username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

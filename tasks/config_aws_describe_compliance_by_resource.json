@@ -25,13 +25,13 @@
 			}
 			,
 		    
-			"resource_type":{
+			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_id":{
+			"resource_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

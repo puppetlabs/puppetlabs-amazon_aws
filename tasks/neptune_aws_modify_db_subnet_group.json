@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"db_subnet_group_description":{
+			"subnet_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subnet_ids":{
+			"db_subnet_group_description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

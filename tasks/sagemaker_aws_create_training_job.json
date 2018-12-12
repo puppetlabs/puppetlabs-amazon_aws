@@ -7,7 +7,7 @@
 		
 		
 		    
-			"role_arn":{
+			"enable_network_isolation":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,25 +19,7 @@
 			}
 			,
 		    
-			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"training_job_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"hyper_parameters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"algorithm_specification":{
+			"output_data_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +31,25 @@
 			}
 			,
 		    
-			"vpc_config":{
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"algorithm_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hyper_parameters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,7 +61,13 @@
 			}
 			,
 		    
-			"output_data_config":{
+			"training_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpc_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

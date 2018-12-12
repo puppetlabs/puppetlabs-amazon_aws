@@ -7,31 +7,7 @@
 		
 		
 		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"display_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"image_name":{
+			"domain_join_info":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +19,13 @@
 			}
 			,
 		    
-			"appstream_agent_version":{
+			"image_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"image_arn":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,7 +37,31 @@
 			}
 			,
 		    
-			"domain_join_info":{
+			"appstream_agent_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

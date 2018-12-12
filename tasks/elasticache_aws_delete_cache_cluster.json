@@ -7,13 +7,13 @@
 		
 		
 		    
-			"final_snapshot_identifier":{
+			"cache_cluster_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cache_cluster_id":{
+			"final_snapshot_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

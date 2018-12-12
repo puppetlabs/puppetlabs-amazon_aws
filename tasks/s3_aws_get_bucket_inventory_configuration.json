@@ -7,12 +7,6 @@
 		
 		
 		    
-			"bucket":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"inventory":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

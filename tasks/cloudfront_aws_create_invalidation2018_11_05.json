@@ -1,0 +1,22 @@
+{
+	"description": "",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"distribution_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"invalidation_batch":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

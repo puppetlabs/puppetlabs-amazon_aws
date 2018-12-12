@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the billing group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"expected_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"billing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

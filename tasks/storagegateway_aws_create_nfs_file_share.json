@@ -7,19 +7,7 @@
 		
 		
 		    
-			"squash":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"read_only":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"gateway_arn":{
+			"guess_mime_type_enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +19,31 @@
 			}
 			,
 		    
-			"kms_key":{
+			"squash":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"location_arn":{
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"default_storage_class":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"gateway_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,6 +61,12 @@
 			}
 			,
 		    
+			"client_list":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"nfs_file_share_defaults":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -67,25 +79,13 @@
 			}
 			,
 		    
-			"default_storage_class":{
+			"read_only":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"guess_mime_type_enabled":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_list":{
+			"location_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

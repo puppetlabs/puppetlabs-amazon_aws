@@ -7,25 +7,25 @@
 		
 		
 		    
-			"notification_options":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_id":{
+			"notification_options":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"principals":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

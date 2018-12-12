@@ -7,13 +7,13 @@
 		
 		
 		    
-			"torrent":{
+			"request_payer":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"request_payer":{
+			"torrent":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

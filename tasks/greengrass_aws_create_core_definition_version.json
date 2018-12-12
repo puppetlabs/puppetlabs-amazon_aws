@@ -1,11 +1,17 @@
 {
-	"description": "Creates a version of a core definition that has already been defined. AWS Greengrass groups must each contain exactly one AWS Greengrass core.",
+	"description": "Creates a version of a core definition that has already been defined. Greengrass groups must each contain exactly one Greengrass core.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"cores":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"amzn_client_token":{
 			   "description": "",
@@ -14,12 +20,6 @@
 			,
 		    
 			"core_definition_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cores":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,19 @@
 		
 		
 		    
-			"grant_poweruser_privileges":{
+			"surname":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"time_zone_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +31,19 @@
 			}
 			,
 		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"given_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"grant_poweruser_privileges":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -32,30 +56,6 @@
 			,
 		    
 			"storage_rule":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"time_zone_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"authentication_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"surname":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

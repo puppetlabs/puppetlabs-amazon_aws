@@ -7,24 +7,6 @@
 		
 		
 		    
-			"end_time":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"marker":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"snapshot_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"start_time":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -43,19 +25,7 @@
 			}
 			,
 		    
-			"cluster_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"snapshot_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_keys":{
+			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,7 +37,43 @@
 			}
 			,
 		    
+			"snapshot_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sorting_entities":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"owner_account":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_keys":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"snapshot_identifier":{
+			"snapshot_cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"snapshot_cluster_identifier":{
+			"snapshot_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

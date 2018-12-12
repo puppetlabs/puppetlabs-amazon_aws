@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"page_size":{
+			"names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"names":{
+			"page_size":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"user_id":{
+			"authentication_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"fleet_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"authentication_type":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +37,7 @@
 			}
 			,
 		    
-			"fleet_name":{
+			"user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

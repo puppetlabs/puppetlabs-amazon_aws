@@ -7,12 +7,6 @@
 		
 		
 		    
-			"subnet_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"hsm_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"source_backup_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subnet_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

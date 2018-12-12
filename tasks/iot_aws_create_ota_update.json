@@ -7,13 +7,25 @@
 		
 		
 		    
-			"aws_job_executions_rollout_config":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"files":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ota_update_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,25 +43,13 @@
 			}
 			,
 		    
-			"files":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"additional_parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"ota_update_id":{
+			"aws_job_executions_rollout_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

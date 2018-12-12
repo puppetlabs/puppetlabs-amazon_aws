@@ -7,13 +7,13 @@
 		
 		
 		    
-			"queue_url":{
+			"label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"label":{
+			"queue_url":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

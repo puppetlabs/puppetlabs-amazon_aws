@@ -7,13 +7,7 @@
 		
 		
 		    
-			"aws_account_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"action_name":{
+			"label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"label":{
+			"action_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"aws_account_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

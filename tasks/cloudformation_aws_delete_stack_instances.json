@@ -7,25 +7,19 @@
 		
 		
 		    
-			"regions":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"operation_preferences":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"retain_stacks":{
+			"regions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"operation_id":{
+			"retain_stacks":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -38,6 +32,12 @@
 			,
 		    
 			"accounts":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"operation_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

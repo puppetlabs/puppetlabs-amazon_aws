@@ -7,18 +7,6 @@
 		
 		
 		    
-			"action":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +26,18 @@
 			,
 		    
 			"rank":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

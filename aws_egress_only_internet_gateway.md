@@ -13,6 +13,7 @@ aws_egress_only_internet_gateway {
   dry_run => "DryRun (optional)",
   egress_only_internet_gateway_id => $aws_egress_only_internet_gateway_id
   egress_only_internet_gateway_ids => "EgressOnlyInternetGatewayIds (optional)",
+  vpc_id => "vpc_id (optional)",
   max_results => "1234 (optional)",
   next_token => "next_token (optional)",
   vpc_id => "vpc_id (optional)",
@@ -25,6 +26,7 @@ aws_egress_only_internet_gateway {
 |dry_run | Boolean | false |
 |egress_only_internet_gateway_id | [EgressOnlyInternetGatewayId](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=egressonlyinternetgatewayid) | false |
 |egress_only_internet_gateway_ids | EgressOnlyInternetGatewayIdList | false |
+|vpc_id | String | false |
 |max_results | Integer | false |
 |next_token | String | false |
 |vpc_id | String | false |

@@ -7,25 +7,7 @@
 		
 		
 		    
-			"ssh_public_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"device_arn":{
+			"project_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +19,7 @@
 			}
 			,
 		    
-			"skip_app_resign":{
+			"remote_record_app_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,19 +31,25 @@
 			}
 			,
 		    
+			"skip_app_resign":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ssh_public_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"interaction_mode":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"project_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -73,7 +61,19 @@
 			}
 			,
 		    
-			"remote_record_app_arn":{
+			"interaction_mode":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

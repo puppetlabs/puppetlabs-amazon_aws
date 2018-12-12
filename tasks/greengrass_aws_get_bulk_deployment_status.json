@@ -1,0 +1,16 @@
+{
+	"description": "Returns the status of a bulk deployment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bulk_deployment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

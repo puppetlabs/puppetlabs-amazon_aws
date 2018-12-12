@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a billing group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"billing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

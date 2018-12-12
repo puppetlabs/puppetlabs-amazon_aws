@@ -1,0 +1,46 @@
+{
+	"description": "Create a machine learning algorithm that you can use in Amazon SageMaker and list in the AWS Marketplace.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"validation_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"algorithm_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"algorithm_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certify_for_marketplace":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"inference_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

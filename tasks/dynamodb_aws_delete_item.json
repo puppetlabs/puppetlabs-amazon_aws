@@ -7,7 +7,7 @@
 		
 		
 		    
-			"table_name":{
+			"return_consumed_capacity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"expression_attribute_names":{
+			"conditional_operator":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +31,7 @@
 			}
 			,
 		    
-			"return_consumed_capacity":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"expression_attribute_values":{
+			"expression_attribute_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +43,19 @@
 			}
 			,
 		    
-			"conditional_operator":{
+			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"condition_expression":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"expression_attribute_values":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

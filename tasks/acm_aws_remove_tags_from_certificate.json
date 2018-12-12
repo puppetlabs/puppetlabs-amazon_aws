@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tags":{
+			"certificate_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"certificate_arn":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

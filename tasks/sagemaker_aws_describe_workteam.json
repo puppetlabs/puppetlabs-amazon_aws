@@ -1,0 +1,16 @@
+{
+	"description": "Gets information about a specific work team. You can see information such as the create date, the last updated date, membership information, and the work team's Amazon Resource Name (ARN).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workteam_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

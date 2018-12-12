@@ -7,18 +7,6 @@
 		
 		
 		    
-			"stream_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"exclusive_start_shard_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -31,7 +19,19 @@
 			}
 			,
 		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"stream_creation_timestamp":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"pipeline_name":{
+			"pipeline_execution_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"pipeline_execution_id":{
+			"pipeline_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

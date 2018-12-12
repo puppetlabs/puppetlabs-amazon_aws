@@ -1,5 +1,5 @@
 {
-	"description": "Deletes the specified IAM user. The user must not belong to any groups or have any access keys, signing certificates, or attached policies.",
+	"description": "Deletes the specified IAM user. The user must not belong to any groups or have any access keys, signing certificates, MFA devices enabled for AWS, or attached policies.",
 	"input_method": "stdin",
 	"parameters":{
 		

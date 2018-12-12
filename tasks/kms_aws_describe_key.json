@@ -1,5 +1,5 @@
 {
-	"description": "Provides detailed information about the specified customer master key (CMK). You can use DescribeKey on a predefined AWS alias, that is, an AWS alias with no key ID. When you do, AWS KMS associates the alias with an AWS managed CMK and returns its KeyId and Arn in the response. To perform this operation on a CMK in a different AWS account, specify the key ARN or alias ARN in the value of the KeyId parameter.",
+	"description": "Provides detailed information about the specified customer master key (CMK). If you use DescribeKey on a predefined AWS alias, that is, an AWS alias with no key ID, AWS KMS associates the alias with an AWS managed CMK and returns its KeyId and Arn in the response. To perform this operation on a CMK in a different AWS account, specify the key ARN or alias ARN in the value of the KeyId parameter.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"key_id":{
+			"grant_tokens":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"grant_tokens":{
+			"key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

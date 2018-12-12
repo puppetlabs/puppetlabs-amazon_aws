@@ -7,12 +7,6 @@
 		
 		
 		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"instance_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"reserved_instances_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

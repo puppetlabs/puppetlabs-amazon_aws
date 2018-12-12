@@ -7,7 +7,13 @@
 		
 		
 		    
-			"search_filter":{
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"access_level_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +31,7 @@
 			}
 			,
 		    
-			"accept_language":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"access_level_filter":{
+			"search_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

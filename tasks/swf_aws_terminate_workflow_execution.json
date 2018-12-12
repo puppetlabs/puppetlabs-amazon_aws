@@ -13,7 +13,7 @@
 			}
 			,
 		    
-			"workflow_id":{
+			"reason":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +25,19 @@
 			}
 			,
 		    
-			"reason":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"details":{
+			"workflow_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"child_policy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"details":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

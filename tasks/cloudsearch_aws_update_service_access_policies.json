@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_name":{
+			"access_policies":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"access_policies":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

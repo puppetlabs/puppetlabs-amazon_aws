@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"name":{
+			"database_input":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"database_input":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

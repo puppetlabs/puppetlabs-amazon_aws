@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"stack_id":{
+			"raid_array_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"raid_array_id":{
+			"stack_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

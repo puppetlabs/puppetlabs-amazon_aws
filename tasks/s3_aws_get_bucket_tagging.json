@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tagging":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"bucket":{
+			"tagging":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

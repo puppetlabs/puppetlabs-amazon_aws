@@ -1,5 +1,5 @@
 {
-	"description": "Describes the link aggregation groups (LAGs) in your account.  If a LAG ID is provided, only information about the specified LAG is returned.",
+	"description": "Describes all your link aggregation groups (LAG) or the specified LAG.",
 	"input_method": "stdin",
 	"parameters":{
 		

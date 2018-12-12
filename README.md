@@ -1,9 +1,11 @@
 # Amazon AWS
 
-Table of contents
+#### Table of contents
+
 1. [Description](#description)
 2. [Setup](#setup)
    * [Install the module](#installing-the-module)
+   * [Validate the module](#validating-the-module)
 3. [Usage](#usage)
    * [Create a virtual machine and subnet](#create-a-virtual-machine-and-subnet)
    * [Run a task](#run-a-task)
@@ -21,27 +23,40 @@ The module is generated from the [AWS API specifications](https://github.com/aws
 
 ### Installing the module
 
-1. Install the retries gem, facets gem, and the Amazon AWS Ruby SDK gem, using the same Ruby used by Puppet.
+Install the retries gem and the Amazon AWS Ruby SDK gem, using the same Ruby used by Puppet.
 
-   If using Puppet 4.x or higher, install the gems by running the following command:
+If using Puppet 4.x or higher, install the gems by running the following command:
 
-   ```
-   /opt/puppetlabs/puppet/bin/gem install aws-sdk retries facets
-   ```
+```
+/opt/puppetlabs/puppet/bin/gem install aws-sdk retries
+```
 
-2. Set the following environment variables specific to your AWS installation:
+Set the following environment variables specific to your AWS installation:
 
-   ```bash
-   export AWS_ACCESS_KEY_ID=your_access_key_id
-   export AWS_SECRET_ACCESS_KEY=your_secret_access_key
-   export AWS_REGION=your_region
-   ```
+```bash
+export AWS_ACCESS_KEY_ID=your_access_key_id
+export AWS_SECRET_ACCESS_KEY=your_secret_access_key
+export AWS_REGION=your_region
+```
 
-3. To install the module, run the following command:
+To install the module, run the following command:
 
-   ```
-   puppet module install puppetlabs-amazon_aws
-   ```
+```
+puppet module install puppetlabs-amazon_aws
+```
+
+### Validating the module
+
+This module is compliant with the Puppet Development Kit [(PDK)](https://puppet.com/docs/pdk/1.x/pdk.html), which provides the tool to help validate the modules's metadata, syntax, and style. When you run validations, PDK output tells you which validations it is running and notifies you of any errors or warnings it finds for each type of validation; syntax, code style, and metadata.
+
+To run all validations against this module, run the following command:
+
+```
+pdk validate ruby
+pdk validate metadata
+``` 
+
+To change validation behavior, add options flags to the command. For a complete list of command options and usage information, see the PDK command [reference](https://puppet.com/docs/pdk/1.x/pdk_reference.html#pdk-validate-command).
 
 ## Usage
 
@@ -99,37 +114,37 @@ In the [examples](https://github.com/puppetlabs/puppetlabs-amazon_aws/blob/maste
 
 * [aws_table](aws_table.md)
 
-* [aws_egress_only_internet_gateway](aws_egress_only_internet_gateway.md)
-* [aws_volume](aws_volume.md)
-* [aws_instances](aws_instances.md)
-* [aws_route_table](aws_route_table.md)
-* [aws_key_pair](aws_key_pair.md)
-* [aws_vpn_gateway](aws_vpn_gateway.md)
-* [aws_network_interface](aws_network_interface.md)
-* [aws_customer_gateway](aws_customer_gateway.md)
-* [aws_vpc](aws_vpc.md)
-* [aws_placement_group](aws_placement_group.md)
-* [aws_internet_gateway](aws_internet_gateway.md)
-* [aws_subnet](aws_subnet.md)
 * [aws_tags](aws_tags.md)
+* [aws_network_interface](aws_network_interface.md)
+* [aws_placement_group](aws_placement_group.md)
+* [aws_subnet](aws_subnet.md)
+* [aws_vpn_gateway](aws_vpn_gateway.md)
+* [aws_volume](aws_volume.md)
+* [aws_vpc](aws_vpc.md)
+* [aws_customer_gateway](aws_customer_gateway.md)
+* [aws_key_pair](aws_key_pair.md)
 * [aws_security_group](aws_security_group.md)
+* [aws_instances](aws_instances.md)
+* [aws_egress_only_internet_gateway](aws_egress_only_internet_gateway.md)
+* [aws_internet_gateway](aws_internet_gateway.md)
+* [aws_route_table](aws_route_table.md)
 
-* [aws_mount_target](aws_mount_target.md)
 * [aws_file_system](aws_file_system.md)
+* [aws_mount_target](aws_mount_target.md)
 
-* [aws_target_group](aws_target_group.md)
 * [aws_listener](aws_listener.md)
 * [aws_load_balancer](aws_load_balancer.md)
 * [aws_rule](aws_rule.md)
+* [aws_target_group](aws_target_group.md)
 
-* [aws_db_cluster_snapshot](aws_db_cluster_snapshot.md)
-* [aws_event_subscription](aws_event_subscription.md)
 * [aws_db_subnet_group](aws_db_subnet_group.md)
+* [aws_event_subscription](aws_event_subscription.md)
+* [aws_db_instance](aws_db_instance.md)
+* [aws_db_cluster_snapshot](aws_db_cluster_snapshot.md)
+* [aws_db_security_group](aws_db_security_group.md)
+* [aws_db_snapshot](aws_db_snapshot.md)
 * [aws_option_group](aws_option_group.md)
 * [aws_db_cluster](aws_db_cluster.md)
 * [aws_db_cluster_parameter_group](aws_db_cluster_parameter_group.md)
-* [aws_db_instance](aws_db_instance.md)
-* [aws_db_snapshot](aws_db_snapshot.md)
 * [aws_db_parameter_group](aws_db_parameter_group.md)
-* [aws_db_security_group](aws_db_security_group.md)
 

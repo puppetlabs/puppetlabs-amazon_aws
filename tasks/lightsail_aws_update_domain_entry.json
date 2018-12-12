@@ -1,5 +1,5 @@
 {
-	"description": "Updates a domain recordset after it is created.",
+	"description": "Updates a domain recordset after it is created. The update domain entry operation supports tag-based access control via resource tags applied to the resource identified by domainName. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		

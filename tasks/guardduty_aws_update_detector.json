@@ -7,6 +7,12 @@
 		
 		
 		    
+			"finding_publishing_frequency":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"enable":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"finding_publishing_frequency":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

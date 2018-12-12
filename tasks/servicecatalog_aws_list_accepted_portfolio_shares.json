@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"page_token":{
+			"page_size":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"page_size":{
+			"page_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

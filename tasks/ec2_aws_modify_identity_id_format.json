@@ -7,12 +7,6 @@
 		
 		
 		    
-			"use_long_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"principal_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"resource":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"use_long_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"username":{
+			"broker_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"broker_id":{
+			"username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

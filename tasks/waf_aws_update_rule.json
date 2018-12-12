@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"updates":{
+			"rule_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"rule_id":{
+			"updates":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

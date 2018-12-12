@@ -7,13 +7,13 @@
 		
 		
 		    
-			"db_subnet_group_name":{
+			"db_subnet_group_description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_subnet_group_description":{
+			"db_subnet_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

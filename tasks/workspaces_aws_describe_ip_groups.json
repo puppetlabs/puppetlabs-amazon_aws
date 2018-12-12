@@ -7,7 +7,7 @@
 		
 		
 		    
-			"group_ids":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"max_results":{
+			"group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,25 @@
 		
 		
 		    
+			"availability_zone":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"availability_zone_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"cidr_block":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,18 +38,6 @@
 			,
 		    
 			"vpc_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dry_run":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"availability_zone":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

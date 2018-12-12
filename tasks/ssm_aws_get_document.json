@@ -7,7 +7,7 @@
 		
 		
 		    
-			"name":{
+			"document_format":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,13 @@
 			}
 			,
 		    
-			"document_format":{
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

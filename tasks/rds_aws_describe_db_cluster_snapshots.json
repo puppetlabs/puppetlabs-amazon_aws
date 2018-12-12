@@ -7,6 +7,18 @@
 		
 		
 		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"db_cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,25 +31,13 @@
 			}
 			,
 		    
-			"snapshot_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"max_records":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"marker":{
+			"include_public":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +49,7 @@
 			}
 			,
 		    
-			"include_public":{
+			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

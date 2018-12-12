@@ -7,13 +7,7 @@
 		
 		
 		    
-			"current_delivery_stream_version_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"destination_id":{
+			"redshift_destination_update":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +19,25 @@
 			}
 			,
 		    
-			"extended_s3_destination_update":{
+			"splunk_destination_update":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"redshift_destination_update":{
+			"current_delivery_stream_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delivery_stream_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destination_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +49,7 @@
 			}
 			,
 		    
-			"splunk_destination_update":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"delivery_stream_name":{
+			"extended_s3_destination_update":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

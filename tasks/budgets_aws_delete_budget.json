@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers associated with that budget. ",
+	"description": "Deletes a budget. You can delete your budget at any time.  Deleting a budget also deletes the notifications and subscribers that are associated with that budget. ",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"account_id":{
+			"budget_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"budget_name":{
+			"account_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

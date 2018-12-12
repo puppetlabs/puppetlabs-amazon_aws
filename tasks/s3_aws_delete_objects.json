@@ -7,13 +7,13 @@
 		
 		
 		    
-			"mfa":{
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"request_payer":{
+			"bypass_governance_retention":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,13 @@
 			}
 			,
 		    
-			"bucket":{
+			"mfa":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"request_payer":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

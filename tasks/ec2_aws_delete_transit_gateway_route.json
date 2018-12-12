@@ -1,0 +1,28 @@
+{
+	"description": "Deletes the specified route from the specified transit gateway route table.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"destination_cidr_block":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transit_gateway_route_table_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

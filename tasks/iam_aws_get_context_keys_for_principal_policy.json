@@ -7,13 +7,13 @@
 		
 		
 		    
-			"policy_source_arn":{
+			"policy_input_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"policy_input_list":{
+			"policy_source_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

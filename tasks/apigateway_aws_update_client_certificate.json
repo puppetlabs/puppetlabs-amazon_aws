@@ -7,13 +7,13 @@
 		
 		
 		    
-			"patch_operations":{
+			"client_certificate_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"client_certificate_id":{
+			"patch_operations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

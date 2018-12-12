@@ -7,13 +7,13 @@
 		
 		
 		    
-			"conditions":{
+			"actions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"actions":{
+			"conditions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

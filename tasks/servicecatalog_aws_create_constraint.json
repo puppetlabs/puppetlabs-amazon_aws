@@ -7,25 +7,13 @@
 		
 		
 		    
-			"type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"idempotency_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"accept_language":{
+			"parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +31,19 @@
 			}
 			,
 		    
-			"parameters":{
+			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

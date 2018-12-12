@@ -7,13 +7,13 @@
 		
 		
 		    
-			"group_id":{
+			"user_rules":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"user_rules":{
+			"group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

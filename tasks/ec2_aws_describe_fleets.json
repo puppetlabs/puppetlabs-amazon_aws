@@ -1,5 +1,5 @@
 {
-	"description": "Describes one or more of your EC2 Fleet.",
+	"description": "Describes one or more of your EC2 Fleets.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,7 +7,13 @@
 		
 		
 		    
-			"dry_run":{
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fleet_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +31,7 @@
 			}
 			,
 		    
-			"fleet_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

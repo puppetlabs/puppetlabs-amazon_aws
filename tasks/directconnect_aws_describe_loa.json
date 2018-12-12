@@ -1,5 +1,5 @@
 {
-	"description": "Returns the LOA-CFA for a connection, interconnect, or link aggregation group (LAG). The Letter of Authorization - Connecting Facility Assignment (LOA-CFA) is a document that is used when establishing your cross connect to AWS at the colocation facility. For more information, see Requesting Cross Connects at AWS Direct Connect Locations in the AWS Direct Connect user guide.",
+	"description": "Gets the LOA-CFA for a connection, interconnect, or link aggregation group (LAG). The Letter of Authorization - Connecting Facility Assignment (LOA-CFA) is a document that is used when establishing your cross connect to AWS at the colocation facility. For more information, see Requesting Cross Connects at AWS Direct Connect Locations in the AWS Direct Connect User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,7 +7,7 @@
 		
 		
 		    
-			"provider_name":{
+			"connection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"connection_id":{
+			"provider_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

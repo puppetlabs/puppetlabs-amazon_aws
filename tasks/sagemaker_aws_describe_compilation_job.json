@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about a model compilation job. To create a model compilation job, use CreateCompilationJob. To get information about multiple model compilation jobs, use ListCompilationJobs.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"compilation_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

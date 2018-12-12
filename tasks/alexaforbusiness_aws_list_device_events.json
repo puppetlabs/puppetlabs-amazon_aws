@@ -7,13 +7,7 @@
 		
 		
 		    
-			"device_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"event_type":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"max_results":{
+			"device_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

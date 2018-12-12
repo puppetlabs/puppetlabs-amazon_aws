@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a link aggregation group (LAG). You cannot delete a LAG if it has active virtual interfaces or hosted connections.",
+	"description": "Deletes the specified link aggregation group (LAG). You cannot delete a LAG if it has active virtual interfaces or hosted connections.",
 	"input_method": "stdin",
 	"parameters":{
 		

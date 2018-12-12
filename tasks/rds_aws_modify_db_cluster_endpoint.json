@@ -1,0 +1,34 @@
+{
+	"description": "Modifies the properties of an endpoint in an Amazon Aurora DB cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"db_cluster_endpoint_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpoint_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"excluded_members":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"static_members":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"suggestion_count":{
+			"only_available":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"only_available":{
+			"suggestion_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

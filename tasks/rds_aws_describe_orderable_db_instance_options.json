@@ -7,19 +7,7 @@
 		
 		
 		    
-			"license_model":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vpc":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
+			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +19,13 @@
 			}
 			,
 		    
-			"marker":{
+			"vpc":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"db_instance_class":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +43,13 @@
 			}
 			,
 		    
-			"db_instance_class":{
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"license_model":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

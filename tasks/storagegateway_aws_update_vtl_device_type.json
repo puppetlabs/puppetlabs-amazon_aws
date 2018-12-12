@@ -7,13 +7,13 @@
 		
 		
 		    
-			"vtl_device_arn":{
+			"device_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"device_type":{
+			"vtl_device_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

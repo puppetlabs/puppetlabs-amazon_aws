@@ -7,6 +7,12 @@
 		
 		
 		    
+			"players":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"ticket_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"game_session_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"players":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

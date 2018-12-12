@@ -7,13 +7,13 @@
 		
 		
 		    
-			"platform_name":{
+			"environment_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"platform_version":{
+			"option_settings":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,13 @@
 			}
 			,
 		    
-			"environment_name":{
+			"platform_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"option_settings":{
+			"platform_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

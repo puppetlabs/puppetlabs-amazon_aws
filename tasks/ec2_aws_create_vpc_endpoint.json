@@ -13,19 +13,13 @@
 			}
 			,
 		    
-			"security_group_ids":{
+			"service_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"private_dns_enabled":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vpc_id":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +31,13 @@
 			}
 			,
 		    
-			"subnet_ids":{
+			"security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"client_token":{
+			"subnet_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +49,19 @@
 			}
 			,
 		    
-			"service_name":{
+			"vpc_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"dry_run":{
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"private_dns_enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

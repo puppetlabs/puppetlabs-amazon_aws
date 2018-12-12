@@ -7,13 +7,7 @@
 		
 		
 		    
-			"target_maps":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"document_version":{
+			"mode":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +19,13 @@
 			}
 			,
 		    
-			"client_token":{
+			"target_locations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"max_errors":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_parameter_name":{
+			"target_maps":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +43,31 @@
 			}
 			,
 		    
-			"document_name":{
+			"max_errors":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"mode":{
+			"document_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_parameter_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,28 @@
+{
+	"description": "Deletes a database in Amazon Lightsail. The delete relational database operation supports tag-based access control via resource tags applied to the resource identified by relationalDatabaseName. For more information, see the Lightsail Dev Guide.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"final_relational_database_snapshot_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relational_database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skip_final_snapshot":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

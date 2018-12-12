@@ -7,13 +7,7 @@
 		
 		
 		    
-			"s3_bucket":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"s3_key_prefix":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"application_name":{
+			"s3_bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"s3_key_prefix":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

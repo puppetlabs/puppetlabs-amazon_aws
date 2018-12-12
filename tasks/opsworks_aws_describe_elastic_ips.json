@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"stack_id":{
+			"ips":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"ips":{
+			"stack_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -19,12 +19,6 @@
 			}
 			,
 		    
-			"status":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"platform_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"requested_by":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

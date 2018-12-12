@@ -10,6 +10,7 @@ Path: "https://github.com/aws/aws-sdk-go-v2/tree/master/models/apis/ec2/2016-11-
 ```puppet
 aws_subnet {
   availability_zone => "availability_zone (optional)",
+  availability_zone_id => "availability_zone_id (optional)",
   cidr_block => "cidr_block (optional)",
   dry_run => "DryRun (optional)",
   filters => "Filters (optional)",
@@ -23,6 +24,7 @@ aws_subnet {
 | Name        | Type           | Required       |
 | ------------- | ------------- | ------------- |
 |availability_zone | String | false |
+|availability_zone_id | String | false |
 |cidr_block | String | false |
 |dry_run | Boolean | false |
 |filters | FilterList | false |

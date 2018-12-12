@@ -7,13 +7,19 @@
 		
 		
 		    
-			"thing_type_name":{
+			"thing_type_properties":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"thing_type_properties":{
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_type_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

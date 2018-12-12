@@ -13,13 +13,19 @@
 			}
 			,
 		    
-			"thing_group_properties":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"thing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_group_properties":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

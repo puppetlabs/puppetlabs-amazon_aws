@@ -1,0 +1,28 @@
+{
+	"description": "Updates an existing work team with new member definitions or description.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"workteam_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"member_definitions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

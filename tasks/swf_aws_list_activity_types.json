@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"name":{
+			"maximum_page_size":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"registration_status":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +37,7 @@
 			}
 			,
 		    
-			"maximum_page_size":{
+			"registration_status":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

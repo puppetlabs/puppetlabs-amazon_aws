@@ -7,13 +7,13 @@
 		
 		
 		    
-			"parameters":{
+			"db_cluster_parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_cluster_parameter_group_name":{
+			"parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

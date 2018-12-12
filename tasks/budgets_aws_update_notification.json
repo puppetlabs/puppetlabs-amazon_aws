@@ -7,13 +7,13 @@
 		
 		
 		    
-			"old_notification":{
+			"new_notification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"new_notification":{
+			"old_notification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

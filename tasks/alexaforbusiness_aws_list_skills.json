@@ -7,7 +7,7 @@
 		
 		
 		    
-			"skill_group_arn":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,19 @@
 			}
 			,
 		    
-			"max_results":{
+			"skill_group_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"skill_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enablement_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

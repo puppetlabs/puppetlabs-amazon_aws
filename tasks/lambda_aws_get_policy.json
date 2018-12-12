@@ -1,5 +1,5 @@
 {
-	"description": "Returns the resource policy associated with the specified Lambda function.  If you are using the versioning feature, you can get the resource policy associated with the specific Lambda function version or alias by specifying the version or alias name using the Qualifier parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  You need permission for the lambda:GetPolicy action. ",
+	"description": "Returns the resource policy associated with the specified Lambda function. This action requires permission for the lambda:GetPolicy action. ",
 	"input_method": "stdin",
 	"parameters":{
 		

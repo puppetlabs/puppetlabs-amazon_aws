@@ -7,13 +7,13 @@
 		
 		
 		    
-			"resource_lifecycle_config":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"application_name":{
+			"resource_lifecycle_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

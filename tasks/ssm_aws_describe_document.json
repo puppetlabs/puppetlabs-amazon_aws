@@ -7,13 +7,19 @@
 		
 		
 		    
+			"document_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"document_version":{
+			"version_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

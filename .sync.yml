@@ -1,0 +1,31 @@
+---
+.rubocop.yml:
+  profiles:
+    strict:
+      configs:
+        Lint/ScriptPermission:
+          Enabled: false
+        Style/NestedTernaryOperator:
+          Enabled: false
+        Layout/EmptyLines:
+          Enabled: false
+        Layout/EmptyLineBetweenDefs:
+          Enabled: false
+        Metrics/LineLength:
+          Enabled: false
+        Style/PredicateName:
+          Enabled: false
+        Lint/UnusedBlockArgument:
+          Enabled: false
+        Style/Semicolon:
+          Enabled: false
+        Style/MultilineIfModifier:
+          Enabled: false
+        Style/EachWithObject:
+          Enabled: false
+
+.gitlab-ci.yml:
+  delete: true
+
+appveyor.yml:
+  delete: true

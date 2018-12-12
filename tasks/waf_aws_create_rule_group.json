@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"name":{
+			"metric_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"metric_name":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

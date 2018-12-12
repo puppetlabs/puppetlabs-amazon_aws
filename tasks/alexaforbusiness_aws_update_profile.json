@@ -7,25 +7,19 @@
 		
 		
 		    
-			"timezone":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"address":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"distance_unit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"wake_word":{
+			"is_default":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_volume_limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +37,13 @@
 			}
 			,
 		    
-			"max_volume_limit":{
+			"wake_word":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"address":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +55,19 @@
 			}
 			,
 		    
-			"profile_name":{
+			"setup_mode_disabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"setup_mode_disabled":{
+			"timezone":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"profile_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

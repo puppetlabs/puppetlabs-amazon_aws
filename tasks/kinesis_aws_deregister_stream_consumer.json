@@ -7,7 +7,7 @@
 		
 		
 		    
-			"consumer_name":{
+			"stream_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"stream_arn":{
+			"consumer_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

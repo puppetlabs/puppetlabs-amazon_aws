@@ -7,13 +7,13 @@
 		
 		
 		    
-			"topic_arn":{
+			"auto_scaling_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"auto_scaling_group_name":{
+			"topic_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

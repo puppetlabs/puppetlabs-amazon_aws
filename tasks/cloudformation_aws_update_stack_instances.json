@@ -13,13 +13,7 @@
 			}
 			,
 		    
-			"regions":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"parameter_overrides":{
+			"operation_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"operation_id":{
+			"parameter_overrides":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"regions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

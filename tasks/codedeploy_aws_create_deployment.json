@@ -7,7 +7,7 @@
 		
 		
 		    
-			"revision":{
+			"deployment_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,31 +19,19 @@
 			}
 			,
 		    
+			"file_exists_behavior":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"ignore_application_stop_failures":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"deployment_config_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployment_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"auto_rollback_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"file_exists_behavior":{
+			"update_outdated_instances_only":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +43,25 @@
 			}
 			,
 		    
+			"auto_rollback_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"target_instances":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"update_outdated_instances_only":{
+			"deployment_config_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"revision":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

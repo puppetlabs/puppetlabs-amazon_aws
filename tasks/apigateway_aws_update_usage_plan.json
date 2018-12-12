@@ -7,13 +7,13 @@
 		
 		
 		    
-			"usage_plan_id":{
+			"patch_operations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"patch_operations":{
+			"usage_plan_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,25 +7,13 @@
 		
 		
 		    
+			"private_dns_enabled":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"reset_policy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"remove_subnet_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"remove_security_group_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"add_security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +31,13 @@
 			}
 			,
 		    
-			"private_dns_enabled":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"add_route_table_ids":{
+			"policy_document":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,13 +49,25 @@
 			}
 			,
 		    
-			"dry_run":{
+			"remove_security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"policy_document":{
+			"remove_subnet_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"add_route_table_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"add_security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

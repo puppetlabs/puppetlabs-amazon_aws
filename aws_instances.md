@@ -11,6 +11,7 @@ Path: "https://github.com/aws/aws-sdk-go-v2/tree/master/models/apis/ec2/2016-11-
 aws_instances {
   additional_info => "additional_info (optional)",
   block_device_mappings => "BlockDeviceMappings (optional)",
+  capacity_reservation_specification => $aws_capacity_reservation_specification
   client_token => "client_token (optional)",
   cpu_options => $aws_cpu_options_request
   credit_specification => $aws_credit_specification_request
@@ -18,9 +19,11 @@ aws_instances {
   dry_run => "DryRun (optional)",
   ebs_optimized => "EbsOptimized (optional)",
   elastic_gpu_specification => "ElasticGpuSpecification (optional)",
+  elastic_inference_accelerators => "ElasticInferenceAccelerators (optional)",
   filters => "Filters (optional)",
+  hibernation_options => $aws_hibernation_options_request
   iam_instance_profile => $aws_iam_instance_profile_specification
-  kernel_id => "kernel_id (optional)",
+  subnet_id => "subnet_id (optional)",
   image_id => "image_id (optional)",
   instance_ids => "InstanceIds (optional)",
   instance_initiated_shutdown_behavior => $aws_shutdown_behavior
@@ -31,6 +34,7 @@ aws_instances {
   kernel_id => "kernel_id (optional)",
   key_name => "key_name (optional)",
   launch_template => $aws_launch_template_specification
+  license_specifications => $aws_license_specification_list_request
   max_count => "1234 (optional)",
   max_results => "1234 (optional)",
   min_count => "1234 (optional)",
@@ -52,6 +56,7 @@ aws_instances {
 | ------------- | ------------- | ------------- |
 |additional_info | String | false |
 |block_device_mappings | BlockDeviceMappingRequestList | false |
+|capacity_reservation_specification | [CapacityReservationSpecification](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=capacityreservationspecification) | false |
 |client_token | String | false |
 |cpu_options | [CpuOptionsRequest](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=cpuoptionsrequest) | false |
 |credit_specification | [CreditSpecificationRequest](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=creditspecificationrequest) | false |
@@ -59,9 +64,11 @@ aws_instances {
 |dry_run | Boolean | false |
 |ebs_optimized | Boolean | false |
 |elastic_gpu_specification | ElasticGpuSpecifications | false |
+|elastic_inference_accelerators | ElasticInferenceAccelerators | false |
 |filters | FilterList | false |
+|hibernation_options | [HibernationOptionsRequest](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=hibernationoptionsrequest) | false |
 |iam_instance_profile | [IamInstanceProfileSpecification](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=iaminstanceprofilespecification) | false |
-|kernel_id | String | false |
+|subnet_id | String | false |
 |image_id | String | false |
 |instance_ids | InstanceIdStringList | false |
 |instance_initiated_shutdown_behavior | [ShutdownBehavior](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=shutdownbehavior) | false |
@@ -72,6 +79,7 @@ aws_instances {
 |kernel_id | String | false |
 |key_name | String | false |
 |launch_template | [LaunchTemplateSpecification](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=launchtemplatespecification) | false |
+|license_specifications | [LicenseSpecificationListRequest](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=licensespecificationlistrequest) | false |
 |max_count | Integer | false |
 |max_results | Integer | false |
 |min_count | Integer | false |

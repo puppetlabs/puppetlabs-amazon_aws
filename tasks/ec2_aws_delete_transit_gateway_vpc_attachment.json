@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified VPC attachment.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"transit_gateway_attachment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

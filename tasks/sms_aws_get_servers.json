@@ -1,5 +1,5 @@
 {
-	"description": "The GetServers API returns a list of all servers in your server catalog. For this call to succeed, you must previously have called ImportServerCatalog.",
+	"description": "Describes the servers in your server catalog. Before you can describe your servers, you must import them using ImportServerCatalog.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,19 @@
 		
 		
 		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"max_results":{
+			"vm_server_address_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"connection_events":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +20,18 @@
 			,
 		    
 			"vpc_endpoint_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connection_events":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

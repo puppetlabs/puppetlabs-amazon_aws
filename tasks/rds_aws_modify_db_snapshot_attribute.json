@@ -7,13 +7,13 @@
 		
 		
 		    
-			"db_snapshot_identifier":{
+			"attribute_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"attribute_name":{
+			"db_snapshot_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

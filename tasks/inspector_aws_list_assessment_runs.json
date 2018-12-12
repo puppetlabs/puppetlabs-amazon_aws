@@ -7,13 +7,13 @@
 		
 		
 		    
-			"assessment_template_arns":{
+			"filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filter":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"max_results":{
+			"assessment_template_arns":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

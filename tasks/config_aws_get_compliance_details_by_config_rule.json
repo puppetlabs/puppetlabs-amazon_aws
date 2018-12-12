@@ -7,13 +7,13 @@
 		
 		
 		    
-			"config_rule_name":{
+			"compliance_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"compliance_types":{
+			"config_rule_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

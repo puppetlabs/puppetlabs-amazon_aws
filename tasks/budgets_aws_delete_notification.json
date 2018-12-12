@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a notification.  Deleting a notification also deletes the subscribers associated with the notification. ",
+	"description": "Deletes a notification.  Deleting a notification also deletes the subscribers that are associated with the notification. ",
 	"input_method": "stdin",
 	"parameters":{
 		

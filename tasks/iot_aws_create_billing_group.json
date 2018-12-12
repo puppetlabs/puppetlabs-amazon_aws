@@ -1,0 +1,28 @@
+{
+	"description": "Creates a billing group.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"billing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"billing_group_properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

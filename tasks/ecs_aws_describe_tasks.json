@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"include":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tasks":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

@@ -7,13 +7,7 @@
 		
 		
 		    
-			"vtl_device_ar_ns":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"marker":{
+			"gateway_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"gateway_arn":{
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vtl_device_ar_ns":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,19 @@
 		
 		
 		    
+			"billing_mode":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"global_secondary_index_updates":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"stream_specification":{
+			"provisioned_throughput":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +31,7 @@
 			}
 			,
 		    
-			"attribute_definitions":{
+			"stream_specification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +43,7 @@
 			}
 			,
 		    
-			"provisioned_throughput":{
+			"attribute_definitions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

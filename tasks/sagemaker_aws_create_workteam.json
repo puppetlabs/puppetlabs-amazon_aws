@@ -1,0 +1,34 @@
+{
+	"description": "Creates a new work team for labeling your data. A work team is defined by one or more Amazon Cognito user pools. You must first create the user pools before you can create a work team. You cannot create more than 25 work teams in an account and region.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"workteam_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"member_definitions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

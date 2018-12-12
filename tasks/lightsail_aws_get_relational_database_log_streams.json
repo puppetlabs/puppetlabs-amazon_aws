@@ -1,0 +1,16 @@
+{
+	"description": "Returns a list of available log streams for a specific database in Amazon Lightsail.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"relational_database_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

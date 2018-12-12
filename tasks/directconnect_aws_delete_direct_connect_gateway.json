@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a direct connect gateway. You must first delete all virtual interfaces that are attached to the direct connect gateway and disassociate all virtual private gateways that are associated with the direct connect gateway.",
+	"description": "Deletes the specified Direct Connect gateway. You must first delete all virtual interfaces that are attached to the Direct Connect gateway and disassociate all virtual private gateways that are associated with the Direct Connect gateway.",
 	"input_method": "stdin",
 	"parameters":{
 		

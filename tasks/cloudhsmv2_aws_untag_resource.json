@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tag_key_list":{
+			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_id":{
+			"tag_key_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -27,6 +27,7 @@ aws_db_instance {
   db_port_number => "DBPortNumber (optional)",
   db_security_groups => "DBSecurityGroups (optional)",
   db_subnet_group_name => "db_subnet_group_name (optional)",
+  delete_automated_backups => "DeleteAutomatedBackups (optional)",
   deletion_protection => "DeletionProtection (optional)",
   domain => "domain (optional)",
   domain_iam_role_name => "domain_iam_role_name (optional)",
@@ -46,7 +47,7 @@ aws_db_instance {
   monitoring_interval => "MonitoringInterval (optional)",
   monitoring_role_arn => "monitoring_role_arn (optional)",
   multi_az => "MultiAZ (optional)",
-  db_name => "db_name (optional)",
+  db_parameter_group_name => "db_parameter_group_name (optional)",
   new_db_instance_identifier => "new_db_instance_identifier (optional)",
   option_group_name => "option_group_name (optional)",
   performance_insights_kms_key_id => "performance_insights_kms_key_id (optional)",
@@ -89,6 +90,7 @@ aws_db_instance {
 |db_port_number | IntegerOptional | false |
 |db_security_groups | DBSecurityGroupNameList | false |
 |db_subnet_group_name | String | false |
+|delete_automated_backups | BooleanOptional | false |
 |deletion_protection | BooleanOptional | false |
 |domain | String | false |
 |domain_iam_role_name | String | false |
@@ -108,7 +110,7 @@ aws_db_instance {
 |monitoring_interval | IntegerOptional | false |
 |monitoring_role_arn | String | false |
 |multi_az | BooleanOptional | false |
-|db_name | String | false |
+|db_parameter_group_name | String | false |
 |new_db_instance_identifier | String | false |
 |option_group_name | String | false |
 |performance_insights_kms_key_id | String | false |

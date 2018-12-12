@@ -1,0 +1,22 @@
+{
+	"description": "Modifies a snapshot schedule. Any schedule associated with a cluster is modified asynchronously.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"schedule_definitions":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

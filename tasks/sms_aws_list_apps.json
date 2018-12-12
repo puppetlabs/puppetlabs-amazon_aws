@@ -1,0 +1,28 @@
+{
+	"description": "Returns a list of summaries for all applications.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

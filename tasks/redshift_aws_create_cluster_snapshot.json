@@ -13,13 +13,19 @@
 			}
 			,
 		    
-			"snapshot_identifier":{
+			"cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cluster_identifier":{
+			"manual_snapshot_retention_period":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"snapshot_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

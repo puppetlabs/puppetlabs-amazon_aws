@@ -7,13 +7,13 @@
 		
 		
 		    
-			"rest_api_id":{
+			"stage_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"stage_name":{
+			"rest_api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

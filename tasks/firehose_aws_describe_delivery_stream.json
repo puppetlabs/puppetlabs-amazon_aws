@@ -7,7 +7,7 @@
 		
 		
 		    
-			"limit":{
+			"delivery_stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"delivery_stream_name":{
+			"limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

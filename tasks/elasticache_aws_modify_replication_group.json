@@ -7,7 +7,31 @@
 		
 		
 		    
-			"notification_topic_status":{
+			"auto_minor_version_upgrade":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_parameter_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"engine_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"preferred_maintenance_window":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"apply_immediately":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +49,31 @@
 			}
 			,
 		    
-			"apply_immediately":{
+			"security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"auto_minor_version_upgrade":{
+			"cache_security_group_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_node_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"node_group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"notification_topic_status":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +91,7 @@
 			}
 			,
 		    
-			"cache_parameter_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"notification_topic_arn":{
+			"automatic_failover_enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -73,43 +103,13 @@
 			}
 			,
 		    
-			"security_group_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"snapshotting_cluster_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"automatic_failover_enabled":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cache_security_group_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"engine_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cache_node_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"preferred_maintenance_window":{
+			"notification_topic_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

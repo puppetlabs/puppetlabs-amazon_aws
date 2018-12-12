@@ -7,6 +7,12 @@
 		
 		
 		    
+			"ip_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"location":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"detector_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ip_set_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

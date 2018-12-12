@@ -7,7 +7,25 @@
 		
 		
 		    
-			"custom_instance_profile_arn":{
+			"enable_auto_healing":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"auto_assign_elastic_ips":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"volume_configurations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,25 +37,7 @@
 			}
 			,
 		    
-			"custom_recipes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"layer_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"custom_json":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"shortname":{
+			"lifecycle_event_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +55,25 @@
 			}
 			,
 		    
-			"name":{
+			"cloud_watch_logs_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_instance_profile_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_json":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"custom_recipes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,43 +85,25 @@
 			}
 			,
 		    
-			"auto_assign_elastic_ips":{
+			"install_updates_on_boot":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cloud_watch_logs_configuration":{
+			"layer_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"shortname":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"attributes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"volume_configurations":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"enable_auto_healing":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"lifecycle_event_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"install_updates_on_boot":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

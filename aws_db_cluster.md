@@ -21,17 +21,19 @@ aws_db_cluster {
   db_subnet_group_name => "db_subnet_group_name (optional)",
   deletion_protection => "DeletionProtection (optional)",
   enable_cloudwatch_logs_exports => "EnableCloudwatchLogsExports (optional)",
+  enable_http_endpoint => "EnableHttpEndpoint (optional)",
   enable_iam_database_authentication => "EnableIAMDatabaseAuthentication (optional)",
   engine => "engine (optional)",
   engine_mode => "engine_mode (optional)",
   engine_version => "engine_version (optional)",
   filters => "Filters (optional)",
   final_db_snapshot_identifier => "final_db_snapshot_identifier (optional)",
+  global_cluster_identifier => "global_cluster_identifier (optional)",
   kms_key_id => "kms_key_id (optional)",
   master_username => "master_username (optional)",
   master_user_password => "master_user_password (optional)",
   max_records => "MaxRecords (optional)",
-  option_group_name => "option_group_name (optional)",
+  database_name => "database_name (optional)",
   new_db_cluster_identifier => "new_db_cluster_identifier (optional)",
   option_group_name => "option_group_name (optional)",
   port => "Port (optional)",
@@ -61,17 +63,19 @@ aws_db_cluster {
 |db_subnet_group_name | String | false |
 |deletion_protection | BooleanOptional | false |
 |enable_cloudwatch_logs_exports | LogTypeList | false |
+|enable_http_endpoint | BooleanOptional | false |
 |enable_iam_database_authentication | BooleanOptional | false |
 |engine | String | false |
 |engine_mode | String | false |
 |engine_version | String | false |
 |filters | FilterList | false |
 |final_db_snapshot_identifier | String | false |
+|global_cluster_identifier | String | false |
 |kms_key_id | String | false |
 |master_username | String | false |
 |master_user_password | String | false |
 |max_records | IntegerOptional | false |
-|option_group_name | String | false |
+|database_name | String | false |
 |new_db_cluster_identifier | String | false |
 |option_group_name | String | false |
 |port | IntegerOptional | false |

@@ -7,37 +7,13 @@
 		
 		
 		    
-			"last_modified_time_after":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"status_equals":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_results":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name_contains":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"notebook_instance_lifecycle_config_name_contains":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +31,37 @@
 			}
 			,
 		    
-			"creation_time_before":{
+			"default_code_repository_contains":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"last_modified_time_before":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name_contains":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status_equals":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additional_code_repository_equals":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,7 +73,13 @@
 			}
 			,
 		    
-			"last_modified_time_before":{
+			"creation_time_before":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"last_modified_time_after":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

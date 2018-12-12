@@ -7,7 +7,7 @@
 		
 		
 		    
-			"next_token":{
+			"job_name_contains":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"status":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"job_name_contains":{
+			"status":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

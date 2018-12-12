@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tag_keys":{
+			"arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"arn":{
+			"tag_keys":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Creates a TypedLinkFacet. For more information, see Typed link.",
+	"description": "Creates a TypedLinkFacet. For more information, see Typed Links.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"schema_arn":{
+			"facet":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"facet":{
+			"schema_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

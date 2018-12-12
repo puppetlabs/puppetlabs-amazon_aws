@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"terminate_resources":{
+			"force_terminate":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"force_terminate":{
+			"terminate_resources":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

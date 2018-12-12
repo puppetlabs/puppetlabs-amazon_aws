@@ -1,0 +1,46 @@
+{
+	"description": "Updates supported fields of the specified job.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_executions_rollout_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"presigned_url_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"abort_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

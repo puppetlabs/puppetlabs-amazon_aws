@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tags":{
+			"instance_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"instance_names":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

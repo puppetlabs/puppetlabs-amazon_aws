@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"profile_arn":{
+			"labels":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"labels":{
+			"profile_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

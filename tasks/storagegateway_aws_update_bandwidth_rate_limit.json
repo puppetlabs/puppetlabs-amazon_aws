@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"average_upload_rate_limit_in_bits_per_sec":{
+			"average_download_rate_limit_in_bits_per_sec":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"average_download_rate_limit_in_bits_per_sec":{
+			"average_upload_rate_limit_in_bits_per_sec":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

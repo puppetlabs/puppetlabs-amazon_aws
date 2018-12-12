@@ -7,13 +7,13 @@
 		
 		
 		    
-			"policy_name":{
+			"group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"group_name":{
+			"policy_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

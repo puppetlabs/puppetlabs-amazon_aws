@@ -1,0 +1,28 @@
+{
+	"description": "Creates a route table for the specified transit gateway.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"tag_specifications":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transit_gateway_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

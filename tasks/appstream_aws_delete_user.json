@@ -1,0 +1,22 @@
+{
+	"description": "Deletes a user from the user pool.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authentication_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

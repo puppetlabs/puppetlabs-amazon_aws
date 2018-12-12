@@ -7,19 +7,37 @@
 		
 		
 		    
+			"lexicon_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"output_format":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"output_s3_bucket_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"output_s3_key_prefix":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"text":{
+			"sample_rate":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"sns_topic_arn":{
+			"text":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,31 +55,13 @@
 			}
 			,
 		    
-			"lexicon_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"output_s3_bucket_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sample_rate":{
+			"sns_topic_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"speech_mark_types":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"output_format":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

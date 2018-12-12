@@ -7,6 +7,12 @@
 		
 		
 		    
+			"directory_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"organizational_unit_distinguished_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"service_account_credentials":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"directory_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

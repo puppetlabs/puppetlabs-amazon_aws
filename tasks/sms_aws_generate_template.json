@@ -1,0 +1,22 @@
+{
+	"description": "Generates an Amazon CloudFormation template based on the current launch configuration and writes it to an Amazon S3 object in the customer’s Amazon S3 bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"template_format":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

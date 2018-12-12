@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"role_name":{
+			"path_prefix":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"path_prefix":{
+			"role_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

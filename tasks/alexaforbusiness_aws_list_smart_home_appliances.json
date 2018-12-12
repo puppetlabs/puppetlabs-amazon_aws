@@ -1,0 +1,28 @@
+{
+	"description": "Lists all of the smart home appliances associated with a room.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"room_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

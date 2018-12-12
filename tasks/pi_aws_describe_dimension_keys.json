@@ -13,19 +13,7 @@
 			}
 			,
 		    
-			"end_time":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"period_in_seconds":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +37,25 @@
 			}
 			,
 		    
+			"end_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"metric":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"period_in_seconds":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -62,12 +68,6 @@
 			,
 		    
 			"max_results":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

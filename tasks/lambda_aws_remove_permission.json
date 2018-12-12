@@ -1,5 +1,5 @@
 {
-	"description": "You can remove individual permissions from an resource policy associated with a Lambda function by providing a statement ID that you provided when you added the permission. If you are using versioning, the permissions you remove are specific to the Lambda function version or alias you specify in the AddPermission request via the Qualifier parameter. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  Note that removal of a permission will cause an active event source to lose permission to the function. You need permission for the lambda:RemovePermission action.",
+	"description": "Removes permissions from a function. You can remove individual permissions from an resource policy associated with a Lambda function by providing a statement ID that you provided when you added the permission. When you remove permissions, disable the event source mapping or trigger configuration first to avoid errors. Permissions apply to the Amazon Resource Name (ARN) used to invoke the function, which can be unqualified (the unpublished version of the function), or include a version or alias. If a client uses a version or alias to invoke a function, use the Qualifier parameter to apply permissions to that ARN. For more information about versioning, see AWS Lambda Function Versioning and Aliases.  You need permission for the lambda:RemovePermission action.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"statement_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"qualifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"revision_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"statement_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

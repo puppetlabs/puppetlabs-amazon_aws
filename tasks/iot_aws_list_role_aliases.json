@@ -1,0 +1,28 @@
+{
+	"description": "Lists the role aliases registered in your account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"ascending_order":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

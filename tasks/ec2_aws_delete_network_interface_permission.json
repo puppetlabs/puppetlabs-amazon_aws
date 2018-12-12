@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"network_interface_permission_id":{
+			"force":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"force":{
+			"network_interface_permission_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

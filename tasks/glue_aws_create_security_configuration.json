@@ -7,13 +7,13 @@
 		
 		
 		    
-			"name":{
+			"encryption_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"encryption_configuration":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

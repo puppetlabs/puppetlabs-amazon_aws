@@ -7,6 +7,18 @@
 		
 		
 		    
+			"command_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,18 +32,6 @@
 			,
 		    
 			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"command_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

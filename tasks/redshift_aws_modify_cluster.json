@@ -7,25 +7,13 @@
 		
 		
 		    
-			"enhanced_vpc_routing":{
+			"allow_version_upgrade":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"node_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"master_user_password":{
+			"manual_snapshot_retention_period":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +25,61 @@
 			}
 			,
 		    
+			"cluster_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enhanced_vpc_routing":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hsm_client_certificate_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"number_of_nodes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_security_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"hsm_configuration_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"master_user_password":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"new_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"node_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +91,7 @@
 			}
 			,
 		    
-			"allow_version_upgrade":{
+			"preferred_maintenance_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,13 +103,25 @@
 			}
 			,
 		    
-			"encrypted":{
+			"cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"cluster_parameter_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"elastic_ip":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encrypted":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -80,54 +134,6 @@
 			,
 		    
 			"maintenance_track_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"number_of_nodes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"elastic_ip":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"hsm_client_certificate_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster_security_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"preferred_maintenance_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"new_cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

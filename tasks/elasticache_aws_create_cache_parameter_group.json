@@ -7,13 +7,13 @@
 		
 		
 		    
-			"cache_parameter_group_name":{
+			"cache_parameter_group_family":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cache_parameter_group_family":{
+			"cache_parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

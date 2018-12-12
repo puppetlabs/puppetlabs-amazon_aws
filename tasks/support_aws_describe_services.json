@@ -7,13 +7,13 @@
 		
 		
 		    
-			"service_code_list":{
+			"language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"language":{
+			"service_code_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

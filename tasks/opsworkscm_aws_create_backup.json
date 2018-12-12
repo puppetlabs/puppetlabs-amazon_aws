@@ -7,13 +7,13 @@
 		
 		
 		    
-			"server_name":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"server_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

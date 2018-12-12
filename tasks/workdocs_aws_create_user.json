@@ -13,25 +13,7 @@
 			}
 			,
 		    
-			"password":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"organization_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"given_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"storage_rule":{
+			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +25,31 @@
 			}
 			,
 		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"storage_rule":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"surname":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"authentication_token":{
+			"given_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"password":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

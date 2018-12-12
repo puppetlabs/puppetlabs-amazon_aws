@@ -7,7 +7,7 @@
 		
 		
 		    
-			"geo_match_set_id":{
+			"updates":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"updates":{
+			"geo_match_set_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

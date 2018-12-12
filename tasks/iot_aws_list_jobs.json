@@ -7,6 +7,24 @@
 		
 		
 		    
+			"target_selection":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,25 +37,7 @@
 			}
 			,
 		    
-			"thing_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"thing_group_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"status":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_selection":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

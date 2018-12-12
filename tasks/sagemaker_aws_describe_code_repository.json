@@ -1,0 +1,16 @@
+{
+	"description": "Gets details about the specified git repository.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"code_repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

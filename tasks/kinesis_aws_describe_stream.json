@@ -7,7 +7,7 @@
 		
 		
 		    
-			"stream_name":{
+			"exclusive_start_shard_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"exclusive_start_shard_id":{
+			"stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

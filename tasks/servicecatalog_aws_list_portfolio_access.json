@@ -7,13 +7,13 @@
 		
 		
 		    
-			"portfolio_id":{
+			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"accept_language":{
+			"portfolio_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

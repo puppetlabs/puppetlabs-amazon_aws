@@ -13,7 +13,13 @@
 			}
 			,
 		    
-			"number_of_bytes":{
+			"grant_tokens":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +31,7 @@
 			}
 			,
 		    
-			"grant_tokens":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"key_id":{
+			"number_of_bytes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

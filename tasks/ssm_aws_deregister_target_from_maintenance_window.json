@@ -7,6 +7,12 @@
 		
 		
 		    
+			"safe":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"window_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"window_target_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"safe":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

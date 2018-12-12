@@ -1,0 +1,40 @@
+{
+	"description": "Lists the organization nodes that have access to the specified portfolio. This API can only be called by the master account in the organization.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"portfolio_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organization_node_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

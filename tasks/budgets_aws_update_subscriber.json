@@ -7,6 +7,12 @@
 		
 		
 		    
+			"new_subscriber":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"notification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"old_subscriber":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"new_subscriber":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Deletes the specified Lambda function code and configuration. If you are using the versioning feature and you don't specify a function version in your DeleteFunction request, AWS Lambda will delete the function, including all its versions, and any aliases pointing to the function versions. To delete a specific function version, you must provide the function version via the Qualifier parameter. For information about function versioning, see AWS Lambda Function Versioning and Aliases.  When you delete a function the associated resource policy is also deleted. You will need to delete the event source mappings explicitly. This operation requires permission for the lambda:DeleteFunction action.",
+	"description": "Deletes a Lambda function. To delete a specific function version, use the Qualifier parameter. Otherwise, all versions and aliases are deleted. Event source mappings are not deleted. This operation requires permission for the lambda:DeleteFunction action.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"qualifier":{
+			"function_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"function_name":{
+			"qualifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,5 +1,5 @@
 {
-	"description": "Creates sn SSH key pair.",
+	"description": "Creates an SSH key pair. The create key pair operation supports tag-based access control via request tags. For more information, see the Lightsail Dev Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -8,6 +8,12 @@
 		
 		    
 			"key_pair_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

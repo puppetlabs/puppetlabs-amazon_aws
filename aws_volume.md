@@ -13,7 +13,6 @@ aws_volume {
   dry_run => "DryRun (optional)",
   encrypted => "Encrypted (optional)",
   filters => "Filters (optional)",
-  snapshot_id => "snapshot_id (optional)",
   iops => "1234 (optional)",
   kms_key_id => "kms_key_id (optional)",
   max_results => "1234 (optional)",
@@ -33,7 +32,6 @@ aws_volume {
 |dry_run | Boolean | false |
 |encrypted | Boolean | false |
 |filters | FilterList | false |
-|snapshot_id | String | false |
 |iops | Integer | false |
 |kms_key_id | String | false |
 |max_results | Integer | false |

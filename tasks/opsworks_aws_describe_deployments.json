@@ -7,12 +7,6 @@
 		
 		
 		    
-			"stack_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"app_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"deployment_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stack_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

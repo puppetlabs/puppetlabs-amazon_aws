@@ -7,13 +7,13 @@
 		
 		
 		    
-			"scaling_parameters":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"domain_name":{
+			"scaling_parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

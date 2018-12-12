@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"accept_language":{
+			"page_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"page_token":{
+			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,7 +7,31 @@
 		
 		
 		    
-			"ramdisk_id":{
+			"launch_configuration_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iam_instance_profile":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classic_link_vpc_security_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"image_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,31 +49,7 @@
 			}
 			,
 		    
-			"ebs_optimized":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"classic_link_vpc_security_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"user_data":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"classic_link_vpc_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"block_device_mappings":{
+			"security_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,25 +61,7 @@
 			}
 			,
 		    
-			"image_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"security_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_type":{
+			"classic_link_vpc_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -91,7 +73,7 @@
 			}
 			,
 		    
-			"iam_instance_profile":{
+			"user_data":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -109,7 +91,25 @@
 			}
 			,
 		    
-			"launch_configuration_name":{
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ramdisk_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"block_device_mappings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ebs_optimized":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

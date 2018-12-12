@@ -7,13 +7,7 @@
 		
 		
 		    
-			"table_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"partition_value_list":{
+			"database_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +19,19 @@
 			}
 			,
 		    
-			"catalog_id":{
+			"partition_value_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"database_name":{
+			"table_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"catalog_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

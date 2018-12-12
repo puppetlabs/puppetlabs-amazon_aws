@@ -7,7 +7,7 @@
 		
 		
 		    
-			"replication_group_id":{
+			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"marker":{
+			"replication_group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

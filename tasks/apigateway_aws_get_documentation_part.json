@@ -7,13 +7,13 @@
 		
 		
 		    
-			"documentation_part_id":{
+			"rest_api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"rest_api_id":{
+			"documentation_part_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

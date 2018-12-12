@@ -7,7 +7,7 @@
 		
 		
 		    
-			"organization_id":{
+			"display_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"display_name":{
+			"organization_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

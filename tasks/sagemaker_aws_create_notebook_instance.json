@@ -7,7 +7,13 @@
 		
 		
 		    
-			"subnet_id":{
+			"direct_internet_access":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +25,31 @@
 			}
 			,
 		    
-			"instance_type":{
+			"security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
+			"volume_size_in_gb":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additional_code_repositories":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"default_code_repository":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,25 +61,25 @@
 			}
 			,
 		    
-			"direct_internet_access":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"security_group_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"kms_key_id":{
+			"subnet_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accelerator_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

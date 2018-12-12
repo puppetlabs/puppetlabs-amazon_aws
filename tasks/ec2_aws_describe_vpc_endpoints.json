@@ -13,12 +13,6 @@
 			}
 			,
 		    
-			"vpc_endpoint_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpc_endpoint_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

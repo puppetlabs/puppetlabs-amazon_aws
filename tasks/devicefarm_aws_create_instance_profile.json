@@ -7,13 +7,13 @@
 		
 		
 		    
-			"description":{
+			"reboot_after_use":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"package_cleanup":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,13 @@
 			}
 			,
 		    
-			"reboot_after_use":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"package_cleanup":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

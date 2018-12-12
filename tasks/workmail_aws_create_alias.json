@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"entity_id":{
+			"alias":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"alias":{
+			"entity_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

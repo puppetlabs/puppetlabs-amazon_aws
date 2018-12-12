@@ -7,13 +7,7 @@
 		
 		
 		    
-			"shard_iterator_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"starting_sequence_number":{
+			"stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +19,19 @@
 			}
 			,
 		    
-			"stream_name":{
+			"shard_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"shard_id":{
+			"shard_iterator_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"starting_sequence_number":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

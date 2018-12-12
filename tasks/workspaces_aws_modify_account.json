@@ -1,0 +1,22 @@
+{
+	"description": "Modifies the configuration of bring your own license (BYOL) for the specified account.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dedicated_tenancy_management_cidr_range":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dedicated_tenancy_support":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

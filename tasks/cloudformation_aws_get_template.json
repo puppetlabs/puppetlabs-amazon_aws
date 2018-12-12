@@ -7,13 +7,13 @@
 		
 		
 		    
-			"stack_name":{
+			"change_set_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"change_set_name":{
+			"stack_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

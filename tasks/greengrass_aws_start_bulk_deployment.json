@@ -1,0 +1,28 @@
+{
+	"description": "Deploys multiple groups in one operation. This action starts the bulk deployment of a specified set of group versions. Each group version deployment will be triggered with an adaptive rate that has a fixed upper limit. We recommend that you include an ''X-Amzn-Client-Token'' token in every ''StartBulkDeployment'' request. These requests are idempotent with respect to the token and the request parameters.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"amzn_client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"execution_role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"input_file_uri":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -7,7 +7,7 @@
 		
 		
 		    
-			"instance_credit_specifications":{
+			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +19,7 @@
 			}
 			,
 		    
-			"client_token":{
+			"instance_credit_specifications":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

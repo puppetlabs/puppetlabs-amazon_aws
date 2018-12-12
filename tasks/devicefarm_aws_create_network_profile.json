@@ -7,25 +7,7 @@
 		
 		
 		    
-			"project_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"uplink_delay_ms":{
+			"downlink_bandwidth_bits":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,19 +19,7 @@
 			}
 			,
 		    
-			"downlink_loss_percent":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"uplink_loss_percent":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,19 +31,49 @@
 			}
 			,
 		    
-			"downlink_bandwidth_bits":{
+			"uplink_delay_ms":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"downlink_delay_ms":{
+			"uplink_loss_percent":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"downlink_loss_percent":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"uplink_jitter_ms":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"downlink_delay_ms":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"sns_topic_arn":{
+			"severity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"source_type":{
+			"sns_topic_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,19 +25,13 @@
 			}
 			,
 		    
-			"event_categories":{
+			"source_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"severity":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"enabled":{
+			"subscription_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +43,13 @@
 			}
 			,
 		    
-			"subscription_name":{
+			"enabled":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_categories":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

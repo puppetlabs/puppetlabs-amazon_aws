@@ -1,5 +1,5 @@
 {
-	"description": "Removes one or more tags from the specified Direct Connect resource.",
+	"description": "Removes one or more tags from the specified AWS Direct Connect resource.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"tag_keys":{
+			"resource_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"resource_arn":{
+			"tag_keys":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

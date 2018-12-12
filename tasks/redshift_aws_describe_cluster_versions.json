@@ -13,7 +13,7 @@
 			}
 			,
 		    
-			"max_records":{
+			"cluster_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +25,7 @@
 			}
 			,
 		    
-			"cluster_version":{
+			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

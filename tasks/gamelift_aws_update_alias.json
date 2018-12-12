@@ -7,7 +7,7 @@
 		
 		
 		    
-			"alias_id":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"description":{
+			"routing_strategy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"routing_strategy":{
+			"alias_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

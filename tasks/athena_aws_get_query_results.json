@@ -7,13 +7,13 @@
 		
 		
 		    
-			"query_execution_id":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"query_execution_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

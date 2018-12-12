@@ -7,19 +7,13 @@
 		
 		
 		    
-			"repository_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"author_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"pull_request_status":{
+			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +25,13 @@
 			}
 			,
 		    
-			"max_results":{
+			"pull_request_status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"repository_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

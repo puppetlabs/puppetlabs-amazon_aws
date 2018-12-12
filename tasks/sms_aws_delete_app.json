@@ -1,0 +1,28 @@
+{
+	"description": "Deletes an existing application. Optionally deletes the launched stack associated with the application and all AWS SMS replication jobs for servers in the application.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"app_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"force_stop_app_replication":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"force_terminate_app":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

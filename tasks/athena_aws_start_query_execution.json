@@ -7,7 +7,13 @@
 		
 		
 		    
-			"result_configuration":{
+			"client_request_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"query_execution_context":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +25,7 @@
 			}
 			,
 		    
-			"client_request_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"query_execution_context":{
+			"result_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

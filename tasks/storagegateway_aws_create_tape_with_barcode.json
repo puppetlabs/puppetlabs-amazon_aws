@@ -7,19 +7,19 @@
 		
 		
 		    
-			"kms_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"gateway_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tape_size_in_bytes":{
+			"kms_encrypted":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +31,7 @@
 			}
 			,
 		    
-			"kms_encrypted":{
+			"tape_size_in_bytes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,7 @@
 		
 		
 		    
-			"open_id_connect_config":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
+			"authentication_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +19,13 @@
 			}
 			,
 		    
-			"authentication_type":{
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"open_id_connect_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

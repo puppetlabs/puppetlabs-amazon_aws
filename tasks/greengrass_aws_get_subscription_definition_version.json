@@ -7,6 +7,12 @@
 		
 		
 		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"subscription_definition_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

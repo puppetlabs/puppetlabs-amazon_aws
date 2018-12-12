@@ -1,0 +1,22 @@
+{
+	"description": "Retrieves a custom terminology.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"terminology_data_format":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

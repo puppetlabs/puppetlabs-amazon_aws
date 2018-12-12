@@ -7,13 +7,13 @@
 		
 		
 		    
-			"resource_id_list":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"resource_id_list":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

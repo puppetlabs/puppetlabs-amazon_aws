@@ -7,13 +7,13 @@
 		
 		
 		    
-			"dry_run":{
+			"device":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"device":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

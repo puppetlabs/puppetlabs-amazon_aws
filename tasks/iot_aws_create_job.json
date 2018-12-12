@@ -7,25 +7,7 @@
 		
 		
 		    
-			"target_selection":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targets":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"document_source":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"document":{
+			"abort_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +19,31 @@
 			}
 			,
 		    
+			"document_source":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"presigned_url_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"target_selection":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -50,6 +56,18 @@
 			,
 		    
 			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"timeout_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,40 @@
+{
+	"description": "Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"static_members":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"db_cluster_endpoint_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"db_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"endpoint_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"excluded_members":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

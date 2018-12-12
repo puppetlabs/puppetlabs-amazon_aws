@@ -7,13 +7,13 @@
 		
 		
 		    
-			"hierarchy_group_id":{
+			"user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"user_id":{
+			"hierarchy_group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

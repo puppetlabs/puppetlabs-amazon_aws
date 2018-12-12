@@ -7,13 +7,13 @@
 		
 		
 		    
-			"fleet_id":{
+			"actions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"actions":{
+			"fleet_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

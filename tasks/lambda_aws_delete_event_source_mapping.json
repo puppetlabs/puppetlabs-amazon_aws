@@ -1,5 +1,5 @@
 {
-	"description": "Removes an event source mapping. This means AWS Lambda will no longer invoke the function for events in the associated source. This operation requires permission for the lambda:DeleteEventSourceMapping action.",
+	"description": "Deletes an event source mapping.",
 	"input_method": "stdin",
 	"parameters":{
 		

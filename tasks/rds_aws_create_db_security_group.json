@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"tags":{
+			"db_security_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"db_security_group_name":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

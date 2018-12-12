@@ -7,13 +7,13 @@
 		
 		
 		    
-			"repository_name":{
+			"blob_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"blob_id":{
+			"repository_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"assign_ipv6_address_on_creation":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"map_public_ip_on_launch":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"subnet_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"assign_ipv6_address_on_creation":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

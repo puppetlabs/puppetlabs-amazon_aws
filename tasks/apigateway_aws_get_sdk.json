@@ -7,25 +7,25 @@
 		
 		
 		    
-			"rest_api_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"stage_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"sdk_type":{
+			"parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"parameters":{
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sdk_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

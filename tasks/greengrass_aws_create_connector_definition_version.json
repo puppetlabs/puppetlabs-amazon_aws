@@ -1,0 +1,28 @@
+{
+	"description": "Creates a version of a connector definition which has already been defined.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"amzn_client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connector_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"connectors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

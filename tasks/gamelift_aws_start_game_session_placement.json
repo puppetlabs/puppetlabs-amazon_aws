@@ -13,19 +13,13 @@
 			}
 			,
 		    
-			"game_properties":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"maximum_player_session_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"game_session_name":{
+			"placement_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +37,19 @@
 			}
 			,
 		    
+			"game_properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"game_session_data":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"placement_id":{
+			"game_session_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
