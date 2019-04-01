@@ -19,7 +19,19 @@
 			}
 			,
 		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"network_acl_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

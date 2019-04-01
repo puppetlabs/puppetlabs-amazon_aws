@@ -1,196 +1,163 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_network_interface',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_network_interface) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_network_interface you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:association) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:attachment) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:availability_zone) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:description) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:dry_run) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:filters, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:groups, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:interface_type) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ipv6_address_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ipv6_addresses, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:mac_address) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:max_results) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:network_interface_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:network_interface_ids, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:next_token) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:owner_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:private_dns_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:private_ip_address) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:private_ip_addresses, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:requester_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:requester_managed) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:secondary_private_ip_address_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:source_dest_check) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:status) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:subnet_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:tag_set) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    association: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    attachment: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    availability_zone: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    description: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    dry_run: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    filters: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    groups: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    interface_type: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    ipv6_address_count: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    ipv6_addresses: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    mac_address: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    max_results: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    network_interface_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    network_interface_ids: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    next_token: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    owner_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    private_dns_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    private_ip_address: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    private_ip_addresses: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    requester_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    requester_managed: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    secondary_private_ip_address_count: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    source_dest_check: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    status: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    subnet_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    tag_set: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

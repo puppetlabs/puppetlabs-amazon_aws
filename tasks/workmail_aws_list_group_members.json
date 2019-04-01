@@ -1,5 +1,5 @@
 {
-	"description": "Returns an overview of the members of a group.",
+	"description": "Returns an overview of the members of a group. Users and groups can be members of a group.",
 	"input_method": "stdin",
 	"parameters":{
 		

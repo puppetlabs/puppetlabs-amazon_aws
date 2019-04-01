@@ -7,24 +7,6 @@
 		
 		
 		    
-			"display_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"provider_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"remove_tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +26,24 @@
 			,
 		    
 			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"display_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provider_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

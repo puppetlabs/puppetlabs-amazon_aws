@@ -1,0 +1,28 @@
+{
+	"description": "Adds tags to a resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags_model":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

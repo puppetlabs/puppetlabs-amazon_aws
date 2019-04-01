@@ -7,13 +7,7 @@
 		
 		
 		    
-			"stack_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attributes":{
+			"custom_json":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,25 +25,19 @@
 			}
 			,
 		    
-			"hostname_theme":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"use_opsworks_security_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"default_subnet_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"service_role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"use_custom_cookbooks":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,31 +49,37 @@
 			}
 			,
 		    
-			"custom_json":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"default_availability_zone":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"default_instance_profile_arn":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"default_ssh_key_name":{
+			"stack_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"agent_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"hostname_theme":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"default_instance_profile_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -103,13 +97,19 @@
 			}
 			,
 		    
-			"service_role_arn":{
+			"default_ssh_key_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"use_custom_cookbooks":{
+			"use_opsworks_security_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

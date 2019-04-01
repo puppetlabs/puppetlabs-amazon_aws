@@ -1,5 +1,5 @@
 {
-	"description": "Stops a running stream processor that was created by .",
+	"description": "Stops a running stream processor that was created by CreateStreamProcessor.",
 	"input_method": "stdin",
 	"parameters":{
 		

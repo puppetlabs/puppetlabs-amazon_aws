@@ -14,10 +14,10 @@ aws_db_snapshot {
   db_snapshot_identifier => "db_snapshot_identifier (optional)",
   engine_version => "engine_version (optional)",
   filters => "Filters (optional)",
-  dbi_resource_id => "dbi_resource_id (optional)",
   include_public => "IncludePublic (optional)",
   include_shared => "IncludeShared (optional)",
   max_records => "MaxRecords (optional)",
+  option_group_name => "option_group_name (optional)",
   option_group_name => "option_group_name (optional)",
   snapshot_type => "snapshot_type (optional)",
   tags => "Tags (optional)",
@@ -31,10 +31,10 @@ aws_db_snapshot {
 |db_snapshot_identifier | String | false |
 |engine_version | String | false |
 |filters | FilterList | false |
-|dbi_resource_id | String | false |
 |include_public | Boolean | false |
 |include_shared | Boolean | false |
 |max_records | IntegerOptional | false |
+|option_group_name | String | false |
 |option_group_name | String | false |
 |snapshot_type | String | false |
 |tags | TagList | false |

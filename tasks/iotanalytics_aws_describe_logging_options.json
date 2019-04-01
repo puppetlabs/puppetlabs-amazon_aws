@@ -1,0 +1,10 @@
+{
+	"description": "Retrieves the current settings of the AWS IoT Analytics logging options.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+	}
+}

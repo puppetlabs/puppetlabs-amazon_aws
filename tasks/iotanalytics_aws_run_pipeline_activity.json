@@ -7,13 +7,13 @@
 		
 		
 		    
-			"payloads":{
+			"pipeline_activity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"pipeline_activity":{
+			"payloads":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

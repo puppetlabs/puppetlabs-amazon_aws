@@ -7,13 +7,13 @@
 		
 		
 		    
-			"project_arn":{
+			"device_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"remote_debug_enabled":{
+			"project_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +37,7 @@
 			}
 			,
 		    
-			"ssh_public_key":{
+			"client_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,6 +55,18 @@
 			}
 			,
 		    
+			"remote_debug_enabled":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ssh_public_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"instance_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -62,18 +74,6 @@
 			,
 		    
 			"interaction_mode":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"device_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

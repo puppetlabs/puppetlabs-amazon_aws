@@ -7,18 +7,6 @@
 		
 		
 		    
-			"tag_filters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags_per_page":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"pagination_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +20,18 @@
 			,
 		    
 			"resource_type_filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags_per_page":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

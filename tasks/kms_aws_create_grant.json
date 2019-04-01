@@ -7,6 +7,12 @@
 		
 		
 		    
+			"grantee_principal":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"grant_tokens":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,12 +44,6 @@
 			,
 		    
 			"constraints":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"grantee_principal":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

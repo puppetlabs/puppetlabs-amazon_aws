@@ -7,12 +7,6 @@
 		
 		
 		    
-			"set_as_default":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"policy_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"policy_document":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"set_as_default":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

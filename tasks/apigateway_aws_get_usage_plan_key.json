@@ -13,6 +13,18 @@
 			}
 			,
 		    
+			"key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"usageplan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"usage_plan_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

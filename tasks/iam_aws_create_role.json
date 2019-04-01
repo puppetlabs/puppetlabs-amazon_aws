@@ -7,24 +7,6 @@
 		
 		
 		    
-			"max_session_duration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"path":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"permissions_boundary":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"role_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +26,24 @@
 			,
 		    
 			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_session_duration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"permissions_boundary":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

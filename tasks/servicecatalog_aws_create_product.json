@@ -7,12 +7,6 @@
 		
 		
 		    
-			"owner":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"support_email":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,18 +14,6 @@
 			,
 		    
 			"support_url":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"accept_language":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +31,7 @@
 			}
 			,
 		    
-			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
+			"owner":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,13 +43,37 @@
 			}
 			,
 		    
+			"support_description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"provisioning_artifact_parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"support_description":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

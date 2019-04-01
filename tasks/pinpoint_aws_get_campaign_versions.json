@@ -7,6 +7,24 @@
 		
 		
 		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"campaign_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"campaign_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +38,6 @@
 			,
 		    
 			"token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"application_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

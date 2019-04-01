@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"distribution_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

@@ -17,6 +17,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"thing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

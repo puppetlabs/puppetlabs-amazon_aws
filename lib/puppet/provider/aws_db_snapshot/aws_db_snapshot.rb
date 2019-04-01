@@ -1,233 +1,38 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-rds'
 
 
-Puppet::Type.type(:aws_db_snapshot).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
+
+
+
+# AwsDbSnapshot class
+class Puppet::Provider::AwsDbSnapshot::AwsDbSnapshot
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-  # RDS Properties
-  def namevar
-    :db_snapshot_identifier
-  end
-
-  def self.namevar
-    :db_snapshot_identifier
-  end
-
-
-  def allocated_storage=(value)
-    Puppet.info("allocated_storage setter called to change to #{value}")
-    @property_flush[:allocated_storage] = value
-  end
-
-  def availability_zone=(value)
-    Puppet.info("availability_zone setter called to change to #{value}")
-    @property_flush[:availability_zone] = value
-  end
-
-  def db_instance_identifier=(value)
-    Puppet.info("db_instance_identifier setter called to change to #{value}")
-    @property_flush[:db_instance_identifier] = value
-  end
-
-  def dbi_resource_id=(value)
-    Puppet.info("dbi_resource_id setter called to change to #{value}")
-    @property_flush[:dbi_resource_id] = value
-  end
-
-  def db_snapshot_arn=(value)
-    Puppet.info("db_snapshot_arn setter called to change to #{value}")
-    @property_flush[:db_snapshot_arn] = value
-  end
-
-  def db_snapshot_identifier=(value)
-    Puppet.info("db_snapshot_identifier setter called to change to #{value}")
-    @property_flush[:db_snapshot_identifier] = value
-  end
-
-  def encrypted=(value)
-    Puppet.info("encrypted setter called to change to #{value}")
-    @property_flush[:encrypted] = value
-  end
-
-  def engine=(value)
-    Puppet.info("engine setter called to change to #{value}")
-    @property_flush[:engine] = value
-  end
-
-  def engine_version=(value)
-    Puppet.info("engine_version setter called to change to #{value}")
-    @property_flush[:engine_version] = value
-  end
-
-  def filters=(value)
-    Puppet.info("filters setter called to change to #{value}")
-    @property_flush[:filters] = value
-  end
-
-  def iam_database_authentication_enabled=(value)
-    Puppet.info("iam_database_authentication_enabled setter called to change to #{value}")
-    @property_flush[:iam_database_authentication_enabled] = value
-  end
-
-  def include_public=(value)
-    Puppet.info("include_public setter called to change to #{value}")
-    @property_flush[:include_public] = value
-  end
-
-  def include_shared=(value)
-    Puppet.info("include_shared setter called to change to #{value}")
-    @property_flush[:include_shared] = value
-  end
-
-  def instance_create_time=(value)
-    Puppet.info("instance_create_time setter called to change to #{value}")
-    @property_flush[:instance_create_time] = value
-  end
-
-  def iops=(value)
-    Puppet.info("iops setter called to change to #{value}")
-    @property_flush[:iops] = value
-  end
-
-  def kms_key_id=(value)
-    Puppet.info("kms_key_id setter called to change to #{value}")
-    @property_flush[:kms_key_id] = value
-  end
-
-  def license_model=(value)
-    Puppet.info("license_model setter called to change to #{value}")
-    @property_flush[:license_model] = value
-  end
-
-  def master_username=(value)
-    Puppet.info("master_username setter called to change to #{value}")
-    @property_flush[:master_username] = value
-  end
-
-  def max_records=(value)
-    Puppet.info("max_records setter called to change to #{value}")
-    @property_flush[:max_records] = value
-  end
-
-  def option_group_name=(value)
-    Puppet.info("option_group_name setter called to change to #{value}")
-    @property_flush[:option_group_name] = value
-  end
-
-  def percent_progress=(value)
-    Puppet.info("percent_progress setter called to change to #{value}")
-    @property_flush[:percent_progress] = value
-  end
-
-  def port=(value)
-    Puppet.info("port setter called to change to #{value}")
-    @property_flush[:port] = value
-  end
-
-  def processor_features=(value)
-    Puppet.info("processor_features setter called to change to #{value}")
-    @property_flush[:processor_features] = value
-  end
-
-  def snapshot_create_time=(value)
-    Puppet.info("snapshot_create_time setter called to change to #{value}")
-    @property_flush[:snapshot_create_time] = value
-  end
-
-  def snapshot_type=(value)
-    Puppet.info("snapshot_type setter called to change to #{value}")
-    @property_flush[:snapshot_type] = value
-  end
-
-  def source_db_snapshot_identifier=(value)
-    Puppet.info("source_db_snapshot_identifier setter called to change to #{value}")
-    @property_flush[:source_db_snapshot_identifier] = value
-  end
-
-  def source_region=(value)
-    Puppet.info("source_region setter called to change to #{value}")
-    @property_flush[:source_region] = value
-  end
-
-  def status=(value)
-    Puppet.info("status setter called to change to #{value}")
-    @property_flush[:status] = value
-  end
-
-  def storage_type=(value)
-    Puppet.info("storage_type setter called to change to #{value}")
-    @property_flush[:storage_type] = value
-  end
-
-  def tags=(value)
-    Puppet.info("tags setter called to change to #{value}")
-    @property_flush[:tags] = value
-  end
-
-  def tde_credential_arn=(value)
-    Puppet.info("tde_credential_arn setter called to change to #{value}")
-    @property_flush[:tde_credential_arn] = value
-  end
-
-  def timezone=(value)
-    Puppet.info("timezone setter called to change to #{value}")
-    @property_flush[:timezone] = value
-  end
-
-  def vpc_id=(value)
-    Puppet.info("vpc_id setter called to change to #{value}")
-    @property_flush[:vpc_id] = value
-  end
-
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  attr_reader :property_hash
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
-  end
-  def self.instances
+    context.debug('Entered get')
     Puppet.debug("Calling instances for region #{region}")
-    client = Aws::RDS::Client.new(region: region)
-
+    client        = Aws::RDS::Client.new(region: region)
     all_instances = []
     client.describe_db_snapshots.each do |response|
       response.db_snapshots.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+        all_instances << hash if name?(hash)
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
+
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      name = prov.property_hash[namevar]
-      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     allocated_storage = instance.respond_to?(:allocated_storage) ? (instance.allocated_storage.respond_to?(:to_hash) ? instance.allocated_storage.to_hash : instance.allocated_storage) : nil
     availability_zone = instance.respond_to?(:availability_zone) ? (instance.availability_zone.respond_to?(:to_hash) ? instance.availability_zone.to_hash : instance.availability_zone) : nil
     db_instance_identifier = instance.respond_to?(:db_instance_identifier) ? (instance.db_instance_identifier.respond_to?(:to_hash) ? instance.db_instance_identifier.to_hash : instance.db_instance_identifier) : nil
@@ -265,8 +70,7 @@ Puppet::Type.type(:aws_db_snapshot).provide(:arm) do
     db_snapshot = {}
     db_snapshot[:ensure] = :present
     db_snapshot[:object] = instance
-    db_snapshot[:name] = instance.to_hash[namevar]
-
+    db_snapshot[:name] = instance.to_hash[self.namevar]
     db_snapshot[:allocated_storage] = allocated_storage unless allocated_storage.nil?
     db_snapshot[:availability_zone] = availability_zone unless availability_zone.nil?
     db_snapshot[:db_instance_identifier] = db_instance_identifier unless db_instance_identifier.nil?
@@ -303,66 +107,111 @@ Puppet::Type.type(:aws_db_snapshot).provide(:arm) do
     db_snapshot
   end
 
-  def build_hash
-    db_snapshot = {}
-    if @is_create || @is_update
-      db_snapshot[:db_instance_identifier] = resource[:db_instance_identifier] unless resource[:db_instance_identifier].nil?
-      db_snapshot[:dbi_resource_id] = resource[:dbi_resource_id] unless resource[:dbi_resource_id].nil?
-      db_snapshot[:db_snapshot_identifier] = resource[:db_snapshot_identifier] unless resource[:db_snapshot_identifier].nil?
-      db_snapshot[:engine_version] = resource[:engine_version] unless resource[:engine_version].nil?
-      db_snapshot[:filters] = resource[:filters] unless resource[:filters].nil?
-      db_snapshot[:dbi_resource_id] = resource[:dbi_resource_id] unless resource[:dbi_resource_id].nil?
-      db_snapshot[:include_public] = resource[:include_public] unless resource[:include_public].nil?
-      db_snapshot[:include_shared] = resource[:include_shared] unless resource[:include_shared].nil?
-      db_snapshot[:max_records] = resource[:max_records] unless resource[:max_records].nil?
-      db_snapshot[:option_group_name] = resource[:option_group_name] unless resource[:option_group_name].nil?
-      db_snapshot[:snapshot_type] = resource[:snapshot_type] unless resource[:snapshot_type].nil?
-      db_snapshot[:tags] = resource[:tags] unless resource[:tags].nil?
-    end
-    db_snapshot[namevar] = resource[:name]
-    symbolize(db_snapshot)
+  def namevar
+    :db_snapshot_identifier
   end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.create_db_snapshot(build_hash)
-    @property_hash[:ensure] = :present
+  def self.namevar
+    :db_snapshot_identifier
+  end
+
+  def name?(hash)
+    !hash[self.namevar].nil? && !hash[self.namevar].empty?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resourceupdate(context, name, should)
+      end
+    end
+  end
+
+  def self.region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client   = Aws::RDS::Client.new(region: region)
+      client.create_db_snapshot(new_hash)
+    end
   rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
+
+  def update(context, name, should)
+    context.updating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client = Aws::RDS::Client.new(region: region)
+      client.modify_db_snapshot(new_hash)
     end
-    @is_update = true
-    @property_hash[:ensure] = :present
-    []
+  rescue StandardError => ex
+    Puppet.alert("Exception during flush. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
+  end
+
+
+  def build_hash(resource)
+    db_snapshot = {}
+    db_snapshot['db_instance_identifier'] = resource[:db_instance_identifier] unless resource[:db_instance_identifier].nil?
+    db_snapshot['dbi_resource_id'] = resource[:dbi_resource_id] unless resource[:dbi_resource_id].nil?
+    db_snapshot['db_snapshot_identifier'] = resource[:db_snapshot_identifier] unless resource[:db_snapshot_identifier].nil?
+    db_snapshot['engine_version'] = resource[:engine_version] unless resource[:engine_version].nil?
+    db_snapshot['filters'] = resource[:filters] unless resource[:filters].nil?
+    db_snapshot['include_public'] = resource[:include_public] unless resource[:include_public].nil?
+    db_snapshot['include_shared'] = resource[:include_shared] unless resource[:include_shared].nil?
+    db_snapshot['max_records'] = resource[:max_records] unless resource[:max_records].nil?
+    db_snapshot['option_group_name'] = resource[:option_group_name] unless resource[:option_group_name].nil?
+    db_snapshot['option_group_name'] = resource[:option_group_name] unless resource[:option_group_name].nil?
+    db_snapshot['snapshot_type'] = resource[:snapshot_type] unless resource[:snapshot_type].nil?
+    db_snapshot['tags'] = resource[:tags] unless resource[:tags].nil?
+    symbolize(db_snapshot)
+  end
+
+  def self.build_key_values
+    key_values = {}
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_db_snapshot')
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.delete_db_snapshot(build_hash)
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    new_hash = symbolize(build_hash(should))
+    client = Aws::RDS::Client.new(region: region)
+    client.delete_db_snapshot(new_hash)
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -375,5 +224,3 @@ Puppet::Type.type(:aws_db_snapshot).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

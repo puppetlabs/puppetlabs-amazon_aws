@@ -1,5 +1,5 @@
 {
-	"description": "Stops a query execution. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
+	"description": "Stops a query execution. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		

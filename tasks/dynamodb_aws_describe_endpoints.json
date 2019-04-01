@@ -1,5 +1,5 @@
 {
-	"description": "",
+	"description": "Returns the regional endpoint information.",
 	"input_method": "stdin",
 	"parameters":{
 		

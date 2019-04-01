@@ -7,37 +7,19 @@
 		
 		
 		    
-			"direct_internet_access":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"notebook_instance_name":{
+			"lifecycle_config_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"security_group_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"volume_size_in_gb":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"additional_code_repositories":{
+			"subnet_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +37,7 @@
 			}
 			,
 		    
-			"lifecycle_config_name":{
+			"notebook_instance_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,7 +49,19 @@
 			}
 			,
 		    
-			"subnet_id":{
+			"accelerator_types":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"direct_internet_access":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additional_code_repositories":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -79,7 +73,19 @@
 			}
 			,
 		    
-			"accelerator_types":{
+			"volume_size_in_gb":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"root_access":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_group_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -23,6 +23,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"bucketmetric":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

@@ -1,17 +1,11 @@
 {
-	"description": "Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information about virtual private gateways, see AWS Managed VPN Connections in the Amazon Virtual Private Cloud User Guide.",
+	"description": "Creates a virtual private gateway. A virtual private gateway is the endpoint on the VPC side of your VPN connection. You can create a virtual private gateway before creating the VPC itself. For more information, see AWS Site-to-Site VPN in the AWS Site-to-Site VPN User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
-		    
-			"amazon_side_asn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
 		    
 			"availability_zone":{
 			   "description": "",
@@ -26,6 +20,12 @@
 			,
 		    
 			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"amazon_side_asn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

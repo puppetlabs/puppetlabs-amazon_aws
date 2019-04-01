@@ -7,24 +7,6 @@
 		
 		
 		    
-			"enabled":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"event_categories":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sns_topic_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"source_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +26,24 @@
 			,
 		    
 			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enabled":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_categories":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sns_topic_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

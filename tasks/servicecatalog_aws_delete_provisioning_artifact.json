@@ -7,6 +7,12 @@
 		
 		
 		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"product_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"provisioning_artifact_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

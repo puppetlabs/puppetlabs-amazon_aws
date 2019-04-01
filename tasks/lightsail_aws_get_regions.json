@@ -7,13 +7,13 @@
 		
 		
 		    
-			"include_relational_database_availability_zones":{
+			"include_availability_zones":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"include_availability_zones":{
+			"include_relational_database_availability_zones":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

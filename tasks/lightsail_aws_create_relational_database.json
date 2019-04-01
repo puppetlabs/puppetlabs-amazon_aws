@@ -7,19 +7,7 @@
 		
 		
 		    
-			"availability_zone":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"master_username":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"master_user_password":{
+			"preferred_maintenance_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +19,7 @@
 			}
 			,
 		    
-			"relational_database_bundle_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"master_database_name":{
+			"master_username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +31,19 @@
 			}
 			,
 		    
-			"preferred_maintenance_window":{
+			"master_user_password":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"relational_database_blueprint_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"relational_database_bundle_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -68,6 +56,18 @@
 			,
 		    
 			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"availability_zone":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"master_database_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

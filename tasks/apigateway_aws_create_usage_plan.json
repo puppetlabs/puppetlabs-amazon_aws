@@ -7,6 +7,18 @@
 		
 		
 		    
+			"quota":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"throttle":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_stages":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,18 +32,6 @@
 			,
 		    
 			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"quota":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"throttle":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

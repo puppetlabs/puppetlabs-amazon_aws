@@ -1,5 +1,5 @@
 {
-	"description": "Deletes the specified git repository from your account.",
+	"description": "Deletes the specified Git repository from your account.",
 	"input_method": "stdin",
 	"parameters":{
 		

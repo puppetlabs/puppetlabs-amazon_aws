@@ -7,19 +7,7 @@
 		
 		
 		    
-			"queue":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"role":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"settings":{
+			"status_update_interval":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +25,37 @@
 			}
 			,
 		    
+			"job_template":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"acceleration_settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"client_request_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"job_template":{
+			"queue":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

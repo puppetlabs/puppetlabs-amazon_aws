@@ -19,18 +19,6 @@
 			}
 			,
 		    
-			"prefix":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"uploads":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"encoding_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -43,13 +31,31 @@
 			}
 			,
 		    
-			"max_uploads":{
+			"prefix":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"upload_id_marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucketupload":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_uploads":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"uploads":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

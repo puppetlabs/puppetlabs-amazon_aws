@@ -23,6 +23,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

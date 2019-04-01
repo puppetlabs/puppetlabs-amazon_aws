@@ -7,13 +7,25 @@
 		
 		
 		    
-			"domain_name":{
+			"base_path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"base_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

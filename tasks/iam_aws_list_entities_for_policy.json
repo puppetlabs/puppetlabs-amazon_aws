@@ -7,24 +7,6 @@
 		
 		
 		    
-			"path_prefix":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"policy_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"policy_usage_filter":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"entity_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +20,24 @@
 			,
 		    
 			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"path_prefix":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_usage_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

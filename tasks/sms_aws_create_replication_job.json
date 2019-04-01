@@ -7,13 +7,13 @@
 		
 		
 		    
-			"encrypted":{
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"frequency":{
+			"license_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,25 +31,19 @@
 			}
 			,
 		    
-			"server_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"kms_key_id":{
+			"encrypted":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"license_type":{
+			"frequency":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -62,6 +56,12 @@
 			,
 		    
 			"seed_replication_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

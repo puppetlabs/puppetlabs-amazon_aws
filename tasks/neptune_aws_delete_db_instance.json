@@ -7,6 +7,12 @@
 		
 		
 		    
+			"skip_final_snapshot":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"db_instance_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"final_db_snapshot_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"skip_final_snapshot":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

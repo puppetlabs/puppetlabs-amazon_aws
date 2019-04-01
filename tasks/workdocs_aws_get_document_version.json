@@ -7,18 +7,6 @@
 		
 		
 		    
-			"authentication_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"document_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"fields":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +20,30 @@
 			,
 		    
 			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

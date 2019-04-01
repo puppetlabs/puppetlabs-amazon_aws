@@ -7,6 +7,12 @@
 		
 		
 		    
+			"device_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"amzn_client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

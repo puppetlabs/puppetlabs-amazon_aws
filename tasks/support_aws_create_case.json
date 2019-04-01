@@ -7,6 +7,12 @@
 		
 		
 		    
+			"communication_body":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"issue_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,13 +25,13 @@
 			}
 			,
 		    
-			"severity_code":{
+			"service_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subject":{
+			"severity_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +55,7 @@
 			}
 			,
 		    
-			"communication_body":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"service_code":{
+			"subject":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

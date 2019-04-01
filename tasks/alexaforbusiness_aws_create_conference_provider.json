@@ -7,24 +7,6 @@
 		
 		
 		    
-			"client_request_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"conference_provider_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"conference_provider_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"ip_dial_in":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +20,24 @@
 			,
 		    
 			"pstn_dial_in":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_request_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"conference_provider_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"conference_provider_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

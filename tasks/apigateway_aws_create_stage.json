@@ -19,19 +19,43 @@
 			}
 			,
 		    
-			"tags":{
+			"tracing_enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"cache_cluster_enabled":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_cluster_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restapi_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"documentation_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"variables":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,25 +73,7 @@
 			}
 			,
 		    
-			"tracing_enabled":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"variables":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cache_cluster_enabled":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cache_cluster_size":{
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

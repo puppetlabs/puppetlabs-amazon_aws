@@ -1,5 +1,5 @@
 {
-	"description": "Updates the specified git repository with the specified values.",
+	"description": "Updates the specified Git repository with the specified values.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"git_config":{
+			"code_repository_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"code_repository_name":{
+			"git_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

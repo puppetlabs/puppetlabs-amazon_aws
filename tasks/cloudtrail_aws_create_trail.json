@@ -7,6 +7,12 @@
 		
 		
 		    
+			"s3_bucket_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"s3_key_prefix":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -31,7 +37,13 @@
 			}
 			,
 		    
-			"enable_log_file_validation":{
+			"kms_key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"is_organization_trail":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +55,7 @@
 			}
 			,
 		    
-			"s3_bucket_name":{
+			"enable_log_file_validation":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -56,18 +68,6 @@
 			,
 		    
 			"is_multi_region_trail":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"is_organization_trail":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

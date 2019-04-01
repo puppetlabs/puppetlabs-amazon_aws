@@ -47,7 +47,7 @@ aws_db_instance {
   monitoring_interval => "MonitoringInterval (optional)",
   monitoring_role_arn => "monitoring_role_arn (optional)",
   multi_az => "MultiAZ (optional)",
-  db_parameter_group_name => "db_parameter_group_name (optional)",
+  master_username => "master_username (optional)",
   new_db_instance_identifier => "new_db_instance_identifier (optional)",
   option_group_name => "option_group_name (optional)",
   performance_insights_kms_key_id => "performance_insights_kms_key_id (optional)",
@@ -80,7 +80,7 @@ aws_db_instance {
 |backup_retention_period | IntegerOptional | false |
 |ca_certificate_identifier | String | false |
 |character_set_name | String | false |
-|cloudwatch_logs_export_configuration | [CloudwatchLogsExportConfiguration](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=cloudwatchlogsexportconfiguration) | false |
+|cloudwatch_logs_export_configuration | [CloudwatchLogsExportConfiguration](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
 |copy_tags_to_snapshot | BooleanOptional | false |
 |db_cluster_identifier | String | false |
 |db_instance_class | String | false |
@@ -110,7 +110,7 @@ aws_db_instance {
 |monitoring_interval | IntegerOptional | false |
 |monitoring_role_arn | String | false |
 |multi_az | BooleanOptional | false |
-|db_parameter_group_name | String | false |
+|master_username | String | false |
 |new_db_instance_identifier | String | false |
 |option_group_name | String | false |
 |performance_insights_kms_key_id | String | false |

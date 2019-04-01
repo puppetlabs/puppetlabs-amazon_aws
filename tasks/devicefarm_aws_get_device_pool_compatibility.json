@@ -7,6 +7,12 @@
 		
 		
 		    
+			"app_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"test_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"app_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

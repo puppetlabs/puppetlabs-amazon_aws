@@ -1,11 +1,17 @@
 {
-	"description": "Deprecated, see the GetBucketLifecycleConfiguration operation.",
+	"description": " No longer used, see the GetBucketLifecycleConfiguration operation.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"bucketlifecycl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"bucket":{
 			   "description": "",

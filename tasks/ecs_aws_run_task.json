@@ -7,19 +7,13 @@
 		
 		
 		    
-			"cluster":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"overrides":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"placement_constraints":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"placement_strategy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,31 +25,37 @@
 			}
 			,
 		    
+			"started_by":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"task_definition":{
+			"count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"enable_ecs_managed_tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"propagate_tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -73,19 +73,19 @@
 			}
 			,
 		    
-			"network_configuration":{
+			"overrides":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"placement_strategy":{
+			"propagate_tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"started_by":{
+			"task_definition":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

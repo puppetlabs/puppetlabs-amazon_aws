@@ -7,6 +7,12 @@
 		
 		
 		    
+			"page_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"page_size":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"page_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

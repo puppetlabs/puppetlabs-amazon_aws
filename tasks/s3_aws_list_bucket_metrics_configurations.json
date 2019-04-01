@@ -7,6 +7,12 @@
 		
 		
 		    
+			"bucketmetric":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

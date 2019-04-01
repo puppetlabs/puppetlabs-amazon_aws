@@ -35,6 +35,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

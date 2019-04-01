@@ -7,13 +7,13 @@
 		
 		
 		    
-			"elastic_load_balancer_name":{
+			"layer_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"layer_id":{
+			"elastic_load_balancer_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

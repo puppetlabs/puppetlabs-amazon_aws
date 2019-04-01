@@ -1,471 +1,47 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-rds'
 
 
-Puppet::Type.type(:aws_db_instance).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
-  end
-
-  # ProviderRDSDBInstance Properties
-  def namevar
-    :db_instance_identifier
-  end
-
-  def self.namevar
-    :db_instance_identifier
-  end
-
-
-  def allocated_storage=(value)
-    Puppet.info("allocated_storage setter called to change to #{value}")
-    @property_flush[:allocated_storage] = value
-  end
-
-  def allow_major_version_upgrade=(value)
-    Puppet.info("allow_major_version_upgrade setter called to change to #{value}")
-    @property_flush[:allow_major_version_upgrade] = value
-  end
-
-  def apply_immediately=(value)
-    Puppet.info("apply_immediately setter called to change to #{value}")
-    @property_flush[:apply_immediately] = value
-  end
-
-  def auto_minor_version_upgrade=(value)
-    Puppet.info("auto_minor_version_upgrade setter called to change to #{value}")
-    @property_flush[:auto_minor_version_upgrade] = value
-  end
-
-  def availability_zone=(value)
-    Puppet.info("availability_zone setter called to change to #{value}")
-    @property_flush[:availability_zone] = value
-  end
-
-  def backup_retention_period=(value)
-    Puppet.info("backup_retention_period setter called to change to #{value}")
-    @property_flush[:backup_retention_period] = value
-  end
-
-  def ca_certificate_identifier=(value)
-    Puppet.info("ca_certificate_identifier setter called to change to #{value}")
-    @property_flush[:ca_certificate_identifier] = value
-  end
-
-  def character_set_name=(value)
-    Puppet.info("character_set_name setter called to change to #{value}")
-    @property_flush[:character_set_name] = value
-  end
-
-  def cloudwatch_logs_export_configuration=(value)
-    Puppet.info("cloudwatch_logs_export_configuration setter called to change to #{value}")
-    @property_flush[:cloudwatch_logs_export_configuration] = value
-  end
-
-  def copy_tags_to_snapshot=(value)
-    Puppet.info("copy_tags_to_snapshot setter called to change to #{value}")
-    @property_flush[:copy_tags_to_snapshot] = value
-  end
-
-  def db_cluster_identifier=(value)
-    Puppet.info("db_cluster_identifier setter called to change to #{value}")
-    @property_flush[:db_cluster_identifier] = value
-  end
-
-  def db_instance_arn=(value)
-    Puppet.info("db_instance_arn setter called to change to #{value}")
-    @property_flush[:db_instance_arn] = value
-  end
-
-  def db_instance_class=(value)
-    Puppet.info("db_instance_class setter called to change to #{value}")
-    @property_flush[:db_instance_class] = value
-  end
-
-  def db_instance_identifier=(value)
-    Puppet.info("db_instance_identifier setter called to change to #{value}")
-    @property_flush[:db_instance_identifier] = value
-  end
-
-  def db_instance_port=(value)
-    Puppet.info("db_instance_port setter called to change to #{value}")
-    @property_flush[:db_instance_port] = value
-  end
-
-  def db_instance_status=(value)
-    Puppet.info("db_instance_status setter called to change to #{value}")
-    @property_flush[:db_instance_status] = value
-  end
-
-  def dbi_resource_id=(value)
-    Puppet.info("dbi_resource_id setter called to change to #{value}")
-    @property_flush[:dbi_resource_id] = value
-  end
-
-  def db_name=(value)
-    Puppet.info("db_name setter called to change to #{value}")
-    @property_flush[:db_name] = value
-  end
-
-  def db_parameter_group_name=(value)
-    Puppet.info("db_parameter_group_name setter called to change to #{value}")
-    @property_flush[:db_parameter_group_name] = value
-  end
-
-  def db_parameter_groups=(value)
-    Puppet.info("db_parameter_groups setter called to change to #{value}")
-    @property_flush[:db_parameter_groups] = value
-  end
-
-  def db_port_number=(value)
-    Puppet.info("db_port_number setter called to change to #{value}")
-    @property_flush[:db_port_number] = value
-  end
-
-  def db_security_groups=(value)
-    Puppet.info("db_security_groups setter called to change to #{value}")
-    @property_flush[:db_security_groups] = value
-  end
-
-  def db_subnet_group=(value)
-    Puppet.info("db_subnet_group setter called to change to #{value}")
-    @property_flush[:db_subnet_group] = value
-  end
-
-  def db_subnet_group_name=(value)
-    Puppet.info("db_subnet_group_name setter called to change to #{value}")
-    @property_flush[:db_subnet_group_name] = value
-  end
-
-  def delete_automated_backups=(value)
-    Puppet.info("delete_automated_backups setter called to change to #{value}")
-    @property_flush[:delete_automated_backups] = value
-  end
-
-  def deletion_protection=(value)
-    Puppet.info("deletion_protection setter called to change to #{value}")
-    @property_flush[:deletion_protection] = value
-  end
-
-  def domain=(value)
-    Puppet.info("domain setter called to change to #{value}")
-    @property_flush[:domain] = value
-  end
-
-  def domain_iam_role_name=(value)
-    Puppet.info("domain_iam_role_name setter called to change to #{value}")
-    @property_flush[:domain_iam_role_name] = value
-  end
-
-  def domain_memberships=(value)
-    Puppet.info("domain_memberships setter called to change to #{value}")
-    @property_flush[:domain_memberships] = value
-  end
-
-  def enable_cloudwatch_logs_exports=(value)
-    Puppet.info("enable_cloudwatch_logs_exports setter called to change to #{value}")
-    @property_flush[:enable_cloudwatch_logs_exports] = value
-  end
-
-  def enabled_cloudwatch_logs_exports=(value)
-    Puppet.info("enabled_cloudwatch_logs_exports setter called to change to #{value}")
-    @property_flush[:enabled_cloudwatch_logs_exports] = value
-  end
-
-  def enable_iam_database_authentication=(value)
-    Puppet.info("enable_iam_database_authentication setter called to change to #{value}")
-    @property_flush[:enable_iam_database_authentication] = value
-  end
-
-  def enable_performance_insights=(value)
-    Puppet.info("enable_performance_insights setter called to change to #{value}")
-    @property_flush[:enable_performance_insights] = value
-  end
-
-  def endpoint=(value)
-    Puppet.info("endpoint setter called to change to #{value}")
-    @property_flush[:endpoint] = value
-  end
-
-  def engine=(value)
-    Puppet.info("engine setter called to change to #{value}")
-    @property_flush[:engine] = value
-  end
-
-  def engine_version=(value)
-    Puppet.info("engine_version setter called to change to #{value}")
-    @property_flush[:engine_version] = value
-  end
-
-  def enhanced_monitoring_resource_arn=(value)
-    Puppet.info("enhanced_monitoring_resource_arn setter called to change to #{value}")
-    @property_flush[:enhanced_monitoring_resource_arn] = value
-  end
-
-  def filters=(value)
-    Puppet.info("filters setter called to change to #{value}")
-    @property_flush[:filters] = value
-  end
-
-  def final_db_snapshot_identifier=(value)
-    Puppet.info("final_db_snapshot_identifier setter called to change to #{value}")
-    @property_flush[:final_db_snapshot_identifier] = value
-  end
 
-  def iam_database_authentication_enabled=(value)
-    Puppet.info("iam_database_authentication_enabled setter called to change to #{value}")
-    @property_flush[:iam_database_authentication_enabled] = value
-  end
-
-  def instance_create_time=(value)
-    Puppet.info("instance_create_time setter called to change to #{value}")
-    @property_flush[:instance_create_time] = value
-  end
-
-  def iops=(value)
-    Puppet.info("iops setter called to change to #{value}")
-    @property_flush[:iops] = value
-  end
-
-  def kms_key_id=(value)
-    Puppet.info("kms_key_id setter called to change to #{value}")
-    @property_flush[:kms_key_id] = value
-  end
-
-  def latest_restorable_time=(value)
-    Puppet.info("latest_restorable_time setter called to change to #{value}")
-    @property_flush[:latest_restorable_time] = value
-  end
-
-  def license_model=(value)
-    Puppet.info("license_model setter called to change to #{value}")
-    @property_flush[:license_model] = value
-  end
-
-  def listener_endpoint=(value)
-    Puppet.info("listener_endpoint setter called to change to #{value}")
-    @property_flush[:listener_endpoint] = value
-  end
-
-  def master_username=(value)
-    Puppet.info("master_username setter called to change to #{value}")
-    @property_flush[:master_username] = value
-  end
-
-  def master_user_password=(value)
-    Puppet.info("master_user_password setter called to change to #{value}")
-    @property_flush[:master_user_password] = value
-  end
-
-  def max_records=(value)
-    Puppet.info("max_records setter called to change to #{value}")
-    @property_flush[:max_records] = value
-  end
-
-  def monitoring_interval=(value)
-    Puppet.info("monitoring_interval setter called to change to #{value}")
-    @property_flush[:monitoring_interval] = value
-  end
-
-  def monitoring_role_arn=(value)
-    Puppet.info("monitoring_role_arn setter called to change to #{value}")
-    @property_flush[:monitoring_role_arn] = value
-  end
-
-  def multi_az=(value)
-    Puppet.info("multi_az setter called to change to #{value}")
-    @property_flush[:multi_az] = value
-  end
-
-  def new_db_instance_identifier=(value)
-    Puppet.info("new_db_instance_identifier setter called to change to #{value}")
-    @property_flush[:new_db_instance_identifier] = value
-  end
-
-  def option_group_memberships=(value)
-    Puppet.info("option_group_memberships setter called to change to #{value}")
-    @property_flush[:option_group_memberships] = value
-  end
-
-  def option_group_name=(value)
-    Puppet.info("option_group_name setter called to change to #{value}")
-    @property_flush[:option_group_name] = value
-  end
-
-  def pending_modified_values=(value)
-    Puppet.info("pending_modified_values setter called to change to #{value}")
-    @property_flush[:pending_modified_values] = value
-  end
-
-  def performance_insights_enabled=(value)
-    Puppet.info("performance_insights_enabled setter called to change to #{value}")
-    @property_flush[:performance_insights_enabled] = value
-  end
-
-  def performance_insights_kms_key_id=(value)
-    Puppet.info("performance_insights_kms_key_id setter called to change to #{value}")
-    @property_flush[:performance_insights_kms_key_id] = value
-  end
-
-  def performance_insights_retention_period=(value)
-    Puppet.info("performance_insights_retention_period setter called to change to #{value}")
-    @property_flush[:performance_insights_retention_period] = value
-  end
-
-  def port=(value)
-    Puppet.info("port setter called to change to #{value}")
-    @property_flush[:port] = value
-  end
-
-  def preferred_backup_window=(value)
-    Puppet.info("preferred_backup_window setter called to change to #{value}")
-    @property_flush[:preferred_backup_window] = value
-  end
-
-  def preferred_maintenance_window=(value)
-    Puppet.info("preferred_maintenance_window setter called to change to #{value}")
-    @property_flush[:preferred_maintenance_window] = value
-  end
-
-  def processor_features=(value)
-    Puppet.info("processor_features setter called to change to #{value}")
-    @property_flush[:processor_features] = value
-  end
-
-  def promotion_tier=(value)
-    Puppet.info("promotion_tier setter called to change to #{value}")
-    @property_flush[:promotion_tier] = value
-  end
-
-  def publicly_accessible=(value)
-    Puppet.info("publicly_accessible setter called to change to #{value}")
-    @property_flush[:publicly_accessible] = value
-  end
-
-  def read_replica_db_cluster_identifiers=(value)
-    Puppet.info("read_replica_db_cluster_identifiers setter called to change to #{value}")
-    @property_flush[:read_replica_db_cluster_identifiers] = value
-  end
-
-  def read_replica_db_instance_identifiers=(value)
-    Puppet.info("read_replica_db_instance_identifiers setter called to change to #{value}")
-    @property_flush[:read_replica_db_instance_identifiers] = value
-  end
-
-  def read_replica_source_db_instance_identifier=(value)
-    Puppet.info("read_replica_source_db_instance_identifier setter called to change to #{value}")
-    @property_flush[:read_replica_source_db_instance_identifier] = value
-  end
-
-  def secondary_availability_zone=(value)
-    Puppet.info("secondary_availability_zone setter called to change to #{value}")
-    @property_flush[:secondary_availability_zone] = value
-  end
-
-  def skip_final_snapshot=(value)
-    Puppet.info("skip_final_snapshot setter called to change to #{value}")
-    @property_flush[:skip_final_snapshot] = value
-  end
-
-  def status_infos=(value)
-    Puppet.info("status_infos setter called to change to #{value}")
-    @property_flush[:status_infos] = value
-  end
 
-  def storage_encrypted=(value)
-    Puppet.info("storage_encrypted setter called to change to #{value}")
-    @property_flush[:storage_encrypted] = value
-  end
-
-  def storage_type=(value)
-    Puppet.info("storage_type setter called to change to #{value}")
-    @property_flush[:storage_type] = value
-  end
-
-  def tags=(value)
-    Puppet.info("tags setter called to change to #{value}")
-    @property_flush[:tags] = value
-  end
-
-  def tde_credential_arn=(value)
-    Puppet.info("tde_credential_arn setter called to change to #{value}")
-    @property_flush[:tde_credential_arn] = value
-  end
-
-  def tde_credential_password=(value)
-    Puppet.info("tde_credential_password setter called to change to #{value}")
-    @property_flush[:tde_credential_password] = value
-  end
-
-  def timezone=(value)
-    Puppet.info("timezone setter called to change to #{value}")
-    @property_flush[:timezone] = value
-  end
-
-  def use_default_processor_features=(value)
-    Puppet.info("use_default_processor_features setter called to change to #{value}")
-    @property_flush[:use_default_processor_features] = value
-  end
-
-  def vpc_security_group_ids=(value)
-    Puppet.info("vpc_security_group_ids setter called to change to #{value}")
-    @property_flush[:vpc_security_group_ids] = value
-  end
-
-  def vpc_security_groups=(value)
-    Puppet.info("vpc_security_groups setter called to change to #{value}")
-    @property_flush[:vpc_security_groups] = value
-  end
-
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
 
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
+# AwsDbInstance class
+class Puppet::Provider::AwsDbInstance::AwsDbInstance
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-  attr_reader :property_hash
-  def self.instances
+    context.debug('Entered get')
     Puppet.debug("Calling instances for region #{region}")
-    client = Aws::RDS::Client.new(region: region)
-
+    client        = Aws::RDS::Client.new(region: region)
     all_instances = []
-    client.describe_db_instances.each do |response|
-      response.db_instances.each do |i|
-        hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+    client.describe_db_instances.each do |list|
+      list.db_instances.each do |l|
+        client.describe_db_instances(namevar => l[:db_instance_identifier]).each do |response|
+          response.db_instances.each do |i|
+            hash = instance_to_hash(i)
+            all_instances << hash if name?(hash)
+          end
+        end
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
+
+
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      name = prov.property_hash[namevar]
-      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     allocated_storage = instance.respond_to?(:allocated_storage) ? (instance.allocated_storage.respond_to?(:to_hash) ? instance.allocated_storage.to_hash : instance.allocated_storage) : nil
     allow_major_version_upgrade = instance.respond_to?(:allow_major_version_upgrade) ? (instance.allow_major_version_upgrade.respond_to?(:to_hash) ? instance.allow_major_version_upgrade.to_hash : instance.allow_major_version_upgrade) : nil
     apply_immediately = instance.respond_to?(:apply_immediately) ? (instance.apply_immediately.respond_to?(:to_hash) ? instance.apply_immediately.to_hash : instance.apply_immediately) : nil
+    associated_roles = instance.respond_to?(:associated_roles) ? (instance.associated_roles.respond_to?(:to_hash) ? instance.associated_roles.to_hash : instance.associated_roles) : nil
     auto_minor_version_upgrade = instance.respond_to?(:auto_minor_version_upgrade) ? (instance.auto_minor_version_upgrade.respond_to?(:to_hash) ? instance.auto_minor_version_upgrade.to_hash : instance.auto_minor_version_upgrade) : nil
     availability_zone = instance.respond_to?(:availability_zone) ? (instance.availability_zone.respond_to?(:to_hash) ? instance.availability_zone.to_hash : instance.availability_zone) : nil
     backup_retention_period = instance.respond_to?(:backup_retention_period) ? (instance.backup_retention_period.respond_to?(:to_hash) ? instance.backup_retention_period.to_hash : instance.backup_retention_period) : nil
@@ -547,11 +123,11 @@ Puppet::Type.type(:aws_db_instance).provide(:arm) do
     db_instance = {}
     db_instance[:ensure] = :present
     db_instance[:object] = instance
-    db_instance[:name] = instance.to_hash[namevar]
-
+    db_instance[:name] = instance.to_hash[self.namevar]
     db_instance[:allocated_storage] = allocated_storage unless allocated_storage.nil?
     db_instance[:allow_major_version_upgrade] = allow_major_version_upgrade unless allow_major_version_upgrade.nil?
     db_instance[:apply_immediately] = apply_immediately unless apply_immediately.nil?
+    db_instance[:associated_roles] = associated_roles unless associated_roles.nil?
     db_instance[:auto_minor_version_upgrade] = auto_minor_version_upgrade unless auto_minor_version_upgrade.nil?
     db_instance[:availability_zone] = availability_zone unless availability_zone.nil?
     db_instance[:backup_retention_period] = backup_retention_period unless backup_retention_period.nil?
@@ -632,112 +208,224 @@ Puppet::Type.type(:aws_db_instance).provide(:arm) do
     db_instance
   end
 
-  def build_hash
-    db_instance = {}
-    if @is_create || @is_update
-      db_instance[:allocated_storage] = resource[:allocated_storage] unless resource[:allocated_storage].nil?
-      db_instance[:allow_major_version_upgrade] = resource[:allow_major_version_upgrade] unless resource[:allow_major_version_upgrade].nil?
-      db_instance[:apply_immediately] = resource[:apply_immediately] unless resource[:apply_immediately].nil?
-      db_instance[:auto_minor_version_upgrade] = resource[:auto_minor_version_upgrade] unless resource[:auto_minor_version_upgrade].nil?
-      db_instance[:availability_zone] = resource[:availability_zone] unless resource[:availability_zone].nil?
-      db_instance[:backup_retention_period] = resource[:backup_retention_period] unless resource[:backup_retention_period].nil?
-      db_instance[:ca_certificate_identifier] = resource[:ca_certificate_identifier] unless resource[:ca_certificate_identifier].nil?
-      db_instance[:character_set_name] = resource[:character_set_name] unless resource[:character_set_name].nil?
-      db_instance[:cloudwatch_logs_export_configuration] = resource[:cloudwatch_logs_export_configuration] unless resource[:cloudwatch_logs_export_configuration].nil?
-      db_instance[:copy_tags_to_snapshot] = resource[:copy_tags_to_snapshot] unless resource[:copy_tags_to_snapshot].nil?
-      db_instance[:db_cluster_identifier] = resource[:db_cluster_identifier] unless resource[:db_cluster_identifier].nil?
-      db_instance[:db_instance_class] = resource[:db_instance_class] unless resource[:db_instance_class].nil?
-      db_instance[:db_instance_identifier] = resource[:db_instance_identifier] unless resource[:db_instance_identifier].nil?
-      db_instance[:db_name] = resource[:db_name] unless resource[:db_name].nil?
-      db_instance[:db_parameter_group_name] = resource[:db_parameter_group_name] unless resource[:db_parameter_group_name].nil?
-      db_instance[:db_port_number] = resource[:db_port_number] unless resource[:db_port_number].nil?
-      db_instance[:db_security_groups] = resource[:db_security_groups] unless resource[:db_security_groups].nil?
-      db_instance[:db_subnet_group_name] = resource[:db_subnet_group_name] unless resource[:db_subnet_group_name].nil?
-      db_instance[:delete_automated_backups] = resource[:delete_automated_backups] unless resource[:delete_automated_backups].nil?
-      db_instance[:deletion_protection] = resource[:deletion_protection] unless resource[:deletion_protection].nil?
-      db_instance[:domain] = resource[:domain] unless resource[:domain].nil?
-      db_instance[:domain_iam_role_name] = resource[:domain_iam_role_name] unless resource[:domain_iam_role_name].nil?
-      db_instance[:enable_cloudwatch_logs_exports] = resource[:enable_cloudwatch_logs_exports] unless resource[:enable_cloudwatch_logs_exports].nil?
-      db_instance[:enable_iam_database_authentication] = resource[:enable_iam_database_authentication] unless resource[:enable_iam_database_authentication].nil?
-      db_instance[:enable_performance_insights] = resource[:enable_performance_insights] unless resource[:enable_performance_insights].nil?
-      db_instance[:engine] = resource[:engine] unless resource[:engine].nil?
-      db_instance[:engine_version] = resource[:engine_version] unless resource[:engine_version].nil?
-      db_instance[:filters] = resource[:filters] unless resource[:filters].nil?
-      db_instance[:final_db_snapshot_identifier] = resource[:final_db_snapshot_identifier] unless resource[:final_db_snapshot_identifier].nil?
-      db_instance[:iops] = resource[:iops] unless resource[:iops].nil?
-      db_instance[:kms_key_id] = resource[:kms_key_id] unless resource[:kms_key_id].nil?
-      db_instance[:license_model] = resource[:license_model] unless resource[:license_model].nil?
-      db_instance[:master_username] = resource[:master_username] unless resource[:master_username].nil?
-      db_instance[:master_user_password] = resource[:master_user_password] unless resource[:master_user_password].nil?
-      db_instance[:max_records] = resource[:max_records] unless resource[:max_records].nil?
-      db_instance[:monitoring_interval] = resource[:monitoring_interval] unless resource[:monitoring_interval].nil?
-      db_instance[:monitoring_role_arn] = resource[:monitoring_role_arn] unless resource[:monitoring_role_arn].nil?
-      db_instance[:multi_az] = resource[:multi_az] unless resource[:multi_az].nil?
-      db_instance[:db_parameter_group_name] = resource[:db_parameter_group_name] unless resource[:db_parameter_group_name].nil?
-      db_instance[:new_db_instance_identifier] = resource[:new_db_instance_identifier] unless resource[:new_db_instance_identifier].nil?
-      db_instance[:option_group_name] = resource[:option_group_name] unless resource[:option_group_name].nil?
-      db_instance[:performance_insights_kms_key_id] = resource[:performance_insights_kms_key_id] unless resource[:performance_insights_kms_key_id].nil?
-      db_instance[:performance_insights_retention_period] = resource[:performance_insights_retention_period] unless resource[:performance_insights_retention_period].nil?
-      db_instance[:port] = resource[:port] unless resource[:port].nil?
-      db_instance[:preferred_backup_window] = resource[:preferred_backup_window] unless resource[:preferred_backup_window].nil?
-      db_instance[:preferred_maintenance_window] = resource[:preferred_maintenance_window] unless resource[:preferred_maintenance_window].nil?
-      db_instance[:processor_features] = resource[:processor_features] unless resource[:processor_features].nil?
-      db_instance[:promotion_tier] = resource[:promotion_tier] unless resource[:promotion_tier].nil?
-      db_instance[:publicly_accessible] = resource[:publicly_accessible] unless resource[:publicly_accessible].nil?
-      db_instance[:storage_encrypted] = resource[:storage_encrypted] unless resource[:storage_encrypted].nil?
-      db_instance[:storage_type] = resource[:storage_type] unless resource[:storage_type].nil?
-      db_instance[:tags] = resource[:tags] unless resource[:tags].nil?
-      db_instance[:tde_credential_arn] = resource[:tde_credential_arn] unless resource[:tde_credential_arn].nil?
-      db_instance[:tde_credential_password] = resource[:tde_credential_password] unless resource[:tde_credential_password].nil?
-      db_instance[:timezone] = resource[:timezone] unless resource[:timezone].nil?
-      db_instance[:use_default_processor_features] = resource[:use_default_processor_features] unless resource[:use_default_processor_features].nil?
-      db_instance[:vpc_security_group_ids] = resource[:vpc_security_group_ids] unless resource[:vpc_security_group_ids].nil?
-    else
-      db_instance['skip_final_snapshot'] = resource['skip_final_snapshot'] unless resource['skip_final_snapshot'].nil?
-      db_instance['final_db_snapshot_identifier'] = resource['final_db_snapshot_identifier'] unless resource['final_db_snapshot_identifier'].nil?
-    end
-    db_instance[namevar] = resource[:name]
-    symbolize(db_instance)
+  def namevar
+    :db_instance_identifier
   end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.create_db_instance(build_hash)
-    @property_hash[:ensure] = :present
+  def self.namevar
+    :db_instance_identifier
+  end
+
+  def name?(hash)
+    !hash[self.namevar].nil? && !hash[self.namevar].empty?
+  end
+
+  def self.name?(hash)
+    !hash[self.namevar].nil? && !hash[self.namevar].empty?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resourceupdate(context, name, should)
+      end
+    end
+  end
+
+  def self.region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client   = Aws::RDS::Client.new(region: region)
+      client.create_db_instance(new_hash)
+    end
   rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
+
+  def update(context, name, should)
+    context.updating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client = Aws::RDS::Client.new(region: region)
+      client.modify_db_instance(new_hash)
     end
-    @is_update = true
-    @property_hash[:ensure] = :present
-    []
+  rescue StandardError => ex
+    Puppet.alert("Exception during flush. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
+  end
+
+
+  def build_hash(resource)
+    db_instance = {}
+          db_instance['allocated_storage'] = resource[:allocated_storage] unless resource[:allocated_storage].nil?
+          db_instance['allow_major_version_upgrade'] = resource[:allow_major_version_upgrade] unless resource[:allow_major_version_upgrade].nil?
+          db_instance['apply_immediately'] = resource[:apply_immediately] unless resource[:apply_immediately].nil?
+          db_instance['auto_minor_version_upgrade'] = resource[:auto_minor_version_upgrade] unless resource[:auto_minor_version_upgrade].nil?
+          db_instance['availability_zone'] = resource[:availability_zone] unless resource[:availability_zone].nil?
+          db_instance['backup_retention_period'] = resource[:backup_retention_period] unless resource[:backup_retention_period].nil?
+          db_instance['ca_certificate_identifier'] = resource[:ca_certificate_identifier] unless resource[:ca_certificate_identifier].nil?
+          db_instance['character_set_name'] = resource[:character_set_name] unless resource[:character_set_name].nil?
+          db_instance['cloudwatch_logs_export_configuration'] = resource[:cloudwatch_logs_export_configuration] unless resource[:cloudwatch_logs_export_configuration].nil?
+          db_instance['copy_tags_to_snapshot'] = resource[:copy_tags_to_snapshot] unless resource[:copy_tags_to_snapshot].nil?
+          db_instance['db_cluster_identifier'] = resource[:db_cluster_identifier] unless resource[:db_cluster_identifier].nil?
+          db_instance['db_instance_class'] = resource[:db_instance_class] unless resource[:db_instance_class].nil?
+          db_instance['db_instance_identifier'] = resource[:db_instance_identifier] unless resource[:db_instance_identifier].nil?
+          db_instance['db_name'] = resource[:db_name] unless resource[:db_name].nil?
+          db_instance['db_parameter_group_name'] = resource[:db_parameter_group_name] unless resource[:db_parameter_group_name].nil?
+          db_instance['db_port_number'] = resource[:db_port_number] unless resource[:db_port_number].nil?
+          db_instance['db_security_groups'] = resource[:db_security_groups] unless resource[:db_security_groups].nil?
+          db_instance['db_subnet_group_name'] = resource[:db_subnet_group_name] unless resource[:db_subnet_group_name].nil?
+          db_instance['delete_automated_backups'] = resource[:delete_automated_backups] unless resource[:delete_automated_backups].nil?
+          db_instance['deletion_protection'] = resource[:deletion_protection] unless resource[:deletion_protection].nil?
+          db_instance['domain'] = resource[:domain] unless resource[:domain].nil?
+          db_instance['domain_iam_role_name'] = resource[:domain_iam_role_name] unless resource[:domain_iam_role_name].nil?
+          db_instance['enable_cloudwatch_logs_exports'] = resource[:enable_cloudwatch_logs_exports] unless resource[:enable_cloudwatch_logs_exports].nil?
+          db_instance['enable_iam_database_authentication'] = resource[:enable_iam_database_authentication] unless resource[:enable_iam_database_authentication].nil?
+          db_instance['enable_performance_insights'] = resource[:enable_performance_insights] unless resource[:enable_performance_insights].nil?
+          db_instance['engine'] = resource[:engine] unless resource[:engine].nil?
+          db_instance['engine_version'] = resource[:engine_version] unless resource[:engine_version].nil?
+          db_instance['filters'] = resource[:filters] unless resource[:filters].nil?
+          db_instance['final_db_snapshot_identifier'] = resource[:final_db_snapshot_identifier] unless resource[:final_db_snapshot_identifier].nil?
+          db_instance['iops'] = resource[:iops] unless resource[:iops].nil?
+          db_instance['kms_key_id'] = resource[:kms_key_id] unless resource[:kms_key_id].nil?
+          db_instance['license_model'] = resource[:license_model] unless resource[:license_model].nil?
+          db_instance['master_username'] = resource[:master_username] unless resource[:master_username].nil?
+          db_instance['master_user_password'] = resource[:master_user_password] unless resource[:master_user_password].nil?
+          db_instance['max_records'] = resource[:max_records] unless resource[:max_records].nil?
+          db_instance['monitoring_interval'] = resource[:monitoring_interval] unless resource[:monitoring_interval].nil?
+          db_instance['monitoring_role_arn'] = resource[:monitoring_role_arn] unless resource[:monitoring_role_arn].nil?
+          db_instance['multi_az'] = resource[:multi_az] unless resource[:multi_az].nil?
+          db_instance['master_username'] = resource[:master_username] unless resource[:master_username].nil?
+          db_instance['new_db_instance_identifier'] = resource[:new_db_instance_identifier] unless resource[:new_db_instance_identifier].nil?
+          db_instance['option_group_name'] = resource[:option_group_name] unless resource[:option_group_name].nil?
+          db_instance['performance_insights_kms_key_id'] = resource[:performance_insights_kms_key_id] unless resource[:performance_insights_kms_key_id].nil?
+          db_instance['performance_insights_retention_period'] = resource[:performance_insights_retention_period] unless resource[:performance_insights_retention_period].nil?
+          db_instance['port'] = resource[:port] unless resource[:port].nil?
+          db_instance['preferred_backup_window'] = resource[:preferred_backup_window] unless resource[:preferred_backup_window].nil?
+          db_instance['preferred_maintenance_window'] = resource[:preferred_maintenance_window] unless resource[:preferred_maintenance_window].nil?
+          db_instance['processor_features'] = resource[:processor_features] unless resource[:processor_features].nil?
+          db_instance['promotion_tier'] = resource[:promotion_tier] unless resource[:promotion_tier].nil?
+          db_instance['publicly_accessible'] = resource[:publicly_accessible] unless resource[:publicly_accessible].nil?
+          db_instance['storage_encrypted'] = resource[:storage_encrypted] unless resource[:storage_encrypted].nil?
+          db_instance['storage_type'] = resource[:storage_type] unless resource[:storage_type].nil?
+          db_instance['tags'] = resource[:tags] unless resource[:tags].nil?
+          db_instance['tde_credential_arn'] = resource[:tde_credential_arn] unless resource[:tde_credential_arn].nil?
+          db_instance['tde_credential_password'] = resource[:tde_credential_password] unless resource[:tde_credential_password].nil?
+          db_instance['timezone'] = resource[:timezone] unless resource[:timezone].nil?
+          db_instance['use_default_processor_features'] = resource[:use_default_processor_features] unless resource[:use_default_processor_features].nil?
+          db_instance['vpc_security_group_ids'] = resource[:vpc_security_group_ids] unless resource[:vpc_security_group_ids].nil?
+    db_instance[namevar] = resource[:name]
+    symbolize(db_instance)
+  end
+
+  def build_hash_delete(resource)
+    db_instance = {}
+        db_instance['allocated_storage'] = resource[:allocated_storage] unless resource[:allocated_storage].nil?
+        db_instance['allow_major_version_upgrade'] = resource[:allow_major_version_upgrade] unless resource[:allow_major_version_upgrade].nil?
+        db_instance['apply_immediately'] = resource[:apply_immediately] unless resource[:apply_immediately].nil?
+        db_instance['auto_minor_version_upgrade'] = resource[:auto_minor_version_upgrade] unless resource[:auto_minor_version_upgrade].nil?
+        db_instance['availability_zone'] = resource[:availability_zone] unless resource[:availability_zone].nil?
+        db_instance['backup_retention_period'] = resource[:backup_retention_period] unless resource[:backup_retention_period].nil?
+        db_instance['ca_certificate_identifier'] = resource[:ca_certificate_identifier] unless resource[:ca_certificate_identifier].nil?
+        db_instance['character_set_name'] = resource[:character_set_name] unless resource[:character_set_name].nil?
+        db_instance['cloudwatch_logs_export_configuration'] = resource[:cloudwatch_logs_export_configuration] unless resource[:cloudwatch_logs_export_configuration].nil?
+        db_instance['copy_tags_to_snapshot'] = resource[:copy_tags_to_snapshot] unless resource[:copy_tags_to_snapshot].nil?
+        db_instance['db_cluster_identifier'] = resource[:db_cluster_identifier] unless resource[:db_cluster_identifier].nil?
+        db_instance['db_instance_class'] = resource[:db_instance_class] unless resource[:db_instance_class].nil?
+        db_instance['db_instance_identifier'] = resource[:db_instance_identifier] unless resource[:db_instance_identifier].nil?
+        db_instance['db_name'] = resource[:db_name] unless resource[:db_name].nil?
+        db_instance['db_parameter_group_name'] = resource[:db_parameter_group_name] unless resource[:db_parameter_group_name].nil?
+        db_instance['db_port_number'] = resource[:db_port_number] unless resource[:db_port_number].nil?
+        db_instance['db_security_groups'] = resource[:db_security_groups] unless resource[:db_security_groups].nil?
+        db_instance['db_subnet_group_name'] = resource[:db_subnet_group_name] unless resource[:db_subnet_group_name].nil?
+        db_instance['delete_automated_backups'] = resource[:delete_automated_backups] unless resource[:delete_automated_backups].nil?
+        db_instance['deletion_protection'] = resource[:deletion_protection] unless resource[:deletion_protection].nil?
+        db_instance['domain'] = resource[:domain] unless resource[:domain].nil?
+        db_instance['domain_iam_role_name'] = resource[:domain_iam_role_name] unless resource[:domain_iam_role_name].nil?
+        db_instance['enable_cloudwatch_logs_exports'] = resource[:enable_cloudwatch_logs_exports] unless resource[:enable_cloudwatch_logs_exports].nil?
+        db_instance['enable_iam_database_authentication'] = resource[:enable_iam_database_authentication] unless resource[:enable_iam_database_authentication].nil?
+        db_instance['enable_performance_insights'] = resource[:enable_performance_insights] unless resource[:enable_performance_insights].nil?
+        db_instance['engine'] = resource[:engine] unless resource[:engine].nil?
+        db_instance['engine_version'] = resource[:engine_version] unless resource[:engine_version].nil?
+        db_instance['filters'] = resource[:filters] unless resource[:filters].nil?
+        db_instance['final_db_snapshot_identifier'] = resource[:final_db_snapshot_identifier] unless resource[:final_db_snapshot_identifier].nil?
+        db_instance['iops'] = resource[:iops] unless resource[:iops].nil?
+        db_instance['kms_key_id'] = resource[:kms_key_id] unless resource[:kms_key_id].nil?
+        db_instance['license_model'] = resource[:license_model] unless resource[:license_model].nil?
+        db_instance['master_username'] = resource[:master_username] unless resource[:master_username].nil?
+        db_instance['master_user_password'] = resource[:master_user_password] unless resource[:master_user_password].nil?
+        db_instance['max_records'] = resource[:max_records] unless resource[:max_records].nil?
+        db_instance['monitoring_interval'] = resource[:monitoring_interval] unless resource[:monitoring_interval].nil?
+        db_instance['monitoring_role_arn'] = resource[:monitoring_role_arn] unless resource[:monitoring_role_arn].nil?
+        db_instance['multi_az'] = resource[:multi_az] unless resource[:multi_az].nil?
+        db_instance['master_username'] = resource[:master_username] unless resource[:master_username].nil?
+        db_instance['new_db_instance_identifier'] = resource[:new_db_instance_identifier] unless resource[:new_db_instance_identifier].nil?
+        db_instance['option_group_name'] = resource[:option_group_name] unless resource[:option_group_name].nil?
+        db_instance['performance_insights_kms_key_id'] = resource[:performance_insights_kms_key_id] unless resource[:performance_insights_kms_key_id].nil?
+        db_instance['performance_insights_retention_period'] = resource[:performance_insights_retention_period] unless resource[:performance_insights_retention_period].nil?
+        db_instance['port'] = resource[:port] unless resource[:port].nil?
+        db_instance['preferred_backup_window'] = resource[:preferred_backup_window] unless resource[:preferred_backup_window].nil?
+        db_instance['preferred_maintenance_window'] = resource[:preferred_maintenance_window] unless resource[:preferred_maintenance_window].nil?
+        db_instance['processor_features'] = resource[:processor_features] unless resource[:processor_features].nil?
+        db_instance['promotion_tier'] = resource[:promotion_tier] unless resource[:promotion_tier].nil?
+        db_instance['publicly_accessible'] = resource[:publicly_accessible] unless resource[:publicly_accessible].nil?
+        db_instance['skip_final_snapshot'] = resource[:skip_final_snapshot] unless resource[:skip_final_snapshot].nil?
+        db_instance['storage_encrypted'] = resource[:storage_encrypted] unless resource[:storage_encrypted].nil?
+        db_instance['storage_type'] = resource[:storage_type] unless resource[:storage_type].nil?
+        db_instance['tags'] = resource[:tags] unless resource[:tags].nil?
+        db_instance['tde_credential_arn'] = resource[:tde_credential_arn] unless resource[:tde_credential_arn].nil?
+        db_instance['tde_credential_password'] = resource[:tde_credential_password] unless resource[:tde_credential_password].nil?
+        db_instance['timezone'] = resource[:timezone] unless resource[:timezone].nil?
+        db_instance['use_default_processor_features'] = resource[:use_default_processor_features] unless resource[:use_default_processor_features].nil?
+        db_instance['vpc_security_group_ids'] = resource[:vpc_security_group_ids] unless resource[:vpc_security_group_ids].nil?
+    db_instance[namevar] = resource[:name]
+    symbolize(db_instance)
+  end
+
+  def self.build_key_values
+    key_values = {}
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_db_instance')
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.delete_db_instance(build_hash)
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-  def exists?
-    Puppet.info("Parametered Describe for resource #{name} of type <no value>")
-    client = Aws::RDS::Client.new(region: self.class.region)
-    response = client.describe_db_instances(namevar => name)
-    @property_hash[:object] = response
-    return true
-  rescue StandardError
-    return false
+  def delete(should)
+    new_hash = symbolize(build_hash_delete(should))
+    client = Aws::RDS::Client.new(region: region)
+    client.delete_db_instance(new_hash)
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
 
   def symbolize(obj)
@@ -751,5 +439,3 @@ Puppet::Type.type(:aws_db_instance).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

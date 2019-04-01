@@ -7,25 +7,13 @@
 		
 		
 		    
-			"valid_until":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"excess_capacity_termination_policy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"launch_template_configs":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_specifications":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +25,13 @@
 			}
 			,
 		    
-			"terminate_instances_with_expiration":{
+			"valid_until":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"type":{
+			"excess_capacity_termination_policy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -73,13 +61,25 @@
 			}
 			,
 		    
-			"tag_specifications":{
+			"terminate_instances_with_expiration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"valid_from":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

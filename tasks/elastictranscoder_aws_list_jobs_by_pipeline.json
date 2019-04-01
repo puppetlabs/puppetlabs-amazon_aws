@@ -7,6 +7,12 @@
 		
 		
 		    
+			"pipeline_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"ascending":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

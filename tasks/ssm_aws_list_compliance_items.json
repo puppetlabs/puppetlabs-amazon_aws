@@ -7,6 +7,12 @@
 		
 		
 		    
+			"resource_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"resource_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

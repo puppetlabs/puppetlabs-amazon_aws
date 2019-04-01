@@ -1,11 +1,23 @@
 {
-	"description": "Returns the specified alias information such as the alias ARN, description, and function version it is pointing to. For more information, see Introduction to AWS Lambda Aliases. This requires permission for the lambda:GetAlias action.",
+	"description": "Returns details about a Lambda function alias.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"function_name":{
 			   "description": "",

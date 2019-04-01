@@ -7,13 +7,19 @@
 		
 		
 		    
+			"include_statistics":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"datastore_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"include_statistics":{
+			"datastore_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

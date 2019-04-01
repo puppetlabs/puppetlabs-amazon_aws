@@ -7,13 +7,13 @@
 		
 		
 		    
-			"group_name":{
+			"filter_expression":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filter_expression":{
+			"group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

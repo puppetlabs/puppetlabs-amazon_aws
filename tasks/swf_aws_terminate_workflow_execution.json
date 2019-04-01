@@ -7,6 +7,18 @@
 		
 		
 		    
+			"child_policy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"details":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"domain":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,18 +38,6 @@
 			,
 		    
 			"workflow_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"child_policy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"details":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

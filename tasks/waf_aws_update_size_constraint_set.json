@@ -7,6 +7,12 @@
 		
 		
 		    
+			"change_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"size_constraint_set_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"updates":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"change_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

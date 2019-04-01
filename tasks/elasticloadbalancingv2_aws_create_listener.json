@@ -7,24 +7,6 @@
 		
 		
 		    
-			"port":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"protocol":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ssl_policy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"certificates":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +20,24 @@
 			,
 		    
 			"load_balancer_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"port":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"protocol":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ssl_policy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"compliance_types":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"resource_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +14,18 @@
 			,
 		    
 			"resource_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"compliance_types":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

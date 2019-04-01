@@ -7,6 +7,18 @@
 		
 		
 		    
+			"index_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"query_string":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"query_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,19 +37,13 @@
 			}
 			,
 		    
+			"thing_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"thing_group_properties":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"index_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"query_string":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

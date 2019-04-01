@@ -7,13 +7,13 @@
 		
 		
 		    
-			"resource_name":{
+			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"filters":{
+			"resource_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

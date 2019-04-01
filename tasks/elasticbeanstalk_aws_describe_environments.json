@@ -7,6 +7,12 @@
 		
 		
 		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"version_label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,12 +50,6 @@
 			,
 		    
 			"max_records":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

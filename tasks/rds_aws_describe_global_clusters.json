@@ -1,11 +1,17 @@
 {
-	"description": " Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. ",
+	"description": " Returns information about Aurora global database clusters. This API supports pagination.   For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. ",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"global_cluster_identifier":{
 			   "description": "",
@@ -20,12 +26,6 @@
 			,
 		    
 			"max_records":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

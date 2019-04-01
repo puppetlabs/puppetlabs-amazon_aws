@@ -7,18 +7,6 @@
 		
 		
 		    
-			"override_dynamic_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"thing_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"thing_group_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +20,18 @@
 			,
 		    
 			"thing_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"override_dynamic_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

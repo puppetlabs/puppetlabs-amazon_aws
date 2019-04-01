@@ -7,13 +7,19 @@
 		
 		
 		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"time_zone_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"authentication_token":{
+			"username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +31,19 @@
 			}
 			,
 		    
+			"given_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"password":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -38,24 +56,6 @@
 			,
 		    
 			"surname":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"given_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"password":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"username":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

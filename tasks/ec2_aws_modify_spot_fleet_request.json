@@ -7,6 +7,12 @@
 		
 		
 		    
+			"target_capacity":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"excess_capacity_termination_policy":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"spot_fleet_request_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_capacity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

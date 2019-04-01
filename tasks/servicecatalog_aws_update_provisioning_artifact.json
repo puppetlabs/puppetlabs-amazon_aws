@@ -7,6 +7,18 @@
 		
 		
 		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"active":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,18 +38,6 @@
 			,
 		    
 			"provisioning_artifact_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"accept_language":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"active":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

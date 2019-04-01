@@ -1,5 +1,5 @@
 {
-	"description": "Creates a named query. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
+	"description": "Creates a named query in the specified workgroup. Requires that you have access to the workgroup. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -32,6 +32,12 @@
 			,
 		    
 			"query_string":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"work_group":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

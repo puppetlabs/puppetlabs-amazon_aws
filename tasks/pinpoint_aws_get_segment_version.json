@@ -7,7 +7,7 @@
 		
 		
 		    
-			"version":{
+			"application_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,6 +20,18 @@
 			,
 		    
 			"segment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"segment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

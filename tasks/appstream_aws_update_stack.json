@@ -7,19 +7,7 @@
 		
 		
 		    
-			"application_settings":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"feedback_url":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +25,7 @@
 			}
 			,
 		    
-			"attributes_to_delete":{
+			"application_settings":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +43,19 @@
 			}
 			,
 		    
-			"name":{
+			"feedback_url":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes_to_delete":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

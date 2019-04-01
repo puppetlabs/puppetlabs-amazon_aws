@@ -7,6 +7,12 @@
 		
 		
 		    
+			"output_artifact_details":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"provider":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,12 +44,6 @@
 			,
 		    
 			"input_artifact_details":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"output_artifact_details":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

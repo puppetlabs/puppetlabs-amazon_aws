@@ -7,6 +7,12 @@
 		
 		
 		    
+			"clientcertificate_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"client_certificate_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

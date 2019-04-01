@@ -7,6 +7,18 @@
 		
 		
 		    
+			"connector_definition_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"connector_definition_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +31,7 @@
 			}
 			,
 		    
-			"next_token":{
+			"connector_definition_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,34 @@
+{
+	"description": "Sets lifecycle configuration for your bucket. If a lifecycle configuration exists, it replaces it.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"lifecycle_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucketlifecycl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lifecycle":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

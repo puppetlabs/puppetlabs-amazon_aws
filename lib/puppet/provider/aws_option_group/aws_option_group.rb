@@ -1,138 +1,38 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-rds'
 
 
-Puppet::Type.type(:aws_option_group).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
+
+
+
+# AwsOptionGroup class
+class Puppet::Provider::AwsOptionGroup::AwsOptionGroup
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-  # RDS Properties
-  def namevar
-    :option_group_name
-  end
-
-  def self.namevar
-    :option_group_name
-  end
-
-
-  def allows_vpc_and_non_vpc_instance_memberships=(value)
-    Puppet.info("allows_vpc_and_non_vpc_instance_memberships setter called to change to #{value}")
-    @property_flush[:allows_vpc_and_non_vpc_instance_memberships] = value
-  end
-
-  def apply_immediately=(value)
-    Puppet.info("apply_immediately setter called to change to #{value}")
-    @property_flush[:apply_immediately] = value
-  end
-
-  def engine_name=(value)
-    Puppet.info("engine_name setter called to change to #{value}")
-    @property_flush[:engine_name] = value
-  end
-
-  def filters=(value)
-    Puppet.info("filters setter called to change to #{value}")
-    @property_flush[:filters] = value
-  end
-
-  def major_engine_version=(value)
-    Puppet.info("major_engine_version setter called to change to #{value}")
-    @property_flush[:major_engine_version] = value
-  end
-
-  def max_records=(value)
-    Puppet.info("max_records setter called to change to #{value}")
-    @property_flush[:max_records] = value
-  end
-
-  def option_group_arn=(value)
-    Puppet.info("option_group_arn setter called to change to #{value}")
-    @property_flush[:option_group_arn] = value
-  end
-
-  def option_group_description=(value)
-    Puppet.info("option_group_description setter called to change to #{value}")
-    @property_flush[:option_group_description] = value
-  end
-
-  def option_group_name=(value)
-    Puppet.info("option_group_name setter called to change to #{value}")
-    @property_flush[:option_group_name] = value
-  end
-
-  def options=(value)
-    Puppet.info("options setter called to change to #{value}")
-    @property_flush[:options] = value
-  end
-
-  def options_to_include=(value)
-    Puppet.info("options_to_include setter called to change to #{value}")
-    @property_flush[:options_to_include] = value
-  end
-
-  def options_to_remove=(value)
-    Puppet.info("options_to_remove setter called to change to #{value}")
-    @property_flush[:options_to_remove] = value
-  end
-
-  def tags=(value)
-    Puppet.info("tags setter called to change to #{value}")
-    @property_flush[:tags] = value
-  end
-
-  def vpc_id=(value)
-    Puppet.info("vpc_id setter called to change to #{value}")
-    @property_flush[:vpc_id] = value
-  end
-
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  attr_reader :property_hash
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
-  end
-  def self.instances
+    context.debug('Entered get')
     Puppet.debug("Calling instances for region #{region}")
-    client = Aws::RDS::Client.new(region: region)
-
+    client        = Aws::RDS::Client.new(region: region)
     all_instances = []
     client.describe_option_groups.each do |response|
       response.option_groups_list.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+        all_instances << hash if name?(hash)
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
+
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      name = prov.property_hash[namevar]
-      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     allows_vpc_and_non_vpc_instance_memberships = instance.respond_to?(:allows_vpc_and_non_vpc_instance_memberships) ? (instance.allows_vpc_and_non_vpc_instance_memberships.respond_to?(:to_hash) ? instance.allows_vpc_and_non_vpc_instance_memberships.to_hash : instance.allows_vpc_and_non_vpc_instance_memberships) : nil
     apply_immediately = instance.respond_to?(:apply_immediately) ? (instance.apply_immediately.respond_to?(:to_hash) ? instance.apply_immediately.to_hash : instance.apply_immediately) : nil
     engine_name = instance.respond_to?(:engine_name) ? (instance.engine_name.respond_to?(:to_hash) ? instance.engine_name.to_hash : instance.engine_name) : nil
@@ -151,8 +51,7 @@ Puppet::Type.type(:aws_option_group).provide(:arm) do
     option_group = {}
     option_group[:ensure] = :present
     option_group[:object] = instance
-    option_group[:name] = instance.to_hash[namevar]
-
+    option_group[:name] = instance.to_hash[self.namevar]
     option_group[:allows_vpc_and_non_vpc_instance_memberships] = allows_vpc_and_non_vpc_instance_memberships unless allows_vpc_and_non_vpc_instance_memberships.nil?
     option_group[:apply_immediately] = apply_immediately unless apply_immediately.nil?
     option_group[:engine_name] = engine_name unless engine_name.nil?
@@ -170,64 +69,109 @@ Puppet::Type.type(:aws_option_group).provide(:arm) do
     option_group
   end
 
-  def build_hash
-    option_group = {}
-    if @is_create || @is_update
-      option_group[:apply_immediately] = resource[:apply_immediately] unless resource[:apply_immediately].nil?
-      option_group[:engine_name] = resource[:engine_name] unless resource[:engine_name].nil?
-      option_group[:filters] = resource[:filters] unless resource[:filters].nil?
-      option_group[:major_engine_version] = resource[:major_engine_version] unless resource[:major_engine_version].nil?
-      option_group[:max_records] = resource[:max_records] unless resource[:max_records].nil?
-      option_group[:option_group_description] = resource[:option_group_description] unless resource[:option_group_description].nil?
-      option_group[:option_group_name] = resource[:option_group_name] unless resource[:option_group_name].nil?
-      option_group[:options_to_include] = resource[:options_to_include] unless resource[:options_to_include].nil?
-      option_group[:options_to_remove] = resource[:options_to_remove] unless resource[:options_to_remove].nil?
-      option_group[:tags] = resource[:tags] unless resource[:tags].nil?
-    end
-    option_group[namevar] = resource[:name]
-    symbolize(option_group)
+  def namevar
+    :option_group_name
   end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.create_option_group(build_hash)
-    @property_hash[:ensure] = :present
+  def self.namevar
+    :option_group_name
+  end
+
+  def name?(hash)
+    !hash[self.namevar].nil? && !hash[self.namevar].empty?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resourceupdate(context, name, should)
+      end
+    end
+  end
+
+  def self.region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client   = Aws::RDS::Client.new(region: region)
+      client.create_option_group(new_hash)
+    end
   rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
+
+  def update(context, name, should)
+    context.updating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client = Aws::RDS::Client.new(region: region)
+      client.modify_option_group(new_hash)
     end
-    @is_update = true
-    @property_hash[:ensure] = :present
-    []
+  rescue StandardError => ex
+    Puppet.alert("Exception during flush. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
+  end
+
+
+  def build_hash(resource)
+    option_group = {}
+    option_group['apply_immediately'] = resource[:apply_immediately] unless resource[:apply_immediately].nil?
+    option_group['engine_name'] = resource[:engine_name] unless resource[:engine_name].nil?
+    option_group['filters'] = resource[:filters] unless resource[:filters].nil?
+    option_group['major_engine_version'] = resource[:major_engine_version] unless resource[:major_engine_version].nil?
+    option_group['max_records'] = resource[:max_records] unless resource[:max_records].nil?
+    option_group['option_group_description'] = resource[:option_group_description] unless resource[:option_group_description].nil?
+    option_group['option_group_name'] = resource[:option_group_name] unless resource[:option_group_name].nil?
+    option_group['options_to_include'] = resource[:options_to_include] unless resource[:options_to_include].nil?
+    option_group['options_to_remove'] = resource[:options_to_remove] unless resource[:options_to_remove].nil?
+    option_group['tags'] = resource[:tags] unless resource[:tags].nil?
+    symbolize(option_group)
+  end
+
+  def self.build_key_values
+    key_values = {}
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_option_group')
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.delete_option_group(build_hash)
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    new_hash = symbolize(build_hash(should))
+    client = Aws::RDS::Client.new(region: region)
+    client.delete_option_group(new_hash)
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -240,5 +184,3 @@ Puppet::Type.type(:aws_option_group).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

@@ -1,5 +1,5 @@
 {
-	"description": "Returns the resource policy associated with the specified Lambda function. This action requires permission for the lambda:GetPolicy action. ",
+	"description": "Returns the resource-based IAM policy for a function, version, or alias.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,19 @@
 		
 		
 		    
-			"qualifier":{
+			"function_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"qualifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

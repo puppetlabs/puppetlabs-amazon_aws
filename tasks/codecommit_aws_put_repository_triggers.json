@@ -1,0 +1,22 @@
+{
+	"description": "Replaces all triggers for a repository. This can be used to create or delete triggers.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"repository_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"triggers":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

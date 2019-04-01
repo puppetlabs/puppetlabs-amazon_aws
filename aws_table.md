@@ -24,14 +24,14 @@ aws_table {
 | Name        | Type           | Required       |
 | ------------- | ------------- | ------------- |
 |attribute_definitions | AttributeDefinitions | false |
-|billing_mode | [BillingMode](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=billingmode) | false |
+|billing_mode | [BillingMode](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
 |global_secondary_indexes | GlobalSecondaryIndexList | false |
 |key_schema | KeySchema | false |
 |local_secondary_indexes | LocalSecondaryIndexList | false |
-|provisioned_throughput | [ProvisionedThroughput](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=provisionedthroughput) | false |
-|sse_specification | [SSESpecification](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=ssespecification) | false |
-|stream_specification | [StreamSpecification](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=streamspecification) | false |
-|table_name | [TableName](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=tablename) | false |
+|provisioned_throughput | [ProvisionedThroughput](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
+|sse_specification | [SSESpecification](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
+|stream_specification | [StreamSpecification](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
+|table_name | [TableName](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
 
 
 

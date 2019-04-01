@@ -7,13 +7,19 @@
 		
 		
 		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"description":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"label":{
+			"topic_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"topic_arn":{
+			"label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

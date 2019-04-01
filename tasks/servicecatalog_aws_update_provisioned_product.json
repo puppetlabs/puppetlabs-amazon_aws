@@ -7,19 +7,7 @@
 		
 		
 		    
-			"path_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"product_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"provisioned_product_id":{
+			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,13 +19,7 @@
 			}
 			,
 		    
-			"provisioning_preferences":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"accept_language":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,7 +37,31 @@
 			}
 			,
 		    
+			"provisioning_preferences":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"update_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"path_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"product_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioned_product_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

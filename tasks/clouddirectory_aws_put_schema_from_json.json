@@ -1,0 +1,22 @@
+{
+	"description": "Allows a schema to be updated using JSON upload. Only available for development schemas. See JSON Schema Format for more information.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"document":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schema_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

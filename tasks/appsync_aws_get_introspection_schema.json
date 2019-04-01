@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"format":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

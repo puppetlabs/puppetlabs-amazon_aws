@@ -7,18 +7,6 @@
 		
 		
 		    
-			"traffic_policy_instance_name_marker":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"traffic_policy_instance_type_marker":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"hosted_zone_id_marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +14,18 @@
 			,
 		    
 			"max_items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"traffic_policy_instance_name_marker":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"traffic_policy_instance_type_marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,268 +1,228 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_instances',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_instances) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_instances you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:additional_info) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:block_device_mappings, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:capacity_reservation_specification) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:client_token) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:cpu_options) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:credit_specification) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:disable_api_termination) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:dry_run) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ebs_optimized) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:elastic_gpu_specification, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:elastic_inference_accelerators, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:filters, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:hibernation_options) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:iam_instance_profile) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:image_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:instance_ids, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:instance_initiated_shutdown_behavior) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:instance_market_options) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:instance_type) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ipv6_address_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ipv6_addresses, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:kernel_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:key_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:launch_template) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:license_specifications) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:max_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:max_results) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:min_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:monitoring) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:network_interfaces, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:next_token) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:placement) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:private_ip_address) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ramdisk_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:security_group_ids, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:security_groups, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:subnet_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:tag_specifications, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:user_data) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    additional_info: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    block_device_mappings: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    capacity_reservation_specification: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    client_token: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    cpu_options: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    credit_specification: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    disable_api_termination: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    dry_run: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    ebs_optimized: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    elastic_gpu_specification: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    elastic_inference_accelerators: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    filters: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    hibernation_options: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    iam_instance_profile: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    image_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    instance_ids: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    instance_initiated_shutdown_behavior: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    instance_market_options: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    instance_type: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    ipv6_address_count: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    ipv6_addresses: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    kernel_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    key_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :namevar,
+    },
+    launch_template: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    license_specifications: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    max_count: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :parameter,
+    },
+    max_results: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    min_count: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :parameter,
+    },
+    monitoring: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    network_interfaces: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    next_token: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    placement: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    private_ip_address: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    ramdisk_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    security_group_ids: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    security_groups: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    subnet_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    tag_specifications: {
+      type: 'Optional[Tuple]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    user_data: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    instance_id: {
+      desc: '',
+      type: 'Optional[String]',
+      behaviour: :init_only
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

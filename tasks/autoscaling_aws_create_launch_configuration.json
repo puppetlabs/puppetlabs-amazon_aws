@@ -1,5 +1,5 @@
 {
-	"description": "Creates a launch configuration. If you exceed your maximum limit of launch configurations, the call fails. For information about viewing this limit, see DescribeAccountLimits. For information about updating this limit, see Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide. For more information, see Launch Configurations in the Amazon EC2 Auto Scaling User Guide.",
+	"description": "Creates a launch configuration. If you exceed your maximum limit of launch configurations, the call fails. For information about viewing this limit, see DescribeAccountLimits. For information about updating this limit, see Amazon EC2 Auto Scaling Limits in the Amazon EC2 Auto Scaling User Guide. For more information, see Launch Configurations in the Amazon EC2 Auto Scaling User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,7 +7,13 @@
 		
 		
 		    
-			"launch_configuration_name":{
+			"associate_public_ip_address":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ebs_optimized":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +25,7 @@
 			}
 			,
 		    
-			"instance_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"classic_link_vpc_security_groups":{
+			"instance_monitoring":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,13 +37,7 @@
 			}
 			,
 		    
-			"instance_monitoring":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"placement_tenancy":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +49,31 @@
 			}
 			,
 		    
-			"associate_public_ip_address":{
+			"classic_link_vpc_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"classic_link_vpc_id":{
+			"instance_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"launch_configuration_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"placement_tenancy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ramdisk_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -73,7 +85,13 @@
 			}
 			,
 		    
-			"user_data":{
+			"block_device_mappings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"classic_link_vpc_security_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -91,25 +109,7 @@
 			}
 			,
 		    
-			"instance_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ramdisk_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"block_device_mappings":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ebs_optimized":{
+			"user_data":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

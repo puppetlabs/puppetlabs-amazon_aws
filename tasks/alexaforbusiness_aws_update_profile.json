@@ -7,6 +7,12 @@
 		
 		
 		    
+			"address":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"distance_unit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,7 +31,7 @@
 			}
 			,
 		    
-			"profile_arn":{
+			"pstn_enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,19 +43,13 @@
 			}
 			,
 		    
-			"wake_word":{
+			"profile_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"address":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"pstn_enabled":{
+			"profile_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,7 +67,7 @@
 			}
 			,
 		    
-			"profile_name":{
+			"wake_word":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

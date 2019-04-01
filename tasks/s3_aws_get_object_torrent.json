@@ -25,6 +25,18 @@
 			}
 			,
 		    
+			"keytorren":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

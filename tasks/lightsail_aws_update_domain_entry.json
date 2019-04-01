@@ -7,13 +7,13 @@
 		
 		
 		    
-			"domain_name":{
+			"domain_entry":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"domain_entry":{
+			"domain_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"certificate_authority_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,6 +20,12 @@
 			,
 		    
 			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"certificate_authority_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

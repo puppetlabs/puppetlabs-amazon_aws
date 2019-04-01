@@ -1,0 +1,16 @@
+{
+	"description": "Initiates the discovery of any smart home appliances associated with the room.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"room_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

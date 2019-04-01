@@ -7,12 +7,6 @@
 		
 		
 		    
-			"provider_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"connection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"loa_content_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provider_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

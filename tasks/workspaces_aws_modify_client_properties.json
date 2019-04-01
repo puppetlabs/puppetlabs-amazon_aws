@@ -1,5 +1,5 @@
 {
-	"description": "Modifies the properties of the specified Amazon WorkSpaces client.",
+	"description": "Modifies the properties of the specified Amazon WorkSpaces clients.",
 	"input_method": "stdin",
 	"parameters":{
 		

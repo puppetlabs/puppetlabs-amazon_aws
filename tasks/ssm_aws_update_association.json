@@ -13,13 +13,7 @@
 			}
 			,
 		    
-			"association_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"document_version":{
+			"compliance_severity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +37,37 @@
 			}
 			,
 		    
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"schedule_expression":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"association_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"compliance_severity":{
+			"association_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"automation_target_parameter_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -62,18 +80,6 @@
 			,
 		    
 			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schedule_expression":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targets":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

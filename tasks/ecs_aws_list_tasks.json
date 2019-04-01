@@ -7,25 +7,7 @@
 		
 		
 		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"started_by":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"container_instance":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"desired_status":{
+			"launch_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +31,31 @@
 			}
 			,
 		    
+			"container_instance":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"desired_status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"family":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"launch_type":{
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"started_by":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"application_name":{
+			"compute_platform":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"compute_platform":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

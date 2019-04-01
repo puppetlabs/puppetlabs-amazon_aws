@@ -13,6 +13,18 @@
 			}
 			,
 		    
+			"rule_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"topic_rule_payload":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

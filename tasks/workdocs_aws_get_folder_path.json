@@ -7,6 +7,18 @@
 		
 		
 		    
+			"fields":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"folder_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,19 +31,13 @@
 			}
 			,
 		    
-			"authentication_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fields":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"folder_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

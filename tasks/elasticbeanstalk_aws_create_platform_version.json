@@ -7,6 +7,18 @@
 		
 		
 		    
+			"platform_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"environment_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +38,6 @@
 			,
 		    
 			"platform_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"platform_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

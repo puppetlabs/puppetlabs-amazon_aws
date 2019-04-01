@@ -31,6 +31,12 @@
 			}
 			,
 		    
+			"document_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

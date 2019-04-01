@@ -23,6 +23,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"filter_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

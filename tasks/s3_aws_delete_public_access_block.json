@@ -17,6 +17,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"bucketpublic_access_bloc":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

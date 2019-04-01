@@ -7,6 +7,12 @@
 		
 		
 		    
+			"kinesis_stream_source_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"s3_destination_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,13 +25,13 @@
 			}
 			,
 		    
-			"delivery_stream_type":{
+			"elasticsearch_destination_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"elasticsearch_destination_configuration":{
+			"delivery_stream_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,19 +49,13 @@
 			}
 			,
 		    
-			"delivery_stream_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kinesis_stream_source_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"splunk_destination_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delivery_stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

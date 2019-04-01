@@ -7,6 +7,18 @@
 		
 		
 		    
+			"version_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attachments":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"content":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,18 +44,6 @@
 			,
 		    
 			"target_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"attachments":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

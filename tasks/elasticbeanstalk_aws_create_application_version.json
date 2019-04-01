@@ -19,12 +19,6 @@
 			}
 			,
 		    
-			"application_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"auto_create_application":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -43,13 +37,25 @@
 			}
 			,
 		    
+			"source_build_information":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"process":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"source_build_information":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

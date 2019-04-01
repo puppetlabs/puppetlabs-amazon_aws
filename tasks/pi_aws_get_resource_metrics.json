@@ -7,24 +7,6 @@
 		
 		
 		    
-			"next_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"period_in_seconds":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"service_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"start_time":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -50,6 +32,24 @@
 			,
 		    
 			"metric_queries":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"period_in_seconds":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"service_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

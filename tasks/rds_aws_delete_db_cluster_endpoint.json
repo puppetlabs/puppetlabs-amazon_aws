@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.",
+	"description": "Deletes a custom endpoint and removes it from an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. ",
 	"input_method": "stdin",
 	"parameters":{
 		

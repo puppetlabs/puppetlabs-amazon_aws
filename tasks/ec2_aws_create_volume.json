@@ -13,19 +13,7 @@
 			}
 			,
 		    
-			"encrypted":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tag_specifications":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"volume_type":{
+			"iops":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +31,7 @@
 			}
 			,
 		    
-			"iops":{
+			"encrypted":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -56,6 +44,18 @@
 			,
 		    
 			"size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_specifications":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"volume_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

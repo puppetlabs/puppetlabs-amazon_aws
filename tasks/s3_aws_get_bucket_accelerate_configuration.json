@@ -7,6 +7,12 @@
 		
 		
 		    
+			"bucketaccelerat":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"accelerate":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

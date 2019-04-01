@@ -7,6 +7,12 @@
 		
 		
 		    
+			"command_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"plugin_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"command_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

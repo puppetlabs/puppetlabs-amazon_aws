@@ -7,6 +7,12 @@
 		
 		
 		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"cache_subnet_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"marker":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

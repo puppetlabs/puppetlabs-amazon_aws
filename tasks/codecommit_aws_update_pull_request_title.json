@@ -7,13 +7,13 @@
 		
 		
 		    
-			"pull_request_id":{
+			"title":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"title":{
+			"pull_request_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

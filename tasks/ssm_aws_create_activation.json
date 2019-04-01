@@ -19,6 +19,12 @@
 			}
 			,
 		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"default_instance_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

@@ -2,11 +2,11 @@
 require 'puppet'
 require 'aws-sdk'
 
-def format_deep_hash(v)
+def format_deep_hash(value)
   # Parameter formatting for hash like structures - example: parameter_name="{:item=>[i1,i2];:item2=>stringElement}"
   request_hash = {}
-  v.delete!('{}')
-  v.split(';').each do |item|
+  value.delete!('{}')
+  value.split(';').each do |item|
     vals = item.split('=>')
     if vals[1].include? '['
       vals[1].delete!('[]')
@@ -67,10 +67,10 @@ def create_evaluation(*args)
   response_to_hash(response)
 end
 
-def format_to_hash(v)
+def format_to_hash(value)
   # Parameter formatting for hash like structures - example: parameter_name="{:item=>[i1,i2];:item2=>stringElement}"
   request_hash = {}
-  msg = v.delete('{}')
+  msg = value.delete('{}')
   arr = msg.split(';')
   arr.each do |item|
     vals = item.split('=>')

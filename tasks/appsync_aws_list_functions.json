@@ -7,6 +7,12 @@
 		
 		
 		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +25,7 @@
 			}
 			,
 		    
-			"max_results":{
+			"api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

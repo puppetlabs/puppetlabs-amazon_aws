@@ -7,6 +7,12 @@
 		
 		
 		    
+			"thing_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"expected_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

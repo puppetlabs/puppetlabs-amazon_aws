@@ -7,18 +7,6 @@
 		
 		
 		    
-			"directory_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"is_unique":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"link_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +20,18 @@
 			,
 		    
 			"parent_reference":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"directory_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"is_unique":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

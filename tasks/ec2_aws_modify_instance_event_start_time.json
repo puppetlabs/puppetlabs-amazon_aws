@@ -1,0 +1,34 @@
+{
+	"description": "Modifies the start time for a scheduled Amazon EC2 instance event.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_event_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"not_before":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

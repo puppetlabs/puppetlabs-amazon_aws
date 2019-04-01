@@ -13,7 +13,19 @@
 			}
 			,
 		    
+			"part_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"patch_operations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restapi_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,19 +7,19 @@
 		
 		
 		    
-			"rule_action":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cidr_block":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"egress":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"network_acl_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,19 +31,13 @@
 			}
 			,
 		    
-			"protocol":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"rule_number":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"egress":{
+			"cidr_block":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,7 +55,13 @@
 			}
 			,
 		    
-			"network_acl_id":{
+			"protocol":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"rule_action":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

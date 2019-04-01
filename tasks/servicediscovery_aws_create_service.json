@@ -7,6 +7,12 @@
 		
 		
 		    
+			"health_check_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"health_check_custom_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,12 +44,6 @@
 			,
 		    
 			"dns_config":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"health_check_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

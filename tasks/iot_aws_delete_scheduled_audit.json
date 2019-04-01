@@ -11,6 +11,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"scheduled_audit_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

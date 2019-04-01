@@ -7,6 +7,12 @@
 		
 		
 		    
+			"service":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"cluster":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"force":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"service":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

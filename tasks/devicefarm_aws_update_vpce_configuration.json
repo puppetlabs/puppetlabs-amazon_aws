@@ -7,12 +7,6 @@
 		
 		
 		    
-			"vpce_service_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"vpce_configuration_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpce_service_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -19,13 +19,25 @@
 			}
 			,
 		    
-			"version_status":{
+			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"authentication_token":{
+			"document_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_status":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

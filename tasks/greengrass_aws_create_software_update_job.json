@@ -7,24 +7,6 @@
 		
 		
 		    
-			"update_targets":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"update_targets_architecture":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"update_targets_operating_system":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"amzn_client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +26,24 @@
 			,
 		    
 			"update_agent_log_level":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"update_targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"update_targets_architecture":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"update_targets_operating_system":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"cluster":{
+			"container_instance":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"container_instance":{
+			"cluster":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

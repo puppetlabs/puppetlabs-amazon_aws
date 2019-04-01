@@ -7,13 +7,13 @@
 		
 		
 		    
-			"stream_name":{
+			"shard_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"shard_count":{
+			"stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

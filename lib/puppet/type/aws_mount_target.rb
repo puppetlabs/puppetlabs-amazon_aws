@@ -1,70 +1,51 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_mount_target',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_mount_target) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_mount_target you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:file_system_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ip_address, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:max_items, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:mount_target_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:security_groups, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:subnet_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
+    file_system_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :namevar,
+    },
+    ip_address: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    max_items: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    mount_target_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    security_groups: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    subnet_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :namevar,
+    },
+  },
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
-
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

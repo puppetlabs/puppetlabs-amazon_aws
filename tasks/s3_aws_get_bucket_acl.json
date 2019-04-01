@@ -7,6 +7,12 @@
 		
 		
 		    
+			"bucketac":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"acl":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

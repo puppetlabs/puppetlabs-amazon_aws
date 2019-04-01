@@ -7,7 +7,7 @@
 		
 		
 		    
-			"disassociate_additional_code_repositories":{
+			"accelerator_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,42 +25,6 @@
 			}
 			,
 		    
-			"lifecycle_config_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"volume_size_in_gb":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"default_code_repository":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"additional_code_repositories":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"disassociate_accelerator_types":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"instance_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -73,7 +37,49 @@
 			}
 			,
 		    
-			"accelerator_types":{
+			"root_access":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"volume_size_in_gb":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additional_code_repositories":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"default_code_repository":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disassociate_accelerator_types":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"disassociate_additional_code_repositories":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lifecycle_config_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

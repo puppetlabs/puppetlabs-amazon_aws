@@ -13,19 +13,13 @@
 			}
 			,
 		    
-			"image_id":{
+			"launch_permission":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"operation_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"product_codes":{
+			"user_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +49,19 @@
 			}
 			,
 		    
-			"launch_permission":{
+			"image_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"user_groups":{
+			"operation_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"product_codes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

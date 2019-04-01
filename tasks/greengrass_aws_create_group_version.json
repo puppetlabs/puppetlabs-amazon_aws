@@ -7,6 +7,12 @@
 		
 		
 		    
+			"function_definition_version_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"amzn_client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,24 +20,6 @@
 			,
 		    
 			"connector_definition_version_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"group_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_definition_version_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_definition_version_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +37,31 @@
 			}
 			,
 		    
-			"function_definition_version_arn":{
+			"group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"logger_definition_version_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_definition_version_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"group_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_definition_version_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

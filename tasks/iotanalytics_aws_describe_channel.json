@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"channel_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"include_statistics":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

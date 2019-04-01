@@ -7,6 +7,12 @@
 		
 		
 		    
+			"deployment_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"deployment_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,13 +31,13 @@
 			}
 			,
 		    
-			"amzn_client_token":{
+			"group_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"deployment_id":{
+			"amzn_client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

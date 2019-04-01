@@ -17,6 +17,18 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"configuration_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"configuration_revision":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

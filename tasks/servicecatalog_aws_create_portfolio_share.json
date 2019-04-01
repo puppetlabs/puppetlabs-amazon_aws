@@ -7,6 +7,12 @@
 		
 		
 		    
+			"portfolio_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"accept_language":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"organization_node":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"portfolio_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"deployment_id":{
+			"auto_rollback_enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"auto_rollback_enabled":{
+			"deployment_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

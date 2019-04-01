@@ -7,13 +7,13 @@
 		
 		
 		    
-			"dry_run":{
+			"vpc_peering_connection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"vpc_peering_connection_id":{
+			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

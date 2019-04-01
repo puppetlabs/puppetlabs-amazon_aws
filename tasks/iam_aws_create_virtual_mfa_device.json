@@ -7,13 +7,13 @@
 		
 		
 		    
-			"virtual_mfa_device_name":{
+			"path":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"path":{
+			"virtual_mfa_device_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

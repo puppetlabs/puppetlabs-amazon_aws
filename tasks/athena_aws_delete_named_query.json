@@ -1,5 +1,5 @@
 {
-	"description": "Deletes a named query. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
+	"description": "Deletes the named query if you have access to the workgroup in which the query was saved. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		

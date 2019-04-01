@@ -7,13 +7,13 @@
 		
 		
 		    
-			"target_key_id":{
+			"alias_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"alias_name":{
+			"target_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

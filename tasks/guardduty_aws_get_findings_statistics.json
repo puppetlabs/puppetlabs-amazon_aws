@@ -7,7 +7,7 @@
 		
 		
 		    
-			"finding_statistic_types":{
+			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,6 +20,12 @@
 			,
 		    
 			"finding_criteria":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"finding_statistic_types":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

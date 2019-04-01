@@ -7,12 +7,6 @@
 		
 		
 		    
-			"iam_role_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"subnet_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +32,12 @@
 			,
 		    
 			"hsm_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"iam_role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

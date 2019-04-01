@@ -1,5 +1,5 @@
 {
-	"description": "Runs (executes) the SQL query statements contained in the Query string. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
+	"description": "Runs the SQL query statements contained in the Query. Requires you to have access to the workgroup in which the query ran. For code samples using the AWS SDK for Java, see Examples and Code Samples in the Amazon Athena User Guide.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -26,6 +26,12 @@
 			,
 		    
 			"result_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"work_group":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

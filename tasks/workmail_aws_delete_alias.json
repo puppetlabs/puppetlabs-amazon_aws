@@ -1,5 +1,5 @@
 {
-	"description": "Remove the alias from a set of aliases for a given user.",
+	"description": "Remove one or more specified aliases from a set of aliases for a given user.",
 	"input_method": "stdin",
 	"parameters":{
 		

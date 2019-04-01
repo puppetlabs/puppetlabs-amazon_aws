@@ -7,12 +7,6 @@
 		
 		
 		    
-			"bucket":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -31,7 +25,25 @@
 			}
 			,
 		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keyac":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"acl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,208 +1,36 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-ec2'
 
 
-Puppet::Type.type(:aws_network_interface).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
+
+
+
+# AwsNetworkInterface class
+class Puppet::Provider::AwsNetworkInterface::AwsNetworkInterface
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-  def namevar
-    :network_interface_id
-  end
-
-  # Properties
-
-  def association=(value)
-    Puppet.info("association setter called to change to #{value}")
-    @property_flush[:association] = value
-  end
-
-  def attachment=(value)
-    Puppet.info("attachment setter called to change to #{value}")
-    @property_flush[:attachment] = value
-  end
-
-  def availability_zone=(value)
-    Puppet.info("availability_zone setter called to change to #{value}")
-    @property_flush[:availability_zone] = value
-  end
-
-  def description=(value)
-    Puppet.info("description setter called to change to #{value}")
-    @property_flush[:description] = value
-  end
-
-  def dry_run=(value)
-    Puppet.info("dry_run setter called to change to #{value}")
-    @property_flush[:dry_run] = value
-  end
-
-  def filters=(value)
-    Puppet.info("filters setter called to change to #{value}")
-    @property_flush[:filters] = value
-  end
-
-  def groups=(value)
-    Puppet.info("groups setter called to change to #{value}")
-    @property_flush[:groups] = value
-  end
-
-  def interface_type=(value)
-    Puppet.info("interface_type setter called to change to #{value}")
-    @property_flush[:interface_type] = value
-  end
-
-  def ipv6_address_count=(value)
-    Puppet.info("ipv6_address_count setter called to change to #{value}")
-    @property_flush[:ipv6_address_count] = value
-  end
-
-  def ipv6_addresses=(value)
-    Puppet.info("ipv6_addresses setter called to change to #{value}")
-    @property_flush[:ipv6_addresses] = value
-  end
-
-  def mac_address=(value)
-    Puppet.info("mac_address setter called to change to #{value}")
-    @property_flush[:mac_address] = value
-  end
-
-  def max_results=(value)
-    Puppet.info("max_results setter called to change to #{value}")
-    @property_flush[:max_results] = value
-  end
-
-  def network_interface_id=(value)
-    Puppet.info("network_interface_id setter called to change to #{value}")
-    @property_flush[:network_interface_id] = value
-  end
-
-  def network_interface_ids=(value)
-    Puppet.info("network_interface_ids setter called to change to #{value}")
-    @property_flush[:network_interface_ids] = value
-  end
-
-  def next_token=(value)
-    Puppet.info("next_token setter called to change to #{value}")
-    @property_flush[:next_token] = value
-  end
-
-  def owner_id=(value)
-    Puppet.info("owner_id setter called to change to #{value}")
-    @property_flush[:owner_id] = value
-  end
-
-  def private_dns_name=(value)
-    Puppet.info("private_dns_name setter called to change to #{value}")
-    @property_flush[:private_dns_name] = value
-  end
-
-  def private_ip_address=(value)
-    Puppet.info("private_ip_address setter called to change to #{value}")
-    @property_flush[:private_ip_address] = value
-  end
-
-  def private_ip_addresses=(value)
-    Puppet.info("private_ip_addresses setter called to change to #{value}")
-    @property_flush[:private_ip_addresses] = value
-  end
-
-  def requester_id=(value)
-    Puppet.info("requester_id setter called to change to #{value}")
-    @property_flush[:requester_id] = value
-  end
-
-  def requester_managed=(value)
-    Puppet.info("requester_managed setter called to change to #{value}")
-    @property_flush[:requester_managed] = value
-  end
-
-  def secondary_private_ip_address_count=(value)
-    Puppet.info("secondary_private_ip_address_count setter called to change to #{value}")
-    @property_flush[:secondary_private_ip_address_count] = value
-  end
-
-  def source_dest_check=(value)
-    Puppet.info("source_dest_check setter called to change to #{value}")
-    @property_flush[:source_dest_check] = value
-  end
-
-  def status=(value)
-    Puppet.info("status setter called to change to #{value}")
-    @property_flush[:status] = value
-  end
-
-  def subnet_id=(value)
-    Puppet.info("subnet_id setter called to change to #{value}")
-    @property_flush[:subnet_id] = value
-  end
-
-  def tag_set=(value)
-    Puppet.info("tag_set setter called to change to #{value}")
-    @property_flush[:tag_set] = value
-  end
-
-  def vpc_id=(value)
-    Puppet.info("vpc_id setter called to change to #{value}")
-    @property_flush[:vpc_id] = value
-  end
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
-  end
-
-
-  def self.instances
     Puppet.debug("Calling instances for region #{region}")
     client = Aws::EC2::Client.new(region: region)
-
     all_instances = []
     client.describe_network_interfaces.each do |response|
       response.network_interfaces.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+        all_instances << hash if name?(hash)
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      tags = prov.respond_to?(:tags) ? prov.tags : nil
-      tags = prov.respond_to?(:tag_set) ? prov.tag_set : tags
-      next if tags.empty?
-      name = tags.find { |x| x[:key] == 'Name' }[:value]
-      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.name_from_tag(instance)
-    tags = instance.respond_to?(:tags) ? instance.tags : nil
-    tags = instance.respond_to?(:tag_set) ? instance.tag_set : tags
-    name = tags.find { |x| x.key == 'Name' } unless tags.nil?
-    name.value unless name.nil?
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     association = instance.respond_to?(:association) ? (instance.association.respond_to?(:to_hash) ? instance.association.to_hash : instance.association) : nil
     attachment = instance.respond_to?(:attachment) ? (instance.attachment.respond_to?(:to_hash) ? instance.attachment.to_hash : instance.attachment) : nil
     availability_zone = instance.respond_to?(:availability_zone) ? (instance.availability_zone.respond_to?(:to_hash) ? instance.availability_zone.to_hash : instance.availability_zone) : nil
@@ -267,76 +95,121 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
     hash[:vpc_id] = vpc_id unless vpc_id.nil?
     hash
   end
+  def namevar
+    :network_interface_id
+  end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::EC2::Client.new(region: self.class.region)
-    response = client.create_network_interface(build_hash)
-    res = response.respond_to?(:network_interface) ? response.network_interface : response
-    with_retries(max_tries: 5) do
+  def self.namevar
+    :network_interface_id
+  end
+
+  def name?(hash)
+    !hash[:name].nil? && !hash[:name].empty?
+  end
+
+  def name_from_tag(instance)
+    tags = instance.respond_to?(:tags) ? instance.tags : nil
+    name = tags.find { |x| x.key == 'Name' } unless tags.nil?
+    name.value unless name.nil?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resource
+
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+        create(context, name, should) unless noop
+
+      end
+    end
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client = Aws::EC2::Client.new(region: region)
+      response = client.create_network_interface(new_hash)
+      res = response.respond_to?(:network_interface) ? response.network_interface : response
       client.create_tags(
         resources: [res.to_hash[namevar]],
-        tags: [{ key: 'Name', value: resource.provider.name }],
+        tags: [{ key: 'Name', value: name }],
       )
     end
-    @property_hash[:ensure] = :present
   rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
-    end
-    @is_update = true
-    build_hash
-    Puppet.info('Calling Update on flush')
-    @property_hash[:ensure] = :present
+
+
+  def build_hash(resource)
+    network_interface = {}
+    network_interface['description'] = resource[:description] unless resource[:description].nil?
+    network_interface['dry_run'] = resource[:dry_run] unless resource[:dry_run].nil?
+    network_interface['filters'] = resource[:filters] unless resource[:filters].nil?
+    network_interface['groups'] = resource[:groups] unless resource[:groups].nil?
+    network_interface['subnet_id'] = resource[:subnet_id] unless resource[:subnet_id].nil?
+    network_interface['ipv6_address_count'] = resource[:ipv6_address_count] unless resource[:ipv6_address_count].nil?
+    network_interface['ipv6_addresses'] = resource[:ipv6_addresses] unless resource[:ipv6_addresses].nil?
+    network_interface['max_results'] = resource[:max_results] unless resource[:max_results].nil?
+    network_interface['network_interface_id'] = resource[:network_interface_id] unless resource[:network_interface_id].nil?
+    network_interface['network_interface_ids'] = resource[:network_interface_ids] unless resource[:network_interface_ids].nil?
+    network_interface['next_token'] = resource[:next_token] unless resource[:next_token].nil?
+    network_interface['private_ip_address'] = resource[:private_ip_address] unless resource[:private_ip_address].nil?
+    network_interface['private_ip_addresses'] = resource[:private_ip_addresses] unless resource[:private_ip_addresses].nil?
+    network_interface['secondary_private_ip_address_count'] = resource[:secondary_private_ip_address_count] unless resource[:secondary_private_ip_address_count].nil?
+    network_interface['subnet_id'] = resource[:subnet_id] unless resource[:subnet_id].nil?
+    network_interface
   end
 
-  def build_hash
-    network_interface = {}
-    if @is_create || @is_update
-      network_interface[:description] = resource[:description] unless resource[:description].nil?
-      network_interface[:dry_run] = resource[:dry_run] unless resource[:dry_run].nil?
-      network_interface[:filters] = resource[:filters] unless resource[:filters].nil?
-      network_interface[:groups] = resource[:groups] unless resource[:groups].nil?
-      network_interface[:ipv6_address_count] = resource[:ipv6_address_count] unless resource[:ipv6_address_count].nil?
-      network_interface[:ipv6_addresses] = resource[:ipv6_addresses] unless resource[:ipv6_addresses].nil?
-      network_interface[:max_results] = resource[:max_results] unless resource[:max_results].nil?
-      network_interface[:network_interface_id] = resource[:network_interface_id] unless resource[:network_interface_id].nil?
-      network_interface[:network_interface_ids] = resource[:network_interface_ids] unless resource[:network_interface_ids].nil?
-      network_interface[:next_token] = resource[:next_token] unless resource[:next_token].nil?
-      network_interface[:private_ip_address] = resource[:private_ip_address] unless resource[:private_ip_address].nil?
-      network_interface[:private_ip_addresses] = resource[:private_ip_addresses] unless resource[:private_ip_addresses].nil?
-      network_interface[:secondary_private_ip_address_count] = resource[:secondary_private_ip_address_count] unless resource[:secondary_private_ip_address_count].nil?
-      network_interface[:subnet_id] = resource[:subnet_id] unless resource[:subnet_id].nil?
-    end
-    symbolize(network_interface)
+  def self.build_key_values
+    key_values = {}
+
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_network_interface')
-    client = Aws::EC2::Client.new(region: self.class.region)
-    client.delete_network_interface(namevar => resource.provider.property_hash[namevar])
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    client = Aws::EC2::Client.new(region: region)
+    myhash = {}
+    @property_hash.each do |response|
+      if response[:name] == should[:name]
+        myhash = response
+      end
+    end
+    client.delete_network_interface(namevar => myhash[namevar])
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -349,5 +222,3 @@ Puppet::Type.type(:aws_network_interface).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

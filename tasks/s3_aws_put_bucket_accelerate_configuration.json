@@ -1,0 +1,34 @@
+{
+	"description": "Sets the accelerate configuration of an existing bucket.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"accelerate_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucketaccelerat":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accelerate":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

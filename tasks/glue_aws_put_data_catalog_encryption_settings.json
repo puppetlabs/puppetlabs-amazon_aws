@@ -1,0 +1,22 @@
+{
+	"description": "Sets the security configuration for a specified catalog. After the configuration has been set, the specified encryption is applied to every catalog write thereafter.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"catalog_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"data_catalog_encryption_settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

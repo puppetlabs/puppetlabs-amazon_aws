@@ -13,13 +13,13 @@
 			}
 			,
 		    
-			"thing_type_name":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"thing_type_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

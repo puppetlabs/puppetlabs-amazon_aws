@@ -7,13 +7,13 @@
 		
 		
 		    
-			"deployment_id":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"instance_id":{
+			"deployment_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

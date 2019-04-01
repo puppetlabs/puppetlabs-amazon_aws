@@ -1,5 +1,5 @@
 {
-	"description": "Creates a deployment group to which application revisions will be deployed.",
+	"description": "Creates a deployment group to which application revisions are deployed.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,19 +7,7 @@
 		
 		
 		    
-			"alarm_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"auto_scaling_groups":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployment_group_name":{
+			"on_premises_tag_set":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,19 +19,61 @@
 			}
 			,
 		    
-			"trigger_configurations":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
+			"auto_scaling_groups":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ec2_tag_filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"on_premises_instance_tag_filters":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"auto_rollback_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"load_balancer_info":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ec2_tag_set":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ecs_services":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"trigger_configurations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"alarm_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,43 +91,13 @@
 			}
 			,
 		    
+			"deployment_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"deployment_style":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ecs_services":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"on_premises_instance_tag_filters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ec2_tag_filters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ec2_tag_set":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"load_balancer_info":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"on_premises_tag_set":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

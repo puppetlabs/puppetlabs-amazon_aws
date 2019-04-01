@@ -7,13 +7,25 @@
 		
 		
 		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"doc_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"documentation_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"rest_api_id":{
+			"restapi_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,24 @@
 		
 		
 		    
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keytaggin":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +38,6 @@
 			,
 		    
 			"tagging":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"exclusive_start_backup_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"limit":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,18 +38,6 @@
 			,
 		    
 			"backup_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"exclusive_start_backup_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

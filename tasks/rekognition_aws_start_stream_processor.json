@@ -1,5 +1,5 @@
 {
-	"description": "Starts processing a stream processor. You create a stream processor by calling . To tell StartStreamProcessor which stream processor to start, use the value of the Name field specified in the call to CreateStreamProcessor.",
+	"description": "Starts processing a stream processor. You create a stream processor by calling CreateStreamProcessor. To tell StartStreamProcessor which stream processor to start, use the value of the Name field specified in the call to CreateStreamProcessor.",
 	"input_method": "stdin",
 	"parameters":{
 		

@@ -1,5 +1,5 @@
 {
-	"description": "Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide. ",
+	"description": "Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see  What Is Amazon Aurora? in the Amazon Aurora User Guide.   This action only applies to Aurora DB clusters. ",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,7 +7,7 @@
 		
 		
 		    
-			"db_cluster_parameter_group_name":{
+			"backup_retention_period":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,37 +19,13 @@
 			}
 			,
 		    
-			"engine_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"preferred_maintenance_window":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"db_cluster_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"master_user_password":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"new_db_cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"preferred_backup_window":{
+			"scaling_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -67,13 +43,13 @@
 			}
 			,
 		    
-			"backup_retention_period":{
+			"db_cluster_parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"enable_iam_database_authentication":{
+			"engine_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -85,7 +61,31 @@
 			}
 			,
 		    
-			"scaling_configuration":{
+			"preferred_backup_window":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_iam_database_authentication":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"master_user_password":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"port":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"preferred_maintenance_window":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -103,13 +103,19 @@
 			}
 			,
 		    
-			"enable_http_endpoint":{
+			"copy_tags_to_snapshot":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"port":{
+			"db_cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_http_endpoint":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

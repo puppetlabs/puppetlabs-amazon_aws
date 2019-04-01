@@ -7,18 +7,6 @@
 		
 		
 		    
-			"thread_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"authentication_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"document_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -37,7 +25,19 @@
 			}
 			,
 		    
-			"text":{
+			"version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"visibility":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,7 +49,19 @@
 			}
 			,
 		    
-			"visibility":{
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"text":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thread_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"source_identifier":{
+			"subscription_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"subscription_name":{
+			"source_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified listeners from the specified load balancer.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"load_balancer_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"load_balancer_ports":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

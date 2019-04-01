@@ -7,7 +7,19 @@
 		
 		
 		    
+			"usageplan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"usage_plan_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

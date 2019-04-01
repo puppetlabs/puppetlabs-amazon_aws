@@ -1,11 +1,17 @@
 {
-	"description": "Creates the content of a data set by applying a SQL action.",
+	"description": "Creates the content of a data set by applying a 'queryAction' (a SQL query) or a 'containerAction' (executing a containerized application).",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"dataset_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"dataset_name":{
 			   "description": "",

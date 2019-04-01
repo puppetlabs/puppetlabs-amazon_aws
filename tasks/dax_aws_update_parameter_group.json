@@ -7,13 +7,13 @@
 		
 		
 		    
-			"parameter_group_name":{
+			"parameter_name_values":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"parameter_name_values":{
+			"parameter_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,18 @@
 		
 		
 		    
+			"id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"hosted_zone_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

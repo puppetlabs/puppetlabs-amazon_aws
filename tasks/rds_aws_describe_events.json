@@ -19,18 +19,6 @@
 			}
 			,
 		    
-			"end_time":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"event_categories":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -56,6 +44,18 @@
 			,
 		    
 			"start_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"end_time":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"event_categories":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

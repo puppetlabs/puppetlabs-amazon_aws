@@ -1,154 +1,123 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_table',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_table) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_table you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:attribute_definitions, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:billing_mode) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:billing_mode_summary) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:creation_date_time) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:global_secondary_indexes, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:item_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:key_schema, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:latest_stream_arn) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:latest_stream_label) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:local_secondary_indexes, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:provisioned_throughput) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:restore_summary) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:sse_description) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:sse_specification) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:stream_specification) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:table_arn) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:table_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:table_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:table_size_bytes) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:table_status) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    attribute_definitions: {
+      type: 'Optional[Tuple]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    billing_mode: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    billing_mode_summary: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    creation_date_time: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    global_secondary_indexes: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    item_count: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    key_schema: {
+      type: 'Optional[Tuple]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    latest_stream_arn: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    latest_stream_label: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    local_secondary_indexes: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    provisioned_throughput: {
+      type: 'Struct[{read_capacity_units => Integer, write_capacity_units => Integer}]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    restore_summary: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    sse_description: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    sse_specification: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    stream_specification: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    table_arn: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    table_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    table_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :namevar,
+    },
+    table_size_bytes: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    table_status: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

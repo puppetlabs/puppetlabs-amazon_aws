@@ -1,0 +1,16 @@
+{
+	"description": "Removes an object lifecycle policy from a container. It takes up to 20 minutes for the change to take effect.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"container_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

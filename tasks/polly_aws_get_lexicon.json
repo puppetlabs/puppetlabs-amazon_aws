@@ -1,0 +1,22 @@
+{
+	"description": "Returns the content of the specified pronunciation lexicon stored in an AWS Region. For more information, see Managing Lexicons.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"lexicon_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

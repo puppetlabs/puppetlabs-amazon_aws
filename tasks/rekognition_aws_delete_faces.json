@@ -7,13 +7,13 @@
 		
 		
 		    
-			"collection_id":{
+			"face_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"face_ids":{
+			"collection_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

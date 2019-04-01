@@ -1,0 +1,34 @@
+{
+	"description": "Provides information to AWS CodePipeline about new revisions to a source.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"action_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"action_revision":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pipeline_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stage_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

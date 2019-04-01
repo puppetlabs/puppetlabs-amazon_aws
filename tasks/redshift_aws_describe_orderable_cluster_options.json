@@ -7,6 +7,12 @@
 		
 		
 		    
+			"cluster_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"marker":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"node_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

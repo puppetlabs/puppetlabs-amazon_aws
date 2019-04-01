@@ -1,11 +1,23 @@
 {
-	"description": "Returns the permission policy for a layer version. For more information, see AddLayerVersionPermission.",
+	"description": "Returns the permission policy for a version of an AWS Lambda layer. For more information, see AddLayerVersionPermission.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"layer_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"version_number":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"layer_name":{
 			   "description": "",

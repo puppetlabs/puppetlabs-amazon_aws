@@ -7,6 +7,18 @@
 		
 		
 		    
+			"source_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subscription_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"enabled":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,18 +32,6 @@
 			,
 		    
 			"sns_topic_arn":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"source_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subscription_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

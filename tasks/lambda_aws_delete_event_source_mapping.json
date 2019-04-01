@@ -1,11 +1,17 @@
 {
-	"description": "Deletes an event source mapping.",
+	"description": "Deletes an event source mapping. You can get the identifier of a mapping from the output of ListEventSourceMappings.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"uuid":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"uuid":{
 			   "description": "",

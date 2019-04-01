@@ -7,7 +7,25 @@
 		
 		
 		    
+			"model_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transform_input":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"transform_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transform_output":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +37,19 @@
 			}
 			,
 		    
+			"batch_strategy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"environment":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_concurrent_transforms":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -32,36 +62,6 @@
 			,
 		    
 			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"transform_input":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"transform_output":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"batch_strategy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_concurrent_transforms":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"model_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

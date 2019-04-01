@@ -7,7 +7,7 @@
 		
 		
 		    
-			"attribute_definitions":{
+			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,19 @@
 			}
 			,
 		    
-			"sse_specification":{
+			"provisioned_throughput":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"stream_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attribute_definitions":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +55,7 @@
 			}
 			,
 		    
-			"provisioned_throughput":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"table_name":{
+			"sse_specification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -11,6 +11,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"role_alias":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

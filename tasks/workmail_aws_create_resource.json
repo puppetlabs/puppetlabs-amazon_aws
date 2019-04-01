@@ -1,5 +1,5 @@
 {
-	"description": "Creates a new Amazon WorkMail resource. The available types are equipment and room.",
+	"description": "Creates a new Amazon WorkMail resource. ",
 	"input_method": "stdin",
 	"parameters":{
 		

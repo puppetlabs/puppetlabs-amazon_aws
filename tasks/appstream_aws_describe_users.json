@@ -1,5 +1,5 @@
 {
-	"description": "Retrieves a list that describes one or more specified users in the user pool, if user names are provided. Otherwise, all users in the user pool are described.",
+	"description": "Retrieves a list that describes one or more specified users in the user pool.",
 	"input_method": "stdin",
 	"parameters":{
 		

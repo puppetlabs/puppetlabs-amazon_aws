@@ -1,0 +1,22 @@
+{
+	"description": "Deletes the specified Client VPN endpoint. You must disassociate all target networks before you can delete a Client VPN endpoint.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"client_vpn_endpoint_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

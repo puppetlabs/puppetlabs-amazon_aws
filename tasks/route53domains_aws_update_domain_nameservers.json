@@ -7,12 +7,6 @@
 		
 		
 		    
-			"fi_auth_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"nameservers":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"domain_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"fi_auth_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

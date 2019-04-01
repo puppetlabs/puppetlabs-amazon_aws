@@ -7,18 +7,6 @@
 		
 		
 		    
-			"kms_encrypted":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kms_key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"network_interface_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -50,6 +38,18 @@
 			,
 		    
 			"gateway_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_encrypted":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

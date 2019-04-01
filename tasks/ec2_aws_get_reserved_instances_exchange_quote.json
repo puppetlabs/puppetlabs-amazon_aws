@@ -7,6 +7,12 @@
 		
 		
 		    
+			"target_configurations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"reserved_instance_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"target_configurations":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

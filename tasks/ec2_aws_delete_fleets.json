@@ -7,6 +7,12 @@
 		
 		
 		    
+			"terminate_instances":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"fleet_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"terminate_instances":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

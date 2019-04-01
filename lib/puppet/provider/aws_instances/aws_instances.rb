@@ -1,238 +1,43 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-ec2'
 
 
-Puppet::Type.type(:aws_instances).provide(:arm) do
-  mk_resource_methods
-
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
-  end
 
 
-  # instance only EC2 support
-  def namevar
-    :instance_ids
-  end
-
-  def self.namevar
-    :instance_ids
-  end
-
-  # Properties
-
-  def additional_info=(value)
-    Puppet.info("additional_info setter called to change to #{value}")
-    @property_flush[:additional_info] = value
-  end
-  def block_device_mappings=(value)
-    Puppet.info("block_device_mappings setter called to change to #{value}")
-    @property_flush[:block_device_mappings] = value
-  end
-  def capacity_reservation_specification=(value)
-    Puppet.info("capacity_reservation_specification setter called to change to #{value}")
-    @property_flush[:capacity_reservation_specification] = value
-  end
-  def client_token=(value)
-    Puppet.info("client_token setter called to change to #{value}")
-    @property_flush[:client_token] = value
-  end
-  def cpu_options=(value)
-    Puppet.info("cpu_options setter called to change to #{value}")
-    @property_flush[:cpu_options] = value
-  end
-  def credit_specification=(value)
-    Puppet.info("credit_specification setter called to change to #{value}")
-    @property_flush[:credit_specification] = value
-  end
-  def disable_api_termination=(value)
-    Puppet.info("disable_api_termination setter called to change to #{value}")
-    @property_flush[:disable_api_termination] = value
-  end
-  def dry_run=(value)
-    Puppet.info("dry_run setter called to change to #{value}")
-    @property_flush[:dry_run] = value
-  end
-  def ebs_optimized=(value)
-    Puppet.info("ebs_optimized setter called to change to #{value}")
-    @property_flush[:ebs_optimized] = value
-  end
-  def elastic_gpu_specification=(value)
-    Puppet.info("elastic_gpu_specification setter called to change to #{value}")
-    @property_flush[:elastic_gpu_specification] = value
-  end
-  def elastic_inference_accelerators=(value)
-    Puppet.info("elastic_inference_accelerators setter called to change to #{value}")
-    @property_flush[:elastic_inference_accelerators] = value
-  end
-  def filters=(value)
-    Puppet.info("filters setter called to change to #{value}")
-    @property_flush[:filters] = value
-  end
-  def hibernation_options=(value)
-    Puppet.info("hibernation_options setter called to change to #{value}")
-    @property_flush[:hibernation_options] = value
-  end
-  def iam_instance_profile=(value)
-    Puppet.info("iam_instance_profile setter called to change to #{value}")
-    @property_flush[:iam_instance_profile] = value
-  end
-  def image_id=(value)
-    Puppet.info("image_id setter called to change to #{value}")
-    @property_flush[:image_id] = value
-  end
-  def instance_ids=(value)
-    Puppet.info("instance_ids setter called to change to #{value}")
-    @property_flush[:instance_ids] = value
-  end
-  def instance_initiated_shutdown_behavior=(value)
-    Puppet.info("instance_initiated_shutdown_behavior setter called to change to #{value}")
-    @property_flush[:instance_initiated_shutdown_behavior] = value
-  end
-  def instance_market_options=(value)
-    Puppet.info("instance_market_options setter called to change to #{value}")
-    @property_flush[:instance_market_options] = value
-  end
-  def instance_type=(value)
-    Puppet.info("instance_type setter called to change to #{value}")
-    @property_flush[:instance_type] = value
-  end
-  def ipv6_address_count=(value)
-    Puppet.info("ipv6_address_count setter called to change to #{value}")
-    @property_flush[:ipv6_address_count] = value
-  end
-  def ipv6_addresses=(value)
-    Puppet.info("ipv6_addresses setter called to change to #{value}")
-    @property_flush[:ipv6_addresses] = value
-  end
-  def kernel_id=(value)
-    Puppet.info("kernel_id setter called to change to #{value}")
-    @property_flush[:kernel_id] = value
-  end
-  def key_name=(value)
-    Puppet.info("key_name setter called to change to #{value}")
-    @property_flush[:key_name] = value
-  end
-  def launch_template=(value)
-    Puppet.info("launch_template setter called to change to #{value}")
-    @property_flush[:launch_template] = value
-  end
-  def license_specifications=(value)
-    Puppet.info("license_specifications setter called to change to #{value}")
-    @property_flush[:license_specifications] = value
-  end
-  def max_count=(value)
-    Puppet.info("max_count setter called to change to #{value}")
-    @property_flush[:max_count] = value
-  end
-  def max_results=(value)
-    Puppet.info("max_results setter called to change to #{value}")
-    @property_flush[:max_results] = value
-  end
-  def min_count=(value)
-    Puppet.info("min_count setter called to change to #{value}")
-    @property_flush[:min_count] = value
-  end
-  def monitoring=(value)
-    Puppet.info("monitoring setter called to change to #{value}")
-    @property_flush[:monitoring] = value
-  end
-  def network_interfaces=(value)
-    Puppet.info("network_interfaces setter called to change to #{value}")
-    @property_flush[:network_interfaces] = value
-  end
-  def next_token=(value)
-    Puppet.info("next_token setter called to change to #{value}")
-    @property_flush[:next_token] = value
-  end
-  def placement=(value)
-    Puppet.info("placement setter called to change to #{value}")
-    @property_flush[:placement] = value
-  end
-  def private_ip_address=(value)
-    Puppet.info("private_ip_address setter called to change to #{value}")
-    @property_flush[:private_ip_address] = value
-  end
-  def ramdisk_id=(value)
-    Puppet.info("ramdisk_id setter called to change to #{value}")
-    @property_flush[:ramdisk_id] = value
-  end
-  def security_group_ids=(value)
-    Puppet.info("security_group_ids setter called to change to #{value}")
-    @property_flush[:security_group_ids] = value
-  end
-  def security_groups=(value)
-    Puppet.info("security_groups setter called to change to #{value}")
-    @property_flush[:security_groups] = value
-  end
-  def subnet_id=(value)
-    Puppet.info("subnet_id setter called to change to #{value}")
-    @property_flush[:subnet_id] = value
-  end
-  def tag_specifications=(value)
-    Puppet.info("tag_specifications setter called to change to #{value}")
-    @property_flush[:tag_specifications] = value
-  end
-  def user_data=(value)
-    Puppet.info("user_data setter called to change to #{value}")
-    @property_flush[:user_data] = value
-  end
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  attr_reader :property_hash
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
-  end
 
 
-  def self.instances
+# AwsInstances class
+class Puppet::Provider::AwsInstances::AwsInstances
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
+  end
+  def get(context)
+
     Puppet.debug("Calling instances for region #{region}")
     client = Aws::EC2::Client.new(region: region)
-
     all_instances = []
-    client.describe_instances(filters: [{ name: 'instance-state-name', values: ['pending', 'running', 'stopping', 'stopped'] }]).each do |response|
+    client.describe_instances(
+      filters: [{
+        name: 'instance-state-name',
+        values: ['pending', 'running', 'stopping', 'stopped'],
+      }],
+    ).each do |response|
       response.reservations.each do |r|
         r.instances.each do |i|
           hash = instance_to_hash(i)
-          all_instances << new(hash) if name?(hash)
+          all_instances << hash if name?(hash)
         end
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      tags = prov.respond_to?(:tags) ? prov.tags : nil
-      next if tags.empty?
-      name = tags.find { |x| x[:key] == 'Name' }[:value]
-      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.name_from_tag(instance)
-    tags = instance.respond_to?(:tags) ? instance.tags : nil
-    name = tags.find { |x| x.key == 'Name' } unless tags.nil?
-    name.value unless name.nil?
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     additional_info = instance.respond_to?(:additional_info) ? (instance.additional_info.respond_to?(:to_hash) ? instance.additional_info.to_hash : instance.additional_info) : nil
     block_device_mappings = instance.respond_to?(:block_device_mappings) ? (instance.block_device_mappings.respond_to?(:to_hash) ? instance.block_device_mappings.to_hash : instance.block_device_mappings) : nil
     capacity_reservation_specification = instance.respond_to?(:capacity_reservation_specification) ? (instance.capacity_reservation_specification.respond_to?(:to_hash) ? instance.capacity_reservation_specification.to_hash : instance.capacity_reservation_specification) : nil
@@ -321,109 +126,169 @@ Puppet::Type.type(:aws_instances).provide(:arm) do
     hash[:user_data] = user_data unless user_data.nil?
     hash
   end
+  def namevar
+    :instance_ids
+  end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::EC2::Client.new(region: self.class.region)
-    response = client.run_instances(build_hash)
-    ids = []
-    response.instances.each do |r|
-      ids.push(r.instance_id)
+  def self.namevar
+    :instance_ids
+  end
+
+  def name?(hash)
+    !hash[:name].nil? && !hash[:name].empty?
+  end
+
+  def name_from_tag(instance)
+    tags = instance.respond_to?(:tags) ? instance.tags : nil
+    name = tags.find { |x| x.key == 'Name' } unless tags.nil?
+    name.value unless name.nil?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resource
+
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+        create(context, name, should) unless noop
+
+      end
     end
-    with_retries(max_tries: 5) do
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client = Aws::EC2::Client.new(region: region)
+      response = client.run_instances(new_hash)
+      ids = []
+      response.instances.each do |r|
+        ids.push(r.instance_id)
+      end
       client.create_tags(
         resources: ids,
-        tags: [{ key: 'Name', value: resource[:name] },
-               { key: 'lifetime', value: '1w' }],
+        tags: [
+          {
+            key: 'Name',
+            value: name,
+          },
+          {
+            key: 'lifetime',
+            value: '1w',
+          },
+        ],
       )
     end
-    @property_hash[:ensure] = :present
   rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
-    end
-    @is_update = true
-    build_hash
-    Puppet.info('Calling Update on flush')
-    @property_hash[:ensure] = :present
-    []
+
+
+  def build_hash(resource)
+    instances = {}
+    instances['additional_info'] = resource[:additional_info] unless resource[:additional_info].nil?
+    instances['block_device_mappings'] = resource[:block_device_mappings] unless resource[:block_device_mappings].nil?
+    instances['capacity_reservation_specification'] = resource[:capacity_reservation_specification] unless resource[:capacity_reservation_specification].nil?
+    instances['client_token'] = resource[:client_token] unless resource[:client_token].nil?
+    instances['cpu_options'] = resource[:cpu_options] unless resource[:cpu_options].nil?
+    instances['credit_specification'] = resource[:credit_specification] unless resource[:credit_specification].nil?
+    instances['disable_api_termination'] = resource[:disable_api_termination] unless resource[:disable_api_termination].nil?
+    instances['dry_run'] = resource[:dry_run] unless resource[:dry_run].nil?
+    instances['ebs_optimized'] = resource[:ebs_optimized] unless resource[:ebs_optimized].nil?
+    instances['elastic_gpu_specification'] = resource[:elastic_gpu_specification] unless resource[:elastic_gpu_specification].nil?
+    instances['elastic_inference_accelerators'] = resource[:elastic_inference_accelerators] unless resource[:elastic_inference_accelerators].nil?
+    instances['filters'] = resource[:filters] unless resource[:filters].nil?
+    instances['hibernation_options'] = resource[:hibernation_options] unless resource[:hibernation_options].nil?
+    instances['iam_instance_profile'] = resource[:iam_instance_profile] unless resource[:iam_instance_profile].nil?
+    instances['kernel_id'] = resource[:kernel_id] unless resource[:kernel_id].nil?
+    instances['image_id'] = resource[:image_id] unless resource[:image_id].nil?
+    instances['instance_ids'] = resource[:instance_ids] unless resource[:instance_ids].nil?
+    instances['instance_initiated_shutdown_behavior'] = resource[:instance_initiated_shutdown_behavior] unless resource[:instance_initiated_shutdown_behavior].nil?
+    instances['instance_market_options'] = resource[:instance_market_options] unless resource[:instance_market_options].nil?
+    instances['instance_type'] = resource[:instance_type] unless resource[:instance_type].nil?
+    instances['ipv6_address_count'] = resource[:ipv6_address_count] unless resource[:ipv6_address_count].nil?
+    instances['ipv6_addresses'] = resource[:ipv6_addresses] unless resource[:ipv6_addresses].nil?
+    instances['kernel_id'] = resource[:kernel_id] unless resource[:kernel_id].nil?
+    instances['key_name'] = resource[:key_name] unless resource[:key_name].nil?
+    instances['launch_template'] = resource[:launch_template] unless resource[:launch_template].nil?
+    instances['license_specifications'] = resource[:license_specifications] unless resource[:license_specifications].nil?
+    instances['max_count'] = resource[:max_count] unless resource[:max_count].nil?
+    instances['max_results'] = resource[:max_results] unless resource[:max_results].nil?
+    instances['min_count'] = resource[:min_count] unless resource[:min_count].nil?
+    instances['monitoring'] = resource[:monitoring] unless resource[:monitoring].nil?
+    instances['network_interfaces'] = resource[:network_interfaces] unless resource[:network_interfaces].nil?
+    instances['next_token'] = resource[:next_token] unless resource[:next_token].nil?
+    instances['placement'] = resource[:placement] unless resource[:placement].nil?
+    instances['private_ip_address'] = resource[:private_ip_address] unless resource[:private_ip_address].nil?
+    instances['ramdisk_id'] = resource[:ramdisk_id] unless resource[:ramdisk_id].nil?
+    instances['security_group_ids'] = resource[:security_group_ids] unless resource[:security_group_ids].nil?
+    instances['security_groups'] = resource[:security_groups] unless resource[:security_groups].nil?
+    instances['subnet_id'] = resource[:subnet_id] unless resource[:subnet_id].nil?
+    instances['tag_specifications'] = resource[:tag_specifications] unless resource[:tag_specifications].nil?
+    instances['user_data'] = resource[:user_data] unless resource[:user_data].nil?
+    instances
   end
 
-  def build_hash
-    instances = {}
-    if @is_create || @is_update
-      instances[:additional_info] = resource[:additional_info] unless resource[:additional_info].nil?
-      instances[:block_device_mappings] = resource[:block_device_mappings] unless resource[:block_device_mappings].nil?
-      instances[:capacity_reservation_specification] = resource[:capacity_reservation_specification] unless resource[:capacity_reservation_specification].nil?
-      instances[:client_token] = resource[:client_token] unless resource[:client_token].nil?
-      instances[:cpu_options] = resource[:cpu_options] unless resource[:cpu_options].nil?
-      instances[:credit_specification] = resource[:credit_specification] unless resource[:credit_specification].nil?
-      instances[:disable_api_termination] = resource[:disable_api_termination] unless resource[:disable_api_termination].nil?
-      instances[:dry_run] = resource[:dry_run] unless resource[:dry_run].nil?
-      instances[:ebs_optimized] = resource[:ebs_optimized] unless resource[:ebs_optimized].nil?
-      instances[:elastic_gpu_specification] = resource[:elastic_gpu_specification] unless resource[:elastic_gpu_specification].nil?
-      instances[:elastic_inference_accelerators] = resource[:elastic_inference_accelerators] unless resource[:elastic_inference_accelerators].nil?
-      instances[:filters] = resource[:filters] unless resource[:filters].nil?
-      instances[:hibernation_options] = resource[:hibernation_options] unless resource[:hibernation_options].nil?
-      instances[:iam_instance_profile] = resource[:iam_instance_profile] unless resource[:iam_instance_profile].nil?
-      instances[:subnet_id] = resource[:subnet_id] unless resource[:subnet_id].nil?
-      instances[:image_id] = resource[:image_id] unless resource[:image_id].nil?
-      instances[:instance_ids] = resource[:instance_ids] unless resource[:instance_ids].nil?
-      instances[:instance_initiated_shutdown_behavior] = resource[:instance_initiated_shutdown_behavior] unless resource[:instance_initiated_shutdown_behavior].nil?
-      instances[:instance_market_options] = resource[:instance_market_options] unless resource[:instance_market_options].nil?
-      instances[:instance_type] = resource[:instance_type] unless resource[:instance_type].nil?
-      instances[:ipv6_address_count] = resource[:ipv6_address_count] unless resource[:ipv6_address_count].nil?
-      instances[:ipv6_addresses] = resource[:ipv6_addresses] unless resource[:ipv6_addresses].nil?
-      instances[:kernel_id] = resource[:kernel_id] unless resource[:kernel_id].nil?
-      instances[:key_name] = resource[:key_name] unless resource[:key_name].nil?
-      instances[:launch_template] = resource[:launch_template] unless resource[:launch_template].nil?
-      instances[:license_specifications] = resource[:license_specifications] unless resource[:license_specifications].nil?
-      instances[:max_count] = resource[:max_count] unless resource[:max_count].nil?
-      instances[:max_results] = resource[:max_results] unless resource[:max_results].nil?
-      instances[:min_count] = resource[:min_count] unless resource[:min_count].nil?
-      instances[:monitoring] = resource[:monitoring] unless resource[:monitoring].nil?
-      instances[:network_interfaces] = resource[:network_interfaces] unless resource[:network_interfaces].nil?
-      instances[:next_token] = resource[:next_token] unless resource[:next_token].nil?
-      instances[:placement] = resource[:placement] unless resource[:placement].nil?
-      instances[:private_ip_address] = resource[:private_ip_address] unless resource[:private_ip_address].nil?
-      instances[:ramdisk_id] = resource[:ramdisk_id] unless resource[:ramdisk_id].nil?
-      instances[:security_group_ids] = resource[:security_group_ids] unless resource[:security_group_ids].nil?
-      instances[:security_groups] = resource[:security_groups] unless resource[:security_groups].nil?
-      instances[:subnet_id] = resource[:subnet_id] unless resource[:subnet_id].nil?
-      instances[:tag_specifications] = resource[:tag_specifications] unless resource[:tag_specifications].nil?
-      instances[:user_data] = resource[:user_data] unless resource[:user_data].nil?
-    end
-    symbolize(instances)
+  def self.build_key_values
+    key_values = {}
+
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation terminate_instances')
-    client = Aws::EC2::Client.new(region: self.class.region)
-    instance_id = resource.provider.property_hash[:object].instance_id
-    client.terminate_instances(instance_ids: [instance_id])
-    client.wait_until(:instance_terminated, instance_ids: [instance_id])
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    client = Aws::EC2::Client.new(region: region)
+    deleteable_instance_ids = []
+    client.describe_instances(
+      filters: [{
+        name: 'instance-state-name',
+        values: ['pending', 'running', 'stopping', 'stopped'],
+      }],
+    ).each do |response|
+      response.reservations.each do |r|
+        r.instances.each do |i|
+          instance_name = name_from_tag(i)
+          if should[:name] == instance_name
+            deleteable_instance_ids << i.instance_id
+          end
+        end
+      end
+    end
+    client.terminate_instances(instance_ids: deleteable_instance_ids)
+    client.wait_until(:instance_terminated, instance_ids: deleteable_instance_ids)
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -436,5 +301,3 @@ Puppet::Type.type(:aws_instances).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"bucketanalytic":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"analytics":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

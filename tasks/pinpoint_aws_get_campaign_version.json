@@ -7,6 +7,18 @@
 		
 		
 		    
+			"version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"application_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +31,7 @@
 			}
 			,
 		    
-			"version":{
+			"campaign_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,34 @@
+{
+	"description": "Updates the workgroup with the specified name. The workgroup's name cannot be changed.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"configuration_updates":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"state":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"work_group":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

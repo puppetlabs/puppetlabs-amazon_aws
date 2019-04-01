@@ -7,7 +7,7 @@
 		
 		
 		    
-			"cores":{
+			"core_definition_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,6 +20,12 @@
 			,
 		    
 			"core_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cores":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

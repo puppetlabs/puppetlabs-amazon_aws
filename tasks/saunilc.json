@@ -1,0 +1,28 @@
+{
+	"description": "Updates a notebook instance lifecycle configuration created with the CreateNotebookInstanceLifecycleConfig API.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"notebook_instance_lifecycle_config_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"on_create":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"on_start":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

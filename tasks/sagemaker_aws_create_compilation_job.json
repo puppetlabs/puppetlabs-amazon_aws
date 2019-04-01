@@ -7,12 +7,6 @@
 		
 		
 		    
-			"stopping_condition":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"compilation_job_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +26,12 @@
 			,
 		    
 			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stopping_condition":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

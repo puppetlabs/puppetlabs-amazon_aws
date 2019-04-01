@@ -7,18 +7,6 @@
 		
 		
 		    
-			"application_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"deployed":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +32,18 @@
 			,
 		    
 			"sort_order":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"deployed":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

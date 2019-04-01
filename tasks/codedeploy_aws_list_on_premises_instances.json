@@ -1,17 +1,11 @@
 {
-	"description": "Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names will be listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.",
+	"description": "Gets a list of names for one or more on-premises instances. Unless otherwise specified, both registered and deregistered on-premises instance names are listed. To list only registered or deregistered on-premises instance names, use the registration status parameter.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
-		    
-			"tag_filters":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
 		    
 			"next_token":{
 			   "description": "",
@@ -20,6 +14,12 @@
 			,
 		    
 			"registration_status":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tag_filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

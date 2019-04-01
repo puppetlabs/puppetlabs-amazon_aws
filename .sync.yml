@@ -3,6 +3,12 @@
   profiles:
     strict:
       configs:
+        AllCops:
+          TargetRubyVersion: '2.2'
+          Include:
+          - "lib/*/*/*/*.rb"
+          - "tasks/*.rb"
+          - "lib/*/*/*.rb"
         Lint/ScriptPermission:
           Enabled: false
         Style/NestedTernaryOperator:
@@ -13,8 +19,6 @@
           Enabled: false
         Metrics/LineLength:
           Enabled: false
-        Style/PredicateName:
-          Enabled: false
         Lint/UnusedBlockArgument:
           Enabled: false
         Style/Semicolon:
@@ -23,9 +27,28 @@
           Enabled: false
         Style/EachWithObject:
           Enabled: false
+        Style/TrailingCommaInHashLiteral:
+          Enabled: false
+        Style/TrailingCommaInArguments:
+          Enabled: false
+        Layout/EmptyLinesAroundMethodBody:
+          Enabled: false
+        Style/RedundantSelf:
+          Enabled: false
+        Style/HashSyntax:
+          Enabled: false
+        Lint/Void:
+          Enabled: false
+        Style/RedundantReturn:
+          Enabled: false
+        Layout/IndentationConsistency:
+          Enabled: false
 
 .gitlab-ci.yml:
   delete: true
 
 appveyor.yml:
+  delete: true
+
+.travis.yml:
   delete: true

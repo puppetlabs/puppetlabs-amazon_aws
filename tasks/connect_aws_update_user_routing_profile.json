@@ -7,7 +7,7 @@
 		
 		
 		    
-			"routing_profile_id":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,6 +20,18 @@
 			,
 		    
 			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"routing_profile_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

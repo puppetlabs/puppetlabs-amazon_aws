@@ -7,13 +7,13 @@
 		
 		
 		    
-			"disk_ids":{
+			"gateway_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"gateway_arn":{
+			"disk_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

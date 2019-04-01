@@ -7,7 +7,25 @@
 		
 		
 		    
-			"relational_database_config":{
+			"api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"dynamodb_config":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"elasticsearch_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +37,7 @@
 			}
 			,
 		    
-			"elasticsearch_config":{
+			"api_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,19 +61,7 @@
 			}
 			,
 		    
-			"api_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"dynamodb_config":{
+			"relational_database_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

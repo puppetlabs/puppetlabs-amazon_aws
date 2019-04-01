@@ -7,7 +7,31 @@
 		
 		
 		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restapi_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"status_code":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,7 +49,7 @@
 			}
 			,
 		    
-			"resource_id":{
+			"http_method":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

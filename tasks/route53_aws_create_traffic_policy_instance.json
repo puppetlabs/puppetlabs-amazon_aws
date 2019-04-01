@@ -7,6 +7,12 @@
 		
 		
 		    
+			"ttl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"hosted_zone_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"traffic_policy_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ttl":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,11 +1,17 @@
 {
-	"description": "Deletes the specified Lambda function alias. For more information, see Introduction to AWS Lambda Aliases. This requires permission for the lambda:DeleteAlias action.",
+	"description": "Deletes a Lambda function alias.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"name":{
 			   "description": "",
@@ -14,6 +20,12 @@
 			,
 		    
 			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

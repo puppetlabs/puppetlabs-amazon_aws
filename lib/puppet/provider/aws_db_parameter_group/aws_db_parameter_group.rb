@@ -1,108 +1,38 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-rds'
 
 
-Puppet::Type.type(:aws_db_parameter_group).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
+
+
+
+# AwsDbParameterGroup class
+class Puppet::Provider::AwsDbParameterGroup::AwsDbParameterGroup
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-  # RDS Properties
-  def namevar
-    :db_parameter_group_name
-  end
-
-  def self.namevar
-    :db_parameter_group_name
-  end
-
-
-  def db_parameter_group_arn=(value)
-    Puppet.info("db_parameter_group_arn setter called to change to #{value}")
-    @property_flush[:db_parameter_group_arn] = value
-  end
-
-  def db_parameter_group_family=(value)
-    Puppet.info("db_parameter_group_family setter called to change to #{value}")
-    @property_flush[:db_parameter_group_family] = value
-  end
-
-  def db_parameter_group_name=(value)
-    Puppet.info("db_parameter_group_name setter called to change to #{value}")
-    @property_flush[:db_parameter_group_name] = value
-  end
-
-  def description=(value)
-    Puppet.info("description setter called to change to #{value}")
-    @property_flush[:description] = value
-  end
-
-  def filters=(value)
-    Puppet.info("filters setter called to change to #{value}")
-    @property_flush[:filters] = value
-  end
-
-  def max_records=(value)
-    Puppet.info("max_records setter called to change to #{value}")
-    @property_flush[:max_records] = value
-  end
-
-  def parameters=(value)
-    Puppet.info("parameters setter called to change to #{value}")
-    @property_flush[:parameters] = value
-  end
-
-  def tags=(value)
-    Puppet.info("tags setter called to change to #{value}")
-    @property_flush[:tags] = value
-  end
-
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  attr_reader :property_hash
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
-  end
-  def self.instances
+    context.debug('Entered get')
     Puppet.debug("Calling instances for region #{region}")
-    client = Aws::RDS::Client.new(region: region)
-
+    client        = Aws::RDS::Client.new(region: region)
     all_instances = []
     client.describe_db_parameter_groups.each do |response|
       response.db_parameter_groups.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+        all_instances << hash if name?(hash)
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
+
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      name = prov.property_hash[namevar]
-      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     db_parameter_group_arn = instance.respond_to?(:db_parameter_group_arn) ? (instance.db_parameter_group_arn.respond_to?(:to_hash) ? instance.db_parameter_group_arn.to_hash : instance.db_parameter_group_arn) : nil
     db_parameter_group_family = instance.respond_to?(:db_parameter_group_family) ? (instance.db_parameter_group_family.respond_to?(:to_hash) ? instance.db_parameter_group_family.to_hash : instance.db_parameter_group_family) : nil
     db_parameter_group_name = instance.respond_to?(:db_parameter_group_name) ? (instance.db_parameter_group_name.respond_to?(:to_hash) ? instance.db_parameter_group_name.to_hash : instance.db_parameter_group_name) : nil
@@ -115,8 +45,7 @@ Puppet::Type.type(:aws_db_parameter_group).provide(:arm) do
     db_parameter_group = {}
     db_parameter_group[:ensure] = :present
     db_parameter_group[:object] = instance
-    db_parameter_group[:name] = instance.to_hash[namevar]
-
+    db_parameter_group[:name] = instance.to_hash[self.namevar]
     db_parameter_group[:db_parameter_group_arn] = db_parameter_group_arn unless db_parameter_group_arn.nil?
     db_parameter_group[:db_parameter_group_family] = db_parameter_group_family unless db_parameter_group_family.nil?
     db_parameter_group[:db_parameter_group_name] = db_parameter_group_name unless db_parameter_group_name.nil?
@@ -128,61 +57,106 @@ Puppet::Type.type(:aws_db_parameter_group).provide(:arm) do
     db_parameter_group
   end
 
-  def build_hash
-    db_parameter_group = {}
-    if @is_create || @is_update
-      db_parameter_group[:db_parameter_group_family] = resource[:db_parameter_group_family] unless resource[:db_parameter_group_family].nil?
-      db_parameter_group[:db_parameter_group_name] = resource[:db_parameter_group_name] unless resource[:db_parameter_group_name].nil?
-      db_parameter_group[:description] = resource[:description] unless resource[:description].nil?
-      db_parameter_group[:filters] = resource[:filters] unless resource[:filters].nil?
-      db_parameter_group[:max_records] = resource[:max_records] unless resource[:max_records].nil?
-      db_parameter_group[:parameters] = resource[:parameters] unless resource[:parameters].nil?
-      db_parameter_group[:tags] = resource[:tags] unless resource[:tags].nil?
-    end
-    db_parameter_group[namevar] = resource[:name]
-    symbolize(db_parameter_group)
+  def namevar
+    :db_parameter_group_name
   end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.create_db_parameter_group(build_hash)
-    @property_hash[:ensure] = :present
+  def self.namevar
+    :db_parameter_group_name
+  end
+
+  def name?(hash)
+    !hash[self.namevar].nil? && !hash[self.namevar].empty?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resourceupdate(context, name, should)
+      end
+    end
+  end
+
+  def self.region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client   = Aws::RDS::Client.new(region: region)
+      client.create_db_parameter_group(new_hash)
+    end
   rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
+
+  def update(context, name, should)
+    context.updating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client = Aws::RDS::Client.new(region: region)
+      client.modify_db_parameter_group(new_hash)
     end
-    @is_update = true
-    @property_hash[:ensure] = :present
-    []
+  rescue StandardError => ex
+    Puppet.alert("Exception during flush. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
+  end
+
+
+  def build_hash(resource)
+    db_parameter_group = {}
+    db_parameter_group['db_parameter_group_family'] = resource[:db_parameter_group_family] unless resource[:db_parameter_group_family].nil?
+    db_parameter_group['db_parameter_group_name'] = resource[:db_parameter_group_name] unless resource[:db_parameter_group_name].nil?
+    db_parameter_group['description'] = resource[:description] unless resource[:description].nil?
+    db_parameter_group['filters'] = resource[:filters] unless resource[:filters].nil?
+    db_parameter_group['max_records'] = resource[:max_records] unless resource[:max_records].nil?
+    db_parameter_group['parameters'] = resource[:parameters] unless resource[:parameters].nil?
+    db_parameter_group['tags'] = resource[:tags] unless resource[:tags].nil?
+    symbolize(db_parameter_group)
+  end
+
+  def self.build_key_values
+    key_values = {}
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_db_parameter_group')
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.delete_db_parameter_group(build_hash)
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    new_hash = symbolize(build_hash(should))
+    client = Aws::RDS::Client.new(region: region)
+    client.delete_db_parameter_group(new_hash)
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -195,5 +169,3 @@ Puppet::Type.type(:aws_db_parameter_group).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

@@ -17,6 +17,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"bucketreplicatio":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

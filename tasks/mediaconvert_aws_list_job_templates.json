@@ -7,6 +7,12 @@
 		
 		
 		    
+			"category":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"list_by":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"order":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"category":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

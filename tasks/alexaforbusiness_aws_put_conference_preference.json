@@ -1,0 +1,16 @@
+{
+	"description": "Sets the conference preferences on a specific conference provider at the account level.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"conference_preference":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

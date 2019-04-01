@@ -41,6 +41,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"volume_kms_key_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

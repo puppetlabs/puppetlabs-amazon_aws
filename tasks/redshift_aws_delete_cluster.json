@@ -7,12 +7,6 @@
 		
 		
 		    
-			"cluster_identifier":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"final_cluster_snapshot_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"skip_final_cluster_snapshot":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

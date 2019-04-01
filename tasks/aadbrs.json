@@ -1,0 +1,16 @@
+{
+	"description": "Deletes the recurring report delivery schedule with the specified schedule ARN.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"schedule_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

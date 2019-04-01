@@ -7,13 +7,19 @@
 		
 		
 		    
+			"expected_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"security_profile_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"expected_version":{
+			"security_profile_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

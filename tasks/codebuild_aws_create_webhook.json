@@ -7,13 +7,19 @@
 		
 		
 		    
+			"project_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"branch_filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"project_name":{
+			"filter_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

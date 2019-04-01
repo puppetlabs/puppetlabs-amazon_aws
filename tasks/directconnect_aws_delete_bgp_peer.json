@@ -7,6 +7,12 @@
 		
 		
 		    
+			"virtual_interface_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"asn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"customer_address":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"virtual_interface_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

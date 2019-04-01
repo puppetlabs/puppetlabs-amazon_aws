@@ -1,11 +1,17 @@
 {
-	"description": "Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.",
+	"description": "Creates a new custom endpoint and associates it with an Amazon Aurora DB cluster.  This action only applies to Aurora DB clusters. ",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"excluded_members":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"static_members":{
 			   "description": "",
@@ -26,12 +32,6 @@
 			,
 		    
 			"endpoint_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"excluded_members":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

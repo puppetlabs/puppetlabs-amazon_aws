@@ -7,13 +7,13 @@
 		
 		
 		    
-			"saml_provider_arn":{
+			"saml_metadata_document":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"saml_metadata_document":{
+			"saml_provider_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

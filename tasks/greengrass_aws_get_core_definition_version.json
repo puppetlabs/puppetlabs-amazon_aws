@@ -17,6 +17,18 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"core_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"core_definition_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

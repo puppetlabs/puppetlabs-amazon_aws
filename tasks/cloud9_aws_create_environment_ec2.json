@@ -7,6 +7,12 @@
 		
 		
 		    
+			"automatic_stop_time_minutes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"client_request_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,12 +44,6 @@
 			,
 		    
 			"subnet_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"automatic_stop_time_minutes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"resource_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"resource_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"include_deleted_resources":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +26,18 @@
 			,
 		    
 			"resource_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"resource_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

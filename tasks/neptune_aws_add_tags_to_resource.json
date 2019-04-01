@@ -7,13 +7,13 @@
 		
 		
 		    
-			"resource_name":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
+			"resource_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

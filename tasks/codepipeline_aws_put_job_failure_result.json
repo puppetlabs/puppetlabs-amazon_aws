@@ -1,0 +1,22 @@
+{
+	"description": "Represents the failure of a job as returned to the pipeline by a job worker. Only used for custom actions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"failure_details":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,11 +1,17 @@
 {
-	"description": "Describes the load balancers for the specified Auto Scaling group. This operation describes only Classic Load Balancers. If you have Application Load Balancers, use DescribeLoadBalancerTargetGroups instead.",
+	"description": "Describes the load balancers for the specified Auto Scaling group. This operation describes only Classic Load Balancers. If you have Application Load Balancers or Network Load Balancers, use DescribeLoadBalancerTargetGroups instead.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"next_token":{
 			   "description": "",
@@ -14,12 +20,6 @@
 			,
 		    
 			"auto_scaling_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_records":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

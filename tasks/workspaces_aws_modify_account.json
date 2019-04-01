@@ -7,13 +7,13 @@
 		
 		
 		    
-			"dedicated_tenancy_management_cidr_range":{
+			"dedicated_tenancy_support":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"dedicated_tenancy_support":{
+			"dedicated_tenancy_management_cidr_range":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

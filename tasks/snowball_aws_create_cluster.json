@@ -7,7 +7,7 @@
 		
 		
 		    
-			"shipping_option":{
+			"forwarding_address_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,19 +19,25 @@
 			}
 			,
 		    
+			"kms_key_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"role_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"forwarding_address_id":{
+			"snowball_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"kms_key_arn":{
+			"address_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,13 +55,7 @@
 			}
 			,
 		    
-			"snowball_type":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"address_id":{
+			"shipping_option":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

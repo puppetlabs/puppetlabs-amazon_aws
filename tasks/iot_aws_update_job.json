@@ -7,12 +7,6 @@
 		
 		
 		    
-			"job_executions_rollout_config":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"job_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +32,18 @@
 			,
 		    
 			"description":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_executions_rollout_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

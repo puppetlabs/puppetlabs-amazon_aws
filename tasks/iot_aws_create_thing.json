@@ -1,11 +1,23 @@
 {
-	"description": "Creates a thing record in the registry.  This is a control plane operation. See Authorization for information about authorizing control plane actions. ",
+	"description": "Creates a thing record in the registry. If this call is made multiple times using the same thing name and configuration, the call will succeed. If this call is made with the same thing name but different configuration a ResourceAlreadyExistsException is thrown.  This is a control plane operation. See Authorization for information about authorizing control plane actions. ",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"thing_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"thing_type_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"attribute_payload":{
 			   "description": "",
@@ -20,12 +32,6 @@
 			,
 		    
 			"thing_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"thing_type_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -11,6 +11,12 @@
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
+			,
+		    
+			"device_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
 			
 	}
 }

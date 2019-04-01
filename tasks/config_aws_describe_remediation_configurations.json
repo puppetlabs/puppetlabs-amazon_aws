@@ -1,0 +1,16 @@
+{
+	"description": "Returns the details of one or more remediation configurations.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"config_rule_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

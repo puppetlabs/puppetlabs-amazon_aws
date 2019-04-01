@@ -7,6 +7,12 @@
 		
 		
 		    
+			"execution_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"cause":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"error":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"execution_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

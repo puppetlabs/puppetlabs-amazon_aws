@@ -1,0 +1,40 @@
+{
+	"description": "Represents the success of a third party job as returned to the pipeline by a job worker. Only used for partner actions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"execution_details":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"job_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuation_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"current_revision":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

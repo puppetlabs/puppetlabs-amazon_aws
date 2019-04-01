@@ -1,11 +1,17 @@
 {
-	"description": "Returns a list of tags assigned to a function when supplied the function ARN (Amazon Resource Name). For more information on Tagging, see Tagging Lambda Functions in the AWS Lambda Developer Guide.",
+	"description": "Returns a function's tags. You can also view tags with GetFunction.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"resource":{
 			   "description": "",

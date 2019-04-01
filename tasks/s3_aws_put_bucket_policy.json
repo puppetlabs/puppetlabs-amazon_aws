@@ -1,0 +1,40 @@
+{
+	"description": "Replaces a policy on a bucket. If the bucket already has a policy, the one in this request completely replaces it.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucketpolic":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"confirm_remove_self_bucket_access":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_md5":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

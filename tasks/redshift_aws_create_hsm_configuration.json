@@ -7,18 +7,6 @@
 		
 		
 		    
-			"tags":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"description":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"hsm_configuration_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +32,18 @@
 			,
 		    
 			"hsm_server_public_certificate":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"description":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

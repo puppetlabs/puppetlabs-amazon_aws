@@ -1,0 +1,34 @@
+{
+	"description": "Sets permissions for a user, group, or resource. This replaces any pre-existing permissions.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"entity_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"grantee_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"permission_values":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

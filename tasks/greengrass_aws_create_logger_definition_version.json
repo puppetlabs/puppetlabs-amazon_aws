@@ -13,13 +13,19 @@
 			}
 			,
 		    
-			"loggers":{
+			"amzn_client_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"amzn_client_token":{
+			"logger_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"loggers":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

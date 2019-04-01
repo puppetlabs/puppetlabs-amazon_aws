@@ -7,25 +7,19 @@
 		
 		
 		    
-			"eq":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter_variable":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ge":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"gt":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"lt":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ne":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,6 +43,24 @@
 			}
 			,
 		    
+			"eq":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter_variable":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ge":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"le":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -56,18 +68,6 @@
 			,
 		    
 			"limit":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"lt":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ne":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

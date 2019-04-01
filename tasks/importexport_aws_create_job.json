@@ -7,6 +7,12 @@
 		
 		
 		    
+			"job_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"manifest":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"api_version":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"job_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

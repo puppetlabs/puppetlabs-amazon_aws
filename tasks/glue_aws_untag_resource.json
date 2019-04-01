@@ -1,0 +1,22 @@
+{
+	"description": "Removes tags from a resource.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"resource_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags_to_remove":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

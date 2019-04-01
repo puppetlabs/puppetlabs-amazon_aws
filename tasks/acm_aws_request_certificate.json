@@ -7,6 +7,18 @@
 		
 		
 		    
+			"options":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"subject_alternative_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"validation_method":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,18 +44,6 @@
 			,
 		    
 			"idempotency_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"options":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"subject_alternative_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

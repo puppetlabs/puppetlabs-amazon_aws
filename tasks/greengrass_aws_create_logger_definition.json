@@ -7,6 +7,12 @@
 		
 		
 		    
+			"amzn_client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"initial_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +25,7 @@
 			}
 			,
 		    
-			"amzn_client_token":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"details":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"command_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"details":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

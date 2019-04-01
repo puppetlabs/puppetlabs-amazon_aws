@@ -7,7 +7,13 @@
 		
 		
 		    
-			"next_token":{
+			"device_definition_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"device_definition_version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,6 +26,12 @@
 			,
 		    
 			"device_definition_version_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

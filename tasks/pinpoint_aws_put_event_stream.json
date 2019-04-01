@@ -1,0 +1,28 @@
+{
+	"description": "Use to create or update the event stream for an app.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"write_event_stream":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

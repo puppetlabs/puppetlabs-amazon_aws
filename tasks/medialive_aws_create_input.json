@@ -7,18 +7,6 @@
 		
 		
 		    
-			"media_connect_flows":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"request_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +14,30 @@
 			,
 		    
 			"role_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"destinations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"media_connect_flows":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +55,7 @@
 			}
 			,
 		    
-			"destinations":{
+			"vpc":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

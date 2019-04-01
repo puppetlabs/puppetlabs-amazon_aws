@@ -7,13 +7,13 @@
 		
 		
 		    
-			"delivery_stream_name":{
+			"tag_keys":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tag_keys":{
+			"delivery_stream_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

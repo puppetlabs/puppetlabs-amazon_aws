@@ -1,11 +1,17 @@
 {
-	"description": "Updates the primary email for an entity. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email) and the email provided in the input is promoted as the primary.",
+	"description": "Updates the primary email for a user, group, or resource. The current email is moved into the list of aliases (or swapped between an existing alias and the current primary email), and the email provided in the input is promoted as the primary.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"organization_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"email":{
 			   "description": "",
@@ -14,12 +20,6 @@
 			,
 		    
 			"entity_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"organization_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

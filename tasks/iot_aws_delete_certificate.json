@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"certificate_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"force_delete":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

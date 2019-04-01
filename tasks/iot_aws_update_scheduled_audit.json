@@ -25,6 +25,12 @@
 			}
 			,
 		    
+			"scheduled_audit_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"target_check_names":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

@@ -7,7 +7,7 @@
 		
 		
 		    
-			"security_profile_ids":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,6 +20,18 @@
 			,
 		    
 			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"security_profile_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"user_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

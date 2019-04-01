@@ -1,0 +1,16 @@
+{
+	"description": "Returns the summaries of the results of the Trusted Advisor checks that have the specified check IDs. Check IDs can be obtained by calling DescribeTrustedAdvisorChecks. The response contains an array of TrustedAdvisorCheckSummary objects.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"check_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

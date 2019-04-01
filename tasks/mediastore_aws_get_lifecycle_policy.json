@@ -1,0 +1,16 @@
+{
+	"description": "Retrieves the object lifecycle policy that is assigned to a container.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"container_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

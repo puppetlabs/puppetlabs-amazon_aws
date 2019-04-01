@@ -1,5 +1,5 @@
 {
-	"description": "Deletes the specified Auto Scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the alarm, even if it no longer has an associated action.",
+	"description": "Deletes the specified scaling policy. Deleting a policy deletes the underlying alarm action, but does not delete the alarm, even if it no longer has an associated action.",
 	"input_method": "stdin",
 	"parameters":{
 		

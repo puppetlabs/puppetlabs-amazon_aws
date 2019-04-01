@@ -1,0 +1,22 @@
+{
+	"description": "Bulk update custom inventory items on one more instance. The request adds an inventory item, if it doesn't already exist, or updates an inventory item, if it does exist.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"items":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

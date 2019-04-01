@@ -7,6 +7,12 @@
 		
 		
 		    
+			"terminate_resources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"environment_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"force_terminate":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"terminate_resources":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

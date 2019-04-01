@@ -7,31 +7,13 @@
 		
 		
 		    
-			"enable_auto_healing":{
+			"custom_instance_profile_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"auto_assign_elastic_ips":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"volume_configurations":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"auto_assign_public_ips":{
+			"custom_recipes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,37 +25,13 @@
 			}
 			,
 		    
-			"packages":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"use_ebs_optimized_instances":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cloud_watch_logs_configuration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"custom_instance_profile_arn":{
+			"auto_assign_public_ips":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"custom_json":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"custom_recipes":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -91,7 +49,49 @@
 			}
 			,
 		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"packages":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"volume_configurations":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"attributes":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"layer_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"use_ebs_optimized_instances":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"enable_auto_healing":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cloud_watch_logs_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -103,7 +103,7 @@
 			}
 			,
 		    
-			"attributes":{
+			"auto_assign_elastic_ips":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

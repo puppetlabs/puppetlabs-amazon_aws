@@ -1,94 +1,78 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_vpn_gateway',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_vpn_gateway) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_vpn_gateway you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:amazon_side_asn) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:availability_zone) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:dry_run) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:filters, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:state) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:tags) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:type) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_attachments) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpn_gateway_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpn_gateway_ids, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    amazon_side_asn: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    availability_zone: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    dry_run: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    filters: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    state: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    tags: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    type: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_attachments: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpn_gateway_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpn_gateway_ids: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

@@ -7,7 +7,19 @@
 		
 		
 		    
+			"requestvalidator_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"request_validator_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restapi_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

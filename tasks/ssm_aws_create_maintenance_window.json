@@ -7,7 +7,7 @@
 		
 		
 		    
-			"end_date":{
+			"duration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,7 +37,19 @@
 			}
 			,
 		    
-			"duration":{
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cutoff":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,19 +61,13 @@
 			}
 			,
 		    
+			"end_date":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"schedule_timezone":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cutoff":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

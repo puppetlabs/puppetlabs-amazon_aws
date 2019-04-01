@@ -1,94 +1,78 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_security_group',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_security_group) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_security_group you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:description) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:dry_run) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:filters, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:group_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:group_ids, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:group_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:group_names, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:max_results) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:next_token) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    description: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    dry_run: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    filters: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    group_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    group_ids: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    group_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    group_names: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    max_results: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    next_token: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

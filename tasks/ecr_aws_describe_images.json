@@ -7,6 +7,12 @@
 		
 		
 		    
+			"filter":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"image_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"repository_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"filter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

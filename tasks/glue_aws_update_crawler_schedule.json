@@ -7,13 +7,13 @@
 		
 		
 		    
-			"crawler_name":{
+			"schedule":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"schedule":{
+			"crawler_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

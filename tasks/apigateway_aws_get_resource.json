@@ -7,6 +7,12 @@
 		
 		
 		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"embed":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +25,13 @@
 			}
 			,
 		    
-			"rest_api_id":{
+			"resource_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restapi_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

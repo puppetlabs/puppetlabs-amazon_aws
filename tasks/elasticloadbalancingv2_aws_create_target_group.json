@@ -13,24 +13,6 @@
 			}
 			,
 		    
-			"health_check_path":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"port":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"vpc_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"health_check_port":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -43,25 +25,25 @@
 			}
 			,
 		    
+			"protocol":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vpc_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"target_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"unhealthy_threshold_count":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"health_check_interval_seconds":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"healthy_threshold_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -79,13 +61,31 @@
 			}
 			,
 		    
+			"healthy_threshold_count":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"matcher":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"protocol":{
+			"health_check_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"port":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"unhealthy_threshold_count":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

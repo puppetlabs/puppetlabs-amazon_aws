@@ -7,13 +7,13 @@
 		
 		
 		    
-			"authentication_token":{
+			"folder_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"order":{
+			"authentication_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,19 @@
 			}
 			,
 		    
-			"include":{
+			"limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"limit":{
+			"type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"include":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +49,13 @@
 			}
 			,
 		    
-			"sort":{
+			"order":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"type":{
+			"sort":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

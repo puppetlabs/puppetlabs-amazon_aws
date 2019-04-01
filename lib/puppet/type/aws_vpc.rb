@@ -1,118 +1,108 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_vpc',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_vpc) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_vpc you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:amazon_provided_ipv6_cidr_block) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:cidr_block) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:cidr_block_association_set) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:dhcp_options_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:dry_run) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:filters, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:instance_tenancy) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:ipv6_cidr_block_association_set) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:is_default) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:owner_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:state) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:tags) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_ids, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    amazon_provided_ipv6_cidr_block: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    cidr_block: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    cidr_block_association_set: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    dhcp_options_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    dry_run: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    filters: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    instance_tenancy: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    ipv6_cidr_block_association_set: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    is_default: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    max_results: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    next_token: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    owner_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    state: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    tags: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_ids: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

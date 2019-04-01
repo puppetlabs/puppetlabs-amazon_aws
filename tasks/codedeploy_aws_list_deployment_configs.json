@@ -1,5 +1,5 @@
 {
-	"description": "Lists the deployment configurations with the applicable IAM user or AWS account.",
+	"description": "Lists the deployment configurations with the IAM user or AWS account.",
 	"input_method": "stdin",
 	"parameters":{
 		

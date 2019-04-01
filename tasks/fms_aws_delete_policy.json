@@ -7,6 +7,12 @@
 		
 		
 		    
+			"delete_all_policy_resources":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"policy_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

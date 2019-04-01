@@ -1,11 +1,17 @@
 {
-	"description": "Lists all versions of a function. For information about versioning, see AWS Lambda Function Versioning and Aliases. ",
+	"description": "Returns a list of versions, with the version-specific configuration of each. ",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"function_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"function_name":{
 			   "description": "",

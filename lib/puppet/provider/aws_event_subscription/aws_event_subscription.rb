@@ -1,148 +1,38 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-rds'
 
 
-Puppet::Type.type(:aws_event_subscription).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
+
+
+
+# AwsEventSubscription class
+class Puppet::Provider::AwsEventSubscription::AwsEventSubscription
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-  # ProviderRDS Event Subscription Properties
-  def namevar
-    :subscription_name
-  end
-
-  def self.namevar
-    :subscription_name
-  end
-
-
-  def customer_aws_id=(value)
-    Puppet.info("customer_aws_id setter called to change to #{value}")
-    @property_flush[:customer_aws_id] = value
-  end
-
-  def cust_subscription_id=(value)
-    Puppet.info("cust_subscription_id setter called to change to #{value}")
-    @property_flush[:cust_subscription_id] = value
-  end
-
-  def enabled=(value)
-    Puppet.info("enabled setter called to change to #{value}")
-    @property_flush[:enabled] = value
-  end
-
-  def event_categories=(value)
-    Puppet.info("event_categories setter called to change to #{value}")
-    @property_flush[:event_categories] = value
-  end
-
-  def event_categories_list=(value)
-    Puppet.info("event_categories_list setter called to change to #{value}")
-    @property_flush[:event_categories_list] = value
-  end
-
-  def event_subscription_arn=(value)
-    Puppet.info("event_subscription_arn setter called to change to #{value}")
-    @property_flush[:event_subscription_arn] = value
-  end
-
-  def filters=(value)
-    Puppet.info("filters setter called to change to #{value}")
-    @property_flush[:filters] = value
-  end
-
-  def max_records=(value)
-    Puppet.info("max_records setter called to change to #{value}")
-    @property_flush[:max_records] = value
-  end
-
-  def sns_topic_arn=(value)
-    Puppet.info("sns_topic_arn setter called to change to #{value}")
-    @property_flush[:sns_topic_arn] = value
-  end
-
-  def source_ids=(value)
-    Puppet.info("source_ids setter called to change to #{value}")
-    @property_flush[:source_ids] = value
-  end
-
-  def source_ids_list=(value)
-    Puppet.info("source_ids_list setter called to change to #{value}")
-    @property_flush[:source_ids_list] = value
-  end
-
-  def source_type=(value)
-    Puppet.info("source_type setter called to change to #{value}")
-    @property_flush[:source_type] = value
-  end
-
-  def status=(value)
-    Puppet.info("status setter called to change to #{value}")
-    @property_flush[:status] = value
-  end
-
-  def subscription_creation_time=(value)
-    Puppet.info("subscription_creation_time setter called to change to #{value}")
-    @property_flush[:subscription_creation_time] = value
-  end
-
-  def subscription_name=(value)
-    Puppet.info("subscription_name setter called to change to #{value}")
-    @property_flush[:subscription_name] = value
-  end
-
-  def tags=(value)
-    Puppet.info("tags setter called to change to #{value}")
-    @property_flush[:tags] = value
-  end
-
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  attr_reader :property_hash
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
-  end
-  def self.instances
+    context.debug('Entered get')
     Puppet.debug("Calling instances for region #{region}")
-    client = Aws::RDS::Client.new(region: region)
-
+    client        = Aws::RDS::Client.new(region: region)
     all_instances = []
     client.describe_event_subscriptions.each do |response|
       response.event_subscriptions_list.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+        all_instances << hash if name?(hash)
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
+
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      name = prov.property_hash[:cust_subscription_id]
-      if (resource = (resources.find { |k, _| k.casecmp(name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     customer_aws_id = instance.respond_to?(:customer_aws_id) ? (instance.customer_aws_id.respond_to?(:to_hash) ? instance.customer_aws_id.to_hash : instance.customer_aws_id) : nil
     cust_subscription_id = instance.respond_to?(:cust_subscription_id) ? (instance.cust_subscription_id.respond_to?(:to_hash) ? instance.cust_subscription_id.to_hash : instance.cust_subscription_id) : nil
     enabled = instance.respond_to?(:enabled) ? (instance.enabled.respond_to?(:to_hash) ? instance.enabled.to_hash : instance.enabled) : nil
@@ -164,7 +54,6 @@ Puppet::Type.type(:aws_event_subscription).provide(:arm) do
     event_subscription[:ensure] = :present
     event_subscription[:object] = instance
     event_subscription[:name] = instance.to_hash[:cust_subscription_id]
-
     event_subscription[:customer_aws_id] = customer_aws_id unless customer_aws_id.nil?
     event_subscription[:cust_subscription_id] = cust_subscription_id unless cust_subscription_id.nil?
     event_subscription[:enabled] = enabled unless enabled.nil?
@@ -184,64 +73,109 @@ Puppet::Type.type(:aws_event_subscription).provide(:arm) do
     event_subscription
   end
 
-  def build_hash
-    event_subscription = {}
-    if @is_create || @is_update
-      event_subscription[:enabled] = resource[:enabled] unless resource[:enabled].nil?
-      event_subscription[:event_categories] = resource[:event_categories] unless resource[:event_categories].nil?
-      event_subscription[:filters] = resource[:filters] unless resource[:filters].nil?
-      event_subscription[:max_records] = resource[:max_records] unless resource[:max_records].nil?
-      event_subscription[:subscription_name] = resource[:subscription_name] unless resource[:subscription_name].nil?
-      event_subscription[:sns_topic_arn] = resource[:sns_topic_arn] unless resource[:sns_topic_arn].nil?
-      event_subscription[:source_ids] = resource[:source_ids] unless resource[:source_ids].nil?
-      event_subscription[:source_type] = resource[:source_type] unless resource[:source_type].nil?
-      event_subscription[:subscription_name] = resource[:subscription_name] unless resource[:subscription_name].nil?
-      event_subscription[:tags] = resource[:tags] unless resource[:tags].nil?
-    end
-    event_subscription[namevar] = resource[:name]
-    symbolize(event_subscription)
+  def namevar
+    :subscription_name
   end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.create_event_subscription(build_hash)
-    @property_hash[:ensure] = :present
+  def self.namevar
+    :subscription_name
+  end
+
+  def name?(hash)
+    !hash[self.namevar].nil? && !hash[self.namevar].empty?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resourceupdate(context, name, should)
+      end
+    end
+  end
+
+  def self.region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client   = Aws::RDS::Client.new(region: region)
+      client.create_event_subscription(new_hash)
+    end
   rescue StandardError => ex
     Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
+
+  def update(context, name, should)
+    context.updating(name) do
+      new_hash = symbolize(build_hash(should))
+
+      client = Aws::RDS::Client.new(region: region)
+      client.modify_event_subscription(new_hash)
     end
-    @is_update = true
-    @property_hash[:ensure] = :present
-    []
+  rescue StandardError => ex
+    Puppet.alert("Exception during flush. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
+  end
+
+
+  def build_hash(resource)
+    event_subscription = {}
+    event_subscription['enabled'] = resource[:enabled] unless resource[:enabled].nil?
+    event_subscription['event_categories'] = resource[:event_categories] unless resource[:event_categories].nil?
+    event_subscription['filters'] = resource[:filters] unless resource[:filters].nil?
+    event_subscription['max_records'] = resource[:max_records] unless resource[:max_records].nil?
+    event_subscription['subscription_name'] = resource[:subscription_name] unless resource[:subscription_name].nil?
+    event_subscription['sns_topic_arn'] = resource[:sns_topic_arn] unless resource[:sns_topic_arn].nil?
+    event_subscription['source_ids'] = resource[:source_ids] unless resource[:source_ids].nil?
+    event_subscription['source_type'] = resource[:source_type] unless resource[:source_type].nil?
+    event_subscription['subscription_name'] = resource[:subscription_name] unless resource[:subscription_name].nil?
+    event_subscription['tags'] = resource[:tags] unless resource[:tags].nil?
+    symbolize(event_subscription)
+  end
+
+  def self.build_key_values
+    key_values = {}
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_event_subscription')
-    client = Aws::RDS::Client.new(region: self.class.region)
-    client.delete_event_subscription(build_hash)
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    new_hash = symbolize(build_hash(should))
+    client = Aws::RDS::Client.new(region: region)
+    client.delete_event_subscription(new_hash)
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -254,5 +188,3 @@ Puppet::Type.type(:aws_event_subscription).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

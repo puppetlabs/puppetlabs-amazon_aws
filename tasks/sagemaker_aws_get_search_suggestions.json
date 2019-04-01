@@ -1,5 +1,5 @@
 {
-	"description": "Returns suggestions for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.",
+	"description": "An auto-complete API for the search functionality in the Amazon SageMaker console. It returns suggestions of possible matches for the property name to use in Search queries. Provides suggestions for HyperParameters, Tags, and Metrics.",
 	"input_method": "stdin",
 	"parameters":{
 		

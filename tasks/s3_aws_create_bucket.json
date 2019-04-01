@@ -7,7 +7,7 @@
 		
 		
 		    
-			"acl":{
+			"object_lock_enabled_for_bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,13 +25,13 @@
 			}
 			,
 		    
-			"grant_read":{
+			"grant_read_acp":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"grant_read_acp":{
+			"grant_read":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,13 +43,19 @@
 			}
 			,
 		    
-			"object_lock_enabled_for_bucket":{
+			"grant_write_acp":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"grant_write_acp":{
+			"acl":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

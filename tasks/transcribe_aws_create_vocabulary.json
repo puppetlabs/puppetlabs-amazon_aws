@@ -1,5 +1,5 @@
 {
-	"description": "Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. Note that vocabularies for en-AU, en-UK, and fr-CA languages that are in preview are not available. In the console, the vocabulary section will be greyed-out and SDK will return error message. ",
+	"description": "Creates a new custom vocabulary that you can use to change the way Amazon Transcribe handles transcription of an audio file. ",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -14,6 +14,12 @@
 			,
 		    
 			"phrases":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"vocabulary_file_uri":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,0 +1,16 @@
+{
+	"description": "Returns information about the workgroup with the specified name.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"work_group":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

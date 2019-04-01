@@ -7,6 +7,18 @@
 		
 		
 		    
+			"request_payer":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucketdelet":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"bucket":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +38,6 @@
 			,
 		    
 			"mfa":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"request_payer":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

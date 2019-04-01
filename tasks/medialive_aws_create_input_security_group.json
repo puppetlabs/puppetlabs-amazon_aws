@@ -7,6 +7,12 @@
 		
 		
 		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"whitelist_rules":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

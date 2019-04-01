@@ -7,13 +7,13 @@
 		
 		
 		    
-			"name":{
+			"appstream_agent_version":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"appstream_agent_version":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

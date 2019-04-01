@@ -7,6 +7,18 @@
 		
 		
 		    
+			"inference_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"training_specification":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"validation_specification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,18 +38,6 @@
 			,
 		    
 			"certify_for_marketplace":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"inference_specification":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"training_specification":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

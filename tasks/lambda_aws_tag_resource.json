@@ -1,11 +1,17 @@
 {
-	"description": "Creates a list of tags (key-value pairs) on the Lambda function. Requires the Lambda function ARN (Amazon Resource Name). If a key is specified without a value, Lambda creates a tag with the specified key and a value of null. For more information, see Tagging Lambda Functions in the AWS Lambda Developer Guide. ",
+	"description": "Adds tags to a function.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"resource":{
 			   "description": "",

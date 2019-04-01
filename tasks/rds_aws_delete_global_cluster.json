@@ -1,5 +1,5 @@
 {
-	"description": " Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first. ",
+	"description": " Deletes a global database cluster. The primary and secondary clusters must already be detached or destroyed first.   This action only applies to Aurora DB clusters. ",
 	"input_method": "stdin",
 	"parameters":{
 		

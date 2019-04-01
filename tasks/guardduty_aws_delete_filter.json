@@ -7,13 +7,25 @@
 		
 		
 		    
-			"filter_name":{
+			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"filter_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,6 +7,12 @@
 		
 		
 		    
+			"domain":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"maximum_page_size":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"reverse_order":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"domain":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

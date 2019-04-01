@@ -7,19 +7,37 @@
 		
 		
 		    
-			"compliance_severity":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"output_location":{
+			"targets":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"automation_target_parameter_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"document_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_concurrency":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"max_errors":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +61,7 @@
 			}
 			,
 		    
-			"document_version":{
+			"compliance_severity":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,19 +73,7 @@
 			}
 			,
 		    
-			"max_concurrency":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_errors":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"targets":{
+			"output_location":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

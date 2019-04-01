@@ -1,118 +1,98 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_option_group',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_option_group) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_option_group you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:allows_vpc_and_non_vpc_instance_memberships) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:apply_immediately) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:engine_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:filters, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:major_engine_version) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:max_records) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:option_group_arn) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:option_group_description) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:option_group_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:options) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:options_to_include, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:options_to_remove, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:tags, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    allows_vpc_and_non_vpc_instance_memberships: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    apply_immediately: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    engine_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    filters: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    major_engine_version: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    max_records: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    option_group_arn: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    option_group_description: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    option_group_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    options: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    options_to_include: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    options_to_remove: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    tags: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

@@ -1,0 +1,40 @@
+{
+	"description": "Terminates the specified provisioned product. This operation does not delete any records associated with the provisioned product. You can check the status of this request using DescribeRecord.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"provisioned_product_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"provisioned_product_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"terminate_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"accept_language":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ignore_errors":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

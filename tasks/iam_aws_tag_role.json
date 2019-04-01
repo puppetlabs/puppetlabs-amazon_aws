@@ -7,13 +7,13 @@
 		
 		
 		    
-			"role_name":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
+			"role_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

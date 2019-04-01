@@ -7,6 +7,12 @@
 		
 		
 		    
+			"cluster_identifier":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"defer_maintenance":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"defer_maintenance_start_time":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,12 +7,6 @@
 		
 		
 		    
-			"scheduled_instance_ids":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"slot_start_time_range":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +32,12 @@
 			,
 		    
 			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scheduled_instance_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

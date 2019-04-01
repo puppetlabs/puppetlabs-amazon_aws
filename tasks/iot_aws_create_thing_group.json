@@ -7,13 +7,7 @@
 		
 		
 		    
-			"parent_group_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"tags":{
+			"thing_group_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -26,6 +20,18 @@
 			,
 		    
 			"thing_group_properties":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"parent_group_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

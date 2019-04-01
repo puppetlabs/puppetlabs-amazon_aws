@@ -1,159 +1,36 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-elasticloadbalancingv2'
 
 
-Puppet::Type.type(:aws_target_group).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
+
+
+
+# AwsTargetGroup class
+class Puppet::Provider::AwsTargetGroup::AwsTargetGroup
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-
-  # ELB Target Group Properties
-  def namevar
-    :target_group_arn
-  end
-
-  def self.namevar
-    :target_group_arn
-  end
-
-  # Properties
-
-  def health_check_enabled=(value)
-    Puppet.info("health_check_enabled setter called to change to #{value}")
-    @property_flush[:health_check_enabled] = value
-  end
-
-  def health_check_interval_seconds=(value)
-    Puppet.info("health_check_interval_seconds setter called to change to #{value}")
-    @property_flush[:health_check_interval_seconds] = value
-  end
-
-  def health_check_path=(value)
-    Puppet.info("health_check_path setter called to change to #{value}")
-    @property_flush[:health_check_path] = value
-  end
-
-  def health_check_port=(value)
-    Puppet.info("health_check_port setter called to change to #{value}")
-    @property_flush[:health_check_port] = value
-  end
-
-  def health_check_protocol=(value)
-    Puppet.info("health_check_protocol setter called to change to #{value}")
-    @property_flush[:health_check_protocol] = value
-  end
-
-  def health_check_timeout_seconds=(value)
-    Puppet.info("health_check_timeout_seconds setter called to change to #{value}")
-    @property_flush[:health_check_timeout_seconds] = value
-  end
-
-  def healthy_threshold_count=(value)
-    Puppet.info("healthy_threshold_count setter called to change to #{value}")
-    @property_flush[:healthy_threshold_count] = value
-  end
-
-  def load_balancer_arn=(value)
-    Puppet.info("load_balancer_arn setter called to change to #{value}")
-    @property_flush[:load_balancer_arn] = value
-  end
-
-  def matcher=(value)
-    Puppet.info("matcher setter called to change to #{value}")
-    @property_flush[:matcher] = value
-  end
-
-  def names=(value)
-    Puppet.info("names setter called to change to #{value}")
-    @property_flush[:names] = value
-  end
-
-  def page_size=(value)
-    Puppet.info("page_size setter called to change to #{value}")
-    @property_flush[:page_size] = value
-  end
-
-  def port=(value)
-    Puppet.info("port setter called to change to #{value}")
-    @property_flush[:port] = value
-  end
-
-  def protocol=(value)
-    Puppet.info("protocol setter called to change to #{value}")
-    @property_flush[:protocol] = value
-  end
-
-  def target_group_arn=(value)
-    Puppet.info("target_group_arn setter called to change to #{value}")
-    @property_flush[:target_group_arn] = value
-  end
-
-  def target_group_arns=(value)
-    Puppet.info("target_group_arns setter called to change to #{value}")
-    @property_flush[:target_group_arns] = value
-  end
-
-  def target_type=(value)
-    Puppet.info("target_type setter called to change to #{value}")
-    @property_flush[:target_type] = value
-  end
-
-  def unhealthy_threshold_count=(value)
-    Puppet.info("unhealthy_threshold_count setter called to change to #{value}")
-    @property_flush[:unhealthy_threshold_count] = value
-  end
-
-  def vpc_id=(value)
-    Puppet.info("vpc_id setter called to change to #{value}")
-    @property_flush[:vpc_id] = value
-  end
-
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  attr_reader :property_hash
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:name].nil? && !hash[:name].empty?
-  end
-  def self.instances
     Puppet.debug("Calling instances for region #{region}")
     client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
-
     all_instances = []
     client.describe_target_groups.each do |response|
       response.target_groups.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+        all_instances << hash if name?(hash)
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      if (resource = (resources.find { |k, _| k.casecmp(prov.name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     health_check_enabled = instance.respond_to?(:health_check_enabled) ? (instance.health_check_enabled.respond_to?(:to_hash) ? instance.health_check_enabled.to_hash : instance.health_check_enabled) : nil
     health_check_interval_seconds = instance.respond_to?(:health_check_interval_seconds) ? (instance.health_check_interval_seconds.respond_to?(:to_hash) ? instance.health_check_interval_seconds.to_hash : instance.health_check_interval_seconds) : nil
     health_check_path = instance.respond_to?(:health_check_path) ? (instance.health_check_path.respond_to?(:to_hash) ? instance.health_check_path.to_hash : instance.health_check_path) : nil
@@ -172,13 +49,12 @@ Puppet::Type.type(:aws_target_group).provide(:arm) do
     target_type = instance.respond_to?(:target_type) ? (instance.target_type.respond_to?(:to_hash) ? instance.target_type.to_hash : instance.target_type) : nil
     unhealthy_threshold_count = instance.respond_to?(:unhealthy_threshold_count) ? (instance.unhealthy_threshold_count.respond_to?(:to_hash) ? instance.unhealthy_threshold_count.to_hash : instance.unhealthy_threshold_count) : nil
     vpc_id = instance.respond_to?(:vpc_id) ? (instance.vpc_id.respond_to?(:to_hash) ? instance.vpc_id.to_hash : instance.vpc_id) : nil
-
     hash = {}
     hash[:ensure] = :present
     hash[:object] = instance
     hash[:name] = instance[:target_group_name]
-    hash[:target_group_name] = instance[:target_group_name]
-
+    hash[:tags] = instance.tags if instance.respond_to?(:tags) && !instance.tags.empty?
+    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) && !instance.tag_set.empty?
 
     hash[:health_check_enabled] = health_check_enabled unless health_check_enabled.nil?
     hash[:health_check_interval_seconds] = health_check_interval_seconds unless health_check_interval_seconds.nil?
@@ -201,76 +77,118 @@ Puppet::Type.type(:aws_target_group).provide(:arm) do
     hash
   end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.region)
-    client.create_target_group(build_hash)
-    @property_hash[:ensure] = :present
+  def namevar
+    :target_group_arn
+  end
+
+  def name?(hash)
+    !hash[namevar].nil? && !hash[namevar].empty?
+  end
+
+  def name_from_tag(instance)
+    tags = instance.respond_to?(:tags) ? instance.tags : nil
+    name = tags.find { |x| x.key == 'Name' } unless tags.nil?
+    name.value unless name.nil?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resource
+        update(context, name, should)
+      end
+    end
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+      client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
+      client.create_target_group(new_hash)
+    end
   rescue StandardError => ex
-    msg = ex.to_s.nil? ? ex.detail : ex
-    Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{msg} and backtrace is #{ex.backtrace}")
+    Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
+
+  def update(context, name, should)
+    context.updating(name) do
+      new_hash = symbolize(build_hash(should))
+      client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
+      client.modify_target_group(new_hash)
     end
-    @is_update = true
-    build_hash
-    Puppet.info('Calling Update on flush')
-    @property_hash[:ensure] = :present
-    []
+  rescue StandardError => ex
+    Puppet.alert("Exception during flush. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
 
-  def build_hash
+
+  def build_hash(resource)
     target_group = {}
-    if @is_create || @is_update
-      target_group[:health_check_enabled] = resource[:health_check_enabled] unless resource[:health_check_enabled].nil?
-      target_group[:health_check_interval_seconds] = resource[:health_check_interval_seconds] unless resource[:health_check_interval_seconds].nil?
-      target_group[:health_check_path] = resource[:health_check_path] unless resource[:health_check_path].nil?
-      target_group[:health_check_port] = resource[:health_check_port] unless resource[:health_check_port].nil?
-      target_group[:health_check_protocol] = resource[:health_check_protocol] unless resource[:health_check_protocol].nil?
-      target_group[:health_check_timeout_seconds] = resource[:health_check_timeout_seconds] unless resource[:health_check_timeout_seconds].nil?
-      target_group[:healthy_threshold_count] = resource[:healthy_threshold_count] unless resource[:healthy_threshold_count].nil?
-      target_group[:vpc_id] = resource[:vpc_id] unless resource[:vpc_id].nil?
-      target_group[:load_balancer_arn] = resource[:load_balancer_arn] unless resource[:load_balancer_arn].nil?
-      target_group[:matcher] = resource[:matcher] unless resource[:matcher].nil?
-      target_group[:name] = resource[:name] unless resource[:name].nil?
-      target_group[:names] = resource[:names] unless resource[:names].nil?
-      target_group[:page_size] = resource[:page_size] unless resource[:page_size].nil?
-      target_group[:port] = resource[:port] unless resource[:port].nil?
-      target_group[:protocol] = resource[:protocol] unless resource[:protocol].nil?
-      target_group[:target_group_arn] = resource[:target_group_arn] unless resource[:target_group_arn].nil?
-      target_group[:target_group_arns] = resource[:target_group_arns] unless resource[:target_group_arns].nil?
-      target_group[:target_type] = resource[:target_type] unless resource[:target_type].nil?
-      target_group[:unhealthy_threshold_count] = resource[:unhealthy_threshold_count] unless resource[:unhealthy_threshold_count].nil?
-      target_group[:vpc_id] = resource[:vpc_id] unless resource[:vpc_id].nil?
-    end
-    symbolize(target_group)
+    target_group['health_check_enabled'] = resource[:health_check_enabled] unless resource[:health_check_enabled].nil?
+    target_group['health_check_interval_seconds'] = resource[:health_check_interval_seconds] unless resource[:health_check_interval_seconds].nil?
+    target_group['health_check_path'] = resource[:health_check_path] unless resource[:health_check_path].nil?
+    target_group['health_check_port'] = resource[:health_check_port] unless resource[:health_check_port].nil?
+    target_group['health_check_protocol'] = resource[:health_check_protocol] unless resource[:health_check_protocol].nil?
+    target_group['health_check_timeout_seconds'] = resource[:health_check_timeout_seconds] unless resource[:health_check_timeout_seconds].nil?
+    target_group['healthy_threshold_count'] = resource[:healthy_threshold_count] unless resource[:healthy_threshold_count].nil?
+    target_group['load_balancer_arn'] = resource[:load_balancer_arn] unless resource[:load_balancer_arn].nil?
+    target_group['matcher'] = resource[:matcher] unless resource[:matcher].nil?
+    target_group['name'] = resource[:name] unless resource[:name].nil?
+    target_group['names'] = resource[:names] unless resource[:names].nil?
+    target_group['page_size'] = resource[:page_size] unless resource[:page_size].nil?
+    target_group['port'] = resource[:port] unless resource[:port].nil?
+    target_group['protocol'] = resource[:protocol] unless resource[:protocol].nil?
+    target_group['target_group_arn'] = resource[:target_group_arn] unless resource[:target_group_arn].nil?
+    target_group['target_group_arns'] = resource[:target_group_arns] unless resource[:target_group_arns].nil?
+    target_group['target_type'] = resource[:target_type] unless resource[:target_type].nil?
+    target_group['unhealthy_threshold_count'] = resource[:unhealthy_threshold_count] unless resource[:unhealthy_threshold_count].nil?
+    target_group['vpc_id'] = resource[:vpc_id] unless resource[:vpc_id].nil?
+    target_group
+  end
+
+  def build_key_values
+    key_values = {}
+
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_target_group')
-    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.region)
-    client.delete_target_group(namevar => @property_hash[namevar])
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
+    myhash = {}
+    @property_hash.each do |response|
+      if name_from_tag(response) == should[:title]
+        myhash = response
+      end
+    end
+    client.delete_target_group(namevar => myhash[namevar])
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -283,5 +201,3 @@ Puppet::Type.type(:aws_target_group).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

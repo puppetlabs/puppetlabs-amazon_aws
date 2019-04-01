@@ -1,0 +1,22 @@
+{
+	"description": "Authorizes the aggregator account and region to collect data from the source account and region. ",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"authorized_account_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"authorized_aws_region":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

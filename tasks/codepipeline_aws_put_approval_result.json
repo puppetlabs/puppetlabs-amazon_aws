@@ -1,0 +1,40 @@
+{
+	"description": "Provides the response to a manual approval request to AWS CodePipeline. Valid responses include Approved and Rejected.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"action_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"pipeline_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"result":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"stage_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

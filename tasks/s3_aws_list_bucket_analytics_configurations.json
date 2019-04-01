@@ -7,7 +7,7 @@
 		
 		
 		    
-			"continuation_token":{
+			"bucketanalytic":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -20,6 +20,12 @@
 			,
 		    
 			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"continuation_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

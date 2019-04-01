@@ -7,6 +7,18 @@
 		
 		
 		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"project_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"rules":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,13 +31,7 @@
 			}
 			,
 		    
-			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"project_arn":{
+			"max_devices":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

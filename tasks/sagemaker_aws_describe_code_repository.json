@@ -1,5 +1,5 @@
 {
-	"description": "Gets details about the specified git repository.",
+	"description": "Gets details about the specified Git repository.",
 	"input_method": "stdin",
 	"parameters":{
 		

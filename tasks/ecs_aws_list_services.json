@@ -7,6 +7,12 @@
 		
 		
 		    
+			"cluster":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"launch_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,12 +32,6 @@
 			,
 		    
 			"scheduling_strategy":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"cluster":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

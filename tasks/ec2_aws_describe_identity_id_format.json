@@ -7,13 +7,13 @@
 		
 		
 		    
-			"resource":{
+			"principal_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"principal_arn":{
+			"resource":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

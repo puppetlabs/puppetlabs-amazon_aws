@@ -7,6 +7,12 @@
 		
 		
 		    
+			"video":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"audio":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"thumbnails":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"video":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

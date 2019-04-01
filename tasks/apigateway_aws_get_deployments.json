@@ -7,6 +7,12 @@
 		
 		
 		    
+			"rest_api_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"limit":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -19,7 +25,7 @@
 			}
 			,
 		    
-			"rest_api_id":{
+			"restapi_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

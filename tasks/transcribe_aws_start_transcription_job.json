@@ -1,11 +1,23 @@
 {
-	"description": "Starts an asynchronous job to transcribe speech to text. Note that en-AU, en-UK, and fr-CA languages are in preview and are only available to whitelisted customers. ",
+	"description": "Starts an asynchronous job to transcribe speech to text. ",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"settings":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transcription_job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"language_code":{
 			   "description": "",
@@ -32,18 +44,6 @@
 			,
 		    
 			"output_bucket_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"settings":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"transcription_job_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

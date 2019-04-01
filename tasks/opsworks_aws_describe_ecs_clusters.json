@@ -7,12 +7,6 @@
 		
 		
 		    
-			"ecs_cluster_arns":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -26,6 +20,12 @@
 			,
 		    
 			"stack_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"ecs_cluster_arns":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

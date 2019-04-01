@@ -7,6 +7,12 @@
 		
 		
 		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"feedback":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

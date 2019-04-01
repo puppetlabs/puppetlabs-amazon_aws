@@ -7,12 +7,6 @@
 		
 		
 		    
-			"redshift_destination_update":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"s3_destination_update":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -50,6 +44,12 @@
 			,
 		    
 			"extended_s3_destination_update":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"redshift_destination_update":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

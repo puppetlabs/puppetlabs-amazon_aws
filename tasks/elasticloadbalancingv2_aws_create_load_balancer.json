@@ -7,12 +7,6 @@
 		
 		
 		    
-			"scheme":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"security_groups":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -50,6 +44,12 @@
 			,
 		    
 			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"scheme":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

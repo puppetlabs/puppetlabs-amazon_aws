@@ -7,13 +7,13 @@
 		
 		
 		    
-			"hsm_client_certificate_identifier":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"tags":{
+			"hsm_client_certificate_identifier":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

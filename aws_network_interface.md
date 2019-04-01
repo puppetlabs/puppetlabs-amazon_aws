@@ -13,6 +13,7 @@ aws_network_interface {
   dry_run => "DryRun (optional)",
   filters => "Filters (optional)",
   groups => "Groups (optional)",
+  subnet_id => "subnet_id (optional)",
   ipv6_address_count => "1234 (optional)",
   ipv6_addresses => "Ipv6Addresses (optional)",
   max_results => "1234 (optional)",
@@ -32,6 +33,7 @@ aws_network_interface {
 |dry_run | Boolean | false |
 |filters | FilterList | false |
 |groups | SecurityGroupIdStringList | false |
+|subnet_id | String | false |
 |ipv6_address_count | Integer | false |
 |ipv6_addresses | InstanceIpv6AddressList | false |
 |max_results | Integer | false |
@@ -51,7 +53,7 @@ Here is a list of endpoints that we use to create, read, update and delete the N
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/`|POST|<p>Creates a network interface in the specified subnet.</p> <p>For more information about network interfaces, see <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html">Elastic Network Interfaces</a> in the <i>Amazon Virtual Private Cloud User Guide</i>.</p>|CreateNetworkInterface|
+|Create|`/`|POST|<p>Creates a network interface in the specified subnet.</p> <p>For more information about network interfaces, see <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html">Elastic Network Interfaces</a> in the <i>Amazon Virtual Private Cloud User Guide</i>.</p>|CreateNetworkInterface|
 |List - list all|`/`|POST|<p>Describes one or more of your network interfaces.</p>|DescribeNetworkInterfaces|
 |List - get one|``||||
 |List - get list using params|`/`|POST|<p>Describes one or more of your network interfaces.</p>|DescribeNetworkInterfaces|

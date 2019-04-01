@@ -7,12 +7,6 @@
 		
 		
 		    
-			"additional_info":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"dry_run":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,6 +14,12 @@
 			,
 		    
 			"instance_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"additional_info":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

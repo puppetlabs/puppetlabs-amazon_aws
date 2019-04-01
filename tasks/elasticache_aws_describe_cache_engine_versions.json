@@ -7,12 +7,6 @@
 		
 		
 		    
-			"cache_parameter_group_family":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"default_only":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +32,12 @@
 			,
 		    
 			"max_records":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"cache_parameter_group_family":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

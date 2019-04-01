@@ -19,6 +19,12 @@
 			}
 			,
 		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"user_rules":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

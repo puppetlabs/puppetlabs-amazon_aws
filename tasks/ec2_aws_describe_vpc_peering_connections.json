@@ -19,6 +19,18 @@
 			}
 			,
 		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"next_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"vpc_peering_connection_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

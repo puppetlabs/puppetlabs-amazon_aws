@@ -1,11 +1,17 @@
 {
-	"description": "Returns the results of a single query execution specified by QueryExecutionId. This request does not execute the query but returns results. Use StartQueryExecution to run a query.",
+	"description": "Returns the results of a single query execution specified by QueryExecutionId if you have access to the workgroup in which the query ran. This request does not execute the query but returns results. Use StartQueryExecution to run a query.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"max_results":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"next_token":{
 			   "description": "",
@@ -14,12 +20,6 @@
 			,
 		    
 			"query_execution_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"max_results":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

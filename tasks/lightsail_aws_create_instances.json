@@ -7,6 +7,24 @@
 		
 		
 		    
+			"custom_image_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"instance_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key_pair_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,24 +50,6 @@
 			,
 		    
 			"bundle_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"custom_image_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"instance_names":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"key_pair_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

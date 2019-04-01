@@ -1,0 +1,28 @@
+{
+	"description": "Sets the Data Catalog resource policy for access control.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"policy_exists_condition":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_hash_condition":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"policy_in_json":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

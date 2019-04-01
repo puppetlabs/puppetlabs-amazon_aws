@@ -7,31 +7,13 @@
 		
 		
 		    
-			"downlink_bandwidth_bits":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"downlink_jitter_ms":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"uplink_bandwidth_bits":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"uplink_delay_ms":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"uplink_jitter_ms":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,6 +37,12 @@
 			}
 			,
 		    
+			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"project_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -67,13 +55,25 @@
 			}
 			,
 		    
-			"uplink_jitter_ms":{
+			"uplink_bandwidth_bits":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"downlink_bandwidth_bits":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"downlink_delay_ms":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"downlink_jitter_ms":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

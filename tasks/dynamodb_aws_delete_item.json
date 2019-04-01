@@ -7,7 +7,19 @@
 		
 		
 		    
-			"return_consumed_capacity":{
+			"conditional_operator":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"return_item_collection_metrics":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +31,7 @@
 			}
 			,
 		    
-			"conditional_operator":{
+			"condition_expression":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -37,31 +49,19 @@
 			}
 			,
 		    
-			"return_item_collection_metrics":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"table_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"condition_expression":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"expression_attribute_values":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"key":{
+			"return_consumed_capacity":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"table_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

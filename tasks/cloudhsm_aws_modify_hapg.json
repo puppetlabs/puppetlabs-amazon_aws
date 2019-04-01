@@ -7,6 +7,12 @@
 		
 		
 		    
+			"hapg_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"label":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"partition_serial_list":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"hapg_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

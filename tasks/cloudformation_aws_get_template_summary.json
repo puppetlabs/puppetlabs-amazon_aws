@@ -7,6 +7,12 @@
 		
 		
 		    
+			"stack_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"stack_set_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"template_url":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"stack_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -1,11 +1,23 @@
 {
-	"description": "The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action.",
+	"description": "The StartOutboundVoiceContact operation initiates a contact flow to place an outbound call to a customer. If you are using an IAM account, it must have permission to the connect:StartOutboundVoiceContact action. There is a 60 second dialing timeout for this operation. If the call is not connected after 60 seconds, the call fails.",
 	"input_method": "stdin",
 	"parameters":{
 		
 		
 		
 		
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contact_flow_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
 		    
 			"destination_phone_number":{
 			   "description": "",
@@ -32,18 +44,6 @@
 			,
 		    
 			"attributes":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"contact_flow_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

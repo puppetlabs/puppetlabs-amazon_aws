@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"write_segment_request":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

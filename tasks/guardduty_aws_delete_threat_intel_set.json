@@ -13,6 +13,18 @@
 			}
 			,
 		    
+			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"threat_intel_set_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"threat_intel_set_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

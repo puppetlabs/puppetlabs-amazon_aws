@@ -1,5 +1,5 @@
 {
-	"description": "Adds an alias to the set of a given member of Amazon WorkMail.",
+	"description": "Adds an alias to the set of a given member (user or group) of Amazon WorkMail.",
 	"input_method": "stdin",
 	"parameters":{
 		

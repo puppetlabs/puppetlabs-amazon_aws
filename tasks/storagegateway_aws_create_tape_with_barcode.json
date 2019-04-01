@@ -25,6 +25,12 @@
 			}
 			,
 		    
+			"pool_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"tape_barcode":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

@@ -1,5 +1,5 @@
 {
-	"description": "Deletes permissions granted to a user or group.",
+	"description": "Deletes permissions granted to a member (user or group).",
 	"input_method": "stdin",
 	"parameters":{
 		

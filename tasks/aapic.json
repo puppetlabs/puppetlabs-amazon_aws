@@ -1,0 +1,28 @@
+{
+	"description": "Configures the email template for the user enrollment invitation with the specified attributes.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"private_skill_ids":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"contact_email":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"organization_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,142 +1,118 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_target_group',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_target_group) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_target_group you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:health_check_enabled) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:health_check_interval_seconds, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:health_check_path) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:health_check_port) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:health_check_protocol) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:health_check_timeout_seconds, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:healthy_threshold_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:load_balancer_arn) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:matcher) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:names, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:page_size) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:port) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:protocol) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:target_group_arn) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:target_group_arns, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:target_type) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:unhealthy_threshold_count) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    health_check_enabled: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    health_check_interval_seconds: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    health_check_path: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    health_check_port: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    health_check_protocol: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    health_check_timeout_seconds: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    healthy_threshold_count: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    load_balancer_arn: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    matcher: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    names: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    page_size: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    port: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    protocol: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    target_group_arn: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    target_group_arns: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    target_type: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    unhealthy_threshold_count: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

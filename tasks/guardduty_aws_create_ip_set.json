@@ -7,18 +7,6 @@
 		
 		
 		    
-			"activate":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +26,24 @@
 			,
 		    
 			"name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"activate":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,18 +7,6 @@
 		
 		
 		    
-			"db_instance_class":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"duration":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -49,13 +37,25 @@
 			}
 			,
 		    
-			"multi_az":{
+			"reserved_db_instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"reserved_db_instance_id":{
+			"db_instance_class":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"duration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"multi_az":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

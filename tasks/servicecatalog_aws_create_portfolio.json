@@ -7,12 +7,6 @@
 		
 		
 		    
-			"idempotency_token":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"provider_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,6 +32,12 @@
 			,
 		    
 			"display_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"idempotency_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

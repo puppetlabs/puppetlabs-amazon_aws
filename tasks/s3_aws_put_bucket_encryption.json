@@ -1,0 +1,40 @@
+{
+	"description": "Creates a new server-side encryption configuration (or replaces an existing one, if present).",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"bucket":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"content_md5":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"encryption":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"server_side_encryption_configuration":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucketencryptio":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

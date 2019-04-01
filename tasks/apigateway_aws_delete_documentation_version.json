@@ -7,7 +7,19 @@
 		
 		
 		    
+			"doc_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"documentation_version":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"restapi_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

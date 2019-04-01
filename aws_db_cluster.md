@@ -15,6 +15,7 @@ aws_db_cluster {
   backup_retention_period => "BackupRetentionPeriod (optional)",
   character_set_name => "character_set_name (optional)",
   cloudwatch_logs_export_configuration => $aws_cloudwatch_logs_export_configuration
+  copy_tags_to_snapshot => "CopyTagsToSnapshot (optional)",
   database_name => "database_name (optional)",
   db_cluster_identifier => "db_cluster_identifier (optional)",
   db_cluster_parameter_group_name => "db_cluster_parameter_group_name (optional)",
@@ -33,7 +34,7 @@ aws_db_cluster {
   master_username => "master_username (optional)",
   master_user_password => "master_user_password (optional)",
   max_records => "MaxRecords (optional)",
-  database_name => "database_name (optional)",
+  option_group_name => "option_group_name (optional)",
   new_db_cluster_identifier => "new_db_cluster_identifier (optional)",
   option_group_name => "option_group_name (optional)",
   port => "Port (optional)",
@@ -53,10 +54,11 @@ aws_db_cluster {
 | ------------- | ------------- | ------------- |
 |apply_immediately | Boolean | false |
 |availability_zones | AvailabilityZones | false |
-|backtrack_window | [LongOptional](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=longoptional) | false |
+|backtrack_window | [LongOptional](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
 |backup_retention_period | IntegerOptional | false |
 |character_set_name | String | false |
-|cloudwatch_logs_export_configuration | [CloudwatchLogsExportConfiguration](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=cloudwatchlogsexportconfiguration) | false |
+|cloudwatch_logs_export_configuration | [CloudwatchLogsExportConfiguration](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
+|copy_tags_to_snapshot | BooleanOptional | false |
 |database_name | String | false |
 |db_cluster_identifier | String | false |
 |db_cluster_parameter_group_name | String | false |
@@ -75,7 +77,7 @@ aws_db_cluster {
 |master_username | String | false |
 |master_user_password | String | false |
 |max_records | IntegerOptional | false |
-|database_name | String | false |
+|option_group_name | String | false |
 |new_db_cluster_identifier | String | false |
 |option_group_name | String | false |
 |port | IntegerOptional | false |
@@ -83,7 +85,7 @@ aws_db_cluster {
 |preferred_maintenance_window | String | false |
 |pre_signed_url | String | false |
 |replication_source_identifier | String | false |
-|scaling_configuration | [ScalingConfiguration](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=scalingconfiguration) | false |
+|scaling_configuration | [ScalingConfiguration](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
 |skip_final_snapshot | Boolean | false |
 |storage_encrypted | BooleanOptional | false |
 |tags | TagList | false |
@@ -97,9 +99,9 @@ Here is a list of endpoints that we use to create, read, update and delete the D
 
 | Operation | Path | Verb | Description | OperationID |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-|Create|`/`|POST|<p>Creates a new Amazon Aurora DB cluster.</p> <p>You can use the <code>ReplicationSourceIdentifier</code> parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by <code>ReplicationSourceIdentifier</code> is encrypted, you must also specify the <code>PreSignedUrl</code> parameter.</p> <p>For more information on Amazon Aurora, see <a href="http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p>|CreateDBCluster|
-|List - list all|`/`|POST|<p>Returns information about provisioned Aurora DB clusters. This API supports pagination.</p> <p>For more information on Amazon Aurora, see <a href="http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p>|DescribeDBClusters|
+|Create|`/`|POST|<p>Creates a new Amazon Aurora DB cluster.</p> <p>You can use the <code>ReplicationSourceIdentifier</code> parameter to create the DB cluster as a Read Replica of another DB cluster or Amazon RDS MySQL DB instance. For cross-region replication where the DB cluster identified by <code>ReplicationSourceIdentifier</code> is encrypted, you must also specify the <code>PreSignedUrl</code> parameter.</p> <p>For more information on Amazon Aurora, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>|CreateDBCluster|
+|List - list all|`/`|POST|<p>Returns information about provisioned Aurora DB clusters. This API supports pagination.</p> <p>For more information on Amazon Aurora, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>|DescribeDBClusters|
 |List - get one|``||||
-|List - get list using params|`/`|POST|<p>Returns information about provisioned Aurora DB clusters. This API supports pagination.</p> <p>For more information on Amazon Aurora, see <a href="http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p>|DescribeDBClusters|
-|Update|`/`|POST|<p>Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see <a href="http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p>|ModifyDBCluster|
-|Delete|`/`|POST|<p>The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.</p> <p/> <p>For more information on Amazon Aurora, see <a href="http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p>|DeleteDBCluster|
+|List - get list using params|`/`|POST|<p>Returns information about provisioned Aurora DB clusters. This API supports pagination.</p> <p>For more information on Amazon Aurora, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>|DescribeDBClusters|
+|Update|`/`|POST|<p>Modify a setting for an Amazon Aurora DB cluster. You can change one or more database configuration parameters by specifying these parameters and the new values in the request. For more information on Amazon Aurora, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>|ModifyDBCluster|
+|Delete|`/`|POST|<p>The DeleteDBCluster action deletes a previously provisioned DB cluster. When you delete a DB cluster, all automated backups for that DB cluster are deleted and can't be recovered. Manual DB cluster snapshots of the specified DB cluster are not deleted.</p> <p/> <p>For more information on Amazon Aurora, see <a href="https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/CHAP_AuroraOverview.html"> What Is Amazon Aurora?</a> in the <i>Amazon Aurora User Guide.</i> </p> <note> <p>This action only applies to Aurora DB clusters.</p> </note>|DeleteDBCluster|

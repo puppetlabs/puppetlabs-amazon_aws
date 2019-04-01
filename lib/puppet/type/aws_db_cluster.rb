@@ -1,418 +1,353 @@
-require 'puppet/parameter/boolean'
+require 'puppet/resource_api'
 
-# AWS provider type
+Puppet::ResourceApi.register_type(
+  name: 'aws_db_cluster',
+  desc: <<-EOSRAPI,
 
-Puppet::Type.newtype(:aws_db_cluster) do
-  @doc = ''
+  EOSRAPI
+  attributes: {
+    ensure: {
+      type: 'Enum[present, absent]',
+      desc: 'Whether this apt key should be present or absent on the target system.',
+    },
+    name: {
+      type: 'String',
+      behaviour: :namevar,
+      desc: '',
+    },
 
-  ensurable
 
-  validate do
-    required_properties = []
-    required_properties.each do |property|
-      # We check for both places so as to cover the puppet resource path as well
-      if self[:ensure] == :present && self[property].nil? && provider.send(property) == :absent
-        raise Puppet::Error, "In aws_db_cluster you must provide a value for #{property}"
-      end
-    end
-  end
-  newproperty(:allocated_storage) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:apply_immediately) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:associated_roles) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:availability_zones, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:backtrack_consumed_change_records) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:backtrack_window) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:backup_retention_period) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:capacity) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:character_set_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:clone_group_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:cloudwatch_logs_export_configuration) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:cluster_create_time) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:custom_endpoints) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:database_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_cluster_arn) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_cluster_identifier) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_cluster_members) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_cluster_option_group_memberships) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_cluster_parameter_group) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_cluster_parameter_group_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_cluster_resource_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_subnet_group) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:db_subnet_group_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:deletion_protection) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:earliest_backtrack_time) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:earliest_restorable_time) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:enable_cloudwatch_logs_exports, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:enabled_cloudwatch_logs_exports) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:enable_http_endpoint) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:enable_iam_database_authentication) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:endpoint) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:engine) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:engine_mode) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:engine_version) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:filters, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:final_db_snapshot_identifier) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:global_cluster_identifier) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:hosted_zone_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:http_endpoint_enabled) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:iam_database_authentication_enabled) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:kms_key_id) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:latest_restorable_time) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:master_username) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:master_user_password) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:max_records) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:multi_az) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:new_db_cluster_identifier) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:option_group_name) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:percent_progress) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:port) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:preferred_backup_window) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:preferred_maintenance_window) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:pre_signed_url) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:reader_endpoint) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:read_replica_identifiers) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:replication_source_identifier) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:scaling_configuration) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:scaling_configuration_info) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:skip_final_snapshot) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:status) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:storage_encrypted) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:tags, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_security_group_ids, array_matching: :all) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
-  newproperty(:vpc_security_groups) do
-    desc ''
-    validate do |x|
-      true
-    end
-  end
 
-  newparam(:name) do
-    isnamevar
-    desc 'The namevar for this resource in AWS'
-    validate do |x|
-      true
-    end
-  end
+    allocated_storage: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    apply_immediately: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    associated_roles: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    availability_zones: {
+      type: 'Optional[Tuple]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    backtrack_consumed_change_records: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    backtrack_window: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    backup_retention_period: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    capacity: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    character_set_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    clone_group_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    cloudwatch_logs_export_configuration: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    cluster_create_time: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    copy_tags_to_snapshot: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    custom_endpoints: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    database_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_cluster_arn: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_cluster_identifier: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_cluster_members: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_cluster_option_group_memberships: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_cluster_parameter_group: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_cluster_parameter_group_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_cluster_resource_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_subnet_group: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    db_subnet_group_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    deletion_protection: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    earliest_backtrack_time: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    earliest_restorable_time: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    enable_cloudwatch_logs_exports: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    enabled_cloudwatch_logs_exports: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    enable_http_endpoint: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    enable_iam_database_authentication: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    endpoint: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    engine: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    engine_mode: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    engine_version: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    filters: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    final_db_snapshot_identifier: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    global_cluster_identifier: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    hosted_zone_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    http_endpoint_enabled: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    iam_database_authentication_enabled: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    kms_key_id: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    latest_restorable_time: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    master_username: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    master_user_password: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    max_records: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    multi_az: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    new_db_cluster_identifier: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    option_group_name: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    percent_progress: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    port: {
+      type: 'Optional[Integer]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    preferred_backup_window: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    preferred_maintenance_window: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    pre_signed_url: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    reader_endpoint: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    read_replica_identifiers: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    replication_source_identifier: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    scaling_configuration: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    scaling_configuration_info: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    skip_final_snapshot: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    status: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    storage_encrypted: {
+      type: 'Optional[Boolean]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    tags: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_security_group_ids: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
+    vpc_security_groups: {
+      type: 'Optional[String]',
+      desc: '',
+      behaviour: :init_only,
+    },
 
-  newparam(:tags) do
-    desc 'Tags are required for all AWS resources in Puppet'
-    validate do |x|
-      true
-    end
-  end
-end
+  },
+
+  autorequires: {
+    file: '$source', # will evaluate to the value of the `source` attribute
+    package: 'apt',
+  },
+)

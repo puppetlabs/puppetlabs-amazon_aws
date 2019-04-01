@@ -24,7 +24,7 @@ aws_egress_only_internet_gateway {
 | ------------- | ------------- | ------------- |
 |client_token | String | false |
 |dry_run | Boolean | false |
-|egress_only_internet_gateway_id | [EgressOnlyInternetGatewayId](https://docs.aws.amazon.com/search/doc-search.html?searchPath=documentation&searchQuery=egressonlyinternetgatewayid) | false |
+|egress_only_internet_gateway_id | [EgressOnlyInternetGatewayId](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/) | false |
 |egress_only_internet_gateway_ids | EgressOnlyInternetGatewayIdList | false |
 |vpc_id | String | false |
 |max_results | Integer | false |

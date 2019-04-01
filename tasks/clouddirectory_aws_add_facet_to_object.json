@@ -7,6 +7,12 @@
 		
 		
 		    
+			"schema_facet":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"directory_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -20,12 +26,6 @@
 			,
 		    
 			"object_reference":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"schema_facet":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

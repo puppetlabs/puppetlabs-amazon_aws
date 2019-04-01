@@ -7,7 +7,7 @@
 		
 		
 		    
-			"enable_ecs_managed_tags":{
+			"cluster":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,13 +19,13 @@
 			}
 			,
 		    
-			"overrides":{
+			"network_configuration":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"started_by":{
+			"overrides":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +43,7 @@
 			}
 			,
 		    
-			"network_configuration":{
+			"enable_ecs_managed_tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,13 +55,13 @@
 			}
 			,
 		    
-			"task_definition":{
+			"started_by":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"cluster":{
+			"task_definition":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

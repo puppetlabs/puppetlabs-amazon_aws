@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"api_key":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"include_value":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

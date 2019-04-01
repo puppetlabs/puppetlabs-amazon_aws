@@ -7,12 +7,6 @@
 		
 		
 		    
-			"kms_key_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"media_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -25,6 +19,12 @@
 			}
 			,
 		    
+			"tags":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"data_retention_in_hours":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,6 +32,12 @@
 			,
 		    
 			"device_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_key_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

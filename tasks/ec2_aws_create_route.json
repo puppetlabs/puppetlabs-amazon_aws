@@ -7,13 +7,31 @@
 		
 		
 		    
-			"destination_ipv6_cidr_block":{
+			"network_interface_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"route_table_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"transit_gateway_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"dry_run":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nat_gateway_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -31,7 +49,7 @@
 			}
 			,
 		    
-			"nat_gateway_id":{
+			"instance_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,25 +67,7 @@
 			}
 			,
 		    
-			"instance_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"network_interface_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"route_table_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"transit_gateway_id":{
+			"destination_ipv6_cidr_block":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

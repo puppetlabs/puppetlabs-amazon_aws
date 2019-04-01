@@ -7,12 +7,6 @@
 		
 		
 		    
-			"key":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"projection_expression":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -44,6 +38,12 @@
 			,
 		    
 			"expression_attribute_names":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

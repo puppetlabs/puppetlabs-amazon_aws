@@ -7,6 +7,12 @@
 		
 		
 		    
+			"window_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"filters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -32,12 +38,6 @@
 			,
 		    
 			"targets":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"window_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

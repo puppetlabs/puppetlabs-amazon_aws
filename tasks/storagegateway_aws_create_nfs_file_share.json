@@ -7,25 +7,7 @@
 		
 		
 		    
-			"guess_mime_type_enabled":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"kms_encrypted":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"squash":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"client_token":{
+			"kms_key":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -43,7 +25,19 @@
 			}
 			,
 		    
-			"kms_key":{
+			"client_list":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"kms_encrypted":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"nfs_file_share_defaults":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -55,19 +49,31 @@
 			}
 			,
 		    
-			"role":{
+			"squash":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"client_list":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"nfs_file_share_defaults":{
+			"client_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"guess_mime_type_enabled":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"location_arn":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -85,7 +91,7 @@
 			}
 			,
 		    
-			"location_arn":{
+			"role":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

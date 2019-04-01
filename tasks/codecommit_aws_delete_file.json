@@ -7,12 +7,6 @@
 		
 		
 		    
-			"keep_empty_folders":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -50,6 +44,12 @@
 			,
 		    
 			"file_path":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"keep_empty_folders":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

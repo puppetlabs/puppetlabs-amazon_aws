@@ -7,13 +7,13 @@
 		
 		
 		    
-			"application_name":{
+			"new_application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"new_application_name":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

@@ -7,13 +7,13 @@
 		
 		
 		    
-			"certificate_signing_request":{
+			"set_as_active":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"set_as_active":{
+			"certificate_signing_request":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

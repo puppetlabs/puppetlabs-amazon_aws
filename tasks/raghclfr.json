@@ -1,0 +1,22 @@
+{
+	"description": "Gets the reason that a specified health check failed most recently.",
+	"input_method": "stdin",
+	"parameters":{
+		
+		
+		
+		
+		    
+			"health_check_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"health_check_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			
+	}
+}

@@ -1,5 +1,5 @@
 {
-	"description": "Lists the mailbox permissions associated with a mailbox.",
+	"description": "Lists the mailbox permissions associated with a user, group, or resource mailbox.",
 	"input_method": "stdin",
 	"parameters":{
 		

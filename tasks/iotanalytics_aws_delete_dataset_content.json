@@ -13,6 +13,12 @@
 			}
 			,
 		    
+			"dataset_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"version_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"

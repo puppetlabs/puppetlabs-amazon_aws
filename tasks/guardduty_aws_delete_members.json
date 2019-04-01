@@ -7,13 +7,19 @@
 		
 		
 		    
-			"account_ids":{
+			"detector_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
 			"detector_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"account_ids":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

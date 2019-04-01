@@ -1,118 +1,36 @@
-require 'json'
-require 'retries'
+require 'puppet/resource_api'
+
 
 require 'aws-sdk-elasticloadbalancingv2'
 
 
-Puppet::Type.type(:aws_load_balancer).provide(:arm) do
-  mk_resource_methods
 
-  def initialize(value = {})
-    super(value)
-    @property_flush = {}
-    @is_create = false
-    @is_delete = false
+
+
+
+# AwsLoadBalancer class
+class Puppet::Provider::AwsLoadBalancer::AwsLoadBalancer
+  def canonicalize(_context, _resources)
+    # nout to do here but seems we need to implement it
+    resources
   end
+  def get(context)
 
-  # ELB properties
-  def namevar
-    :load_balancer_arn
-  end
-
-  # Properties
-
-  def ip_address_type=(value)
-    Puppet.info("ip_address_type setter called to change to #{value}")
-    @property_flush[:ip_address_type] = value
-  end
-
-  def load_balancer_arn=(value)
-    Puppet.info("load_balancer_arn setter called to change to #{value}")
-    @property_flush[:load_balancer_arn] = value
-  end
-
-  def load_balancer_arns=(value)
-    Puppet.info("load_balancer_arns setter called to change to #{value}")
-    @property_flush[:load_balancer_arns] = value
-  end
-
-  def names=(value)
-    Puppet.info("names setter called to change to #{value}")
-    @property_flush[:names] = value
-  end
-
-  def page_size=(value)
-    Puppet.info("page_size setter called to change to #{value}")
-    @property_flush[:page_size] = value
-  end
-
-  def scheme=(value)
-    Puppet.info("scheme setter called to change to #{value}")
-    @property_flush[:scheme] = value
-  end
-
-  def security_groups=(value)
-    Puppet.info("security_groups setter called to change to #{value}")
-    @property_flush[:security_groups] = value
-  end
-
-  def subnet_mappings=(value)
-    Puppet.info("subnet_mappings setter called to change to #{value}")
-    @property_flush[:subnet_mappings] = value
-  end
-
-  def subnets=(value)
-    Puppet.info("subnets setter called to change to #{value}")
-    @property_flush[:subnets] = value
-  end
-
-  def tags=(value)
-    Puppet.info("tags setter called to change to #{value}")
-    @property_flush[:tags] = value
-  end
-
-  def type=(value)
-    Puppet.info("type setter called to change to #{value}")
-    @property_flush[:type] = value
-  end
-
-
-  def name=(value)
-    Puppet.info("name setter called to change to #{value}")
-    @property_flush[:name] = value
-  end
-
-  def self.region
-    ENV['AWS_REGION'] || 'us-west-2'
-  end
-
-  def self.name?(hash)
-    !hash[:load_balancer_name].nil? && !hash[:load_balancer_name].empty?
-  end
-
-  def self.instances
     Puppet.debug("Calling instances for region #{region}")
     client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
-
     all_instances = []
     client.describe_load_balancers.each do |response|
       response.load_balancers.each do |i|
         hash = instance_to_hash(i)
-        all_instances << new(hash) if name?(hash)
+        all_instances << hash if name?(hash)
       end
     end
+    @property_hash = all_instances
+    context.debug("Completed get, returning hash #{all_instances}")
     all_instances
   end
 
-  def self.prefetch(resources)
-    instances.each do |prov|
-      if (resource = (resources.find { |k, _| k.casecmp(prov.name).zero? } || [])[1])
-        resource.provider = prov
-      end
-    end
-  end
-
-  def self.instance_to_hash(instance)
+  def instance_to_hash(instance)
     ip_address_type = instance.respond_to?(:ip_address_type) ? (instance.ip_address_type.respond_to?(:to_hash) ? instance.ip_address_type.to_hash : instance.ip_address_type) : nil
     load_balancer_arn = instance.respond_to?(:load_balancer_arn) ? (instance.load_balancer_arn.respond_to?(:to_hash) ? instance.load_balancer_arn.to_hash : instance.load_balancer_arn) : nil
     load_balancer_arns = instance.respond_to?(:load_balancer_arns) ? (instance.load_balancer_arns.respond_to?(:to_hash) ? instance.load_balancer_arns.to_hash : instance.load_balancer_arns) : nil
@@ -124,12 +42,12 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
     subnets = instance.respond_to?(:subnets) ? (instance.subnets.respond_to?(:to_hash) ? instance.subnets.to_hash : instance.subnets) : nil
     tags = instance.respond_to?(:tags) ? (instance.tags.respond_to?(:to_hash) ? instance.tags.to_hash : instance.tags) : nil
     type = instance.respond_to?(:type) ? (instance.type.respond_to?(:to_hash) ? instance.type.to_hash : instance.type) : nil
-
     hash = {}
     hash[:ensure] = :present
     hash[:object] = instance
     hash[:name] = instance[:load_balancer_name]
-    hash[:load_balancer_name] = instance[:load_balancer_name]
+    hash[:tags] = instance.tags if instance.respond_to?(:tags) && !instance.tags.empty?
+    hash[:tag_set] = instance.tag_set if instance.respond_to?(:tag_set) && !instance.tag_set.empty?
 
     hash[:ip_address_type] = ip_address_type unless ip_address_type.nil?
     hash[:load_balancer_arn] = load_balancer_arn unless load_balancer_arn.nil?
@@ -145,68 +63,103 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
     hash
   end
 
-  def create
-    @is_create = true
-    Puppet.info("Entered create for resource #{resource[:name]} of type Instances")
-    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.region)
-    client.create_load_balancer(build_hash)
-    @property_hash[:ensure] = :present
+  def namevar
+    :load_balancer_arn
+  end
+
+  def name?(hash)
+    !hash[namevar].nil? && !hash[namevar].empty?
+  end
+
+  def name_from_tag(instance)
+    tags = instance.respond_to?(:tags) ? instance.tags : nil
+    name = tags.find { |x| x.key == 'Name' } unless tags.nil?
+    name.value unless name.nil?
+  end
+
+  def set(context, changes, noop: false)
+    context.debug('Entered set')
+    changes.each do |name, change|
+      context.debug("set change with #{name} and #{change}")
+      is = change.key?(:is) ? change[:is] : get(context).find { |key| key[:id] == name }
+      should = change[:should]
+      is = { name: name, ensure: 'absent' } if is.nil?
+      should = { name: name, ensure: 'absent' } if should.nil?
+      if is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'present'
+        create(context, name, should) unless noop
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'absent'
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+      elsif is[:ensure].to_s == 'absent' && should[:ensure].to_s == 'absent'
+        context.failed(name, message: 'Unexpected absent to absent change')
+      elsif is[:ensure].to_s == 'present' && should[:ensure].to_s == 'present'
+        # if update method exists call update, else delete and recreate the resource
+        context.deleting(name) do
+          delete(should) unless noop
+        end
+        create(context, name, should) unless noop
+      end
+    end
+  end
+
+  def region
+    ENV['AWS_REGION'] || 'us-west-2'
+  end
+
+  def create(context, name, should)
+    context.creating(name) do
+      new_hash = symbolize(build_hash(should))
+      client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
+      client.create_load_balancer(new_hash)
+    end
   rescue StandardError => ex
-    msg = ex.to_s.nil? ? ex.detail : ex
-    Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{msg} and backtrace is #{ex.backtrace}")
+    Puppet.alert("Exception during create. The state of the resource is unknown.  ex is #{ex} and backtrace is #{ex.backtrace}")
     raise
   end
 
-  def flush
-    Puppet.info("Entered flush for resource #{name} of type <no value> - creating ? #{@is_create}, deleting ? #{@is_delete}")
-    if @is_create || @is_delete
-      return # we've already done the create or delete
-    end
-    @is_update = true
-    build_hash
-    Puppet.info('Calling Update on flush')
-    @property_hash[:ensure] = :present
-    []
+
+
+  def build_hash(resource)
+    load_balancer = {}
+    load_balancer['ip_address_type'] = resource[:ip_address_type] unless resource[:ip_address_type].nil?
+    load_balancer['load_balancer_arn'] = resource[:load_balancer_arn] unless resource[:load_balancer_arn].nil?
+    load_balancer['load_balancer_arns'] = resource[:load_balancer_arns] unless resource[:load_balancer_arns].nil?
+    load_balancer['name'] = resource[:name] unless resource[:name].nil?
+    load_balancer['names'] = resource[:names] unless resource[:names].nil?
+    load_balancer['page_size'] = resource[:page_size] unless resource[:page_size].nil?
+    load_balancer['scheme'] = resource[:scheme] unless resource[:scheme].nil?
+    load_balancer['security_groups'] = resource[:security_groups] unless resource[:security_groups].nil?
+    load_balancer['subnet_mappings'] = resource[:subnet_mappings] unless resource[:subnet_mappings].nil?
+    load_balancer['subnets'] = resource[:subnets] unless resource[:subnets].nil?
+    load_balancer['tags'] = resource[:tags] unless resource[:tags].nil?
+    load_balancer['type'] = resource[:type] unless resource[:type].nil?
+    load_balancer
   end
 
-  def build_hash
-    load_balancer = {}
-    if @is_create || @is_update
-      load_balancer[:ip_address_type] = resource[:ip_address_type] unless resource[:ip_address_type].nil?
-      load_balancer[:load_balancer_arn] = resource[:load_balancer_arn] unless resource[:load_balancer_arn].nil?
-      load_balancer[:load_balancer_arns] = resource[:load_balancer_arns] unless resource[:load_balancer_arns].nil?
-      load_balancer[:name] = resource[:name] unless resource[:name].nil?
-      load_balancer[:names] = resource[:names] unless resource[:names].nil?
-      load_balancer[:page_size] = resource[:page_size] unless resource[:page_size].nil?
-      load_balancer[:scheme] = resource[:scheme] unless resource[:scheme].nil?
-      load_balancer[:security_groups] = resource[:security_groups] unless resource[:security_groups].nil?
-      load_balancer[:subnet_mappings] = resource[:subnet_mappings] unless resource[:subnet_mappings].nil?
-      load_balancer[:subnets] = resource[:subnets] unless resource[:subnets].nil?
-      load_balancer[:tags] = resource[:tags] unless resource[:tags].nil?
-      load_balancer[:type] = resource[:type] unless resource[:type].nil?
-    end
-    symbolize(load_balancer)
+  def build_key_values
+    key_values = {}
+
+    key_values
   end
 
   def destroy
-    Puppet.info("Entered delete for resource #{resource[:name]}")
-    @is_delete = true
-    Puppet.info('Calling operation delete_load_balancer')
-    client = Aws::ElasticLoadBalancingV2::Client.new(region: self.class.region)
-    client.delete_load_balancer(namevar => @property_hash[namevar])
-    @property_hash[:ensure] = :absent
+    delete(resource)
   end
 
-
-  # Shared funcs
-  def exists?
-    return_value = @property_hash[:ensure] && @property_hash[:ensure] != :absent
-    Puppet.info("Checking if resource #{name} of type <no value> exists, returning #{return_value}")
-    return_value
+  def delete(should)
+    client = Aws::ElasticLoadBalancingV2::Client.new(region: region)
+    myhash = {}
+    @property_hash.each do |response|
+      if name_from_tag(response) == should[:title]
+        myhash = response
+      end
+    end
+    client.delete_load_balancer(namevar => myhash[namevar])
+  rescue StandardError => ex
+    Puppet.alert("Exception during destroy. ex is #{ex} and backtrace is #{ex.backtrace}")
+    raise
   end
-
-  attr_reader :property_hash
-
 
   def symbolize(obj)
     return obj.reduce({}) do |memo, (k, v)|
@@ -219,5 +172,3 @@ Puppet::Type.type(:aws_load_balancer).provide(:arm) do
     obj
   end
 end
-
-# this is the end of the ruby class

@@ -1,5 +1,5 @@
 {
-	"description": "Lists the deployment groups for an application registered with the applicable IAM user or AWS account.",
+	"description": "Lists the deployment groups for an application registered with the IAM user or AWS account.",
 	"input_method": "stdin",
 	"parameters":{
 		
@@ -7,13 +7,13 @@
 		
 		
 		    
-			"application_name":{
+			"next_token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"next_token":{
+			"application_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

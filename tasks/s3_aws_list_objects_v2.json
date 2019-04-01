@@ -7,7 +7,25 @@
 		
 		
 		    
+			"max_keys":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"bucketlist_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"continuation_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"delimiter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -25,31 +43,7 @@
 			}
 			,
 		    
-			"max_keys":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"prefix":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"start_after":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
 			"bucket":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"delimiter":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -61,7 +55,19 @@
 			}
 			,
 		    
+			"prefix":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"request_payer":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"start_after":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

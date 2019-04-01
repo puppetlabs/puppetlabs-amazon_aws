@@ -7,6 +7,12 @@
 		
 		
 		    
+			"ml_model_type":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"parameters":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -38,12 +44,6 @@
 			,
 		    
 			"ml_model_name":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"ml_model_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

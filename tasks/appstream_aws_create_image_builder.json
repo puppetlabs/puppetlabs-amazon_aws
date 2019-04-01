@@ -7,7 +7,7 @@
 		
 		
 		    
-			"domain_join_info":{
+			"display_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,19 +19,25 @@
 			}
 			,
 		    
+			"image_arn":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"image_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"name":{
+			"instance_type":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"vpc_config":{
+			"tags":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -49,19 +55,19 @@
 			}
 			,
 		    
-			"display_name":{
+			"domain_join_info":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"image_arn":{
+			"name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"instance_type":{
+			"vpc_config":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

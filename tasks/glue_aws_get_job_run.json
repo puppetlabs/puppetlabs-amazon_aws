@@ -7,6 +7,12 @@
 		
 		
 		    
+			"job_name":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"predecessors_included":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
@@ -14,12 +20,6 @@
 			,
 		    
 			"run_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"job_name":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

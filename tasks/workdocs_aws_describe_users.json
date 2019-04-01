@@ -7,7 +7,25 @@
 		
 		
 		    
+			"authentication_token":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"include":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"query":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"sort":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -19,7 +37,7 @@
 			}
 			,
 		    
-			"authentication_token":{
+			"fields":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -44,24 +62,6 @@
 			,
 		    
 			"organization_id":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"sort":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"fields":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"include":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

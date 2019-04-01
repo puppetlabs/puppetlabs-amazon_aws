@@ -25,7 +25,19 @@
 			}
 			,
 		    
+			"application_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
 			"page_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"segment_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

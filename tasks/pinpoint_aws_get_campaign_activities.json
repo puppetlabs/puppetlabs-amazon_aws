@@ -7,13 +7,7 @@
 		
 		
 		    
-			"page_size":{
-			   "description": "",
-			   "type": "Optional[String[1]]"
-			}
-			,
-		    
-			"token":{
+			"application_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
@@ -26,6 +20,24 @@
 			,
 		    
 			"campaign_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"campaign_id":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"page_size":{
+			   "description": "",
+			   "type": "Optional[String[1]]"
+			}
+			,
+		    
+			"token":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}

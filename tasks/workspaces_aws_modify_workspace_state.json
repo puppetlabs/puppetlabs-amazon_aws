@@ -7,13 +7,13 @@
 		
 		
 		    
-			"workspace_id":{
+			"workspace_state":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
 			,
 		    
-			"workspace_state":{
+			"workspace_id":{
 			   "description": "",
 			   "type": "Optional[String[1]]"
 			}
