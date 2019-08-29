@@ -19,6 +19,8 @@ Amazon AWS exposes an API for creating and managing its Infrastructure as a Serv
 
 The module is generated from the [AWS API specifications](https://github.com/aws/aws-sdk-go-v2/tree/master/models/apis) and utilizes the AWS Ruby SDK. For additional information, see the [AWS SDK for Ruby documentation](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/).
 
+**Note** that we are no longer developing this module.
+
 ## Setup
 
 ### Installing the module
